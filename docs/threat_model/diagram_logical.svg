@@ -1,0 +1,969 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="3108px" preserveAspectRatio="none" style="width:4316px;height:3108px;background:#FFFFFF;" version="1.1" viewBox="0 0 4316 3108" width="4316px" zoomAndPan="magnify"><defs><filter height="300%" id="f1whccwk4npgqm" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="365" x="1969" y="16.708">BLOSSOM Logical Architecture Diagram</text><!--MD5=[c444070a69c905f8781a2e7d91c12e8c]
+cluster aws--><rect fill="#FFFFFF" height="1899.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="2722" x="1491" y="1051.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="258" x="2723" y="1068.3047">NIST-Managed AWS Account</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="192" x="2756" y="1083.2168">[Amazon Web Services Region]</text><!--MD5=[a1320f513aefdeb66e35e79a4f3e5a5d]
+cluster mb_network--><rect fill="#FFFFFF" height="911.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="1101" x="1859" y="2007.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="361" x="2229" y="2024.3047">BLOSSOM Managed Blockchain Network</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="239" x="2290" y="2039.2168">[Managed blockchain components from</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="33" x="2393" y="2053.1855">AWS]</text><!--MD5=[1de224b31678667cab674f205fbd773a]
+cluster mb_endpoints--><rect fill="#FFFFFF" height="782.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="1013" x="1907" y="2096.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="448" x="2189.5" y="2113.3047">AWS Managed Blockchain services and endpoints</text><!--MD5=[d50b2251973245ff2891b6dac29680ab]
+cluster mb_member1--><rect fill="#FFFFFF" height="194.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="705" x="2175" y="2644.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="364" x="2345.5" y="2661.3047">Managed Blockchain Network Member 1</text><!--MD5=[96aba686123580c7215b032a2cfb4e6f]
+cluster mb_member1_peernode1--><rect fill="#FFFFFF" height="92" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="421" x="2427" y="2697.4531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="329" x="2473" y="2714.3047">Managed Peer Node 1 for Member 1</text><!--MD5=[f25d582bb983925db6dec7cb562d28b3]
+cluster mb_member2--><rect fill="#FFFFFF" height="194.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="705" x="2175" y="2400.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="363" x="2346" y="2417.8047">Managed Blockchain Network Member 2</text><!--MD5=[0199f18b7999679d3a85e4fe3f81d246]
+cluster mb_member2_peernode1--><rect fill="#FFFFFF" height="92" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="421" x="2427" y="2453.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="328" x="2473.5" y="2470.8047">Managed Peer Node 1 for Member 2</text><!--MD5=[f3e010e4ffe562dd10ac0ee9bcd477af]
+cluster mb_member3--><rect fill="#FFFFFF" height="194.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="705" x="2175" y="2157.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="364" x="2345.5" y="2174.3047">Managed Blockchain Network Member 3</text><!--MD5=[2bf24098cc2932697751fc617f637116]
+cluster mb_member3_peernode1--><rect fill="#FFFFFF" height="92" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="421" x="2427" y="2210.4531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="329" x="2473" y="2227.3047">Managed Peer Node 1 for Member 3</text><!--MD5=[bfe4f767bb11f22a1eaa0d90d17cf673]
+cluster atob--><rect fill="#FFFFFF" height="409" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="2562" x="1525" y="1304.4531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="130" x="2741" y="1321.3047">ATO boundary</text><!--MD5=[01c3ee5fd25bc877bd19edccc2bc170a]
+cluster mbvpc--><rect fill="#FFFFFF" height="340" style="stroke:#A2A2A2;stroke-width:1.5;" width="2514" x="1549" y="1349.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="256" x="2678" y="1366.3047">BLOSSOM Development VPC</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="222" x="2695" y="1381.2168">[AWS VPC with resources supporting</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="181" x="2715.5" y="1395.1855">Managed Blockchain network]</text><!--MD5=[48eaebb5a8e23c5e0774680e8758bcbf]
+cluster mbvpc_infra--><rect fill="#FFFFFF" height="243" style="stroke:#A2A2A2;stroke-width:1.5;" width="750" x="3289" y="1422.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="174" x="3577" y="1439.3047">Support Resources</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="158" x="3585" y="1454.2168">[Supporting resources for</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="225" x="3551.5" y="1468.1855">Application Interface and DevSecOps</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="46" x="3641" y="1482.1543">tooling]</text><!--MD5=[0ad1f39330fde4c86b512025b1bac840]
+cluster asg_app--><rect fill="#FFFFFF" height="157" style="stroke:#A2A2A2;stroke-width:1.5;" width="453" x="1989" y="1486.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="437" x="1997" y="1503.3047">Management dashboard app auto-scaling group</text><!--MD5=[f064b04809d34db29640df725b8ce8a2]
+cluster asg_member1--><rect fill="#FFFFFF" height="173" style="stroke:#A2A2A2;stroke-width:1.5;" width="368" x="2482" y="1478.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="352" x="2490" y="1495.3047">Network Member 1 auto-scaling group</text><!--MD5=[a5b8403fb69330253ee64776e2a3f27b]
+cluster asg_member2--><rect fill="#FFFFFF" height="173" style="stroke:#A2A2A2;stroke-width:1.5;" width="367" x="2890" y="1478.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="351" x="2898" y="1495.3047">Network Member 2 auto-scaling group</text><!--MD5=[1d65d9158a5fc2db1adb5ce1db531ed1]
+cluster asg_member3--><rect fill="#FFFFFF" height="173" style="stroke:#A2A2A2;stroke-width:1.5;" width="368" x="1581" y="1478.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="352" x="1589" y="1495.3047">Network Member 3 auto-scaling group</text><!--MD5=[3320c4e17d84b5275ff7273532b2725a]
+cluster computer--><rect fill="#FFFFFF" height="396" style="stroke:#A2A2A2;stroke-width:1.5;" width="862" x="7" y="212.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="165" x="355.5" y="229.8047">Computing Device</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="223" x="326.5" y="244.7168">[MS Windows, OS X, or Linux running</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="57" x="409.5" y="258.6855">NIST VPN]</text><!--MD5=[58cbff9f7c32c36ff908675b0c565243]
+cluster user_computer--><rect fill="#FFFFFF" height="379.5" style="stroke:#A2A2A2;stroke-width:1.5;" width="240" x="1418" y="229.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="165" x="1455.5" y="246.3047">Computing Device</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="223" x="1426.5" y="261.2168">[MS Windows, OS X, or Linux running</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="57" x="1509.5" y="275.1855">NIST VPN]</text><!--MD5=[366d755d3c1558bd89c65fe9920f2d06]
+cluster nist_saas--><rect fill="#FFFFFF" height="550.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="1079" x="388" y="697.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="312" x="771.5" y="714.8047">NIST-Authorized External Services</text><!--MD5=[9541eb5ca0fde0e38d130b3f3240f98a]
+cluster gsuite--><rect fill="#FFFFFF" height="169" style="stroke:#A2A2A2;stroke-width:1.5;" width="443" x="1000" y="765.4531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="192" x="1125.5" y="782.3047">Azure and Office 365</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="196" x="1123.5" y="797.2168">[Collaboration SaaS, part of NIST</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="30" x="1206.5" y="811.1855">GSS]</text><!--MD5=[4b7e0bc75171606716ea54f9453815a0]
+cluster deploymentservices--><rect fill="#FFFFFF" height="481.5" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="318" x="412" y="742.9531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="192" x="475" y="759.8047">Deployment Services</text><!--MD5=[46add8cf7bf384e60847f614ab2d9898]
+cluster github--><rect fill="#FFFFFF" height="138" style="stroke:#A2A2A2;stroke-width:1.5;" width="270" x="436" y="787.9531"/><text fill="#000000" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="61" x="540.5" y="804.8047">GitHub</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="537" y="819.7168">[VCS SaaS]</text><!--MD5=[0983a057d3573ff5cbd0935faae8f203]
+cluster securityservices--><rect fill="#FFFFFF" height="155" style="stroke:#444444;stroke-width:1.0;stroke-dasharray:7.0,7.0;" width="222" x="754" y="779.4531"/><text fill="#444444" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="157" x="786.5" y="796.3047">Security Services</text><text fill="#444444" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="206" x="762" y="811.2168">[VPN and Other Security Services]</text><!--MD5=[d537da6c131333d5e81fa4d8c49ed6ec]
+entity aws_mgmt_api--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="207" x="2565.5" y="1111.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="165" x="2583.5" y="1136.8047">AWS Management</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="39" x="2649.5" y="1155.4297">APIs</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2671" y="1172.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="2641.5" y="1188.4951">used by</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="2575.5" y="1204.792">Infrastructure-as-Code to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="2636" y="1221.0889">provision</text><!--MD5=[764c4a89ad6e0521de67d149490e9fd4]
+entity aws_dns_private--><rect fill="#999999" height="141.0625" style="stroke:#8A8A8A;stroke-width:1.5;" width="207" x="1915.5" y="1102.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="156" x="1938" y="1127.3047">AWS Private DNS</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="130" x="1951" y="1145.9297">(Route53) and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="1968" y="1164.5547">PrivateLink</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2021" y="1181.3232"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="1991.5" y="1197.6201">used by</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="1925.5" y="1213.917">Infrastructure-as-Code to</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="1986" y="1230.2139">provision</text><!--MD5=[655d94b08028e1038e5281d7f934b05f]
+entity vpce_access_mb--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="219" x="2227.5" y="1802.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="169" x="2249.5" y="1827.3047">VPCE for managed</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="76" x="2299" y="1845.9297">network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2339" y="1862.6982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="2241.5" y="1878.9951">Access from BLOSSOM VPC</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="2252" y="1895.292">to Managed Blockchain</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="2274.5" y="1911.5889">network instance</text><!--MD5=[3b1cbe74b6c89c2f51efef6353974265]
+entity mb_ordering_svc--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="197" x="1950.5" y="2205.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="171" x="1960.5" y="2230.8047">BLOSSOM Network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="151" x="1973.5" y="2249.4297">Ordering Service</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2051" y="2266.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="1976" y="2282.4951">Managed Blockchain</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="1969.5" y="2298.792">endpoint for network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1991" y="2315.0889">ordering service</text><!--MD5=[8179edc1c80e10d72edc878b6db8dbb0]
+entity mb_member1_ca_svc--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="190" x="2218" y="2692.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="164" x="2228" y="2717.8047">Member Fabric CA</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2273" y="2736.4297">Endpoint</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2315" y="2753.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="2240" y="2769.4951">Managed Blockchain</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="2233.5" y="2785.792">endpoint for network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="2255" y="2802.0889">ordering service</text><!--MD5=[b65d4a433cdc6b428c9279c532f80b27]
+entity mb_member1_peernode1_peer_endpoint--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="148" x="2684" y="2734.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="2694" y="2759.3047">Peer Endpoint</text><!--MD5=[cd4a824835aef277f298805cf69a3538]
+entity mb_member1_peernode1_event_endpoint--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="205" x="2443.5" y="2734.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="185" x="2453.5" y="2759.3047">Peer Event Endpoint</text><!--MD5=[cb5be8033fd09d949908f94e0229bfb7]
+entity mb_member2_ca_svc--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="190" x="2218" y="2449.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="164" x="2228" y="2474.3047">Member Fabric CA</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2273" y="2492.9297">Endpoint</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2315" y="2509.6982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="2240" y="2525.9951">Managed Blockchain</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="2233.5" y="2542.292">endpoint for network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="2255" y="2558.5889">ordering service</text><!--MD5=[e71833d48a878bfd1bed34b828895712]
+entity mb_member2_peernode1_peer_endpoint--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="148" x="2684" y="2490.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="2694" y="2515.8047">Peer Endpoint</text><!--MD5=[cf70b66465caf866cea9d43bb92f2ce9]
+entity mb_member2_peernode1_event_endpoint--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="205" x="2443.5" y="2490.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="185" x="2453.5" y="2515.8047">Peer Event Endpoint</text><!--MD5=[2ebd78707edd9ba14e4b409b484bfb41]
+entity mb_member3_ca_svc--><rect fill="#999999" height="122.4375" style="stroke:#8A8A8A;stroke-width:1.5;" width="190" x="2218" y="2205.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="164" x="2228" y="2230.8047">Member Fabric CA</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="80" x="2273" y="2249.4297">Endpoint</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2315" y="2266.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="2240" y="2282.4951">Managed Blockchain</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="2233.5" y="2298.792">endpoint for network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="2255" y="2315.0889">ordering service</text><!--MD5=[d6b82d1ead5a69225dbcfbdb360aef0b]
+entity mb_member3_peernode1_peer_endpoint--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="148" x="2684" y="2247.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="128" x="2694" y="2272.3047">Peer Endpoint</text><!--MD5=[4dc61a8bcb1a98a5b82198a6cd33740f]
+entity mb_member3_peernode1_event_endpoint--><rect fill="#999999" height="38.625" style="stroke:#8A8A8A;stroke-width:1.5;" width="205" x="2443.5" y="2247.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="185" x="2453.5" y="2272.3047">Peer Event Endpoint</text><!--MD5=[3d6aef4893c84ea39ac9272187d54c74]
+entity s3_app_data--><path d="M3305.5,1520.9531 C3305.5,1510.9531 3413,1510.9531 3413,1510.9531 C3413,1510.9531 3520.5,1510.9531 3520.5,1520.9531 L3520.5,1630.0625 C3520.5,1640.0625 3413,1640.0625 3413,1640.0625 C3413,1640.0625 3305.5,1640.0625 3305.5,1630.0625 L3305.5,1520.9531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M3305.5,1520.9531 C3305.5,1530.9531 3413,1530.9531 3413,1530.9531 C3413,1530.9531 3520.5,1530.9531 3520.5,1520.9531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="102" x="3359" y="1549.8047">Application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="172" x="3327" y="1568.4297">configuration data</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="26" x="3400" y="1583.3418">[S3]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="3415" y="1599.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="3319.5" y="1615.4639">Stores persistent data for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="3395.5" y="1631.7607">apps</text><!--MD5=[61137a1d80afc7a6d0c29e4f1f32c4a9]
+entity s3_deploy_data--><path d="M3556,1520.9531 C3556,1510.9531 3664,1510.9531 3664,1510.9531 C3664,1510.9531 3772,1510.9531 3772,1520.9531 L3772,1630.0625 C3772,1640.0625 3664,1640.0625 3664,1640.0625 C3664,1640.0625 3556,1640.0625 3556,1630.0625 L3556,1520.9531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M3556,1520.9531 C3556,1530.9531 3664,1530.9531 3664,1530.9531 C3664,1530.9531 3772,1530.9531 3772,1520.9531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="110" x="3606" y="1549.8047">Deployment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="172" x="3578" y="1568.4297">configuration data</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="196" x="3566" y="1583.3418">[KMS, S3, SSM Parameter Store]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="3666" y="1599.167"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="3570.5" y="1615.4639">Stores persistent data for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="3646.5" y="1631.7607">apps</text><!--MD5=[310390f783ce19feed3cc251c8d19b79]
+entity ssm_params--><path d="M3807,1511.4531 C3807,1501.4531 3915,1501.4531 3915,1501.4531 C3915,1501.4531 4023,1501.4531 4023,1511.4531 L4023,1639.1875 C4023,1649.1875 3915,1649.1875 3915,1649.1875 C3915,1649.1875 3807,1649.1875 3807,1639.1875 L3807,1511.4531 " fill="#438DD5" style="stroke:#3C7FC0;stroke-width:1.5;"/><path d="M3807,1511.4531 C3807,1521.4531 3915,1521.4531 3915,1521.4531 C3915,1521.4531 4023,1521.4531 4023,1511.4531 " fill="none" style="stroke:#3C7FC0;stroke-width:1.5;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="110" x="3857" y="1540.3047">Deployment</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="182" x="3821" y="1558.9297">configuration items</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="186" x="3822" y="1577.5547">and runtime secrets</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="196" x="3817" y="1592.4668">[KMS, S3, SSM Parameter Store]</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="3917" y="1608.292"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="187" x="3821.5" y="1624.5889">Stores persistent data for</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="3897.5" y="1640.8857">apps</text><!--MD5=[0c220cd0d352361db5f3761b71f33d72]
+entity mgmt_app--><rect fill="#1168BD" height="87.5156" style="stroke:#3C7FC0;stroke-width:1.5;" width="179" x="2238.5" y="1531.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="101" x="2277.5" y="1556.3047">application</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2330" y="1573.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="2252.5" y="1589.3701">BLOSSOM Dashboard</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="2283" y="1605.667">Applications</text><!--MD5=[e3142dc68c97912e9b1d4ac7be0ee16b]
+entity member1_runtime--><rect fill="#1168BD" height="103.8125" style="stroke:#3C7FC0;stroke-width:1.5;" width="218" x="2567" y="1523.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="166" x="2593" y="1548.3047">member1_runtime</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="2678" y="1565.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="2607.5" y="1581.3701">Docker images and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="2577" y="1597.667">configuration for Member 1</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="2657.5" y="1613.9639">users</text><!--MD5=[65df2dc363217966e9ff903b92a158f5]
+entity member2_runtime--><rect fill="#1168BD" height="103.8125" style="stroke:#3C7FC0;stroke-width:1.5;" width="217" x="2974.5" y="1523.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="165" x="3000.5" y="1548.3047">member2_runtime</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="3085" y="1565.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="3014.5" y="1581.3701">Docker images and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="2984.5" y="1597.667">configuration for Member 2</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="3064.5" y="1613.9639">users</text><!--MD5=[2e18276eb56947dea1c5a5513c04911b]
+entity member3_runtime--><rect fill="#1168BD" height="103.8125" style="stroke:#3C7FC0;stroke-width:1.5;" width="218" x="1707" y="1523.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="166" x="1733" y="1548.3047">member3_runtime</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1818" y="1565.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="137" x="1747.5" y="1581.3701">Docker images and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="198" x="1717" y="1597.667">configuration for Member 3</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="1797.5" y="1613.9639">users</text><!--MD5=[23555a4f9c8a267cdfd801ad53ceaf15]
+entity browser--><rect fill="#1168BD" height="71.2188" style="stroke:#3C7FC0;stroke-width:1.5;" width="165" x="687.5" y="294.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="122" x="709" y="319.3047">Web Browser</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="772" y="336.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="701.5" y="352.3701">any modern version</text><!--MD5=[0d0ddc5f5cee4473b9b7dc4bacc3b027]
+entity aws_cli--><rect fill="#1168BD" height="87.5156" style="stroke:#3C7FC0;stroke-width:1.5;" width="198" x="246" y="285.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="69" x="310.5" y="310.8047">aws CLI</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="347" y="327.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="170" x="260" y="343.8701">local command for AWS</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="283.5" y="360.167">API configuration</text><!--MD5=[8d378d7fa3d28bcb81a7915c0a174c8c]
+entity git_cli--><rect fill="#1168BD" height="87.5156" style="stroke:#3C7FC0;stroke-width:1.5;" width="173" x="479.5" y="285.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="58" x="537" y="310.8047">git CLI</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="568" y="327.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="145" x="493.5" y="343.8701">local version control</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="530.5" y="360.167">command</text><!--MD5=[8da29b5d4c7112794e749e100aa75c8a]
+entity tf_cli--><rect fill="#1168BD" height="103.8125" style="stroke:#3C7FC0;stroke-width:1.5;" width="187" x="23.5" y="277.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="129" x="52.5" y="302.8047">Terraform CLI</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="119" y="319.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="67.5" y="335.8701">Terraform CLI</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="163" x="33.5" y="352.167">Infrastructure-as-Code</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="81.5" y="368.4639">command</text><!--MD5=[d598eb60d273e4dc4c65d81b953341ae]
+entity vpn_nist_client--><rect fill="#1168BD" height="122.4375" style="stroke:#3C7FC0;stroke-width:1.5;" width="208" x="301" y="470.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="178" x="313" y="495.8047">Client for NIST VPN</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="76" x="367" y="514.4297">Solution</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="407" y="531.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="315" y="547.4951">All filtered IP traffic, only</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="315.5" y="563.792">way to access collab and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="325.5" y="580.0889">development services</text><!--MD5=[c7ce629274efa778a789c1c45d2c3b88]
+entity user_browser--><rect fill="#1168BD" height="71.2188" style="stroke:#3C7FC0;stroke-width:1.5;" width="165" x="1455.5" y="294.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="122" x="1477" y="319.3047">Web Browser</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1540" y="336.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="1469.5" y="352.3701">any modern version</text><!--MD5=[4155d614abce5a11e658f92849541551]
+entity vpn_nist_client_user--><rect fill="#1168BD" height="122.4375" style="stroke:#3C7FC0;stroke-width:1.5;" width="208" x="1434" y="470.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="178" x="1446" y="495.8047">Client for NIST VPN</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="76" x="1500" y="514.4297">Solution</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1540" y="531.1982"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="1448" y="547.4951">All filtered IP traffic, only</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="1448.5" y="563.792">way to access collab and</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="1458.5" y="580.0889">development services</text><!--MD5=[6313d1a98fd634432c97f86c220e9adb]
+entity ggroup--><rect fill="#1168BD" height="87.5156" style="stroke:#3C7FC0;stroke-width:1.5;" width="188" x="1016" y="830.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="168" x="1026" y="855.3047">blossom@nist.gov</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1112" y="872.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="118" x="1051" y="888.3701">Developer email</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="1045" y="904.667">distribution group</text><!--MD5=[2e8b36c285d5e1f5938b65e8f301b5a0]
+entity secureauth--><rect fill="#999999" height="71.2188" style="stroke:#8A8A8A;stroke-width:1.5;" width="188" x="1239" y="838.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="148" x="1259" y="863.8047">NIST ADFS SAML</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="1335" y="880.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="1253" y="896.8701">SAML Identity Provider</text><!--MD5=[b03b48899f711162ba6dcba6662c8625]
+entity dependabot--><rect fill="#999999" height="71.2188" style="stroke:#8A8A8A;stroke-width:1.5;" width="212" x="465" y="1137.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="178" x="482" y="1162.3047">GitHub Dependabot</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="573" y="1179.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="479" y="1195.3701">Dependency analysis SaaS</text><!--MD5=[71cadeb8fcec62cb3d9f95842856d941]
+entity github_repo--><rect fill="#1168BD" height="71.2188" style="stroke:#3C7FC0;stroke-width:1.5;" width="237" x="452.5" y="838.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="217" x="462.5" y="863.8047">usnistgov/blossom-sam</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="573" y="880.5732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="515" y="896.8701">Code repository</text><!--MD5=[d6fdffee3df5f1de6eebad0889b981c6]
+entity vpn_nist--><rect fill="#999999" height="87.5156" style="stroke:#8A8A8A;stroke-width:1.5;" width="187" x="772.5" y="830.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="167" x="782.5" y="855.3047">NIST VPN Solution</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="868" y="872.0732"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="791" y="888.3701">Filtered IP Traffic, All</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="832" y="904.667">Protocols</text><path d="M303.5,62.4531 L303.5,117.8516 L520.5,117.8516 L520.5,72.4531 L510.5,62.4531 L303.5,62.4531 " fill="#FBFB77" filter="url(#f1whccwk4npgqm)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M510.5,62.4531 L510.5,72.4531 L520.5,72.4531 L510.5,62.4531 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="315.5" y="79.52">All connections depicted are</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="192" x="309.5" y="94.6528">encrypted with TLS 1.2 unless</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="108" x="353.5" y="109.7856">otherwise noted.</text><!--MD5=[3789662c0cc29586a59dac5c9e376c74]
+entity team--><rect fill="#08427B" height="105.25" style="stroke:#073B6F;stroke-width:1.5;" width="161" x="555.5" y="37.4531"/><image height="48" width="48" x="612" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="47.4531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="135" x="565.5" y="110.3047">NIST BLOSSOM</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="92" x="590" y="128.9297">Developer</text><!--MD5=[8fc3522a43f8c7199df5e09e5bb0188e]
+entity user--><rect fill="#08427B" height="123.875" style="stroke:#073B6F;stroke-width:1.5;" width="197" x="1439.5" y="27.9531"/><image height="48" width="48" x="1514" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAIAAADYYG7QAAACD0lEQVR4Xu2YoU4EMRCGT+4j8Ai8AhaH4QHgAUjQuFMECUgMIUgwJAgMhgQsAYUiJCiQIBBY+EITsjfTdme6V24v4c8vyGbb+ZjOtN0bNcvjQXmkH83WvYBWto6PLm6v7p7uH1/w2fXD+PBycX1Pv2l3IdDm/vn7x+dXQiAubRzoURa7gRZWd0iGRIiJbOnhnfYBQZNJjNbuyY2eJG8fkDE3bbG4ep6MHUAsgYxmE3nVs6VsBWJSGccsOlFPmLIViMzLOB7pCVO2AtHJMohH7Fh6zqitQK7m0rJvAVYgGcEpe//PLdDz65sM4pF9N7ICcXDKIB5Nv6j7tD0NoSdM2QrU9Gg0ewE1LqBhHR3BBdvj2vapnidjHxD/q6vd7Pvhr31AwcY8eXMTXAKECZZJFXuEq27aLgQK5uLMohCenGGuGewOxSjBvYBqeG6B+Nqiblggdjnc+ZXDy+FNFpFzw76O3UBAROuXh6FoiAcf5g9eTvUgzy0nWg6I8cXHRUpg5bOVBCo+KDpFajOf23GgPme7RSQ+lacIENUgJ6gg1k6HjgOlqnLqip4tEuhv0hNEMXUD0clyXE3p6pZA0S2nnvTlXwLJEZWlb7cTQH1+USgTN4VhAenm/wea1OCAOmqo6fE1WCb9WSKBah+rbUWPWAmE2Rvk0ApiB45eOyNAzU8xcTvj8KvkKEoOaIYeHNA3ZuygAvFMUO0AAAAASUVORK5CYII=" y="37.9531"/><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="171" x="1449.5" y="100.8047">BLOSSOM Network</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="171" x="1449.5" y="119.4297">Member User from</text><text fill="#FFFFFF" font-family="sans-serif" font-size="16" font-weight="bold" lengthAdjust="spacing" textLength="65" x="1505.5" y="138.0547">Agency</text><!--MD5=[f889840e8e9fec1af357dd045c61ff58]
+link team to aws_cli--><path d="M555.382,141.2131 C518.21,164.9031 478.681,190.9831 462,204.9531 C435.13,227.4531 408.084,255.6731 386.774,279.5031 " fill="none" id="team-to-aws_cli" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="381.203,285.7831,388.7534,281.7842,384.2622,277.8056,381.203,285.7831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="491" y="194.0918">uses</text><!--MD5=[80203ab3abe2d40d3d8327b84757bbee]
+link team to browser--><path d="M665.076,142.5931 C689.474,185.9331 723.877,247.0331 746.546,287.2931 " fill="none" id="team-to-browser" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="750.497,294.3131,749.1955,285.8688,743.964,288.8068,750.497,294.3131" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="695" y="194.0918">uses</text><!--MD5=[e431952a094c5e9637d1bd7b2592e9cf]
+link team to tf_cli--><path d="M559.046,142.5731 C552.095,146.0931 545.025,149.2831 538,151.9531 C407.334,201.5931 350.329,137.3331 228,204.9531 C199.217,220.8631 174.085,247.1431 155.047,271.4231 " fill="none" id="team-to-tf_cli" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="150.091,277.8731,157.3426,273.3549,152.5837,269.7008,150.091,277.8731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="277" y="194.0918">uses</text><!--MD5=[ba33e0e9ec7c1aadc5fc165052663820]
+link team to git_cli--><path d="M620.811,142.5931 C609.012,182.7131 592.734,238.0631 580.986,278.0031 " fill="none" id="team-to-git_cli" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="578.7,285.7731,583.8351,278.9444,578.0788,277.2517,578.7,285.7731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="608" y="194.0918">uses</text><!--MD5=[b46cc5daae0a23b20adcad14c35df212]
+link aws_cli to vpn_nist_client--><path d="M313.732,374.0831 C302.787,394.6031 295.369,419.3231 305,440.9531 C308.674,449.2031 313.519,457.0131 319.098,464.3331 " fill="none" id="aws_cli-to-vpn_nist_client" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="324.416,470.9031,321.7203,462.7955,317.054,466.5672,324.416,470.9031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="306" y="431.0918">tunnels</text><!--MD5=[314ba41a61293616b7fc15467c9a93d0]
+link browser to vpn_nist_client--><path d="M706.839,365.5631 C654.48,394.2531 578.785,435.7331 516.298,469.9631 " fill="none" id="browser-to-vpn_nist_client" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="509.134,473.8931,517.5913,472.679,514.7076,467.4174,509.134,473.8931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="621" y="431.0918">tunnels</text><!--MD5=[ab6b8ca2fce939ab251af9d69f2b036c]
+link git_cli to vpn_nist_client--><path d="M479.242,373.2231 C440.221,392.3331 402.642,410.9231 402,411.9531 C392.683,426.9431 389.917,445.1831 390.368,462.8331 " fill="none" id="git_cli-to-vpn_nist_client" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="390.79,470.8831,393.3572,462.7339,387.3658,463.0553,390.79,470.8831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="403" y="431.0918">tunnels</text><!--MD5=[cef7accc543af108b636da2b9b2fe215]
+link tf_cli to vpn_nist_client--><path d="M166.649,382.2031 C187.108,401.8531 211.689,423.6831 236,440.9531 C253.859,453.6431 273.724,465.7631 293.378,476.7631 " fill="none" id="tf_cli-to-vpn_nist_client" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="300.606,480.7731,295.0603,474.2735,292.154,479.5226,300.606,480.7731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="237" y="431.0918">tunnels</text><!--MD5=[cb0b8b76abfa2834642063151b7f0b8e]
+link user to user_browser--><path d="M1538,152.2431 C1538,194.2431 1538,248.8931 1538,286.2331 " fill="none" id="user-to-user_browser" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1538,294.3931,1541,286.3931,1535,286.3931,1538,294.3931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="34" x="1539" y="194.0918">uses</text><!--MD5=[13b29ad2c2084e4b54a087ce94a5ccb0]
+link user_browser to vpn_nist_client_user--><path d="M1538,365.7931 C1538,392.4131 1538,429.9431 1538,462.4931 " fill="none" id="user_browser-to-vpn_nist_client_user" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1538,470.6631,1541,462.6631,1535,462.6631,1538,470.6631" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="55" x="1539" y="431.0918">tunnels</text><!--MD5=[34fe10ac248a24ba6543f20c8ac1b751]
+link browser to github_repo--><path d="M759.878,365.6131 C743.843,419.7331 711.018,527.3931 678,616.9531 C649.821,693.3831 612.271,780.5631 589.967,831.0731 " fill="none" id="browser-to-github_repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="586.656,838.5531,592.6306,832.4454,587.1414,830.0229,586.656,838.5531" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="144" x="727" y="522.5918">makes pull-request,</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="98" x="752" y="536.5605">approves PRs</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="745" y="550.5293">[HTTPS (TCP 443)]</text><!--MD5=[467d9abc5f256b63239734abb1957638]
+link git_cli to github_repo--><path d="M566.397,373.9731 C567.332,475.5031 569.669,729.0631 570.604,830.5131 " fill="none" id="git_cli-to-github_repo" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="570.68,838.6931,573.6085,830.6667,567.6087,830.7202,570.68,838.6931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="99" x="570" y="529.5918">commits code</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="91" x="574" y="543.5605">[SSH (TCP 22)]</text><!--MD5=[ab88e0362905da48db6ab813158f3f99]
+link team to ggroup--><path d="M716.525,115.4831 C765.507,133.7331 826.586,162.8231 869,204.9531 C1016.93,351.8931 1017.4,425.4531 1078,624.9531 C1098.12,691.1931 1105.59,771.1031 1108.36,822.0931 " fill="none" id="team-to-ggroup" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1108.79,830.3331,1111.3715,822.1884,1105.3796,822.4993,1108.79,830.3331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="146" x="1023" y="424.0918">provides assistance</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="43" x="1074.5" y="438.0605">[Email]</text><!--MD5=[da464b5b2158b482a23a4dfab7f3a23b]
+link team to secureauth--><path d="M716.718,109.2231 C784.919,126.9631 883.441,158.1231 960,204.9531 C1073.98,274.6631 1106.16,299.2931 1178,411.9531 C1266.59,550.8931 1310.15,745.8731 1325.88,830.9531 " fill="none" id="team-to-secureauth" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1327.31,838.8331,1328.8332,830.426,1322.9296,831.4974,1327.31,838.8331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="104" x="1198" y="424.0918">authenticates</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="1194" y="438.0605">[HTTPS (TCP 443)]</text><!--MD5=[abf702869146223f28b0bf61e0d7a816]
+link asg_app to vpce_access_mb--><path d="M2204.1254,1643.929 C2204.1481,1644.1685 2204.1711,1644.4083 2204.1943,1644.6484 C2204.3798,1646.5693 2204.5813,1648.5078 2204.7998,1650.4609 C2205.6738,1658.2731 2206.8205,1666.3173 2208.3128,1674.3867 C2211.2975,1690.5256 2215.665,1706.7656 2222,1721.4531 C2233.55,1748.2331 2251.73,1774.0331 2270.25,1796.0831 " fill="none" id="asg_app-to-vpce_access_mb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2275.47,1802.1931,2272.5446,1794.1656,2267.9875,1798.0685,2275.47,1802.1931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="92" x="2261" y="1741.5918">accesses MB</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="85" x="2266.5" y="1755.5605">network via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="2253" y="1769.5293">[HTTPS (TCP 443)]</text><!--MD5=[589deef7fdad16fae39e1368da7636e3]
+link asg_member1 to vpce_access_mb--><path d="M2481.8361,1635.0269 C2481.3599,1635.9493 2480.8797,1636.8778 2480.3957,1637.8119 C2478.4597,1641.5485 2476.4627,1645.3761 2474.414,1649.2708 C2470.3168,1657.0604 2466.013,1665.1184 2461.5783,1673.2533 C2452.7088,1689.5231 2443.315,1706.1006 2434,1721.4531 C2418.99,1746.1931 2401.36,1772.5131 2385.28,1795.6331 " fill="none" id="asg_member1-to-vpce_access_mb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2380.57,1802.3831,2387.6062,1797.5363,2382.6843,1794.1048,2380.57,1802.3831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="92" x="2435" y="1741.5918">accesses MB</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="85" x="2440.5" y="1755.5605">network via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="2427" y="1769.5293">[HTTPS (TCP 443)]</text><!--MD5=[b9441ac6d13d9d1a9c3147a68722930c]
+link asg_member2 to vpce_access_mb--><path d="M2889.9353,1596.4952 C2889.8624,1596.6627 2889.7891,1596.8311 2889.7153,1597.0003 C2889.5677,1597.3387 2889.4181,1597.6804 2889.2667,1598.0253 C2888.6608,1599.405 2888.024,1600.8362 2887.3565,1602.3147 C2886.0216,1605.2715 2884.564,1608.4171 2882.9854,1611.7161 C2879.8281,1618.3141 2876.1869,1625.5259 2872.075,1633.0694 C2855.6275,1663.2431 2831.65,1698.7231 2801,1721.4531 C2698.61,1797.3831 2555.04,1832.8231 2454.81,1849.1031 " fill="none" id="asg_member2-to-vpce_access_mb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2446.76,1850.3831,2455.135,1852.0738,2454.1817,1846.1501,2446.76,1850.3831" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="92" x="2788" y="1741.5918">accesses MB</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="85" x="2793.5" y="1755.5605">network via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="2780" y="1769.5293">[HTTPS (TCP 443)]</text><!--MD5=[4bf51eeb78db4db90511957fd7aa12af]
+link asg_member3 to vpce_access_mb--><path d="M1674.0653,1651.59 C1674.086,1651.8483 1674.1068,1652.1066 1674.1278,1652.3649 C1674.1698,1652.8814 1674.2126,1653.3978 1674.2562,1653.914 C1674.6046,1658.0439 1675.002,1662.1617 1675.4548,1666.2169 C1676.3604,1674.3271 1677.4879,1682.1862 1678.8892,1689.3877 C1681.6919,1703.7906 1685.59,1715.5631 1691,1721.4531 C1760.98,1797.6231 2052.55,1836.4231 2219.06,1852.7231 " fill="none" id="asg_member3-to-vpce_access_mb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2227.38,1853.5331,2219.7068,1849.7752,2219.1278,1855.7472,2227.38,1853.5331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="92" x="1791" y="1741.5918">accesses MB</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="85" x="1796.5" y="1755.5605">network via</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="1783" y="1769.5293">[HTTPS (TCP 443)]</text><!--MD5=[5ea5bf2729643e268dd176ec16b01435]
+link vpce_access_mb to mb_endpoints--><path d="M2227.06,1866.8131 C2133.42,1875.2431 2003.35,1903.4331 1934,1991.4531 C1929.3075,1997.4099 1925.7737,2017.3008 1923.1127,2043.8466 C1921.7821,2057.1195 1920.6697,2072.0562 1919.7397,2087.7467 C1919.6235,2089.7081 1919.5101,2091.6812 1919.3995,2093.6643 C1919.3718,2094.16 1919.3443,2094.6564 1919.317,2095.1534 " fill="none" id="vpce_access_mb-to-mb_endpoints" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1919.317,2095.1534,1922.7514,2087.3301,1916.7605,2087.0009,1919.317,2095.1534" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="128" x="1965" y="1966.5918">tunnels traffic to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="1973" y="1980.5605">[HTTPS (TCP 443)]</text><!--MD5=[fff1e54d7e95703a7c546e55a93510a5]
+link vpn_nist_client to vpn_nist--><path d="M496.943,593.0631 C510.843,601.4231 525.162,609.6431 539,616.9531 C610.623,654.7931 640.686,642.0431 706,689.9531 C756.742,727.1731 802.581,783.1731 832.057,823.5131 " fill="none" id="vpn_nist_client-to-vpn_nist" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="837.006,830.3431,834.7383,822.1056,829.881,825.6278,837.006,830.3431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="94" x="697.5" y="637.0918">Secure cloud</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="107" x="691" y="651.0605">infrastructure</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="107" x="693" y="665.0293">access via VPN</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="98" x="697.5" y="678.998">[All IP protocols]</text><!--MD5=[b685bcb509587bcadaf176d1257702c8]
+link vpn_nist_client_user to vpn_nist--><path d="M1433.77,543.1831 C1318.6,558.8131 1132,597.3031 1000,689.9531 C951.317,724.1231 913.497,781.6931 890.631,823.2531 " fill="none" id="vpn_nist_client_user-to-vpn_nist" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="886.814,830.2931,893.2563,824.6809,887.9776,821.8287,886.814,830.2931" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="94" x="1112.5" y="637.0918">Secure cloud</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="107" x="1106" y="651.0605">infrastructure</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="107" x="1108" y="665.0293">access via VPN</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="98" x="1112.5" y="678.998">[All IP protocols]</text><!--MD5=[506314871bf73eff8fdcee56b9c11861]
+link vpn_nist to aws_mgmt_api--><path d="M939.827,918.5231 C958.871,927.8931 979.729,936.7131 1000,942.4531 C1489.4,1081.0731 1638.12,960.7431 2140,1043.4531 C2285.79,1067.4831 2450.8,1110.0831 2557.19,1139.6131 " fill="none" id="vpn_nist-to-aws_mgmt_api" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2565.06,1141.8031,2558.1548,1136.7714,2556.5489,1142.5525,2565.06,1141.8031" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="172" x="2082" y="969.5918">Infrastructure-as-Code</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="48" x="2142" y="983.5605">stores</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="144" x="2094" y="997.5293">configuration state</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="67" x="2134.5" y="1011.498">in bucket</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="2112" y="1025.4668">[HTTPS (TCP 443)]</text><!--MD5=[35a9288abc6a78a5bf5497e695e72e7a]
+link vpn_nist to mgmt_app--><path d="M937.061,918.4831 C956.762,928.2931 978.626,937.3331 1000,942.4531 C1034.12,950.6231 2227.93,949.4631 2263,950.4531 C2469.84,956.2731 3974.95,898.8931 4123,1043.4531 C4201.09,1119.7131 4217,1211.0831 4140,1288.4531 C4123.68,1304.8531 2493.77,1284.4331 2474,1296.4531 C2392.57,1345.9331 2354.28,1457.4231 2338.18,1523.1931 " fill="none" id="vpn_nist-to-mgmt_app" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2336.23,1531.3731,2341.0073,1524.2895,2335.1716,1522.8949,2336.23,1531.3731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="92" x="4201.5" y="1156.5918">tunnels user</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="86" x="4204.5" y="1170.5605">requests to</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="117" x="4191" y="1184.5293">dashboard apps</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="112" x="4193.5" y="1198.498">[HTTPS (TCP 443)]</text><!--MD5=[889aa3d57b53e7b4365dc18417d5dee0]
+link aws_mgmt_api to asg_app--><path d="M2565.44,1188.3431 C2447.41,1207.0331 2265.22,1243.6331 2222,1296.4531 C2183.4,1343.6281 2178.195,1411.7106 2182.8625,1468.6919 C2183.1542,1472.2532 2183.4845,1475.7712 2183.8476,1479.238 C2184.0292,1480.9713 2184.2189,1482.6919 2184.4162,1484.3988 C2184.4655,1484.8255 2184.5153,1485.2513 2184.5655,1485.6763 " fill="none" id="aws_mgmt_api-to-asg_app" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2184.5655,1485.6763,2186.6056,1477.3794,2180.6471,1478.0838,2184.5655,1485.6763" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="28" x="2251" y="1285.5918">****</text><!--MD5=[db130c04c34333ea2bea722d212e4912]
+link aws_mgmt_api to asg_member1--><path d="M2596.76,1234.0831 C2579.13,1252.3331 2562.16,1273.6431 2551,1296.4531 C2524.01,1351.6481 2513.8975,1419.8556 2510.5875,1474.8956 C2510.5358,1475.7556 2510.4857,1476.6124 2510.4373,1477.4659 " fill="none" id="aws_mgmt_api-to-asg_member1" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2510.4373,1477.4659,2513.8857,1469.6487,2507.8954,1469.3088,2510.4373,1477.4659" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="2563" y="1285.5918">creates</text><!--MD5=[9ef2a3c8e3ebf2e2560d6c123cc057c9]
+link aws_mgmt_api to asg_member2--><path d="M2746.5,1234.1831 C2766.33,1252.4931 2786.2,1273.8231 2801,1296.4531 C2836.255,1350.3581 2860.305,1418.5456 2875.6388,1473.8981 C2879.4722,1487.7363 2882.7609,1500.7722 2885.5437,1512.5822 C2886.935,1518.4872 2888.2,1524.0858 2889.3433,1529.3249 C2889.4862,1529.9798 2889.6272,1530.6291 2889.7663,1531.2726 C2889.8359,1531.5944 2889.905,1531.9147 2889.9736,1532.2336 " fill="none" id="aws_mgmt_api-to-asg_member2" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2889.9736,1532.2336,2891.2237,1523.7816,2885.3579,1525.0437,2889.9736,1532.2336" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="2796" y="1285.5918">creates</text><!--MD5=[e9009a9aeec730506e3d7637431827a2]
+link aws_mgmt_api to asg_member3--><path d="M2565.39,1192.1831 C2458.95,1210.4131 2288.31,1238.3031 2140,1256.4531 C2090.28,1262.5331 1726.05,1260.6731 1691,1296.4531 C1680.25,1307.4231 1675.49,1375.9281 1673.4225,1442.1819 C1673.1641,1450.4636 1672.9477,1458.7101 1672.767,1466.8047 C1672.7218,1468.8284 1672.6788,1470.8425 1672.638,1472.8454 C1672.6176,1473.8468 1672.5977,1474.8454 1672.5783,1475.8409 C1672.5686,1476.3387 1672.5591,1476.8357 1672.5497,1477.3319 " fill="none" id="aws_mgmt_api-to-asg_member3" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1672.5497,1477.3319,1675.701,1469.3903,1669.7021,1469.2763,1672.5497,1477.3319" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1784" y="1285.5918">creates</text><!--MD5=[49df37f0f28b6956ceaa0b7fc49de29a]
+link aws_mgmt_api to s3_app_data--><path d="M2772.59,1176.3831 C2887.64,1183.6131 3074.7,1209.2331 3208,1296.4531 C3286.15,1347.5931 3345.09,1439.4031 3379.26,1503.4731 " fill="none" id="aws_mgmt_api-to-s3_app_data" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="3383.1,1510.7531,3382.0295,1502.2765,3376.7197,1505.0705,3383.1,1510.7531" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="3196" y="1285.5918">creates</text><!--MD5=[0958381b240dc6ee1d90c4fbbcca6ddf]
+link aws_mgmt_api to s3_deploy_data--><path d="M2772.86,1176.3231 C2976.55,1182.9131 3419.01,1207.3631 3538,1296.4531 C3604.1,1345.9431 3636.42,1438.1931 3651.59,1502.8131 " fill="none" id="aws_mgmt_api-to-s3_deploy_data" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="3653.44,1510.9431,3654.5938,1502.4774,3648.7428,1503.8062,3653.44,1510.9431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="3517" y="1285.5918">creates</text><!--MD5=[11959140d661c9117df217a8bc9df302]
+link aws_mgmt_api to ssm_params--><path d="M2772.69,1179.4331 C3034.75,1194.1031 3708.65,1237.2031 3790,1296.4531 C3853.58,1342.7631 3885.47,1429.0131 3901.04,1493.2131 " fill="none" id="aws_mgmt_api-to-ssm_params" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="3902.94,1501.3331,3904.0314,1492.8591,3898.1903,1494.231,3902.94,1501.3331" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="3774" y="1285.5918">creates</text><!--MD5=[ea3fc14b1d3409b8895661a70a58bc0a]
+link aws_mgmt_api to mb_network--><path d="M2565.07,1193.8231 C2458.72,1213.2931 2288.49,1242.0731 2140,1256.4531 C2077.14,1262.5431 1613.38,1247.8931 1573,1296.4531 C1430.18,1468.2031 1501.42,1708.1476 1609.4812,1906.3556 C1663.5119,2005.4596 1726.7478,2094.1295 1777.0342,2158.6239 C1802.1774,2190.8711 1824.0832,2217.0744 1839.9823,2235.5161 C1847.9319,2244.737 1854.3797,2252.0175 1858.9797,2257.1429 " fill="none" id="aws_mgmt_api-to-mb_network" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="1858.9797,2257.1429,1855.8689,2249.1853,1851.4036,2253.1929,1858.9797,2257.1429" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="1545" y="1755.5918">creates</text><!--MD5=[3a8c2c9021d0f0e46d44cde02c876f1c]
+link aws_mgmt_api to vpce_access_mb--><path d="M2772.53,1175.2431 C3077.29,1180.1331 3955.12,1202.3231 4039,1296.4531 C4164.66,1437.4731 4166.93,1582.4831 4039,1721.4531 C3931.95,1837.7431 2822.34,1858.1331 2454.64,1861.7031 " fill="none" id="aws_mgmt_api-to-vpce_access_mb" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="2446.62,1861.7731,2454.6465,1864.7016,2454.5929,1858.7018,2446.62,1861.7731" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="57" x="4135" y="1580.0918">creates</text><!--MD5=[b79f4bceb630258ecd0f96ceb78182a8]
+reverse link github_repo to dependabot--><path d="M571,918.0531 C571,977.0631 571,1082.5531 571,1137.1231 " fill="none" id="github_repo-backto-dependabot" style="stroke:#666666;stroke-width:1.0;"/><polygon fill="#666666" points="571,910.0431,568,918.0431,574,918.0431,571,910.0431" style="stroke:#666666;stroke-width:1.0;"/><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="88" x="594.5" y="962.5918">watches for</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="125" x="576" y="976.5605">changes, reports</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="77" x="600" y="990.5293">vulnerable</text><text fill="#666666" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="101" x="590" y="1004.498">dependencies</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="133" x="572" y="1018.4668">[GitHub API via HTTPS</text><text fill="#666666" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="65" x="608" y="1032.4355">(TCP 443)]</text><!--MD5=[d7906931527d4509e9d7a30323c1ef5c]
+link mb_member2 to mb_member1--><!--MD5=[71bbf5c372a07a2ad2912b757fe999b2]
+link mb_member3 to mb_member2--><rect fill="#FFFFFF" height="128.0781" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:1.0;" width="153" x="4141" y="2963.9531"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="57" x="4147" y="2983.9482">Legend</text><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="0" x="4208" y="2983.9482"/><rect fill="#08427B" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="4147" y="2987.25"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="4151" y="3000.2451">person</text><rect fill="#1168BD" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="4147" y="3003.5469"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="52" x="4151" y="3016.542">system</text><rect fill="#438DD5" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="4147" y="3019.8438"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="4151" y="3032.8389">container</text><rect fill="#686868" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="4147" y="3036.1406"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="4151" y="3049.1357">external person</text><rect fill="#999999" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="4147" y="3052.4375"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="4151" y="3065.4326">external system</text><rect fill="#B3B3B3" height="16.2969" style="stroke:none;stroke-width:1.0;" width="141" x="4147" y="3068.7344"/><text fill="#FFFFFF" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="4151" y="3081.7295">external container</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="2970.9531" y2="2970.9531"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="2987.25" y2="2987.25"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="3003.5469" y2="3003.5469"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="3019.8438" y2="3019.8438"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="3036.1406" y2="3036.1406"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="3052.4375" y2="3052.4375"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="3068.7344" y2="3068.7344"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4288" y1="3085.0313" y2="3085.0313"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4147" x2="4147" y1="2970.9531" y2="3085.0313"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="4288" x2="4288" y1="2970.9531" y2="3085.0313"/><!--MD5=[59a163aae1a8329a22e9fd25879bf3eb]
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Deployment.puml
+
+LAYOUT_WITH_LEGEND()
+title BLOSSOM Logical Architecture Diagram
+
+note as EncryptionNote
+All connections depicted are encrypted with TLS 1.2 unless otherwise noted.
+end note
+
+Deployment_Node(aws, "NIST-Managed AWS Account", "Amazon Web Services Region") {
+        System_Ext("aws_mgmt_api", "AWS Management APIs", "used by Infrastructure-as-Code to provision")
+        System_Ext("aws_dns_private", "AWS Private DNS (Route53) and PrivateLink", "used by Infrastructure-as-Code to provision")
+        Deployment_Node(mb_network, "BLOSSOM Managed Blockchain Network", "Managed blockchain components from AWS") {
+            Deployment_Node(mb_endpoints, "AWS Managed Blockchain services and endpoints") {
+
+                System_Ext(mb_ordering_svc, "BLOSSOM Network Ordering Service", "Managed Blockchain endpoint for network ordering service")
+
+                Deployment_Node(mb_member1, "Managed Blockchain Network Member 1") {
+                    System_Ext(mb_member1_ca_svc, "Member Fabric CA Endpoint", "Managed Blockchain endpoint for network ordering service")
+                    Boundary(mb_member1_peernode1, "Managed Peer Node 1 for Member 1") {
+                        System_Ext(mb_member1_peernode1_peer_endpoint, "Peer Endpoint")
+                        System_Ext(mb_member1_peernode1_event_endpoint, "Peer Event Endpoint")
+                    }
+                }
+                Deployment_Node(mb_member2, "Managed Blockchain Network Member 2") {
+                    System_Ext(mb_member2_ca_svc, "Member Fabric CA Endpoint", "Managed Blockchain endpoint for network ordering service")
+                    Boundary(mb_member2_peernode1, "Managed Peer Node 1 for Member 2") {
+                        System_Ext(mb_member2_peernode1_peer_endpoint, "Peer Endpoint")
+                        System_Ext(mb_member2_peernode1_event_endpoint, "Peer Event Endpoint")
+                    }
+                }
+                Deployment_Node(mb_member3, "Managed Blockchain Network Member 3") {
+                    System_Ext(mb_member3_ca_svc, "Member Fabric CA Endpoint", "Managed Blockchain endpoint for network ordering service")
+                    Boundary(mb_member3_peernode1, "Managed Peer Node 1 for Member 3") {
+                        System_Ext(mb_member3_peernode1_peer_endpoint, "Peer Endpoint")
+                        System_Ext(mb_member3_peernode1_event_endpoint, "Peer Event Endpoint")
+                    }
+                }
+            }
+        }
+
+        System_Ext(vpce_access_mb, "VPCE for managed network", "Access from BLOSSOM VPC to Managed Blockchain network instance")
+    
+        Boundary(atob, "ATO boundary") {
+            Deployment_Node(mbvpc, "BLOSSOM Development VPC", "AWS VPC with resources supporting Managed Blockchain network") {
+                Deployment_Node(mbvpc_infra, "Support Resources", "Supporting resources for Application Interface and DevSecOps tooling") {
+                    ContainerDb(s3_app_data, "Application configuration data", "S3", "Stores persistent data for apps")
+                    ContainerDb(s3_deploy_data, "Deployment configuration data", "KMS, S3, SSM Parameter Store", "Stores persistent data for apps")
+                    ContainerDb(ssm_params, "Deployment configuration items and runtime secrets", "KMS, S3, SSM Parameter Store", "Stores persistent data for apps")
+                }
+                Deployment_Node(asg_app, "Management dashboard app auto-scaling group") {
+                    System(mgmt_app, "application", "BLOSSOM Dashboard Applications")
+                }
+                Deployment_Node(asg_member1, "Network Member 1 auto-scaling group") {
+                    System(member1_runtime, "member1_runtime", "Docker images and configuration for Member 1 users")
+                }
+                Deployment_Node(asg_member2, "Network Member 2 auto-scaling group") {
+                    System(member2_runtime, "member2_runtime", "Docker images and configuration for Member 2 users")
+                }
+                Deployment_Node(asg_member3, "Network Member 3 auto-scaling group") {
+                    System(member3_runtime, "member3_runtime", "Docker images and configuration for Member 3 users")
+                }
+            }
+        }
+}
+
+Person(team, "NIST BLOSSOM Developer")
+Deployment_Node(computer, "Computing Device", "MS Windows, OS X, or Linux running NIST VPN"){
+    System(browser, "Web Browser", "any modern version")
+    System(aws_cli, "aws CLI", "local command for AWS API configuration")
+    System(git_cli, "git CLI", "local version control command")
+    System(tf_cli, "Terraform CLI", "Terraform CLI Infrastructure-as-Code command")
+    System(vpn_nist_client, "Client for NIST VPN Solution", "All filtered IP traffic, only way to access collab and development services")
+}
+Rel(team, aws_cli, "uses")
+Rel(team, browser, "uses")
+Rel(team, tf_cli, "uses")
+Rel(team, git_cli, "uses")
+Rel(aws_cli, vpn_nist_client, "tunnels")
+Rel(browser, vpn_nist_client, "tunnels")
+Rel(git_cli, vpn_nist_client, "tunnels")
+Rel(tf_cli, vpn_nist_client, "tunnels")
+
+Person(user, "BLOSSOM Network Member User from Agency")
+Deployment_Node(user_computer, "Computing Device", "MS Windows, OS X, or Linux running NIST VPN"){
+    System(user_browser, "Web Browser", "any modern version")
+    System(vpn_nist_client_user, "Client for NIST VPN Solution", "All filtered IP traffic, only way to access collab and development services")
+}
+Rel(user, user_browser, "uses")
+Rel(user_browser, vpn_nist_client_user, "tunnels")
+
+Boundary(nist_saas, "NIST-Authorized External Services") { 
+    Deployment_Node(gsuite, "Azure and Office 365", "Collaboration SaaS, part of NIST GSS") {
+        System(ggroup, "blossom@nist.gov", "Developer email distribution group")
+        System_Ext(secureauth, "NIST ADFS SAML", "SAML Identity Provider")
+    }
+    Boundary(deploymentservices, "Deployment Services") {
+        System_Ext(dependabot, "GitHub Dependabot", "Dependency analysis SaaS")
+        Deployment_Node(github, "GitHub", "VCS SaaS"){
+            System(github_repo, "usnistgov/blossom", "Code repository")
+            System(github_repo, "usnistgov/blossom-dashboard", "Code repository")
+            System(github_repo, "usnistgov/blossom-sam", "Code repository")
+        }
+    }
+    Boundary(securityservices, "Security Services", "VPN and Other Security Services") {
+        System_Ext(vpn_nist, "NIST VPN Solution", "Filtered IP Traffic, All Protocols")
+    }
+}
+
+
+'Team interactions
+Rel(browser, github_repo, "makes pull-request, approves PRs", "HTTPS (TCP 443)")
+Rel(git_cli, github_repo, "commits code", "SSH (TCP 22)")
+Rel(team, ggroup, "provides assistance", "Email")
+Rel(team, secureauth, "authenticates", "HTTPS (TCP 443)")
+Rel(asg_app, vpce_access_mb, "accesses MB network via", "HTTPS (TCP 443)")
+Rel(asg_member1, vpce_access_mb, "accesses MB network via", "HTTPS (TCP 443)")
+Rel(asg_member2, vpce_access_mb, "accesses MB network via", "HTTPS (TCP 443)")
+Rel(asg_member3, vpce_access_mb, "accesses MB network via", "HTTPS (TCP 443)")
+Rel(vpce_access_mb, mb_endpoints, "tunnels traffic to", "HTTPS (TCP 443)")
+' Deployment automation
+Rel(vpn_nist_client, vpn_nist, "Secure cloud infrastructure access via VPN", "All IP protocols")
+Rel(vpn_nist_client_user, vpn_nist, "Secure cloud infrastructure access via VPN", "All IP protocols")
+Rel(vpn_nist, aws_mgmt_api, "Infrastructure-as-Code stores configuration state in bucket", "HTTPS (TCP 443)")
+Rel(vpn_nist, mgmt_app, "tunnels user requests to dashboard apps", "HTTPS (TCP 443)")
+Rel(aws_mgmt_api, asg_app, "")
+Rel(aws_mgmt_api, asg_member1, "creates")
+Rel(aws_mgmt_api, asg_member2, "creates")
+Rel(aws_mgmt_api, asg_member3, "creates")
+Rel(aws_mgmt_api, s3_app_data, "creates")
+Rel(aws_mgmt_api, s3_deploy_data, "creates")
+Rel(aws_mgmt_api, ssm_params, "creates")
+'Rel(aws_cli, aws_mgmt_api, "queries AWS API to provide configuration data")
+'Rel(tf_cli, s3_deploy_data, "reads and updates environment state to")
+Rel(aws_mgmt_api, mb_network, "creates")
+Rel(aws_mgmt_api, vpce_access_mb, "creates")
+Rel_Up(dependabot, github_repo, "watches for changes, reports vulnerable dependencies", "GitHub API via HTTPS (TCP 443)")
+
+
+
+' Non-functional, just helps with layout
+Lay_U(mb_member1, mb_member2)
+Lay_U(mb_member2, mb_member3)
+'Lay_U()
+'Lay_R(atob, vpce_access_mb)
+'Lay_R(mb_endpoints, atob)
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam defaultTextAlignment center
+
+skinparam wrapWidth 200
+skinparam maxMessageSize 150
+
+skinparam LegendBorderColor transparent
+skinparam LegendBackgroundColor transparent
+skinparam LegendFontColor #FFFFFF
+
+skinparam shadowing<<legendArea>> false
+skinparam rectangle<<legendArea>> {
+    backgroundcolor #00000000
+    bordercolor #00000000
+}
+
+skinparam rectangle {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam database {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam queue {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam arrow {
+    Color #666666
+    FontColor #666666
+    FontSize 12
+}
+
+skinparam actor {
+    StereotypeFontSize 12
+    shadowing false
+    style awesome
+}
+
+skinparam person {
+    StereotypeFontSize 12
+    shadowing false
+}
+
+skinparam package {
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontStyle plain
+    BackgroundColor transparent
+}
+
+skinparam rectangle<<boundary>> {
+    Shadowing false
+    StereotypeFontSize 6
+    StereotypeFontColor transparent
+    FontColor #444444
+    BorderColor #444444
+    BackgroundColor transparent
+    BorderStyle dashed
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam database<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam queue<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam actor<<person>> {
+    StereotypeFontColor #08427B
+    FontColor #08427B
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+skinparam person<<person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #08427B
+    BorderColor #073B6F
+}
+
+
+skinparam rectangle<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam database<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_person>> {
+    StereotypeFontColor #686868
+    FontColor #686868
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+skinparam person<<external_person>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #686868
+    BorderColor #8A8A8A
+}
+
+
+skinparam rectangle<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam database<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam queue<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam actor<<system>> {
+    StereotypeFontColor #1168BD
+    FontColor #1168BD
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+skinparam person<<system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #1168BD
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam database<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam queue<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam actor<<external_system>> {
+    StereotypeFontColor #999999
+    FontColor #999999
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+skinparam person<<external_system>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #999999
+    BorderColor #8A8A8A
+}
+
+
+
+
+
+sprite $person [48x48/16] {
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+000000000000025788300000000005886410000000000000
+000000000007DFFFFFFD9643347BFFFFFFFB400000000000
+0000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFB1000000000
+000000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFD200000000
+00000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE10000000
+0000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB0000000
+000000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5000000
+000003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD000000
+000009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF200000
+00000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000
+00000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF800000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+00001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA00000
+00000EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF700000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+0000008FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD3000000
+000000014555555555555555555555555555555300000000
+000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000
+}
+
+sprite $person2 [48x48/16] {
+0000000000000000000049BCCA7200000000000000000000
+0000000000000000006EFFFFFFFFB3000000000000000000
+00000000000000001CFFFFFFFFFFFF700000000000000000
+0000000000000001EFFFFFFFFFFFFFF80000000000000000
+000000000000000CFFFFFFFFFFFFFFFF6000000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+00000000000001FFFFFFFFFFFFFFFFFFF900000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFF00000000000000
+0000000000000BFFFFFFFFFFFFFFFFFFFF40000000000000
+0000000000000EFFFFFFFFFFFFFFFFFFFF70000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000FFFFFFFFFFFFFFFFFFFFF80000000000000
+0000000000000DFFFFFFFFFFFFFFFFFFFF60000000000000
+0000000000000AFFFFFFFFFFFFFFFFFFFF40000000000000
+00000000000006FFFFFFFFFFFFFFFFFFFE00000000000000
+00000000000000EFFFFFFFFFFFFFFFFFF800000000000000
+000000000000007FFFFFFFFFFFFFFFFFF100000000000000
+000000000000000BFFFFFFFFFFFFFFFF5000000000000000
+0000000000000001DFFFFFFFFFFFFFF70000000000000000
+00000000000000000BFFFFFFFFFFFF500000000000000000
+0000000000000000005DFFFFFFFFA1000000000000000000
+0000000000000000000037ABB96100000000000000000000
+000000000002578888300000000005888864100000000000
+0000000007DFFFFFFFFD9643347BFFFFFFFFFB4000000000
+00000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB10000000
+0000007FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD2000000
+000006FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE100000
+00003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB00000
+0000BFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF50000
+0003FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD0000
+0009FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF2000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFB000
+001FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA000
+000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF8000
+000DFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF6000
+0009FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFF2000
+0003FFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFFD0000
+0000BFFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFF50000
+00003FFFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFFB00000
+000006FFFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFFE100000
+0000007FFFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFFD2000000
+00000004EFFF8FFFFFFFFFFFFFFFFFFFFFF8FFFB10000000
+0000000007DF8FFFFFFFFFFFFFFFFFFFFFF8FB4000000000
+000000000002578888888888888888888864100000000000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam database<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam queue<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam actor<<container>> {
+    StereotypeFontColor #438DD5
+    FontColor #438DD5
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+skinparam person<<container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #438DD5
+    BorderColor #3C7FC0
+}
+
+
+skinparam rectangle<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam database<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam queue<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam actor<<external_container>> {
+    StereotypeFontColor #B3B3B3
+    FontColor #B3B3B3
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+skinparam person<<external_container>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #B3B3B3
+    BorderColor #A6A6A6
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+skinparam rectangle<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam database<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam queue<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam actor<<node>> {
+    StereotypeFontColor #FFFFFF
+    FontColor #FFFFFF
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+skinparam person<<node>> {
+    StereotypeFontColor #000000
+    FontColor #000000
+    BackgroundColor #FFFFFF
+    BorderColor #A2A2A2
+}
+
+
+skinparam rectangle<<node>> {
+    FontStyle normal
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hide stereotype
+legend right
+|<color:#000000>**Legend**</color> |
+|<#08427B> person |
+|<#1168BD> system |
+|<#438DD5> container |
+|<#686868> external person |
+|<#999999> external system |
+|<#B3B3B3> external container |
+endlegend
+title BLOSSOM Logical Architecture Diagram
+
+note as EncryptionNote
+All connections depicted are encrypted with TLS 1.2 unless otherwise noted.
+end note
+
+rectangle "==NIST-Managed AWS Account\n<size:12>[Amazon Web Services Region]</size>" <<node>> as aws  {
+        rectangle "==AWS Management APIs\n\n used by Infrastructure-as-Code to provision" <<external_system>> as aws_mgmt_api 
+        rectangle "==AWS Private DNS (Route53) and PrivateLink\n\n used by Infrastructure-as-Code to provision" <<external_system>> as aws_dns_private 
+        rectangle "==BLOSSOM Managed Blockchain Network\n<size:12>[Managed blockchain components from</size>\n<size:12>AWS]</size>" <<node>> as mb_network  {
+            rectangle "==AWS Managed Blockchain services and endpoints" <<node>> as mb_endpoints  {
+
+                rectangle "==BLOSSOM Network Ordering Service\n\n Managed Blockchain endpoint for network ordering service" <<external_system>> as mb_ordering_svc 
+
+                rectangle "==Managed Blockchain Network Member 1" <<node>> as mb_member1  {
+                    rectangle "==Member Fabric CA Endpoint\n\n Managed Blockchain endpoint for network ordering service" <<external_system>> as mb_member1_ca_svc 
+                    rectangle "==Managed Peer Node 1 for Member 1" <<boundary>> as mb_member1_peernode1  {
+                        rectangle "==Peer Endpoint" <<external_system>> as mb_member1_peernode1_peer_endpoint 
+                        rectangle "==Peer Event Endpoint" <<external_system>> as mb_member1_peernode1_event_endpoint 
+                    }
+                }
+                rectangle "==Managed Blockchain Network Member 2" <<node>> as mb_member2  {
+                    rectangle "==Member Fabric CA Endpoint\n\n Managed Blockchain endpoint for network ordering service" <<external_system>> as mb_member2_ca_svc 
+                    rectangle "==Managed Peer Node 1 for Member 2" <<boundary>> as mb_member2_peernode1  {
+                        rectangle "==Peer Endpoint" <<external_system>> as mb_member2_peernode1_peer_endpoint 
+                        rectangle "==Peer Event Endpoint" <<external_system>> as mb_member2_peernode1_event_endpoint 
+                    }
+                }
+                rectangle "==Managed Blockchain Network Member 3" <<node>> as mb_member3  {
+                    rectangle "==Member Fabric CA Endpoint\n\n Managed Blockchain endpoint for network ordering service" <<external_system>> as mb_member3_ca_svc 
+                    rectangle "==Managed Peer Node 1 for Member 3" <<boundary>> as mb_member3_peernode1  {
+                        rectangle "==Peer Endpoint" <<external_system>> as mb_member3_peernode1_peer_endpoint 
+                        rectangle "==Peer Event Endpoint" <<external_system>> as mb_member3_peernode1_event_endpoint 
+                    }
+                }
+            }
+        }
+
+        rectangle "==VPCE for managed network\n\n Access from BLOSSOM VPC to Managed Blockchain network instance" <<external_system>> as vpce_access_mb 
+    
+        rectangle "==ATO boundary" <<boundary>> as atob  {
+            rectangle "==BLOSSOM Development VPC\n<size:12>[AWS VPC with resources supporting</size>\n<size:12>Managed Blockchain network]</size>" <<node>> as mbvpc  {
+                rectangle "==Support Resources\n<size:12>[Supporting resources for</size>\n<size:12>Application Interface and DevSecOps</size>\n<size:12>tooling]</size>" <<node>> as mbvpc_infra  {
+                    database "==Application configuration data\n//<size:12>[S3]</size>//\n\n Stores persistent data for apps" <<container>> as s3_app_data 
+                    database "==Deployment configuration data\n//<size:12>[KMS, S3, SSM Parameter Store]</size>//\n\n Stores persistent data for apps" <<container>> as s3_deploy_data 
+                    database "==Deployment configuration items and runtime secrets\n//<size:12>[KMS, S3, SSM Parameter Store]</size>//\n\n Stores persistent data for apps" <<container>> as ssm_params 
+                }
+                rectangle "==Management dashboard app auto-scaling group" <<node>> as asg_app  {
+                    rectangle "==application\n\n BLOSSOM Dashboard Applications" <<system>> as mgmt_app 
+                }
+                rectangle "==Network Member 1 auto-scaling group" <<node>> as asg_member1  {
+                    rectangle "==member1_runtime\n\n Docker images and configuration for Member 1 users" <<system>> as member1_runtime 
+                }
+                rectangle "==Network Member 2 auto-scaling group" <<node>> as asg_member2  {
+                    rectangle "==member2_runtime\n\n Docker images and configuration for Member 2 users" <<system>> as member2_runtime 
+                }
+                rectangle "==Network Member 3 auto-scaling group" <<node>> as asg_member3  {
+                    rectangle "==member3_runtime\n\n Docker images and configuration for Member 3 users" <<system>> as member3_runtime 
+                }
+            }
+        }
+}
+
+rectangle "<$person>\n==NIST BLOSSOM Developer" <<person>> as team 
+rectangle "==Computing Device\n<size:12>[MS Windows, OS X, or Linux running</size>\n<size:12>NIST VPN]</size>" <<node>> as computer {
+    rectangle "==Web Browser\n\n any modern version" <<system>> as browser 
+    rectangle "==aws CLI\n\n local command for AWS API configuration" <<system>> as aws_cli 
+    rectangle "==git CLI\n\n local version control command" <<system>> as git_cli 
+    rectangle "==Terraform CLI\n\n Terraform CLI Infrastructure-as-Code command" <<system>> as tf_cli 
+    rectangle "==Client for NIST VPN Solution\n\n All filtered IP traffic, only way to access collab and development services" <<system>> as vpn_nist_client 
+}
+team - ->> aws_cli : **uses**
+team - ->> browser : **uses**
+team - ->> tf_cli : **uses**
+team - ->> git_cli : **uses**
+aws_cli - ->> vpn_nist_client : **tunnels**
+browser - ->> vpn_nist_client : **tunnels**
+git_cli - ->> vpn_nist_client : **tunnels**
+tf_cli - ->> vpn_nist_client : **tunnels**
+
+rectangle "<$person>\n==BLOSSOM Network Member User from Agency" <<person>> as user 
+rectangle "==Computing Device\n<size:12>[MS Windows, OS X, or Linux running</size>\n<size:12>NIST VPN]</size>" <<node>> as user_computer {
+    rectangle "==Web Browser\n\n any modern version" <<system>> as user_browser 
+    rectangle "==Client for NIST VPN Solution\n\n All filtered IP traffic, only way to access collab and development services" <<system>> as vpn_nist_client_user 
+}
+user - ->> user_browser : **uses**
+user_browser - ->> vpn_nist_client_user : **tunnels**
+
+rectangle "==NIST-Authorized External Services" <<boundary>> as nist_saas  { 
+    rectangle "==Azure and Office 365\n<size:12>[Collaboration SaaS, part of NIST</size>\n<size:12>GSS]</size>" <<node>> as gsuite  {
+        rectangle "==blossom@nist.gov\n\n Developer email distribution group" <<system>> as ggroup 
+        rectangle "==NIST ADFS SAML\n\n SAML Identity Provider" <<external_system>> as secureauth 
+    }
+    rectangle "==Deployment Services" <<boundary>> as deploymentservices  {
+        rectangle "==GitHub Dependabot\n\n Dependency analysis SaaS" <<external_system>> as dependabot 
+        rectangle "==GitHub\n<size:12>[VCS SaaS]</size>" <<node>> as github {
+            rectangle "==usnistgov/blossom\n\n Code repository" <<system>> as github_repo 
+            rectangle "==usnistgov/blossom-dashboard\n\n Code repository" <<system>> as github_repo 
+            rectangle "==usnistgov/blossom-sam\n\n Code repository" <<system>> as github_repo 
+        }
+    }
+    rectangle "==Security Services\n<size:12>[VPN and Other Security Services]</size>" <<boundary>> as securityservices  {
+        rectangle "==NIST VPN Solution\n\n Filtered IP Traffic, All Protocols" <<external_system>> as vpn_nist 
+    }
+}
+
+
+browser - ->> github_repo : **makes pull-request, approves PRs**\n//<size:12>[HTTPS (TCP 443)]</size>//
+git_cli - ->> github_repo : **commits code**\n//<size:12>[SSH (TCP 22)]</size>//
+team - ->> ggroup : **provides assistance**\n//<size:12>[Email]</size>//
+team - ->> secureauth : **authenticates**\n//<size:12>[HTTPS (TCP 443)]</size>//
+asg_app - ->> vpce_access_mb : **accesses MB network via**\n//<size:12>[HTTPS (TCP 443)]</size>//
+asg_member1 - ->> vpce_access_mb : **accesses MB network via**\n//<size:12>[HTTPS (TCP 443)]</size>//
+asg_member2 - ->> vpce_access_mb : **accesses MB network via**\n//<size:12>[HTTPS (TCP 443)]</size>//
+asg_member3 - ->> vpce_access_mb : **accesses MB network via**\n//<size:12>[HTTPS (TCP 443)]</size>//
+vpce_access_mb - ->> mb_endpoints : **tunnels traffic to**\n//<size:12>[HTTPS (TCP 443)]</size>//
+vpn_nist_client - ->> vpn_nist : **Secure cloud infrastructure access via VPN**\n//<size:12>[All IP protocols]</size>//
+vpn_nist_client_user - ->> vpn_nist : **Secure cloud infrastructure access via VPN**\n//<size:12>[All IP protocols]</size>//
+vpn_nist - ->> aws_mgmt_api : **Infrastructure-as-Code stores configuration state in bucket**\n//<size:12>[HTTPS (TCP 443)]</size>//
+vpn_nist - ->> mgmt_app : **tunnels user requests to dashboard apps**\n//<size:12>[HTTPS (TCP 443)]</size>//
+aws_mgmt_api - ->> asg_app : ****
+aws_mgmt_api - ->> asg_member1 : **creates**
+aws_mgmt_api - ->> asg_member2 : **creates**
+aws_mgmt_api - ->> asg_member3 : **creates**
+aws_mgmt_api - ->> s3_app_data : **creates**
+aws_mgmt_api - ->> s3_deploy_data : **creates**
+aws_mgmt_api - ->> ssm_params : **creates**
+aws_mgmt_api - ->> mb_network : **creates**
+aws_mgmt_api - ->> vpce_access_mb : **creates**
+dependabot -UP->> github_repo : **watches for changes, reports vulnerable dependencies**\n//<size:12>[GitHub API via HTTPS (TCP 443)]</size>//
+
+
+
+mb_member1 -[hidden]U- mb_member2
+mb_member2 -[hidden]U- mb_member3
+@enduml
+
+PlantUML version 1.2022.1beta5(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
