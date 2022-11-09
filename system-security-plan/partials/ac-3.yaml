@@ -1,0 +1,8 @@
+
+- uuid: {{ uuid.control }}
+  control-id: ID-#
+  by-components:
+    - component-uuid: {{ uuid.component-uuid }}
+      uuid: {{ uuid.by-component }}
+      description: >-
+        DESCRIPTION HERE
