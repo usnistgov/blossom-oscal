@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: sc-2
+  statements:
+    - statement-id: sc-2
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          User functionality, including user interface services, will be separated from system management functionality.
