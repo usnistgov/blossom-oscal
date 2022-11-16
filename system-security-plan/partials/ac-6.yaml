@@ -1,7 +1,7 @@
 - uuid: {{ uuid.control }}
   control-id: ac-6
-  statements: ac-6
-    - statement-id: 
+  statements: 
+    - statement-id: ac-6
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
