@@ -1,0 +1,39 @@
+- uuid: {{ uuid.control }}
+  control-id: sc-7
+  set-parameters:
+    - param-id: sc-7_prm_1
+      values: >-
+      Logically.
+
+- uuid: {{ uuid.control }}
+  control-id: sc-7
+  statements:
+    - statement-id: sc-7_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Communications will be monitored and controlled at the external managed interfaces to the system and at key internal managed interfaces within the system.
+
+- uuid: {{ uuid.control }}
+  control-id: sc-7
+  statements:
+    - statement-id: sc-7_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Subnetworks will be implemented for publicly accessible system components that are logically separated from internal organizational networks.
+
+- uuid: {{ uuid.control }}
+  control-id: sc-7
+  statements:
+    - statement-id: sc-7_smt.c
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          External networks or systems will be connected only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
