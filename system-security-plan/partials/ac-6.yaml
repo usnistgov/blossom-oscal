@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-6
+  statements:
+    - statement-id: 
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Least privilege will be employed to allow authorized access required to accomplish assigned tasks.
