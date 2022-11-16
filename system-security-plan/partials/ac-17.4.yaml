@@ -1,0 +1,24 @@
+control-id: ac-17.4_prm_1
+  set-parameters:
+    - param-id: ac-17.4_prm_1
+      values: >-
+       To manage system and system configurations.
+
+statements:
+    - statement-id: ac-17.4_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          The execution of privileged commands and access to security-relevant information via remote access will be authorized only in a format that provides assessable evidence and to manage system and system configurations.
+
+
+statements:
+    - statement-id: ac-17.4_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          The rationale for remote access will be documented in the security plan for the system.
