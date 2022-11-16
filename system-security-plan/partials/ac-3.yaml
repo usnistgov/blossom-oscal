@@ -1,8 +1,10 @@
-
 - uuid: {{ uuid.control }}
   control-id: ac-3
-  by-components:
-    - component-uuid: {{ uuid.component-uuid }}
-      uuid: {{ uuid.by-component }}
-      description: >-
+    statements: 
+    - statement-id: ac-3
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
         Approved authorizations are required for access to system and information residing in the system.
