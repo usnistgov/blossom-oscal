@@ -1,0 +1,14 @@
+control-id: ac-2.1
+  set-parameters:
+    - param-id: ac-2_prm_1
+      values: >-
+      Active directory.
+
+  statements:
+    - statement-id: ac-2.1
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Active directory will be used to support the management of system accounts.
