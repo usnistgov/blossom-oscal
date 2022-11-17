@@ -1,0 +1,19 @@
+control-id: ac-2.2
+  set-parameters:
+    - param-id: ac-2_prm_1
+      values: >-
+      Remove.
+
+  set-parameters:
+    - param-id: ac-2_prm_2
+      values: >-
+      24 hours.
+
+  statements:
+    - statement-id: ac-2.2
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Temporary and emergency accounts are automatically removed 24 hours after creation.
