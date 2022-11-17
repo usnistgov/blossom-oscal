@@ -1,0 +1,77 @@
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  set-parameters:
+    - param-id: sa-11_prm_1
+      values: >-
+      Unit, integration, system, and regression.
+
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  set-parameters:
+    - param-id: sa-11_prm_2
+      values: >-
+      Weekly.
+
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  set-parameters:
+    - param-id: sa-11_prm_3
+      values: >-
+      Full depth and coverage.
+
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  statements:
+    - statement-id: sa-11_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          A plan will be developed and implemented for ongoing security and privacy control assessments.
+          
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  statements:
+    - statement-id: sa-11_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Unit, integration, system, and regression testing/evaluation will be performed weekly at full depth and coverage.
+         
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  statements:
+    - statement-id: sa-11_smt.c
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Evidence of the execution of the assessment plan and the results of the testing and evaluation will be produced.
+        
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  statements:
+    - statement-id: sa-11_smt.d
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          A verifiable flaw remediation process will be implemented.
+
+- uuid: {{ uuid.control }}
+  control-id: sa-11
+  statements:
+    - statement-id: sa-11_smt.e
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Flaws identified during testing and evaluation will be corrected.
+        
+        
