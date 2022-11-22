@@ -3,57 +3,30 @@ control-id: ac-2
     - param-id: ac-2_prm_1
       values: >-
       Business need.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_2
       values: >-
       Role.
-
-control-id: ac-3
-  set-parameters:
     - param-id: ac-2_prm_3
       values: >-
       System owner.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_4
       values: >-
       Account management policies and procedures.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_5
       values: >-
       System owner.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_6
       values: >-
       Within 24 hours.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_7
       values: >-
       Within 24 hours.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_8
       values: >-
       Within 24 hours.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_9
       values: >-
       Roles and responsibilities.
-
-control-id: ac-2
-  set-parameters:
     - param-id: ac-2_prm_10
       values: >-
       Every 6 months.
