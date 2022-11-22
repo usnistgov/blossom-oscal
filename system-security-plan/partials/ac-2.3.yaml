@@ -14,7 +14,7 @@ control-id: ac-2.3
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Disable accounts within 24 hours when the accounts:
+          Accounts will be disabled within 24 hours when the accounts:
           (a) Have expired;
           (b) Are no longer associated with a user or individual;
           (c) Are in violation of organizational policy; or
