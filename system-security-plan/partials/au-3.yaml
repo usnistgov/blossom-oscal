@@ -1,0 +1,16 @@
+- uuid: {{ uuid.control }}
+  control-id: au-3
+    statements:
+    - statement-id: au-3
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Audit records will contain the following information:
+          (a) What type of event occurred;
+          (b) When the event occurred;
+          (c) Where the event occurred; 
+          (d) Source of the event;
+          (e) Outcome of the event; and
+          (f) Identities of any individuals, subjects, or objects/entities associated with the event.
