@@ -11,7 +11,7 @@ control-id: ac-6.1
       Access control lists.
 
     statements:
-    - statement-id: au-6.1
+    - statement-id: ac-6.1
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
