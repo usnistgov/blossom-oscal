@@ -1,4 +1,4 @@
-ontrol-id: ac-2.13
+control-id: ac-2.13
   set-parameters:
     - param-id: ac-2.13_prm_1
       values: >-
