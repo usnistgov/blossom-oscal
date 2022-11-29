@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Account creation, modification, enabling, disabling, and removal actions will be automatically audited.
+            Account creation, modification, enabling, disabling, and removal actions will be automatically audited.
