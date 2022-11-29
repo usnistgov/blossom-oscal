@@ -1,0 +1,14 @@
+control-id: ac-6.5
+  set-parameters:
+    - param-id: ac-6.5_prm_1
+      values: >-
+        System administrators.
+  
+  statements:
+    - statement-id: ac-6.5
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Privileged accounts on the system will be restricted to system administrators.
