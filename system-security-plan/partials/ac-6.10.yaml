@@ -1,10 +1,10 @@
 - uuid: {{ uuid.control }}
-  control-id: ac-3
+  control-id: ac-6.10
     statements: 
-    - statement-id: ac-3
+    - statement-id: ac-6.10
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Approved authorizations are required for access to system and information residing in the system.
+            Non-privileged users will be prevented from executing privileged functions.
