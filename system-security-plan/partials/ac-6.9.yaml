@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-6.9
+    statements: 
+    - statement-id: ac-6.9
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            The execution of privileged functions will be logged.
