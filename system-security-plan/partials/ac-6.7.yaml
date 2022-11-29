@@ -1,0 +1,26 @@
+control-id: ac-6.7
+  set-parameters:
+    - param-id: ac-6.7_prm_1
+      values: >-
+      Every month.
+    - param-id: ac-6.7_prm_2
+      values: >-
+      System administrators.
+
+ statements:
+    - statement-id: ac-6.7_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Privileges assigned to system administrators will be reviewed every month to validate the need for such privileges.
+
+  statements:
+    - statement-id: ac-6.7_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+          Privileges will be reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.
