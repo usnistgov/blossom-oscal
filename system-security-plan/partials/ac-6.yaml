@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Least privilege will be employed to allow authorized access required to accomplish assigned tasks.
+            Least privilege will be employed to allow authorized access required to accomplish assigned tasks.
