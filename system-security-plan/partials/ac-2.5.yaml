@@ -1,4 +1,5 @@
-control-id: ac-2.5
+- uuid: {{ uuid.control }}
+  control-id: ac-2.5
   set-parameters:
     - param-id: ac-2.5_prm_1
       values: >-
@@ -11,4 +12,4 @@ control-id: ac-2.5
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Users will be required to log out when 5 minutes of inactivity will occur or when leaving the console.
+            Users will be required to log out when 5 minutes of inactivity will occur or when leaving the console.
