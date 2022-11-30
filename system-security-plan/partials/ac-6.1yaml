@@ -1,4 +1,5 @@
-control-id: ac-6.1
+- uuid: {{ uuid.control }}
+  control-id: ac-6.1
   set-parameters:
     - param-id: ac-6.1_prm_1
       values: >-
@@ -10,14 +11,14 @@ control-id: ac-6.1
       values: >-
       Access control lists.
 
-    statements:
+  statements:
     - statement-id: ac-6.1
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Authorized access will be permitted for system administrators to:
-          (a) Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters; and
-          (b) Review access control lists.
+            Authorized access will be permitted for system administrators to:
+            (a) Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters; and
+            (b) Review access control lists.
           
