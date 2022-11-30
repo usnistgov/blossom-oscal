@@ -3,10 +3,10 @@
   set-parameters:
     - param-id: ac-2.13_prm_1
       values: >-
-      1 hour.
+        1 hour.
     - param-id: ac-2.13_prm_2
       values: >-
-      Unauthorized access.
+        Unauthorized access.
 
   statements:
     - statement-id: ac-2.13
@@ -15,4 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Accounts of individuals will be disabled within 1 hour of discovery of unauthorized access.
+            Accounts of individuals will be disabled within 1 hour of discovery of unauthorized access.
