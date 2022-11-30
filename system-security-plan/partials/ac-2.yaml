@@ -39,7 +39,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Types of accounts allowed and specifically prohibited for use within the system will be defined and documented.
+            Types of accounts allowed and specifically prohibited for use within the system will be defined and documented.
 
   statements:
     - statement-id: ac-2_smt.b
@@ -48,7 +48,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Account managers will be assigned.
+            Account managers will be assigned.
 
   statements:
     - statement-id: ac-2_smt.c
@@ -57,7 +57,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Business need will be required for group and role membership.
+            Business need will be required for group and role membership.
 
   statements:
     - statement-id: ac-2_smt.d
@@ -66,7 +66,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Authorized users of the system; group and role membership; and privileges and business need for each account is specified.
+            Authorized users of the system; group and role membership; and privileges and business need for each account is specified.
 
   statements:
     - statement-id: ac-2_smt.e
@@ -75,7 +75,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          System owner is requried to approve account requests.
+            System owner is requried to approve account requests.
 
   statements:
     - statement-id: ac-2_smt.f
@@ -84,7 +84,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Account management policies and procedures will be followed to create, enable, modify, disable, and remove user accounts.
+            Account management policies and procedures will be followed to create, enable, modify, disable, and remove user accounts.
 
   statements:
     - statement-id: ac-2_smt.g
@@ -93,7 +93,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Use of accounts will be monitored.
+            Use of accounts will be monitored.
 
   statements:
     - statement-id: ac-2_smt.h
@@ -102,7 +102,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Account managers and system owner will be notified within 24 hours when accounts are no longer required, when users are terminated or transferred, and when user system usage and need-to-know changes.
+            Account managers and system owner will be notified within 24 hours when accounts are no longer required, when users are terminated or transferred, and when user system usage and need-to-know changes.
 
   statements:
     - statement-id: ac-2_smt.i
@@ -111,7 +111,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          System access will be authorized based on a valid access authorization, intended system usage, and roles and responsibilities.
+            System access will be authorized based on a valid access authorization, intended system usage, and roles and responsibilities.
 
   statements:
     - statement-id: ac-2_smt.j
@@ -120,7 +120,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          User accounts will reviewed every 6 months.
+            User accounts will reviewed every 6 months.
 
   statements:
     - statement-id: ac-2_smt.k
@@ -129,7 +129,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          A process for changing shared or group account authenticators when users are removed from the group will be established and implemented.
+            A process for changing shared or group account authenticators when users are removed from the group will be established and implemented.
 
   statements:
     - statement-id: ac-2_smt.l
@@ -138,6 +138,6 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Account management processes will be aligned with personnel termination and transfer processes.
+            Account management processes will be aligned with personnel termination and transfer processes.
 
           
