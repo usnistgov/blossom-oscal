@@ -3,34 +3,34 @@
   set-parameters:
     - param-id: ac-2_prm_1
       values: >-
-      Business need.
+        Business need.
     - param-id: ac-2_prm_2
       values: >-
-      Role.
+        Role.
     - param-id: ac-2_prm_3
       values: >-
-      System owner.
+        System owner.
     - param-id: ac-2_prm_4
       values: >-
-      Account management policies and procedures.
+        Account management policies and procedures.
     - param-id: ac-2_prm_5
       values: >-
-      System owner.
+        System owner.
     - param-id: ac-2_prm_6
       values: >-
-      Within 24 hours.
+        Within 24 hours.
     - param-id: ac-2_prm_7
       values: >-
-      Within 24 hours.
+        Within 24 hours.
     - param-id: ac-2_prm_8
       values: >-
-      Within 24 hours.
+        Within 24 hours.
     - param-id: ac-2_prm_9
       values: >-
-      Roles and responsibilities.
+        Roles and responsibilities.
     - param-id: ac-2_prm_10
       values: >-
-      Every 6 months.
+        Every 6 months.
 
   statements:
     - statement-id: ac-2_smt.a
