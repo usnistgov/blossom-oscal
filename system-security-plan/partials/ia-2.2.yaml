@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: ia-2.2
+    statements: 
+    - statement-id: ia-2.2
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Multi-factor authentication will be implemented for access to non- privileged accounts.
