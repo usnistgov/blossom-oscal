@@ -1,0 +1,14 @@
+- uuid: {{ uuid.control }}
+  control-id: sc-7.5
+  set-parameters:
+    - param-id: sc-7.5_prm_1
+      values: >-
+        At managed interfaces.
+  statements: 
+    - statement-id: sc-7.4
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Network communications traffic will be denied by default and network communications traffic will be allowed by exception at managed interfaces.
