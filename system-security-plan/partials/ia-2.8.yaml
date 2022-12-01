@@ -3,7 +3,7 @@
   set-parameters:
     - param-id: ia-2.8_prm_1
       values: >-
-      Privileged and non-privileged accounts.
+        Privileged and non-privileged accounts.
     
   statements:
     - statement-id: ia-2.8
@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-             Replay-resistant authentication methods will be implemented for access to privileged and non-privileged accounts. 
+            Replay-resistant authentication methods will be implemented for access to privileged and non-privileged accounts. 
