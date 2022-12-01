@@ -3,13 +3,13 @@
   set-parameters:
     - param-id: ra-5_prm_1
       values: >-
-      Monthly or when new vulnerabilities are identified.
+        Monthly or when new vulnerabilities are identified.
     - param-id: ra-5_prm_2
       values: >-
-      Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
+        Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
     - param-id: ra-5_prm_3
       values: >-
-      System security officers and system owners.
+        System security officers and system owners.
     
   statements:
     - statement-id: ra-5_smt.a
@@ -18,9 +18,8 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-           System and hosted applications will be monitored and scanned for vulnerabilities monthly or when new vulnerabilities potentially affecting the system are identified and reported.
+            System and hosted applications will be monitored and scanned for vulnerabilities monthly or when new vulnerabilities potentially affecting the system are identified and reported.
 
-  statements:
     - statement-id: ra-5_smt.b
       uuid: {{ uuid.statement }}
       by-components:
@@ -32,38 +31,34 @@
             2. Formatting checklists and test procedures; and
             3. Measuring vulnerability impact.
 
-  statements:
     - statement-id: ra-5_smt.c
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-             Vulnerability scan reports and results from vulnerability monitoring will be analyzed.
+            Vulnerability scan reports and results from vulnerability monitoring will be analyzed.
 
-  statements:
     - statement-id: ra-5_smt.d
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Legitimate vulnerabilities will be remediated within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW in accordance with an organizational assessment of risk.
+            Legitimate vulnerabilities will be remediated within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW in accordance with an organizational assessment of risk.
 
-  statements:
     - statement-id: ra-5_smt.e
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Information obtained from the vulnerability monitoring process and control assessments will be shared with system security officers and system owners to help eliminate similar vulnerabilities in other systems.
+            Information obtained from the vulnerability monitoring process and control assessments will be shared with system security officers and system owners to help eliminate similar vulnerabilities in other systems.
 
-  statements:
     - statement-id: ra-5_smt.f
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-           Employed vulnerability monitoring tools will include the capability to readily update the vulnerabilities to be scanned.
+            Employed vulnerability monitoring tools will include the capability to readily update the vulnerabilities to be scanned.
