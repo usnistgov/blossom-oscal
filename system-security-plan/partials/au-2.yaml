@@ -1,4 +1,5 @@
-control-id: au-2
+- uuid: {{ uuid.control }}
+  control-id: au-2
   set-parameters:
     - param-id: au-2_prm_1
       values: >-
