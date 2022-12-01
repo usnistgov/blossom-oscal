@@ -3,10 +3,10 @@
   set-parameters:
     - param-id: ra-5.5_prm_1
       values: >-
-      All system components.
+        All system components.
     - param-id: ra-5.5_prm_2
       values: >-
-     Monthly vulnerability scans.
+        Monthly vulnerability scans.
    
   statements:
     - statement-id: ra-5.5
@@ -15,4 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-           Privileged access authorizations will be implemented to all system components for monthly vulnerability scans.
+            Privileged access authorizations will be implemented to all system components for monthly vulnerability scans.
