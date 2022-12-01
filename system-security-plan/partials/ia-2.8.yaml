@@ -1,4 +1,5 @@
-control-id: ia-2.8
+- uuid: {{ uuid.control }}
+  control-id: ia-2.8
   set-parameters:
     - param-id: ia-2.8_prm_1
       values: >-
