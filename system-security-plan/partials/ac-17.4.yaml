@@ -14,7 +14,6 @@
           description: >-
             The execution of privileged commands and access to security-relevant information via remote access will be authorized only in a format that provides assessable evidence and to manage system and system configurations.
 
-  statements:
     - statement-id: ac-17.4_smt.b
       uuid: {{ uuid.statement }}
       by-components:
