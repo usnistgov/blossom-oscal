@@ -41,7 +41,6 @@
           description: >-
             Types of accounts allowed and specifically prohibited for use within the system will be defined and documented.
 
-  statements:
     - statement-id: ac-2_smt.b
       uuid: {{ uuid.statement }}
       by-components:
@@ -50,7 +49,6 @@
           description: >-
             Account managers will be assigned.
 
-  statements:
     - statement-id: ac-2_smt.c
       uuid: {{ uuid.statement }}
       by-components:
@@ -59,7 +57,6 @@
           description: >-
             Business need will be required for group and role membership.
 
-  statements:
     - statement-id: ac-2_smt.d
       uuid: {{ uuid.statement }}
       by-components:
@@ -68,7 +65,6 @@
           description: >-
             Authorized users of the system; group and role membership; and privileges and business need for each account is specified.
 
-  statements:
     - statement-id: ac-2_smt.e
       uuid: {{ uuid.statement }}
       by-components:
@@ -77,7 +73,6 @@
           description: >-
             System owner is requried to approve account requests.
 
-  statements:
     - statement-id: ac-2_smt.f
       uuid: {{ uuid.statement }}
       by-components:
@@ -86,7 +81,6 @@
           description: >-
             Account management policies and procedures will be followed to create, enable, modify, disable, and remove user accounts.
 
-  statements:
     - statement-id: ac-2_smt.g
       uuid: {{ uuid.statement }}
       by-components:
@@ -95,7 +89,6 @@
           description: >-
             Use of accounts will be monitored.
 
-  statements:
     - statement-id: ac-2_smt.h
       uuid: {{ uuid.statement }}
       by-components:
@@ -104,7 +97,6 @@
           description: >-
             Account managers and system owner will be notified within 24 hours when accounts are no longer required, when users are terminated or transferred, and when user system usage and need-to-know changes.
 
-  statements:
     - statement-id: ac-2_smt.i
       uuid: {{ uuid.statement }}
       by-components:
@@ -113,7 +105,6 @@
           description: >-
             System access will be authorized based on a valid access authorization, intended system usage, and roles and responsibilities.
 
-  statements:
     - statement-id: ac-2_smt.j
       uuid: {{ uuid.statement }}
       by-components:
@@ -122,7 +113,6 @@
           description: >-
             User accounts will reviewed every 6 months.
 
-  statements:
     - statement-id: ac-2_smt.k
       uuid: {{ uuid.statement }}
       by-components:
@@ -131,7 +121,6 @@
           description: >-
             A process for changing shared or group account authenticators when users are removed from the group will be established and implemented.
 
-  statements:
     - statement-id: ac-2_smt.l
       uuid: {{ uuid.statement }}
       by-components:
