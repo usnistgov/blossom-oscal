@@ -3,12 +3,10 @@
   set-parameters:
     - param-id: ac-7_prm_1
       values: >-
-        5
-        
+        5      
     - param-id: ac-7_prm_2
       values: > 
-        15 minutes
-        
+        15 minutes       
     - param-id: ac-7_prm_3
       values: >-
         Lock account or node for 60 mimnutes and notify system administrator.
@@ -22,7 +20,6 @@
           description: >-
             A limit of 5 consecutive invalid login attempts by a user during a 15 minute time period will be enforced.
 
-  statements:
     - statement-id: ac-7_smt.b
       uuid: {{ uuid.statement }}
       by-components:
