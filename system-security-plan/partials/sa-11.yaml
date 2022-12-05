@@ -25,7 +25,6 @@
           description: >-
             A plan will be developed and implemented for ongoing security and privacy control assessments.
           
-  statements:
     - statement-id: sa-11_smt.b
       uuid: {{ uuid.statement }}
       by-components:
@@ -34,7 +33,6 @@
           description: >-
             Unit, integration, system, and regression testing/evaluation will be performed weekly at full depth and coverage.
          
-  statements:
     - statement-id: sa-11_smt.c
       uuid: {{ uuid.statement }}
       by-components:
@@ -43,7 +41,6 @@
           description: >-
             Evidence of the execution of the assessment plan and the results of the testing and evaluation will be produced.
         
-  statements:
     - statement-id: sa-11_smt.d
       uuid: {{ uuid.statement }}
       by-components:
@@ -52,7 +49,6 @@
           description: >-
             A verifiable flaw remediation process will be implemented.
 
-  statements:
     - statement-id: sa-11_smt.e
       uuid: {{ uuid.statement }}
       by-components:
