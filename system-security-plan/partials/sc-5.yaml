@@ -1,14 +1,15 @@
-control-id: sc-5
+- uuid: {{ uuid.control }}
+  control-id: sc-5
   set-parameters:
     - param-id: sc-5_prm_1
       values: >-
-      Protect against.
+        Protect against.
     - param-id: sc-5_prm_2
       values: >-
-      Flooding services and crashing services.
+        Flooding services and crashing services.
     - param-id: sc-5_prm_3
       values: >-
-      Filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
+        Filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
   
   statements:
     - statement-id: sc-5_smt.a
@@ -17,13 +18,12 @@ control-id: sc-5
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Protection against the effects of denial of service events flooding services and crashing services will be implemented.
+            Protection against the effects of denial of service events flooding services and crashing services will be implemented.
 
-  statements:
     - statement-id: sc-5_smt.b
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-          Denial of service objective will be achieved by filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
+            Denial of service objective will be achieved by filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
