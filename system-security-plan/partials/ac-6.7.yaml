@@ -17,7 +17,6 @@
           description: >-
             Privileges assigned to system administrators will be reviewed every month to validate the need for such privileges.
 
-  statements:
     - statement-id: ac-6.7_smt.b
       uuid: {{ uuid.statement }}
       by-components:
