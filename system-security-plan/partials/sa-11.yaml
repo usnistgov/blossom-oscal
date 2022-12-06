@@ -17,44 +17,20 @@
         Full depth and coverage.
 
   statements:
-    - statement-id: sa-11_smt.a
+    - statement-id: sa-11
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            A plan will be developed and implemented for ongoing security and privacy control assessments.
-          
-    - statement-id: sa-11_smt.b
-      uuid: {{ uuid.statement }}
-      by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
-          description: >-
-            Unit, integration, system, and regression testing/evaluation will be performed weekly at full depth and coverage.
-         
-    - statement-id: sa-11_smt.c
-      uuid: {{ uuid.statement }}
-      by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
-          description: >-
-            Evidence of the execution of the assessment plan and the results of the testing and evaluation will be produced.
-        
-    - statement-id: sa-11_smt.d
-      uuid: {{ uuid.statement }}
-      by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
-          description: >-
-            A verifiable flaw remediation process will be implemented.
+            The developer of the system, system component, or system service will be required, at all post design stages of the system development life cycle to:
+            a.	Develop and implement a plan for ongoing security and privacy control assessments;
+            b.	Perform unit, integration, system, and regression testing/evaluation weekly at full depth and coverage;
+            c.	Produce evidence of the execution of the assessment plan and the results of the testing and evaluation;
+            d.	Implement a verifiable flaw remediation process; and
+            e.	Correct flaws identified during testing and evaluation.
 
-    - statement-id: sa-11_smt.e
-      uuid: {{ uuid.statement }}
-      by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
-          description: >-
-            Flaws identified during testing and evaluation will be corrected.
+          
+
         
         
