@@ -6,17 +6,76 @@
         As they are identified.
         
   statements: 
-    - statement-id: sc-7.4
+    - statement-id: sc-7.4_smt.a
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            (a) A managed interface will be implemented for each external telecommunication service ;
-            (b) A traffic flow policy will be established for each managed interface;
-            (c) The confidentiality and integrity of the information being transmitted across each interface will be protected;
-            (d) Each exception to the traffic flow policy will be documented with a supporting mission or business need and duration of that need;
-            (e) Exceptions to the traffic flow policy will be reviewed as they are identified and exceptions that are no longer supported by an explicit mission or business need will be removed;
-            (f) Unauthorized exchange of control plane traffic with external networks will be prevented;
-            (g) Information to enable remote networks to detect unauthorized control plane traffic from internal networks will be published; and
-            (h) Unauthorized control plane traffic will be filtered from external networks.
+            A managed interface will be implemented for each external telecommunication service.
+           
+    - statement-id: sc-7.4_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            A traffic flow policy will be established for each managed interface.
+
+    - statement-id: sc-7.4_smt.c
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            The confidentiality and integrity of the information being transmitted across each interface will be protected.
+
+    - statement-id: sc-7.4_smt.d
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Each exception to the traffic flow policy will be documented with a supporting mission or business need and duration of that need.
+
+    - statement-id: sc-7.4_smt.e
+        uuid: {{ uuid.statement }}
+        by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Exceptions to the traffic flow policy will be reviewed as they are identified and exceptions that are no longer supported by an explicit mission or business need will be removed.
+
+      - statement-id: sc-7.4_smt.f
+        uuid: {{ uuid.statement }}
+        by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Unauthorized exchange of control plane traffic with external networks will be prevented.
+
+      - statement-id: sc-7.4_smt.g
+        uuid: {{ uuid.statement }}
+        by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Information to enable remote networks to detect unauthorized control plane traffic from internal networks will be published.
+
+      - statement-id: sc-7.4_smt.h
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Unauthorized control plane traffic will be filtered from external networks.
+            
+
+
+
+
+
+
+
+
+         
