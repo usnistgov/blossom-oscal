@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The number of external network connections to the system will be   limited.
+            The number of external network connections to the system will be limited.
