@@ -3,7 +3,7 @@
   set-parameters:
     - param-id: ac-17.4_prm_1
       values: >-
-        To manage system and system configurations.
+        Manage system and system configurations.
 
   statements:
     - statement-id: ac-17.4_smt.a
