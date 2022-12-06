@@ -71,7 +71,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            System owner is requried to approve account requests.
+            System owner will be required to approve requests to create accounts.
 
     - statement-id: ac-2_smt.f
       uuid: {{ uuid.statement }}
@@ -79,7 +79,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Account management policies and procedures will be followed to create, enable, modify, disable, and remove user accounts.
+            Accounts will be created, enabled, modified, disabled, and removed in accordance with account management policies and procedures.
 
     - statement-id: ac-2_smt.g
       uuid: {{ uuid.statement }}
@@ -95,7 +95,10 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Account managers and system owner will be notified within 24 hours when accounts are no longer required, when users are terminated or transferred, and when user system usage and need-to-know changes.
+            Account managers and system owner will be notified within:
+              1. 24 hours when accounts are no longer required;
+              2. 24 hours when users are terminated or transferred; and 
+              3. 24 hours when user system usage and need-to-know changes.
 
     - statement-id: ac-2_smt.i
       uuid: {{ uuid.statement }}
@@ -103,7 +106,10 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            System access will be authorized based on a valid access authorization, intended system usage, and roles and responsibilities.
+            System access will be authorized based on:
+            1. A valid access authorization;
+            2. Intended system usage; and 
+            3. Roles and responsibilities.
 
     - statement-id: ac-2_smt.j
       uuid: {{ uuid.statement }}
@@ -111,7 +117,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            User accounts will reviewed every 6 months.
+            User accounts will reviewed for compliance with account management requirements every 6 months.
 
     - statement-id: ac-2_smt.k
       uuid: {{ uuid.statement }}
@@ -119,7 +125,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            A process for changing shared or group account authenticators when users are removed from the group will be established and implemented.
+            A process will be established and implemented for changing shared or group account authenticators when users are removed from the group.
 
     - statement-id: ac-2_smt.l
       uuid: {{ uuid.statement }}
