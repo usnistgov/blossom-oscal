@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Automated meechanisms will be employed to monitor and control remote access methods.
+            Automated mechanisms will be employed to monitor and control remote access methods.
