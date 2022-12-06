@@ -9,7 +9,7 @@
         15 minutes       
     - param-id: ac-7_prm_3
       values: >-
-        Lock account or node for 60 mimnutes and notify system administrator.
+        Lock account or node for 60 minutes and notify system administrator.
          
   statements:
     - statement-id: ac-7_smt.a
@@ -26,5 +26,5 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Automatically lock account or node for 60 mimnutes and notify system administrator when the maximum number of unsuccessful attempts is exceeded.
+            Automatically lock account or node for 60 minutes and notify system administrator when the maximum number of unsuccessful attempts is exceeded.
             
