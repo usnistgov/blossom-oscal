@@ -18,7 +18,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The system will log system access, system accounts, system configuration changes, and file change events in support of the audit function.
+            System audit logs capture system access, system accounts, system configuration changes, and file change events.
  
     - statement-id: au-2_smt.b
       uuid: {{ uuid.statement }}
@@ -26,7 +26,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The event logging function will be coordinated with other organizational entities requiring audit-related information to guide and inform the selection criteria for events to be logged.
+            System auditable events are coordinated with OISM.
   
     - statement-id: au-2_smt.c
       uuid: {{ uuid.statement }}
@@ -34,7 +34,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged as they occur.        
+            Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged when they occur.      
              
     - statement-id: au-2_smt.d
       uuid: {{ uuid.statement }}
@@ -42,7 +42,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            A rationale will be provided for why the event types selected for logging are deemed to be adequate to support after-the-fact investigations of incidents.
+            The rationale for selecting specific auditable events to be logged is documented in the SSP.
 
     - statement-id: au-2_smt.e
       uuid: {{ uuid.statement }}
@@ -50,4 +50,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-             Event types selected for logging will be reviewed and updated annually. 
+             System auditable events are reviewed and updated annually. 
