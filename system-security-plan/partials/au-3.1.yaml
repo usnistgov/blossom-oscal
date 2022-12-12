@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Generated audit records will contain user name and file location.
+            System audit logs contain user name and file location information.
