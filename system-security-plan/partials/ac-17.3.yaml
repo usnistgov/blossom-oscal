@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Remote accesses will be routed through authorized and managed network access control points.
+            Remote access is routed through network routers inside the network and at the boundary.
