@@ -15,8 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Accounts will be disabled within 24 hours when the accounts:
-            (a) Have expired;
-            (b) Are no longer associated with a user or individual;
-            (c) Are in violation of organizational policy; or
-            (d) Have been inactive for 60 days.
+            Accounts are disabled within 24 hours when they have expired, are no longer associated with the user, are in violation of the account management policy, or have been inactive for 60 days.
