@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Approved authorizations will be enforced for logical access to information and system resources in accordance with applicable access control policies.
+            Access to the system is enforced by assignment to groups within the NIST-Managed Active Directory domain.
