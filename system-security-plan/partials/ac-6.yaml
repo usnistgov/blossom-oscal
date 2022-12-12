@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The principle of least privilege will be employed to allow only authorized access for users (or processes acting on behalf of users) that are necessary to accomplish assigned organizational tasks.
+            Users are only provided necessary privileges to complete their tasks, and this is enforced by AD group/role membership.
