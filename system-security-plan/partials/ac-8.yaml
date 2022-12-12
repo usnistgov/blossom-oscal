@@ -14,6 +14,7 @@
         Government purpose. This information system may contain Controlled Unclassified Information (CUI) that is subject to 
         safeguarding or dissemination controls in accordance with law, regulation, or Government-wide policy. Accessing and 
         using this system indicates your understanding of this warning.
+        
   statements:
     - statement-id: ac-8_smt.a
       uuid: {{ uuid.statement }}
@@ -21,21 +22,20 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The system use notification will be implemented in the following locations before allowing access:
-              * Server log in
-              * Application log in
+            The system use notification is implemented at server and application login.
+
     - statement-id: ac-8_smt.b
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The system use notification will remain visible until the user completes the actions required to attempt to log into the system.
+            The system use notification is visible until the user logs in.
+
     - statement-id: ac-8_smt.c
       uuid: {{ uuid.statement }}
       by-components:
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            This system is not authorized to be publicly accessible.  If any response from the system can be displayed on screen, 
-            such as a terminal window or web browser, the system use notification will be emitted.
+            The system is not publicly accessible.
