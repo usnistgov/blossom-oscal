@@ -23,12 +23,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The developer of the system, system component, or system service will be required, at all post design stages of the system development life cycle to:
-            a.	Develop and implement a plan for ongoing security and privacy control assessments;
-            b.	Perform unit, integration, system, and regression testing/evaluation weekly at full depth and coverage;
-            c.	Produce evidence of the execution of the assessment plan and the results of the testing and evaluation;
-            d.	Implement a verifiable flaw remediation process; and
-            e.	Correct flaws identified during testing and evaluation.
+            Developers: have developed and implemented a plan for ongoing security and privacy control assessments; perform unit, integration, system, and regression testing/evaluation weekly at full depth and coverage; produce evidence of the execution of the assessment plan and the results of the testing and evaluation; implement a verifiable flaw remediation process; and correct flaws identified during testing and evaluation.
 
           
 
