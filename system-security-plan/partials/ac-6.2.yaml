@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Users of system accounts (or roles) with access to establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters or have access to access control lists will use non-privileged accounts or roles when accessing non-security functions.      
+            System administrators with access to establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters or have access to access control lists use non-privileged accounts or roles when accessing non-security functions.      
