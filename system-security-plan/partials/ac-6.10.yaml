@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Non-privileged users will be prevented from executing privileged functions.
+            Only system administrators can execute privileged function. This is enforced by AD group/role membership.
