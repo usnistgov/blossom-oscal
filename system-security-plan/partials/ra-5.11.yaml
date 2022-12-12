@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            A public reporting channel for receiving reports of vulnerabilities in organizational systems and system components will be established.
+            Vulnerabilities identified by the public are reported to the National Vulnerability Database (NVD).
