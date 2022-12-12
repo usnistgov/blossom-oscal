@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Organizational users will be uniquely identified and authenticated and that unique identification will be associated with processes acting on behalf of those users.
+            PIV cards are used to identify and authenticate users.
