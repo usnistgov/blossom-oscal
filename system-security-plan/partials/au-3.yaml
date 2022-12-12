@@ -7,10 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Audit records will contain the following information:
-            (a) What type of event occurred;
-            (b) When the event occurred;
-            (c) Where the event occurred; 
-            (d) Source of the event;
-            (e) Outcome of the event; and
-            (f) Identities of any individuals, subjects, or objects/entities associated with the event.
+            System audit logs contain type of event occurred, when and where event occurred, source of the event, and any user associated with the event.
