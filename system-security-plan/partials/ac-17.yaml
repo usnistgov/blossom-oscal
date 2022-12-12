@@ -7,7 +7,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Usage restrictions, configuration/connection requirements, and implementation guidance for each type of remote access allowed will be established and documented.
+            Remote access usage restrictions, configuration requirements, and implementation guidance is documented in the SSP.
 
   control-id: ac-17
   statements:
@@ -17,4 +17,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Each type of remote access to the system will be authorized prior to allowing such connections.
+            Each type of remote access is authorized by the system owner.
