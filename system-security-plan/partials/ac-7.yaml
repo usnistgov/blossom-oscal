@@ -18,7 +18,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            A limit of 5 consecutive invalid login attempts by a user during a 15 minute time period will be enforced.
+            System enforces 5 invalid login attempts within a 15 minute time period.
 
     - statement-id: ac-7_smt.b
       uuid: {{ uuid.statement }}
@@ -26,5 +26,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Automatically lock account or node for 60 minutes and notify system administrator when the maximum number of unsuccessful attempts is exceeded.
-            
+            The user account is automatically locked for 60 minutes and the system administrator is notified when the user exceeds 5 invalid login attempts. 
