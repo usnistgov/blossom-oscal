@@ -18,7 +18,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            System and hosted applications will be monitored and scanned for vulnerabilities monthly or when new vulnerabilities potentially affecting the system are identified and reported.
+            Vulnerability scans are conducted monthly or when new moderate or high vulnerabilities are identified and reported by Tenable.
 
     - statement-id: ra-5_smt.b
       uuid: {{ uuid.statement }}
@@ -26,10 +26,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Employed vulnerability monitoring tools and techniques will facilitate interoperability among tools and automate parts of the vulnerability management process by using standards for:
-            1. Enumerating platforms, software flaws, and improper configurations;
-            2. Formatting checklists and test procedures; and
-            3. Measuring vulnerability impact.
+            Vulnerabilities are identified using the Common Vulnerabilities and Exposures (CVE) naming convention.
 
     - statement-id: ra-5_smt.c
       uuid: {{ uuid.statement }}
@@ -37,7 +34,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Vulnerability scan reports and results from vulnerability monitoring will be analyzed.
+            Vulnerability scan results are analyzed by OISM, and the applicable results are provided to the ISSO for remediation.
 
     - statement-id: ra-5_smt.d
       uuid: {{ uuid.statement }}
@@ -45,7 +42,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Legitimate vulnerabilities will be remediated within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW in accordance with an organizational assessment of risk.
+            Identified vulnerabilities are remediated within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
 
     - statement-id: ra-5_smt.e
       uuid: {{ uuid.statement }}
@@ -53,7 +50,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Information obtained from the vulnerability monitoring process and control assessments will be shared with system security officers and system owners to help eliminate similar vulnerabilities in other systems.
+            Vulnerability scan results are provided to system security officers and system owners.
 
     - statement-id: ra-5_smt.f
       uuid: {{ uuid.statement }}
@@ -61,4 +58,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Employed vulnerability monitoring tools will include the capability to readily update the vulnerabilities to be scanned.
+            Tenable scanning tool is updated by Tenable.
