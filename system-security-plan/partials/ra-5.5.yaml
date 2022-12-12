@@ -15,4 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Privileged access authorizations will be implemented to all system components for monthly vulnerability scans.
+            Credential scans are implemented on all system components for monthly vulnerability scans.
