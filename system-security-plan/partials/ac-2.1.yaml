@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Active Directory is used to manage system accounts.
+            Active Directory is used to manage system accounts privileges and Account Management System (AMS) is used for account management.
