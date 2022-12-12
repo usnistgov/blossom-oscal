@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            System vulnerabilities to be scanned will be updated prior to a new scan and when new vulnerabilities are identified and reported. 
+            Vulnerability signatures are provided by Tenable and are updated prior to a new scan. 
