@@ -15,7 +15,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Privileges assigned to system administrators will be reviewed every 30 days to validate the need for such privileges.
+            System administrator privileges are reviewed every 30 days by the account managers.
 
     - statement-id: ac-6.7_smt.b
       uuid: {{ uuid.statement }}
@@ -23,4 +23,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Privileges will be reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.
+            System administrator privileges are reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.
