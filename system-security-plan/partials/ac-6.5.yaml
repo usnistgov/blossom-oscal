@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Privileged accounts on the system will be restricted to system administrators.
+            Only system administrators have privileged accounts.
