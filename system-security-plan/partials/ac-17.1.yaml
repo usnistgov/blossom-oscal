@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Automated mechanisms will be employed to monitor and control remote access methods.
+            Network routers are used to monitor and control remote access.
