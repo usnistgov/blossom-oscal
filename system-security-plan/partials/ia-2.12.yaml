@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Personal Identity Verification-compliant credentials will be accepted and electronically verified.
+            PIV cards are accepted and electronically verified.
