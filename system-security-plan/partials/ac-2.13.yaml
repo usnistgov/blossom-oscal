@@ -15,4 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Accounts of individuals will be disabled within 1 hour of discovery of unauthorized access.
+            User accounts are disabled by the system administrator within 1 hour after they are notified by the account manager. An account disabled verification e-mail is sent to the system owner and the account managers.
