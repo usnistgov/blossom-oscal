@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Cryptographic mechanisms will be implemented to protect the confidentiality and integrity of remote access sessions.
+            TLS 1.2 has been implemented to protect the confidentiality and integrity of remote sessions.
