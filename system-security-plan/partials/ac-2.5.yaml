@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Users will be required to log out when 5 minutes of inactivity will occur or when leaving the console.
+            Per the account management policy, users will log out if they are inactive for 5 minutes or if they are leaving their PC, laptop, or any networked device.
