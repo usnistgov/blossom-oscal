@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Replay-resistant authentication methods will be implemented for access to privileged and non-privileged accounts. 
+            PIV cards are used for access to privileged and non-privileged accounts. 
