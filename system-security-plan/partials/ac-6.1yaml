@@ -18,7 +18,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Authorized access will be permitted for system administrators to:
+            Access to the system and privileges are enforced by assignment to groups within the NIST-Managed Active Directory domain. Authorized access will be permitted for system administrators to:
             (a) Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters; and
             (b) Review access control lists.
           
