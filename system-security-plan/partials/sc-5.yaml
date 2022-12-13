@@ -18,7 +18,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Protection against the effects of denial of service events flooding services and crashing services will be implemented.
+            Protections against denial of service flooding services and crashing services have been implemented. Network routers filter all incoming packets.
 
     - statement-id: sc-5_smt.b
       uuid: {{ uuid.statement }}
@@ -26,4 +26,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Denial of service objective will be achieved by filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
+            Network packets are filtered by routers in the network and at the network boundary. System is also replicated along multiple VMs.
