@@ -15,4 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            All internal communications traffic to all external networks will be routed through authentication proxy servers at managed interfaces.
+            All internal communication traffic to all external networks are routed through routers on the network boundary.
