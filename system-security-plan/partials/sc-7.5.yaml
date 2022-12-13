@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Network communications traffic will be denied by default and network communications traffic will be allowed by exception at managed interfaces.
+            Network routers deny network traffic to the system by default and allow by exception.
