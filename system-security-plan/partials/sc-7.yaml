@@ -12,7 +12,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Communications will be monitored and controlled at the external managed interfaces to the system and at key internal managed interfaces within the system.
+            Communication into and out of the system is monitored and controlled by network routers.
 
     - statement-id: sc-7_smt.b
       uuid: {{ uuid.statement }}
@@ -20,7 +20,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Subnetworks will be implemented for publicly accessible system components that are logically separated from internal organizational networks.
+            There are no publicly accessible system components.
 
     - statement-id: sc-7_smt.c
       uuid: {{ uuid.statement }}
@@ -28,4 +28,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            External networks or systems will be connected only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security and privacy architecture.
+            External systems or networks are not directly connected to the system. System traffic is managed by network routers.
