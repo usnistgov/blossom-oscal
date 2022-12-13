@@ -12,4 +12,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Split tunneling for remote devices connecting to organizational systems will be prevented unless the split tunnel is securely provisioned using a virtual private network (VPN).
+            Split tunneling is not provided.
