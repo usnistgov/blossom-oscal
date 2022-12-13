@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-3
+  statements: 
+    - statement-id: ac-3
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Access to the system is enforced by assignment to groups within the NIST-Managed Active Directory domain.

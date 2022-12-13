@@ -1,0 +1,26 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-6.7
+  set-parameters:
+    - param-id: ac-6.7_prm_1
+      values: >-
+        Every 30 days.
+    - param-id: ac-6.7_prm_2
+      values: >-
+        System administrators.
+
+ statements:
+    - statement-id: ac-6.7_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            System administrator privileges are reviewed every 30 days by the account managers.
+
+    - statement-id: ac-6.7_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            System administrator privileges are reassigned or removed, if necessary, to correctly reflect organizational mission and business needs.

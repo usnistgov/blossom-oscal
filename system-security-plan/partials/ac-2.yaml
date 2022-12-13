@@ -1,0 +1,132 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-2
+  set-parameters:
+    - param-id: ac-2_prm_1
+      values: >-
+        Business need.
+    - param-id: ac-2_prm_2
+      values: >-
+        Role.
+    - param-id: ac-2_prm_3
+      values: >-
+        System owner.
+    - param-id: ac-2_prm_4
+      values: >-
+        Account management policies and procedures.
+    - param-id: ac-2_prm_5
+      values: >-
+        System owner.
+    - param-id: ac-2_prm_6
+      values: >-
+        Within 24 hours.
+    - param-id: ac-2_prm_7
+      values: >-
+        Within 24 hours.
+    - param-id: ac-2_prm_8
+      values: >-
+        Within 24 hours.
+    - param-id: ac-2_prm_9
+      values: >-
+        Roles and responsibilities.
+    - param-id: ac-2_prm_10
+      values: >-
+        Every 6 months.
+
+  statements:
+    - statement-id: ac-2_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Account management policy identifies that only user and system administrator accounts will be allowed on the system.
+
+    - statement-id: ac-2_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Account managers have been assigned.
+
+    - statement-id: ac-2_smt.c
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Account request includes business need for the account.
+
+    - statement-id: ac-2_smt.d
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Account requests include user of the system, their group and/or role membership, and privileges and the business need for the account.
+
+    - statement-id: ac-2_smt.e
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            System owner approves requests to create accounts via e-mail.
+
+    - statement-id: ac-2_smt.f
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Account management policies and procedures are followed for creating, enabling modifying, disabling, and removing accounts.  Account Management System (AMS) is used for account management. 
+
+    - statement-id: ac-2_smt.g
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Accounts are monitored by the account managers and the system owner is notified if any changes are needed to the account privileges.  
+
+    - statement-id: ac-2_smt.h
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Account managers and system owner are notified within 24 hours via e-mail when accounts are no longer required, uses are terminated or transferred, and user privileges change.
+
+    - statement-id: ac-2_smt.i
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            System administrator authorizes access to the system based on a valid access authorization, system usage requirements, and role or responsibility.
+
+    - statement-id: ac-2_smt.j
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            System accounts are reviewed by the system administrator and account managers every 6 months and the results are sent to the system owner via e-mail.
+
+    - statement-id: ac-2_smt.k
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Shared or group authenticators are not used.
+
+    - statement-id: ac-2_smt.l
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            The account management policy is followed when users are terminated or transferred.
+
+          

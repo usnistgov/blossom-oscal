@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: ra-5.11
+  statements: 
+    - statement-id: ra-5.11
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Vulnerabilities identified by the public are reported to the National Vulnerability Database (NVD).

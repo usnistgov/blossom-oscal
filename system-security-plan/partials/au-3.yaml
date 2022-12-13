@@ -1,0 +1,10 @@
+- uuid: {{ uuid.control }}
+  control-id: au-3
+  statements:
+    - statement-id: au-3
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            System audit logs contain type of event occurred, when and where event occurred, source of the event, and any user associated with the event.

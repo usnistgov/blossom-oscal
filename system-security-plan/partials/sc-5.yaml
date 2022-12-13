@@ -1,0 +1,29 @@
+- uuid: {{ uuid.control }}
+  control-id: sc-5
+  set-parameters:
+    - param-id: sc-5_prm_1
+      values: >-
+        Protect against.
+    - param-id: sc-5_prm_2
+      values: >-
+        Flooding services and crashing services.
+    - param-id: sc-5_prm_3
+      values: >-
+        Filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
+  
+  statements:
+    - statement-id: sc-5_smt.a
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Protections against denial of service flooding services and crashing services have been implemented. Network routers filter all incoming packets.
+
+    - statement-id: sc-5_smt.b
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Network packets are filtered by routers in the network and at the network boundary. System is also replicated along multiple VMs.

@@ -1,0 +1,24 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-6.1
+  set-parameters:
+    - param-id: ac-6.1_prm_1
+      values: >-
+        System administrators.
+    - param-id: ac-6.1_prm_2
+      values: >-
+        Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters.
+    - param-id: ac-6.1_prm_3
+      values: >-
+        Access control lists.
+
+  statements:
+    - statement-id: ac-6.1
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Access to the system and privileges are enforced by assignment to groups within the NIST-Managed Active Directory domain. Authorized access will be permitted for system administrators to:
+            (a) Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters; and
+            (b) Review access control lists.
+          

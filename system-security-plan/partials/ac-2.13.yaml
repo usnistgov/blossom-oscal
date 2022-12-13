@@ -1,0 +1,18 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-2.13
+  set-parameters:
+    - param-id: ac-2.13_prm_1
+      values: >-
+        1 hour.
+    - param-id: ac-2.13_prm_2
+      values: >-
+        Unauthorized access.
+
+  statements:
+    - statement-id: ac-2.13
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            User accounts are disabled by the system administrator within 1 hour after they are notified by the account manager of unathorized access. An account disabled verification e-mail is sent to the system owner and the account managers.

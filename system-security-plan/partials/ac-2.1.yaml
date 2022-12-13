@@ -1,0 +1,15 @@
+- uuid: {{ uuid.control }}
+  control-id: ac-2.1
+  set-parameters:
+    - param-id: ac-2.1_prm_1
+      values: >-
+        Active directory.
+
+  statements:
+    - statement-id: ac-2.1
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Active Directory is used to manage system accounts privileges and Account Management System (AMS) is used for account management.

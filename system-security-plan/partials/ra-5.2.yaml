@@ -1,0 +1,15 @@
+- uuid: {{ uuid.control }}
+  control-id: ra-5.2
+  set-parameters:
+    - param-id: ra-5.2_prm_1
+      values: >-
+        Prior to a new scan and when new vulnerabilities are identified and reported.
+    
+  statements:
+    - statement-id: ra-5.2
+      uuid: {{ uuid.statement }}
+      by-components:
+        - component-uuid: {{ uuid.component-uuid }}
+          uuid: {{ uuid.by-component }}
+          description: >-
+            Vulnerability signatures are provided by Tenable and are updated prior to a new scan. 
