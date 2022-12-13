@@ -15,4 +15,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            User accounts are disabled by the system administrator within 1 hour after they are notified by the account manager. An account disabled verification e-mail is sent to the system owner and the account managers.
+            User accounts are disabled by the system administrator within 1 hour after they are notified by the account manager of unathorized access. An account disabled verification e-mail is sent to the system owner and the account managers.
