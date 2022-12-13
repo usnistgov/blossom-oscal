@@ -28,7 +28,7 @@
             DESCRIPTION HERE
 
 
-## CONTROL WITH STATEMENTS
+## CONTROL ONLY
 - uuid: {{ uuid.control }}
   control-id: ID-#
   by-components:
