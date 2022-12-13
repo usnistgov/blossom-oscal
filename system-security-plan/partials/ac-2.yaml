@@ -63,7 +63,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Account requests include user of the system, their group and/or role membership, and the business need for the account.
+            Account requests include user of the system, their group and/or role membership, and privileges and the business need for the account.
 
     - statement-id: ac-2_smt.e
       uuid: {{ uuid.statement }}
@@ -71,7 +71,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            System owners approve requests to create accounts via e-mail.
+            System owner approves requests to create accounts via e-mail.
 
     - statement-id: ac-2_smt.f
       uuid: {{ uuid.statement }}
