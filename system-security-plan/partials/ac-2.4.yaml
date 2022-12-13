@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Per the account managers request, system audit logs are reviewed by the system administrator for any user account changes. 
+            System audit logs capture account creation, modification, enabling, disabling, and removal.
