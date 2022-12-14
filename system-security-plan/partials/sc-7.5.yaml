@@ -3,7 +3,7 @@
   set-parameters:
     - param-id: sc-7.5_prm_1
       values: >-
-        At managed interfaces.
+        Network routers.
         
   statements: 
     - statement-id: sc-7.5
