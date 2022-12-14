@@ -34,7 +34,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Vulnerability scan results are analyzed by OISM, and the applicable results are provided to the ISSO for remediation.
+            Vulnerability scan results are analyzed by OIS, and the applicable results are provided to the ISSO for remediation.
 
     - statement-id: ra-5_smt.d
       uuid: {{ uuid.statement }}
@@ -50,7 +50,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Vulnerability scan results are provided to system security officers and system owners.
+            Vulnerability scan results are provided to system security officer and system owner.
 
     - statement-id: ra-5_smt.f
       uuid: {{ uuid.statement }}
