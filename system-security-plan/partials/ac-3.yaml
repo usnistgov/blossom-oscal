@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Access to the system is enforced by assignment to groups within the NIST-Managed Active Directory domain.
+            Access to the system is enforced by assignment to groups within the Active Directory domain.
