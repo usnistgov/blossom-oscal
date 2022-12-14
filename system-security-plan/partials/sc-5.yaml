@@ -9,7 +9,7 @@
         Flooding services and crashing services.
     - param-id: sc-5_prm_3
       values: >-
-        Filtering packets by boundary protections devices and increasing network capacity combined with service redundancy.
+        Filtering packets by boundary protections devices.
   
   statements:
     - statement-id: sc-5_smt.a
