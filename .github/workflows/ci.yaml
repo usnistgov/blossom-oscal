@@ -4,7 +4,7 @@ on:
     branches:
       - feature-validation-fixes
 jobs:
-  partial_handling:
+  partial_ssp:
     runs-on: ubuntu-20.04
     defaults:
       run:
@@ -36,6 +36,8 @@ jobs:
           path: SSP.output.yaml
   validate_oscal:
     runs-on: ubuntu-20.04
+    needs:
+      - partial_ssp
     defaults:
       run:
         working-directory: .
