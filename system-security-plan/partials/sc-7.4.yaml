@@ -2,8 +2,8 @@
   control-id: sc-7.4
   set-parameters:
     - param-id: sc-7.4_prm_1
-      values: >-
-        As they are identified.
+      values:
+        - As they are identified.
         
   statements: 
     - statement-id: sc-7.4_smt.a

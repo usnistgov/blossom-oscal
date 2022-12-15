@@ -3,8 +3,8 @@
   control-id: ID-#
   set-parameters:
     - param-id: id-#_prm_1
-      values: >-
-        PARAMETER CONTENT
+      values:
+        - PARAMETER CONTENT
   statements:
     - statement-id: id-#_smt.a
       uuid: {{ uuid.statement }}

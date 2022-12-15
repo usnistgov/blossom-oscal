@@ -2,8 +2,8 @@
   control-id: ac-2.1
   set-parameters:
     - param-id: ac-2.1_prm_1
-      values: >-
-        Active directory.
+      values:
+        - Active directory.
 
   statements:
     - statement-id: ac-2.1

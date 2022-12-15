@@ -2,14 +2,14 @@
   control-id: ra-5 
   set-parameters:
     - param-id: ra-5_prm_1
-      values: >-
-        Monthly or when new vulnerabilities are identified.
+      values:
+        - Monthly or when new vulnerabilities are identified.
     - param-id: ra-5_prm_2
-      values: >-
-        Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
+      values:
+        - Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
     - param-id: ra-5_prm_3
-      values: >-
-        System security officers and system owners.
+      values:
+        - System security officers and system owners.
     
   statements:
     - statement-id: ra-5_smt.a

@@ -2,8 +2,8 @@
   control-id: au-3.1
   set-parameters:
     - param-id: au-3.1_prm_1
-      values: >-
-        User name and file location.
+      values:
+        - User name and file location.
 
   statements:
     - statement-id: au-3.1

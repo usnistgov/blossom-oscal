@@ -2,14 +2,14 @@
   control-id: ac-7
   set-parameters:
     - param-id: ac-7_prm_1
-      values: >-
-        5      
+      values:
+        - 5      
     - param-id: ac-7_prm_2
       values: > 
         15 minutes       
     - param-id: ac-7_prm_3
-      values: >-
-        Lock account or node for 60 minutes and notify system administrator.
+      values:
+        - Lock account or node for 60 minutes and notify system administrator.
          
   statements:
     - statement-id: ac-7_smt.a
