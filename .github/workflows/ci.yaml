@@ -54,6 +54,8 @@ jobs:
       - name: Execute script.
         shell: bash
         run: |
+          pwd
+          ls -ltra
           cat SSP.output.yaml
       - name: Run oscal-cli for version check (debugging on)
         uses: oscal-club/oscal-cli-action@v1.0.0
