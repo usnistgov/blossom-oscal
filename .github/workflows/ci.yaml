@@ -1,0 +1,52 @@
+name: Content Handler
+on:
+  push:
+    branches:
+      - feature-validation-fixes
+jobs:
+  partial_handling:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - name: Check out repository code.
+        uses: actions/checkout@v3
+      - name: Check environment.
+        run: |
+          ls -ltra
+          python --version
+          pip --version
+      - name: Install dependencies.
+        run: |
+          pip install -r requirements.txt
+      # - name: Run tests.
+      #   run: |
+      #     pytest
+      - name: Execute script.
+        run: |
+          python oscal.py
+      - name: Save SSP.
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact-ssp
+          path: SSP.output.yaml
+  validate_oscal:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - name: Checkout
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+        id: checkout
+      - name: Setup Java
+        uses: actions/setup-java@c3ac5dd0ed8db40fedb61c32fbe677e6b355e94c
+        with:
+          distribution: adopt
+          java-version: 11
+          id: setup_java
+      - name: Run oscal-cli for version check (debugging on)
+        uses: oscal-club/oscal-cli-action@v1.0.0
+        with:
+          args: ssp validate SSP.output.yaml
