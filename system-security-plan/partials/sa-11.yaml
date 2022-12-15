@@ -4,14 +4,9 @@
     - param-id: sa-11_prm_1
       values:
         - Unit, integration, system, and regression.
-
-  control-id: sa-11
-  set-parameters:
     - param-id: sa-11_prm_2
       values:
         - Weekly.
-
-   set-parameters:
     - param-id: sa-11_prm_3
       values:
         - Full depth and coverage.
