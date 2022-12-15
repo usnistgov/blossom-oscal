@@ -2,7 +2,11 @@ name: Content Handler
 on:
   push:
     branches:
-      - feature-validation-fixes
+      - feature-*
+      - Feature-*
+      - develop
+      - main
+  pull_request: {}
 jobs:
   partial_ssp:
     runs-on: ubuntu-20.04
@@ -36,6 +40,7 @@ jobs:
           path: SSP.output.yaml
   validate_oscal:
     runs-on: ubuntu-20.04
+    if: ${{ github.repository == 'refs/heads/main' || github.repository == 'refs/heads/develop' }}
     needs:
       - partial_ssp
     steps:
