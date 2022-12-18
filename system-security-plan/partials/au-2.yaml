@@ -3,13 +3,13 @@
   set-parameters:
     - param-id: au-2_prm_1
       values: >-
-        System access, system accounts, system configuration changes, file changes.
+        - System access, system accounts, system configuration changes, file changes.
     - param-id: au-2_prm_2
       values: >-
-        Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged as they occur.
+        - Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged as they occur.
     - param-id: au-2_prm_3
       values: >-
-        Annually.
+        - Annually.
 
   statements:
     - statement-id: au-2_smt.a
