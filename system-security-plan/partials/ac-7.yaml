@@ -5,7 +5,7 @@
       values:
         - 5      
     - param-id: ac-7_prm_2
-      values: > 
+      values:
         15 minutes       
     - param-id: ac-7_prm_3
       values:
