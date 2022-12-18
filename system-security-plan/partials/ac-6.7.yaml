@@ -8,7 +8,7 @@
       values:
         - System administrators.
 
- statements:
+  statements:
     - statement-id: ac-6.7_smt.a
       uuid: {{ uuid.statement }}
       by-components:
