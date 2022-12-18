@@ -3,7 +3,7 @@
   set-parameters:
     - param-id: ac-7_prm_1
       values:
-        - 5      
+        - 5 invalid login attempts.      
     - param-id: ac-7_prm_2
       values:
         - 15 minutes       
