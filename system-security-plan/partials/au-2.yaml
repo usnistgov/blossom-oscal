@@ -50,4 +50,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-             System auditable events are reviewed and updated annually. 
+            System auditable events are reviewed and updated annually. 
