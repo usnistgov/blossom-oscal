@@ -3,10 +3,10 @@
   set-parameters:
     - param-id: ac-7_prm_1
       values:
-        - Five invalid login attempts.      
+        - 5 invalid login attempts.      
     - param-id: ac-7_prm_2
       values:
-        - Fifteen minutes.       
+        - 15 minutes.       
     - param-id: ac-7_prm_3
       values:
         - Lock account or node for 60 minutes and notify system administrator.
