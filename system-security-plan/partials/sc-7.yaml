@@ -5,7 +5,7 @@
       values:
         - Logically.
 
-   statements:
+  statements:
     - statement-id: sc-7_smt.a
       uuid: {{ uuid.statement }}
       by-components:
