@@ -9,8 +9,6 @@
           description: >-
             Remote access usage restrictions, configuration requirements, and implementation guidance is documented in the SSP.
 
-  control-id: ac-17
-  statements:
     - statement-id: ac-17_smt.b
       uuid: {{ uuid.statement }}
       by-components:
