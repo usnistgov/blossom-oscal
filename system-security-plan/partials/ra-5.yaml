@@ -2,14 +2,14 @@
   control-id: ra-5 
   set-parameters:
     - param-id: ra-5_prm_1
-      values: >-
-        Monthly or when new vulnerabilities are identified.
+      values:
+        - Monthly or when new vulnerabilities are identified.
     - param-id: ra-5_prm_2
-      values: >-
-        Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
+      values:
+        - Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
     - param-id: ra-5_prm_3
-      values: >-
-        System security officers and system owners.
+      values:
+        - System security officers and system owners.
     
   statements:
     - statement-id: ra-5_smt.a
@@ -34,7 +34,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Vulnerability scan results are analyzed by OISM, and the applicable results are provided to the ISSO for remediation.
+            Vulnerability scan results are analyzed by OIS, and the applicable results are provided to the ISSO for remediation.
 
     - statement-id: ra-5_smt.d
       uuid: {{ uuid.statement }}
@@ -50,7 +50,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            Vulnerability scan results are provided to system security officers and system owners.
+            Vulnerability scan results are provided to system security officer and system owner.
 
     - statement-id: ra-5_smt.f
       uuid: {{ uuid.statement }}

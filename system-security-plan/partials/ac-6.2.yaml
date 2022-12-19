@@ -2,8 +2,8 @@
   control-id: ac-6.2
   set-parameters:
     - param-id: ac-6.2_prm_1
-      values: >-
-        Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters or have acces to access control lists.
+      values:
+        - Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters or have acces to access control lists.
   
   statements:
     - statement-id: ac-6.2

@@ -2,8 +2,8 @@
   control-id: ac-2.5
   set-parameters:
     - param-id: ac-2.5_prm_1
-      values: >-
-        5 minutes of inactivity will occur or when leaving the console.
+      values:
+        - 5 minutes of inactivity will occur or when leaving the console.
 
   statements:
     - statement-id: ac-2.5

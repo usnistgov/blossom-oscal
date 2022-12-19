@@ -2,11 +2,11 @@
   control-id: sc-7.8
   set-parameters:
     - param-id: sc-7.8_prm_1
-      values: >-
-        All internal communications traffic.
+      values:
+        - All internal communications traffic.
     - param-id: sc-7.8_prm_2
-      values: >-
-        All external networks.
+      values:
+        - All external networks.
 
   statements:
     - statement-id: sc-7.8

@@ -2,8 +2,8 @@
   control-id: ac-17.4_prm_1
   set-parameters:
     - param-id: ac-17.4_prm_1
-      values: >-
-        Manage system and system configurations.
+      values:
+        - Manage system and system configurations.
 
   statements:
     - statement-id: ac-17.4_smt.a
@@ -12,7 +12,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The system owner authorizes remote access via e-mail to the account managers and the system administrators.
+            The system owner authorizes remote access via e-mail to the account managers and the system administrators. System administrators use privileged commands to manage and configure systems.
 
     - statement-id: ac-17.4_smt.b
       uuid: {{ uuid.statement }}
@@ -20,4 +20,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            The rationale for approving remote access is documented in the SSP
+            The rationale for approving remote access is documented in the SSP.

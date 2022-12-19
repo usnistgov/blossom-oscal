@@ -2,14 +2,14 @@
   control-id: au-2
   set-parameters:
     - param-id: au-2_prm_1
-      values: >-
-      System access, system accounts, system configuration changes, file changes.
+      values: 
+        - System access, system accounts, system configuration changes, file changes.
     - param-id: au-2_prm_2
-      values: >-
-      Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged as they occur.
+      values: 
+        - Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged as they occur.
     - param-id: au-2_prm_3
-      values: >-
-      Annually.
+      values: 
+        - Annually.
 
   statements:
     - statement-id: au-2_smt.a
@@ -26,7 +26,7 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-            System auditable events are coordinated with OISM.
+            System auditable events are coordinated with Office of Information Security.
   
     - statement-id: au-2_smt.c
       uuid: {{ uuid.statement }}
@@ -50,4 +50,4 @@
         - component-uuid: {{ uuid.component-uuid }}
           uuid: {{ uuid.by-component }}
           description: >-
-             System auditable events are reviewed and updated annually. 
+            System auditable events are reviewed and updated annually. 

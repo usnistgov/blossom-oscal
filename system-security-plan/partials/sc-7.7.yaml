@@ -2,8 +2,8 @@
   control-id: sc-7.7
   set-parameters:
     - param-id: sc-7.7_prm_1
-      values: >-
-        Virtual private network (VPN).
+      values:
+        - Virtual private network (VPN).
         
   statements: 
     - statement-id: sc-7.7

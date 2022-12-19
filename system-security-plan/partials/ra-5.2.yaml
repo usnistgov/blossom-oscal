@@ -2,8 +2,8 @@
   control-id: ra-5.2
   set-parameters:
     - param-id: ra-5.2_prm_1
-      values: >-
-        Prior to a new scan and when new vulnerabilities are identified and reported.
+      values:
+        - Prior to a new scan.
     
   statements:
     - statement-id: ra-5.2

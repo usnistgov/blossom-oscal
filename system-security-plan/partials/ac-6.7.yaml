@@ -2,13 +2,13 @@
   control-id: ac-6.7
   set-parameters:
     - param-id: ac-6.7_prm_1
-      values: >-
-        Every 30 days.
+      values:
+        - Every 30 days.
     - param-id: ac-6.7_prm_2
-      values: >-
-        System administrators.
+      values:
+        - System administrators.
 
- statements:
+  statements:
     - statement-id: ac-6.7_smt.a
       uuid: {{ uuid.statement }}
       by-components:

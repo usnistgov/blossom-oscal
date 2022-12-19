@@ -2,11 +2,11 @@
   control-id: ac-2.2
   set-parameters:
     - param-id: ac-2.2_prm_1
-      values: >-
-        Remove.
+      values:
+        - Remove.
     - param-id: ac-2.2_prm_2
-      values: >-
-        24 hours.
+      values:
+        - 24 hours.
 
   statements:
     - statement-id: ac-2.2

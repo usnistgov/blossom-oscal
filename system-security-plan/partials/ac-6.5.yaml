@@ -2,8 +2,8 @@
   control-id: ac-6.5
   set-parameters:
     - param-id: ac-6.5_prm_1
-      values: >-
-        System administrators.
+      values:
+        - System administrators.
   
   statements:
     - statement-id: ac-6.5

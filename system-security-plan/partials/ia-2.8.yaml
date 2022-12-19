@@ -2,8 +2,8 @@
   control-id: ia-2.8
   set-parameters:
     - param-id: ia-2.8_prm_1
-      values: >-
-        Privileged and non-privileged accounts.
+      values:
+        - Privileged and non-privileged accounts.
     
   statements:
     - statement-id: ia-2.8
