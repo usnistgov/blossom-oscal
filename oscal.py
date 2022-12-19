@@ -56,7 +56,7 @@ ssp_controls=list()
 #%% Interpret Partials
 print(len(partials))
 for partial in partials:
-    if partial.beginswith('template.'):
+    if partial.startswith('template.'):
         continue
 
     partial_file = os.path.join(os.getcwd(), partial_path, partial)
