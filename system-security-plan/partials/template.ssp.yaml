@@ -1,16 +1,16 @@
 system-security-plan:
-  uuid: f80b8dca-eb68-4efa-b56f-1d7158c78e58
+  uuid: {{ uuid:document }}
 
   metadata:
-    title: Leveraging SaaS System Security Plan
-    last-modified: 2022-11-18T00:00:00.0000-04:00
-    version: "0.0.1-alpha"
+    title: BloSS@M Experimental System Security Plan
+    last-modified: {{ modified-date }}
+    version: {{ version }}
     oscal-version: 1.0.4
     roles:
       - id: admin
         title: Administrator
     parties:
-      - uuid: ae282151-9a3f-4009-a819-1f1b87f8ae66
+      - uuid: {{ uuid:party }}
         type: person
   
   import-profile:
