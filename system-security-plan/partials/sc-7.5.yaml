@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: sc-7.5
   set-parameters:
     - param-id: sc-7.5_prm_1
@@ -7,9 +7,9 @@
         
   statements: 
     - statement-id: sc-7.5
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Network routers deny network traffic to the system by default and allow by exception.

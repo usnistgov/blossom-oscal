@@ -1,10 +1,10 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-2.4
   statements: 
     - statement-id: ac-2.4
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             System audit logs capture account creation, modification, enabling, disabling, and removal.

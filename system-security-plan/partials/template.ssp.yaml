@@ -25,7 +25,7 @@ system-security-plan:
     security-sensitivity-level: low
     system-information:
       information-types:
-        - uuid: 856db9b2-9643-4c21-9b61-f58eea408ea6
+        - uuid: {{ uuid:information-type }}
           title: System Assessment
           description: This system handles development information pertaining to audit and assessment events to demonstrate the OSCAL workflow.
           categorizations:
@@ -49,7 +49,7 @@ system-security-plan:
   
   system-implementation:
     users:
-      - uuid: b1720f31-b2d4-41ce-911f-f9c06c392019
+      - uuid: {{ uuid:user }}
         role-ids:
           - admin
         authorized-privileges:
@@ -57,7 +57,7 @@ system-security-plan:
             functions-performed:
               - Manages the content and components within the system.
     components:
-      - uuid: a413cc1e-92dc-494b-b2ed-a8d9610597da
+      - uuid: {{ uuid:component }}
         type: this-system
         title: OSCAL Testing Workflow Application
         description: This is an application to demonstrate minimal OSCAL content, and automation to execute tests against the application.
@@ -70,3 +70,4 @@ system-security-plan:
   control-implementation:
     description: This system implements a very minimal set of controls for demonstration only.
     implemented-requirements:
+      {{ content:controls }}

@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-2.2
   set-parameters:
     - param-id: ac-2.2_prm_1
@@ -10,9 +10,9 @@
 
   statements:
     - statement-id: ac-2.2
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Temporary or emergency accounts are not created.

@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ia-2.8
   set-parameters:
     - param-id: ia-2.8_prm_1
@@ -7,9 +7,9 @@
     
   statements:
     - statement-id: ia-2.8
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             PIV cards are used for access to privileged and non-privileged accounts. 

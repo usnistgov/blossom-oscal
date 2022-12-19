@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: au-2
   set-parameters:
     - param-id: au-2_prm_1
@@ -13,41 +13,41 @@
 
   statements:
     - statement-id: au-2_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             System audit logs capture system access, system accounts, system configuration changes, and file change events.
  
     - statement-id: au-2_smt.b
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             System auditable events are coordinated with Office of Information Security.
   
     - statement-id: au-2_smt.c
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events are logged when they occur.      
              
     - statement-id: au-2_smt.d
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             The rationale for selecting specific auditable events to be logged is documented in the SSP.
 
     - statement-id: au-2_smt.e
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             System auditable events are reviewed and updated annually. 

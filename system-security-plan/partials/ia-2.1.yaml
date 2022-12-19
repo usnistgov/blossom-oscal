@@ -1,10 +1,10 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ia-2.1
   statements: 
     - statement-id: ia-2.1
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             PIV cards are used for access to privileged accounts.

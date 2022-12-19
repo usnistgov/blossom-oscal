@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: sc-7.8
   set-parameters:
     - param-id: sc-7.8_prm_1
@@ -10,9 +10,9 @@
 
   statements:
     - statement-id: sc-7.8
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             All internal communication traffic to all external networks are routed through routers on the network boundary.

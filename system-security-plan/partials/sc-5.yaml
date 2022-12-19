@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: sc-5
   set-parameters:
     - param-id: sc-5_prm_1
@@ -13,17 +13,17 @@
   
   statements:
     - statement-id: sc-5_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Protections against denial of service flooding services and crashing services have been implemented. Network routers filter all incoming packets.
 
     - statement-id: sc-5_smt.b
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Network packets are filtered by routers in the network and at the network boundary. System is also replicated along multiple VMs.
