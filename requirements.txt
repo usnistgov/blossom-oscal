@@ -2,3 +2,4 @@ chevron
 pydantic
 PyYAML
 diagrams
+oscalic @ git+https://github.com/Compton-NIST/OSCALic.git@develop

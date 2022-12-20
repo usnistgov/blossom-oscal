@@ -11,42 +11,26 @@
 import os
 import chevron
 import json
+import datetime
 from pathlib import Path
 from uuid import UUID,uuid4
 from typing import List, Optional
 from pydantic import BaseModel,ValidationError,Field
 from yaml import safe_load,YAMLError,dump
 
+from oscalic import SystemSecurityPlan as SSP
+from oscalic import ControlAssembly as Control
+from oscalic import validation
+
+
+#%% Setup
+today = datetime.datetime.now()
+today_format = '%Y-%m-%dT00:00:00.0000-04:00'
+today = today.strftime(today_format)
+control_list = list()
+
 #%% Paths
 partial_path = 'system-security-plan/partials'
-
-#%% Set Up OSCAL Model for SSP Controls
-class SetParameter(BaseModel):
-    param_id: str = Field(alias='param-id')
-    values: List[str] = []
-
-class ByComponent(BaseModel):
-    uuid: str | UUID
-    component_uuid: str | UUID = Field(alias='component-uuid')
-    description: str
-
-class Statement(BaseModel):
-    uuid: str | UUID
-    statement_id: str = Field(alias='statement-id')
-    by_components: List[ByComponent] = Field(default=None, alias='by-components')
-
-class Control(BaseModel):
-    uuid: str | UUID
-    control_id: str = Field(alias='control-id')
-    set_parameters: List[SetParameter] = Field(default=None, alias='set-parameters')
-    statements: List[Statement] | None
-    by_components: List[ByComponent] = Field(default=None, alias='by-components')
-
-# I know this is not valid.
-class SSP(BaseModel):
-    uuid: str | UUID
-    controls: List[Control] | None
-
 
 #%% Read Partials
 partials = os.listdir(partial_path)
@@ -60,7 +44,7 @@ for partial in partials:
         continue
 
     partial_file = os.path.join(os.getcwd(), partial_path, partial)
-    partial_template = Path(partial_file).read_text().replace('uuid.','uuid:')
+    partial_template = Path(partial_file).read_text() #.replace('uuid.','uuid:')
     # print(partial_template)
 
     uuid_content = {
@@ -88,7 +72,7 @@ for partial in partials:
         control = Control(**partial_yaml[0])
         ssp_controls.append(control)
         print(f"SUCCESS: {partial_file}")
-    except ValidationError as e:
+    except validation.OSCALValidationError as e:
         print(f"{partial_file}:\nVALIDATION ERROR: {e.json()}\n")
 
 
@@ -116,6 +100,53 @@ print(result)
 Path('SSP.output.yaml').write_text(result)
 
 
-# %%
+#%% Make Profile
+profile_file = os.path.join(os.getcwd(), partial_path, 'template.profile.yaml')
+profile_template = Path(profile_file).read_text()
+
+profile_data = {
+    'uuid:document':        uuid4(),
+    'uuid:statement':       uuid4(),
+    'uuid:component-uuid':  this_system_component_uuid, 
+    'uuid:by-component':    uuid4(),
+    'version':              '0.0.1',
+    'modified_date':        f"{today}"
+}
+
+args = {
+    'template': profile_template,
+    'data': profile_data
+}
+
+profile_content = chevron.render(**args)
+
+try:
+    partial_yaml = safe_load(profile_content)
+except YAMLError as e:
+    print(f"{partial_file}:\nYAML ERROR: Could not interpret ({e.problem}). Skipping.\n")
+
+partial_yaml
+
+
+#%% Make SSP
+ssp_file = os.path.join(os.getcwd(), partial_path, 'template.ssp.yaml')
+ssp_template = Path(ssp_file).read_text()
+
+ssp_data = {
+    'uuid:document':         uuid4(),
+    'uuid:statement':       uuid4(),
+    'uuid:component-uuid':  this_system_component_uuid, 
+    'uuid:by-component':    uuid4(), 
+    'version':              '0.0.1'
+}
+
+args = {
+    'template': ssp_template,
+    'data': ssp_data
+}
+
+ssp_content = chevron.render(**args)
+
+ssp_content
 
 # %%
