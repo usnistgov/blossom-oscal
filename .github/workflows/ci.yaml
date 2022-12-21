@@ -40,7 +40,7 @@ jobs:
           path: SSP.output.yaml
   validate_oscal:
     runs-on: ubuntu-20.04
-    if: ${{ github.repository == 'refs/heads/main' || github.repository == 'refs/heads/develop' }}
+    if: ${{ github.repository == 'refs/heads/main' || github.repository == 'refs/heads/develop' || github.repository == 'refs/heads/feature-doc-templates' }}
     needs:
       - partial_ssp
     steps:
