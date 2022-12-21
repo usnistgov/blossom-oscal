@@ -58,5 +58,9 @@ jobs:
           name: artifact-ssp
       - name: Run oscal-cli Validation.
         uses: oscal-club/oscal-cli-action@v1.0.0
+        id: validation
         with:
           args: ssp validate SSP.output.yaml
+      - name: Check Validation Result
+        run: |
+          "${{join(steps.run_tests.outputs.*, '\n')}}" | grep ERROR
