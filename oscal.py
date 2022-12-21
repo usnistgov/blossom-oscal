@@ -45,6 +45,7 @@ ssp_data = {
     'uuid:user':            Helper.get_uuid(),
     'uuid:party':           Helper.get_uuid(), 
     'uuid:by-component':    Helper.get_uuid(), 
+    'uuid:information-type':Helper.get_uuid(), 
     'version':              '0.0.1',
     'modified_date':        f"{today}",
 }

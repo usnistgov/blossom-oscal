@@ -69,4 +69,5 @@ system-security-plan:
 
   
   control-implementation:
+    description: "List of Controls"
     implemented-requirements: []
