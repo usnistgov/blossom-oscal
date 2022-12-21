@@ -61,6 +61,12 @@ jobs:
         id: validation
         with:
           args: ssp validate SSP.output.yaml
+  pass_or_fail:
+    runs-on: ubuntu-20.04
+    needs: 
+      - validate_oscal
+    steps:
       - name: Check Validation Result
+        
         run: |
-          "${{join(steps.validation.outputs.*, '\n')}}" | grep ERROR
+          "${{join(steps.validate_oscal.outputs.*, '\n')}}" | grep ERROR
