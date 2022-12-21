@@ -1,10 +1,10 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ia-2.12
   statements: 
     - statement-id: ia-2.12
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             PIV cards are accepted and electronically verified.

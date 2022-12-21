@@ -1,10 +1,10 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-17.2
   statements:
     - statement-id: ac-17.2
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             TLS 1.2 has been implemented to protect the confidentiality and integrity of remote sessions.

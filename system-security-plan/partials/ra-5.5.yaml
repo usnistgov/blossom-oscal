@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ra-5.5 
   set-parameters:
     - param-id: ra-5.5_prm_1
@@ -10,9 +10,9 @@
    
   statements:
     - statement-id: ra-5.5
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Credential scans are implemented on all system components for monthly vulnerability scans.

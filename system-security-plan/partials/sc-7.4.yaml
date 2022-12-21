@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: sc-7.4
   set-parameters:
     - param-id: sc-7.4_prm_1
@@ -7,66 +7,66 @@
         
   statements: 
     - statement-id: sc-7.4_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             External communication is provided by network routers.
            
     - statement-id: sc-7.4_smt.b
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Traffic flow policies are enforced by the network routers.
 
     - statement-id: sc-7.4_smt.c
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             TLS 1.2 has been implemented to protect the confidentiality and integrity of transmitted information.
 
     - statement-id: sc-7.4_smt.d
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             There are no exceptions to the traffic flow policy but if there are they will be documented in the SSP.
 
     - statement-id: sc-7.4_smt.e
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Exceptions to the traffic policy are reviewed and updated as they are identified.
 
     - statement-id: sc-7.4_smt.f
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-      - component-uuid: {{ uuid.component-uuid }}
-        uuid: {{ uuid.by-component }}
+      - component-uuid: {{ uuid:component-uuid }}
+        uuid: {{ uuid:by-component }}
         description: >-
           Traffic flow is enforced by network routers following traffic flow policies.
 
     - statement-id: sc-7.4_smt.g
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-      - component-uuid: {{ uuid.component-uuid }}
-        uuid: {{ uuid.by-component }}
+      - component-uuid: {{ uuid:component-uuid }}
+        uuid: {{ uuid:by-component }}
         description: >-
           External networks do not have access to internal networks.
 
     - statement-id: sc-7.4_smt.h
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-      - component-uuid: {{ uuid.component-uuid }}
-        uuid: {{ uuid.by-component }}
+      - component-uuid: {{ uuid:component-uuid }}
+        uuid: {{ uuid:by-component }}
         description: >-
           Control plane traffic is enforced by the network routers.
             

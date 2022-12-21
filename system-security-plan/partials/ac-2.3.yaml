@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-2.3
   set-parameters:
     - param-id: ac-2.3_prm_1
@@ -10,9 +10,9 @@
 
   statements:
     - statement-id: ac-2.3
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Accounts are disabled within 24 hours when they have expired, are no longer associated with the user, are in violation of the account management policy, or have been inactive for 60 days.

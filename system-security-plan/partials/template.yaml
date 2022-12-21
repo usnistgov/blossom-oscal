@@ -1,5 +1,5 @@
 ## CONTROL WITH STATEMENTS AND PARAMETER
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ID-#
   set-parameters:
     - param-id: id-#_prm_1
@@ -7,32 +7,32 @@
         - PARAMETER CONTENT
   statements:
     - statement-id: id-#_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             DESCRIPTION HERE
 
 
 ## CONTROL WITH STATEMENTS
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ID-#
   statements:
     - statement-id: id-#_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             DESCRIPTION HERE
 
 
 ## CONTROL ONLY
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ID-#
   by-components:
-    - component-uuid: {{ uuid.component-uuid }}
-      uuid: {{ uuid.by-component }}
+    - component-uuid: {{ uuid:component-uuid }}
+      uuid: {{ uuid:by-component }}
       description: >-
         DESCRIPTION HERE

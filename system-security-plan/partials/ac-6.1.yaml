@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-6.1
   set-parameters:
     - param-id: ac-6.1_prm_1
@@ -13,10 +13,10 @@
 
   statements:
     - statement-id: ac-6.1
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Access to the system and privileges are enforced by assignment to groups within the Active Directory domain. Authorized access will be permitted for system administrators to:
             (a) Establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters; and

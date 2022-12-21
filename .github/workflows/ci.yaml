@@ -40,7 +40,7 @@ jobs:
           path: SSP.output.yaml
   validate_oscal:
     runs-on: ubuntu-20.04
-    if: ${{ github.repository == 'refs/heads/main' || github.repository == 'refs/heads/develop' }}
+    if: ${{ github.ref_name == 'main' || github.ref_name == 'develop' || github.ref_name == 'feature-doc-templates' }}
     needs:
       - partial_ssp
     steps:
@@ -58,5 +58,10 @@ jobs:
           name: artifact-ssp
       - name: Run oscal-cli Validation.
         uses: oscal-club/oscal-cli-action@v1.0.0
+        id: validation
         with:
           args: ssp validate SSP.output.yaml
+      - name: Validation Result
+        shell: bash
+        run: |
+          exit $oscalcli_exit_code

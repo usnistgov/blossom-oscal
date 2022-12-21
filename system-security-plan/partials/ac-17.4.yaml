@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-17.4_prm_1
   set-parameters:
     - param-id: ac-17.4_prm_1
@@ -7,17 +7,17 @@
 
   statements:
     - statement-id: ac-17.4_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             The system owner authorizes remote access via e-mail to the account managers and the system administrators. System administrators use privileged commands to manage and configure systems.
 
     - statement-id: ac-17.4_smt.b
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             The rationale for approving remote access is documented in the SSP.

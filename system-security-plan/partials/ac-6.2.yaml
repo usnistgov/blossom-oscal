@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: ac-6.2
   set-parameters:
     - param-id: ac-6.2_prm_1
@@ -7,9 +7,9 @@
   
   statements:
     - statement-id: ac-6.2
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             System administrators with access to establish system accounts, configure access authorizations (i.e., permissions, privileges), configure settings for events to be audited, and establish intrusion detection parameters or have access to access control lists use non-privileged accounts or roles when accessing non-security functions.      
