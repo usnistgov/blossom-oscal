@@ -61,19 +61,7 @@ jobs:
         id: validation
         with:
           args: ssp validate SSP.output.yaml > validation.log
-          name: validation-log
-          path: validation.log
-  pass_or_fail:
-    runs-on: ubuntu-20.04
-    needs: 
-      - validate_oscal
-    steps:
-      - name: Get Validation Result
-        uses: actions/download-artifact@v3
-        with:
-          name: validate_oscal
       - name: Check Validation Result
         shell: bash
         run: |
-          value=`cat validation.log`
-          echo $value
+          echo $oscalcli_exit_code
