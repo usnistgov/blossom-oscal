@@ -60,7 +60,7 @@ jobs:
         uses: oscal-club/oscal-cli-action@v1.0.0
         id: validation
         with:
-          args: ssp validate SSP.output.yaml > validation.log
+          args: ssp validate SSP.output.yaml
       - name: Validation Result
         shell: bash
         run: |
