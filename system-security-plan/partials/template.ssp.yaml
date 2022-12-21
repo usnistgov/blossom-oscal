@@ -3,7 +3,7 @@ system-security-plan:
 
   metadata:
     title: BloSS@M Experimental System Security Plan
-    last-modified: {{ modified_date }}
+    # last-modified: {{ modified_date }}
     version: {{ version }}
     oscal-version: 1.0.4
     roles:
@@ -67,7 +67,6 @@ system-security-plan:
         status:
           state: under-development
 
+  
   control-implementation:
-    description: This system implements a very minimal set of controls for demonstration only.
-    implemented-requirements:
-      {{ content:controls }}
+    implemented-requirements: []
