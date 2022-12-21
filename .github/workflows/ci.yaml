@@ -60,13 +60,20 @@ jobs:
         uses: oscal-club/oscal-cli-action@v1.0.0
         id: validation
         with:
-          args: ssp validate SSP.output.yaml
+          args: ssp validate SSP.output.yaml > validation.log
+          name: validation-log
+          path: validation.log
   pass_or_fail:
     runs-on: ubuntu-20.04
     needs: 
       - validate_oscal
     steps:
+      - name: Get Validation Result
+        uses: actions/download-artifact@v3
+        with:
+          name: validate_oscal
       - name: Check Validation Result
-        
+        shell: bash
         run: |
-          "${{join(steps.validate_oscal.outputs.*, '\n')}}" | grep ERROR
+          value=`cat validation.log`
+          echo $value
