@@ -3,7 +3,7 @@ system-security-plan:
 
   metadata:
     title: BloSS@M Experimental System Security Plan
-    last-modified: {{ modified_date }}
+    last-modified: 2022-12-21T00:00:00.0000-04:00
     version: {{ version }}
     oscal-version: 1.0.4
     roles:
