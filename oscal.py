@@ -8,7 +8,7 @@
 # Note: You may need to install this: https://www.graphviz.org/
 
 #%% Import Libraries
-import os
+import os, sys
 import chevron
 import json
 import datetime
@@ -19,6 +19,7 @@ from oscalic.system_security_plan import SystemSecurityPlan as SSP
 from oscalic.control import ControlAssembly as Control
 from oscalic import Template, Helper, Validation
 
+error_condition = None
 
 #%% Setup
 today = datetime.datetime.now()
@@ -83,6 +84,7 @@ for partial in partials:
         print(f"SUCCESS: {partial_file}")
     except Validation.OSCALValidationError as e:
         print(f"{partial_file}:\nVALIDATION ERROR: {e.json()}\n")
+        error_condition = 1
 
 
 #%% Run above here for partial validation.
@@ -108,3 +110,7 @@ Path('SSP.output.yaml').write_text(Helper.to_yaml(ssp))
 # Path('SSP.output.yaml').write_text(result)
 
 # %%
+if error_condition:
+    exit(error_condition)
+
+#%%
