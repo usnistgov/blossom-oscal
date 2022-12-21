@@ -1,4 +1,4 @@
-- uuid: {{ uuid.control }}
+- uuid: {{ uuid:control }}
   control-id: au-12
   set-parameters:
     - param-id: au-12_prm_1
@@ -10,25 +10,25 @@
 
   statements:
     - statement-id: au-12_smt.a
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Audit records can be generated for system audit logs that capture system access, system accounts, system configuration changes, and file change events on all system componenents.
 
     - statement-id: au-12_smt.b
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             System administrators are allowed to select event types that are to be logged by all components of the system.
 
     - statement-id: au-12_smt.c
-      uuid: {{ uuid.statement }}
+      uuid: {{ uuid:statement }}
       by-components:
-        - component-uuid: {{ uuid.component-uuid }}
-          uuid: {{ uuid.by-component }}
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
           description: >-
             Audit logs are generated for logon and log off; invalid login attempts; account creation, deletion, and modification; system configuration changes; and stored file change events. System audit logs also contain information on the type of event occurred, when and where event occurred, source of the event, and any user associated with the event.
