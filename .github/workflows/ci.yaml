@@ -61,7 +61,7 @@ jobs:
         id: validation
         with:
           args: ssp validate SSP.output.yaml > validation.log
-      - name: Check Validation Result
+      - name: Validation Result
         shell: bash
         run: |
-          echo $oscalcli_exit_code
+          exit $oscalcli_exit_code
