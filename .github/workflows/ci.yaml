@@ -63,4 +63,4 @@ jobs:
           args: ssp validate SSP.output.yaml
       - name: Check Validation Result
         run: |
-          "${{join(steps.run_tests.outputs.*, '\n')}}" | grep ERROR
+          "${{join(steps.validation.outputs.*, '\n')}}" | grep ERROR
