@@ -99,17 +99,6 @@ Path('Profile.output.yaml').write_text(profile_content)
 #%% Save SSP
 Path('SSP.output.yaml').write_text(Helper.to_yaml(ssp))
 
-#%%
-# try:
-# ssp = SSP.from_yaml(partial_content)
-#     ssp_controls.append(control)
-#     print(f"SUCCESS: {partial_file}")
-#     print(control.to_yaml())
-# except Validation.OSCALValidationError as e:
-#     print(f"{partial_file}:\nVALIDATION ERROR: {e.json()}\n")
-
-# Path('SSP.output.yaml').write_text(result)
-
 # %%
 if error_condition:
     exit(error_condition)
