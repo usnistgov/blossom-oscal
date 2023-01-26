@@ -1,0 +1,29 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-7
+  set-parameters:
+    - param-id: ac-7_prm_1
+      values:
+        - 5 invalid login attempts.      
+    - param-id: ac-7_prm_2
+      values:
+        - 15 minutes.       
+    - param-id: ac-7_prm_3
+      values:
+        - Lock account or node for 60 minutes and notify system administrator.
+         
+  statements:
+    - statement-id: ac-7_smt.a
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system enforces 5 invalid login attempts within a 15 minute time period.
+
+    - statement-id: ac-7_smt.b
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            When the user exceeds 5 invalid login attempts the cloud service provider user account or node is automatically locked for 60 minutes and the system administrator is notified. 

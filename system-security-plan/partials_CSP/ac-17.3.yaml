@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-17.3
+  statements:
+    - statement-id: ac-17.3
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider remote access is routed through network routers inside the network and at the boundary.

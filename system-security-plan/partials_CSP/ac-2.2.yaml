@@ -1,0 +1,18 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-2.2
+  set-parameters:
+    - param-id: ac-2.2_prm_1
+      values:
+        - Remove.
+    - param-id: ac-2.2_prm_2
+      values:
+        - 24 hours.
+
+  statements:
+    - statement-id: ac-2.2
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider removes temporary or emergency accounts after 24 hours of creation.

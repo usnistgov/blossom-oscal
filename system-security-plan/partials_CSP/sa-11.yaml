@@ -1,0 +1,26 @@
+- uuid: {{ uuid:control }}
+  control-id: sa-11
+  set-parameters:
+    - param-id: sa-11_prm_1
+      values:
+        - Unit, integration, system, and regression.
+    - param-id: sa-11_prm_2
+      values:
+        - Weekly.
+    - param-id: sa-11_prm_3
+      values:
+        - Full depth and coverage.
+
+  statements:
+    - statement-id: sa-11
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system developers will develope and implement a plan for ongoing security and privacy control assessments; perform unit, integration, system, and regression testing/evaluation weekly at full depth and coverage; produce evidence of the execution of the assessment plan and the results of the testing and evaluation; implement a verifiable flaw remediation process; and correct flaws identified during testing and evaluation.
+
+          
+
+        
+        

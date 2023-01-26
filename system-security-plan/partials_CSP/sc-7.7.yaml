@@ -1,0 +1,15 @@
+- uuid: {{ uuid:control }}
+  control-id: sc-7.7
+  set-parameters:
+    - param-id: sc-7.7_prm_1
+      values:
+        - Virtual private network (VPN).
+        
+  statements: 
+    - statement-id: sc-7.7
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider does not allow split tunneling.

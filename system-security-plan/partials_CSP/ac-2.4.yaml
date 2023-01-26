@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-2.4
+  statements: 
+    - statement-id: ac-2.4
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system audit logs capture account creation, modification, enabling, disabling, and removal.

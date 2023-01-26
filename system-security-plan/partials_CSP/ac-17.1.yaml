@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-17.1
+  statements:
+    - statement-id: ac-17.1
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider network routers are used to monitor and control remote access.

@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-17.2
+  statements:
+    - statement-id: ac-17.2
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider implements TLS 1.2 to protect the confidentiality and integrity of remote sessions.
