@@ -7,4 +7,4 @@
         - component-uuid: {{ uuid:component-uuid }}
           uuid: {{ uuid:by-component }}
           description: >-
-            System audit logs contain type of event occurred, when and where event occurred, source of the event, and any user associated with the event.
+            System audit logs contain type of event occurred, when and where event occurred, source of the event, outcome of the event, and any user associated with the event.
