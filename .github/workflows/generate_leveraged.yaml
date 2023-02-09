@@ -1,0 +1,67 @@
+name: Leveraged Content Handler
+on:
+  push:
+    branches:
+      - feature-*
+      - Feature-*
+      - develop
+      - main
+  pull_request: {}
+jobs:
+  partial_ssp:
+    runs-on: ubuntu-20.04
+    defaults:
+      run:
+        working-directory: .
+    steps:
+      - name: Check out repository code.
+        uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10' 
+      - name: Check environment.
+        run: |
+          ls -ltra
+          python --version
+          pip --version
+      - name: Install dependencies.
+        run: |
+          pip install -r requirements.txt
+      # - name: Run tests.
+      #   run: |
+      #     pytest
+      - name: Execute script.
+        run: |
+          python oscal_leveraged.py
+      - name: Save SSP.
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact-leveraged-ssp
+          path: SSP.LEVERAGED.output.yaml
+  validate_oscal:
+    runs-on: ubuntu-20.04
+    if: ${{ github.ref_name == 'main' || github.ref_name == 'develop' || github.ref_name == 'feature-doc-templates' }}
+    needs:
+      - partial_ssp
+    steps:
+      - name: Checkout
+        uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
+        id: checkout
+      - name: Setup Java
+        uses: actions/setup-java@c3ac5dd0ed8db40fedb61c32fbe677e6b355e94c
+        with:
+          distribution: adopt
+          java-version: 11
+      - name: Download SSP.
+        uses: actions/download-artifact@v3
+        with:
+          name: artifact-leveraged-ssp
+      - name: Run oscal-cli Validation.
+        uses: oscal-club/oscal-cli-action@v1.0.0
+        id: validation
+        with:
+          args: ssp validate SSP.LEVERAGED.output.yaml
+      - name: Validation Result
+        shell: bash
+        run: |
+          exit $oscalcli_exit_code
