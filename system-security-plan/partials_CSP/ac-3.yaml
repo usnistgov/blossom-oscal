@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-3
+  statements: 
+    - statement-id: ac-3
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider enforces access to the system by assigning users to groups within the Active Directory domain.

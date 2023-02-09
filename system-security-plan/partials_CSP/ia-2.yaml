@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ia-2
+  statements: 
+    - statement-id: ia-2
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider will employ PIV cards to identify and authenticate users.

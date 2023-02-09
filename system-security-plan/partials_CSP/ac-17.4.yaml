@@ -1,0 +1,23 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-17.4_prm_1
+  set-parameters:
+    - param-id: ac-17.4_prm_1
+      values:
+        - Manage system and system configurations.
+
+  statements:
+    - statement-id: ac-17.4_smt.a
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system owner authorizes remote access via e-mail to the system administrators. System administrators use privileged commands to manage and configure systems.
+
+    - statement-id: ac-17.4_smt.b
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider rationale for approving remote access is documented in the SSP.

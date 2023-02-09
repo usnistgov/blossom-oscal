@@ -1,0 +1,15 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-2.5
+  set-parameters:
+    - param-id: ac-2.5_prm_1
+      values:
+        - 5 minutes of inactivity will occur or if they are leaving their PC, laptop, or any networked device.
+
+  statements:
+    - statement-id: ac-2.5
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider requires users to log out if 5 minutes of inactivity will occur or if they are leaving their PC, laptop, or any networked device.

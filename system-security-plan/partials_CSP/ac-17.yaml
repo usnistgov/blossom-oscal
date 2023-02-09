@@ -1,0 +1,18 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-17
+  statements:
+    - statement-id: ac-17_smt.a
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider documents remote access usage restrictions, configuration requirements, and implementation guidance in the SSP.
+
+    - statement-id: ac-17_smt.b
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider authorizes each type of remote access to the system.

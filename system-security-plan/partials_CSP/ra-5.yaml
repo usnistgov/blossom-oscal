@@ -1,0 +1,61 @@
+- uuid: {{ uuid:control }}
+  control-id: ra-5 
+  set-parameters:
+    - param-id: ra-5_prm_1
+      values:
+        - Monthly or when new vulnerabilities are identified.
+    - param-id: ra-5_prm_2
+      values:
+        - Within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
+    - param-id: ra-5_prm_3
+      values:
+        - System security officer.
+    
+  statements:
+    - statement-id: ra-5_smt.a
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system vulnerability scans are conducted monthly or when new moderate or high vulnerabilities are identified and reported by vendor.
+
+    - statement-id: ra-5_smt.b
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system vulnerabilities are identified using the Common Vulnerabilities and Exposures (CVE) naming convention.
+
+    - statement-id: ra-5_smt.c
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system vulnerability scan results are analyzed by the Security Operations Center and the applicable results are provided to the ISSO for remediation.
+
+    - statement-id: ra-5_smt.d
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system vulnerabilities are remediated within 1 week for HIGH, 30 days for MODERATE, and 90 days for LOW.
+
+    - statement-id: ra-5_smt.e
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider system vulnerability scan results are provided to system security officer.
+
+    - statement-id: ra-5_smt.f
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Cloud service provider employed scanning tool is updated by the vendor.

@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ac-6.10
+  statements: 
+    - statement-id: ac-6.10
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            Only cloud service provider system administrators can execute privileged functions. This is enforced by AD group/role membership.
