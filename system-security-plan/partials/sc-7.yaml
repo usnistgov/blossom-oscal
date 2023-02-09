@@ -12,7 +12,7 @@
         - component-uuid: {{ uuid:component-uuid }}
           uuid: {{ uuid:by-component }}
           description: >-
-            Communication into and out of the system is monitored and controlled by network routers.
+            Communication into and out of the system is monitored and controlled by network and boundary routers.
 
     - statement-id: sc-7_smt.b
       uuid: {{ uuid:statement }}
