@@ -30,5 +30,5 @@
                 uuid: {{ uuid:responsibilities }}
                 provided-uuid: {{ uuid:provided }}
                 description: >-
-                  The cloud service provider use automation to manage system accounts and privileges.
+                  The cloud service provider uses automation to manage system accounts and privileges.
                 action:
