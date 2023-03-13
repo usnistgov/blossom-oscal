@@ -13,7 +13,7 @@
             provided:
               uuid: {{ uuid:provided }}
               description: >- 
-                The cloud service provider system auditing captured specific events.
+                The cloud service provider system auditing captures specific events.
               import-ref: ""
               implementation-status:
                 state: implemented
