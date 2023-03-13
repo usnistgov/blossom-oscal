@@ -16,3 +16,22 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider user accounts are disabled by the system administrator within 1 hour after they are notified of unathorized access. An account disabled verification e-mail is sent to the system owner.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider user accounts are disabled by the system administrator within specific time frame of notification and the system owner is notified.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                The cloud service provider user accounts are disabled when notified and a notification of the action is sent to the system owner.
+              action: ""
