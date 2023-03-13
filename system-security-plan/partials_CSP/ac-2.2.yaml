@@ -34,4 +34,4 @@
               provided-uuid: {{ uuid:provided }}
               description: >-
                 The cloud service provider removes temporary and privileges accounts according to the policy.
-              action:
+              action: ""
