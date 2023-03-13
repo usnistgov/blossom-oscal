@@ -26,4 +26,4 @@
                 provided-uuid: {{ uuid:provided }}
                 description: >-
                   The cloud service provider audit logs capture events identified in the auditing policy.
-                action:
+                action: ""
