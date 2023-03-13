@@ -11,16 +11,16 @@
 
           export:
             provided:
-                uuid: {{ uuid:provided }}
-                description: >- 
-                  The cloud service provider system auditing captured specific events.
-                import-ref: ""
-                implementation-status:
-                  state: implemented
-                  remarks: ""
-                inheritance:
-                  type: full
-                  remarks: ""
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider system auditing captured specific events.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
             responsibilities:
                 uuid: {{ uuid:responsibilities }}
                 provided-uuid: {{ uuid:provided }}
