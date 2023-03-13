@@ -72,7 +72,7 @@
             provided:
               uuid: {{ uuid:provided }}
               description: >- 
-                Cloud service provider account account managers have been assigned.
+                Cloud service provider account managers have been assigned.
               import-ref: ""
               implementation-status:
                 state: implemented
@@ -111,7 +111,7 @@
               uuid: {{ uuid:responsibilities }}
               provided-uuid: {{ uuid:provided }}
               description: >-
-                Cloud service provider account request needs have been identified.
+                Cloud service provider account request needs are identified.
               action: ""
 
     - statement-id: ac-2_smt.d
