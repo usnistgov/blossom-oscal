@@ -21,7 +21,7 @@
             provided:
               uuid: {{ uuid:provided }}
               description: >- 
-                The cloud service provider accounts are disabled within a specific time frame, for specific reasons, and if inactive for a specfic time frame.
+                The cloud service provider accounts are disabled within a specific time frame, for specific reasons, or if inactive for a specfic time frame.
               import-ref: ""
               implementation-status:
                 state: implemented
