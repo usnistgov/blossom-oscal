@@ -13,3 +13,22 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider requires users to log out if 5 minutes of inactivity will occur or if they are leaving their PC, laptop, or any networked device.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider requires users to log out from their systems if they are going to be inactive for a specific time frame or if they are leaving their systems.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                The cloud service provider requires users to log out when leaving their systems.
+              action: ""
