@@ -41,6 +41,25 @@
           description: >-
             Cloud service provider account management policy identifies that only user and system administrator accounts will be allowed on the system.
 
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider account management policy identifies users allowed on the system.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account management policy specifies which users will be allowed on the system.
+              action: ""
+
     - statement-id: ac-2_smt.b
       uuid: {{ uuid:statement }}
       by-components:
@@ -48,6 +67,25 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider account managers have been assigned.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider account account managers have been assigned.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account management roles have been assigned.
+              action: ""
 
     - statement-id: ac-2_smt.c
       uuid: {{ uuid:statement }}
@@ -57,6 +95,25 @@
           description: >-
             Cloud service provider account requests include business need for the account.
 
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider account requests include the need for the account.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account request needs have been identified.
+              action: ""
+
     - statement-id: ac-2_smt.d
       uuid: {{ uuid:statement }}
       by-components:
@@ -64,6 +121,25 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider account requests include user of the system, their group and/or role membership, privileges, and the business need for the account.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider account request includes user information, their memberships and privileges, and the need for the account.
+              import-ref: ""
+              implementation-status:
+                  state: implemented
+                  remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account request includes user information.
+              action: ""
 
     - statement-id: ac-2_smt.e
       uuid: {{ uuid:statement }}
@@ -73,6 +149,25 @@
           description: >-
             Cloud service provider system owner approves requests to create accounts via e-mail.
 
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider system owner approves the account.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account management policy is followed for account approval.
+              action: ""
+
     - statement-id: ac-2_smt.f
       uuid: {{ uuid:statement }}
       by-components:
@@ -80,6 +175,25 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider account management policies and procedures are followed for creating, enabling modifying, disabling, and removing accounts. 
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider account management policy and procedures include actions that can be taken.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account management policy and procedures are followed for managing accounts.
+              action: ""
 
     - statement-id: ac-2_smt.g
       uuid: {{ uuid:statement }}
@@ -89,6 +203,25 @@
           description: >-
             Cloud service provider system accounts are monitored by the account managers and the system owner is notified if any changes are needed to the account privileges.    
 
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider system accounts are monitored and notifications are sent if any account changes occur.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider system accounts are monitored and notifications are sent as needed.
+              action: ""
+
     - statement-id: ac-2_smt.h
       uuid: {{ uuid:statement }}
       by-components:
@@ -96,6 +229,25 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider system account managers and system owner are notified within 24 hours via e-mail when accounts are no longer required, uses are terminated or transferred, and user privileges change.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                Cloud service provider account managers and system owner are notified within a sopecific time frame when accounts are modified.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account managers and system owner are notified when there are changes to the account.
+              action: ""
 
     - statement-id: ac-2_smt.i
       uuid: {{ uuid:statement }}
@@ -105,6 +257,25 @@
           description: >-
             Cloud service provider system administrator authorizes access to the system based on a valid access authorization, system usage requirements, and role or responsibility.
 
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider system administrator authorizes access to the system based on specific criteria.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider system administrator authorizes access to the system based on policy.
+              action: ""
+
     - statement-id: ac-2_smt.j
       uuid: {{ uuid:statement }}
       by-components:
@@ -112,6 +283,25 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider system accounts are reviewed by the system administrator and account managers every 30 days and the results are sent to the system owner via e-mail.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider system accounts are reviewed by the system administrator and account managers within a specific time frame and results are sent to the system owner.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider system accounts are reviewed by the system administrator and account managers and the system owner is notified.
+              action: ""
 
     - statement-id: ac-2_smt.k
       uuid: {{ uuid:statement }}
@@ -121,6 +311,25 @@
           description: >-
             Cloud service provider does not allow the use of shared or group authenticators.
 
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider does not allow shared or group authenticators.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider does not allow shared or group authenticators.
+              action: ""
+
     - statement-id: ac-2_smt.l
       uuid: {{ uuid:statement }}
       by-components:
@@ -128,5 +337,24 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider account management policy is followed when users are terminated or transferred.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider account management policy is followed when the user does not require system access.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                Cloud service provider account management policy is followed when the user accounts are no longer needed.
+              action: ""
 
           

@@ -16,19 +16,19 @@
           
           export:
             provided:
-                uuid: {{ uuid:provided }}
-                description: >- 
-                  The cloud service provider uses active directory to manage system account and privileges.
-                import-ref: ""
-                implementation-status:
-                  state: implemented
-                  remarks: ""
-                inheritance:
-                  type: full
-                  remarks: ""
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider uses active directory to manage system accounts and privileges.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
             responsibilities:
-                uuid: {{ uuid:responsibilities }}
-                provided-uuid: {{ uuid:provided }}
-                description: >-
-                  The cloud service provider uses automation to manage system accounts and privileges.
-                action:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                The cloud service provider uses automation to manage system accounts and privileges.
+              action: ""
