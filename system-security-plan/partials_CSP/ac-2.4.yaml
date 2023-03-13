@@ -13,7 +13,7 @@
             provided:
                 uuid: {{ uuid:provided }}
                 description: >- 
-                  The cloud service provider uses active directory to manage system account and privileges.
+                  The cloud service provider system auditing captured specific events.
                 import-ref: ""
                 implementation-status:
                   state: implemented
@@ -25,5 +25,5 @@
                 uuid: {{ uuid:responsibilities }}
                 provided-uuid: {{ uuid:provided }}
                 description: >-
-                  The cloud service provider uses automation to manage system accounts and privileges.
+                  The cloud service provider audit logs capture events identified in the auditing policy.
                 action:
