@@ -8,3 +8,22 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider system audit logs capture account creation, modification, enabling, disabling, and removal.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider system auditing captures specific events.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+                uuid: {{ uuid:responsibilities }}
+                provided-uuid: {{ uuid:provided }}
+                description: >-
+                  The cloud service provider audit logs capture events identified in the auditing policy.
+                action: ""

@@ -16,3 +16,22 @@
           uuid: {{ uuid:by-component }}
           description: >-
             Cloud service provider accounts are disabled within 24 hours when they have expired, are no longer associated with the user, are in violation of the account management policy, or have been inactive for 17 calendar days.
+
+          export:
+            provided:
+              uuid: {{ uuid:provided }}
+              description: >- 
+                The cloud service provider accounts are disabled within a specific time frame, for specific reasons, or if inactive for a specfic time frame.
+              import-ref: ""
+              implementation-status:
+                state: implemented
+                remarks: ""
+              inheritance:
+                type: full
+                remarks: ""
+            responsibilities:
+              uuid: {{ uuid:responsibilities }}
+              provided-uuid: {{ uuid:provided }}
+              description: >-
+                The cloud service provider accounts are disabled according to policy.
+              action:
