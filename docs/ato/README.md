@@ -5,7 +5,7 @@
 
 <p align="center">
    <a href="ATO.legend.drawio.svg"><img src="ATO.legend.drawio.svg" style="max-height: 600px;display: block" /></a>
-   <i>Fig 1. Legend for the diagrams that follow.</i>
+   <br/><i>Fig 1. Legend for the diagrams that follow.</i>
 </p>
 
 
@@ -15,7 +15,7 @@
 
 <p align="center">
    <a href="ATO.initiation.drawio.svg"><img src="ATO.initiation.drawio.svg" style="max-height: 600px;display: block" /></a>
-   <i>Fig 2. Outline of the steps necessary to complete initiation phase.</i>
+   <br/><i>Fig 2. Outline of the steps necessary to complete initiation phase.</i>
 </p>
 
 
@@ -34,7 +34,7 @@
 
 <p align="center">
    <a href="ATO.implementation.drawio.svg"><img src="ATO.implementation.drawio.svg" style="max-height: 600px;display: block" /></a>
-   <i>Fig 3. Outline of the steps necessary to complete initiation phase.</i>
+   <br/><i>Fig 3. Outline of the steps necessary to complete initiation phase.</i>
 </p>
 
 ### Process Description
@@ -56,7 +56,7 @@
 
 <p align="center">
    <a href="ATO.authorization.drawio.svg"><img src="ATO.authorization.drawio.svg" style="max-height: 600px;display: block" /></a>
-   <i>Fig 4. Outline of the steps necessary to complete initiation phase.</i>
+   <br/><i>Fig 4. Outline of the steps necessary to complete initiation phase.</i>
 </p>
 
 ### Process Description
@@ -89,7 +89,7 @@ A more detailed set of roles exist *(Fig. 5)*, and my be required for a fully im
 
 <p align="center">
    <a href="support/Actors.drawio.svg"><img src="support/Actors.drawio.svg" style="max-height: 600px;display: block" /></a>
-   <i>Fig 5. An outline of roles that may be involved in a system like BloSS@M.</i>
+   <br/><i>Fig 5. An outline of roles that may be involved in a system like BloSS@M.</i>
 </p>
 
 
