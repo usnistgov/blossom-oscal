@@ -97,28 +97,3 @@ A more detailed set of roles exist *(Fig. 5)*, and my be required for a fully im
 
 
 
-<style>
-
-img {
-  display: block;
-  margin: 0 auto;
-  padding 20px;
-  max-height: 600px;
-  margin-top: 20px;
-}
-
-figure {
-  display: block;
-  border: 1px #cccccc solid;
-}
-
-figcaption {
-  background-color: #10739E;
-  color: white;
-  font-style: italic;
-  font-size: 10pt;
-  padding: 2px;
-  text-align: center;
-  margin-top: 20px;
-}
-</style>
