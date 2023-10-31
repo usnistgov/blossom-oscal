@@ -3,17 +3,20 @@
 
 ## Diagram Legend
 
-![Legend](ATO.legend.drawio.svg)
->*Fig 1. Legend for the diagrams that follow.*
-
+<figure>
+   <a href="ATO.legend.drawio.svg"><img src="ATO.legend.drawio.svg"></a>
+   <figcaption>Fig 1. Legend for the diagrams that follow.</figcaption>
+</figure>
 
 
 ---
 
 ## Initiation Phase
 
-![Initiation](ATO.initiation.drawio.svg)
->*Fig 2. Outline of the steps necessary to complete initiation phase.*
+<figure>
+   <a href="ATO.initiation.drawio.svg"><img src="ATO.initiation.drawio.svg"></a>
+   <figcaption>Fig 2. Outline of the steps necessary to complete initiation phase.</figcaption>
+</figure>
 
 
 ### Process Description
@@ -29,8 +32,10 @@
 
 ## Implementation Phase
 
-![Implementation](ATO.implementation.drawio.svg)
->*Fig 3. Outline of the steps necessary to complete initiation phase.*
+<figure>
+   <a href="ATO.implementation.drawio.svg"><img src="ATO.implementation.drawio.svg"></a>
+   <figcaption>Fig 3. Outline of the steps necessary to complete initiation phase.</figcaption>
+</figure>
 
 ### Process Description
 
@@ -49,8 +54,10 @@
 
 ## Authorization Phase
 
-![Authorization](ATO.authorization.drawio.svg)
->*Fig 4. Outline of the steps necessary to complete initiation phase.*
+<figure>
+   <a href="ATO.authorization.drawio.svg"><img src="ATO.authorization.drawio.svg"></a>
+   <figcaption>Fig 4. Outline of the steps necessary to complete initiation phase.</figcaption>
+</figure>
 
 ### Process Description
 
@@ -67,3 +74,51 @@
 22. **Record system changes.**
 23. Reassess. Go to #5 (or #4 if the plan requires adjustment.)
 24. Reauthorize the members.
+
+## System Actors
+
+For the purposes of the project, the roles have been collapsed into a subset of:
+
+- **System Administrator** (Organization) - Representing the Operations side of the sphere.
+- **Authorizing Official** (Organization) - Representing the Authorization side of the sphere.
+- **Federation**: General term used to describe all participating Authorizing Officials.
+
+A more detailed set of roles exist *(Fig. 5)*, and my be required for a fully implemented system.
+
+---
+
+<figure>
+   <a href="support/Actors.drawio.svg"><img src="support/Actors.drawio.svg"></a>
+   <figcaption>Fig 5. An outline of roles that may be involved in a system like BloSS@M.</figcaption>
+</figure>
+
+
+
+
+
+
+<style>
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding 20px;
+  max-height: 600px;
+  margin-top: 20px;
+}
+
+figure {
+  display: block;
+  border: 1px #cccccc solid;
+}
+
+figcaption {
+  background-color: #10739E;
+  color: white;
+  font-style: italic;
+  font-size: 10pt;
+  padding: 2px;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
