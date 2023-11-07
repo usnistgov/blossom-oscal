@@ -83,7 +83,7 @@ For the purposes of the project, the roles have been collapsed into a subset of:
 - **Authorizing Official** (Organization) - Representing the Authorization side of the sphere.
 - **Federation**: General term used to describe all participating Authorizing Officials.
 
-A more detailed set of roles exist *(Fig. 5)*, and my be required for a fully implemented system.
+A more detailed set of roles exist *(Fig. 5)*, and may be required for a fully implemented system.
 
 ---
 
