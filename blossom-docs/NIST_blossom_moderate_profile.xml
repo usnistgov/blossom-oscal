@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" type="application/xml" href="https://github.com/usnistgov/OSCAL/releases/download/v1.1.1/oscal_complete_schema.xsd"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="384f9e3b-ae28-4ac2-b945-f18071f0ee15">
+   <metadata>
+      <title>NIST BloSS@M Tailored Moderate Baseline</title>
+      <last-modified>2024-03-20T16:16:00.000000-00:00</last-modified>
+      <version>0.0.1</version>
+      <oscal-version>1.1.2</oscal-version>
+      <role id="creator">
+         <title>Document Creator</title>
+      </role>
+      <role id="contact">
+         <title>Contact</title>
+      </role>
+      <party uuid="1741c4fb-3b8b-41f2-af60-7c5565c916a4" type="organization">
+         <name>BloSS@M</name>
+         <email-address>blossom@nist.gov</email-address>
+         <address>
+            <addr-line>National Institute of Standards and Technology</addr-line>
+            <addr-line>Attn: Computer Security Division</addr-line>
+            <addr-line>Information Technology Laboratory</addr-line>
+            <addr-line>100 Bureau Drive (Mail Stop 8930)</addr-line>
+            <city>Gaithersburg</city>
+            <state>MD</state>
+            <postal-code>20899-8930</postal-code>
+         </address>
+      </party>
+      <responsible-party role-id="creator">
+         <party-uuid>1741c4fb-3b8b-41f2-af60-7c5565c916a4</party-uuid>
+      </responsible-party>
+      <responsible-party role-id="contact">
+         <party-uuid>1741c4fb-3b8b-41f2-af60-7c5565c916a4</party-uuid>
+      </responsible-party>
+   </metadata>
+   <import href="#f4faee53-d96f-4fdb-b491-4a1a79066b9b">
+      <include-controls>
+         <with-id>ac-2</with-id>
+         <with-id>ac-2.1</with-id>
+         <with-id>ac-2.2</with-id>
+         <with-id>ac-2.3</with-id>
+         <with-id>ac-2.4</with-id>
+         <with-id>ac-2.5</with-id>
+         <with-id>ac-2.13</with-id>
+         <with-id>ac-3</with-id>
+         <with-id>ac-6</with-id>
+         <with-id>ac-6.1</with-id>
+         <with-id>ac-6.2</with-id>
+         <with-id>ac-6.5</with-id>
+         <with-id>ac-6.7</with-id>
+         <with-id>ac-6.9</with-id>
+         <with-id>ac-6.10</with-id>
+         <with-id>ac-7</with-id>
+         <with-id>ac-8</with-id>
+         <with-id>ac-17</with-id>
+         <with-id>ac-17.1</with-id>
+         <with-id>ac-17.2</with-id>
+         <with-id>ac-17.3</with-id>
+         <with-id>ac-17.4</with-id>
+         <with-id>au-2</with-id>
+         <with-id>au-3</with-id>
+         <with-id>au-3.1</with-id>
+         <with-id>au-12</with-id>
+         <with-id>ia-2</with-id>
+         <with-id>ia-2.1</with-id>
+         <with-id>ia-2.2</with-id>
+         <with-id>ia-2.8</with-id>
+         <with-id>ia-2.12</with-id>
+         <with-id>ra-5</with-id>
+         <with-id>ra-5.2</with-id>
+         <with-id>ra-5.5</with-id>
+         <with-id>ra-5.11</with-id>
+         <with-id>sa-11</with-id>
+         <with-id>sc-2</with-id>
+         <with-id>sc-5</with-id>
+         <with-id>sc-7</with-id>
+         <with-id>sc-7.3</with-id>
+         <with-id>sc-7.4</with-id>
+         <with-id>sc-7.5</with-id>
+         <with-id>sc-7.7</with-id>
+         <with-id>sc-7.8</with-id>
+      </include-controls>
+   </import>
+   <merge>
+      <as-is>true</as-is>
+   </merge>
+   <back-matter>
+      <resource uuid="f4faee53-d96f-4fdb-b491-4a1a79066b9b">
+         <description>
+            <p>NIST OSCAL SP 800-53 Rev5 Moderate Baseline</p>
+         </description>
+         <rlink media-type="application/oscal.profile+xml" href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml"/>
+         <rlink media-type="application/oscal.catalog+json" href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json"/>
+         <rlink media-type="application/oscal.catalog+yaml" href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.yaml"/>
+      </resource>
+   </back-matter>
+</profile>

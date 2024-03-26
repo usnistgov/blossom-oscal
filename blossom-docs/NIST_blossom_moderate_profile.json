@@ -1,0 +1,62 @@
+{
+  "profile" : {
+    "uuid" : "384f9e3b-ae28-4ac2-b945-f18071f0ee15",
+    "metadata" : {
+      "title" : "NIST BloSS@M Tailored Moderate Baseline",
+      "last-modified" : "2024-03-20T16:16:00Z",
+      "version" : "0.0.1",
+      "oscal-version" : "1.1.2",
+      "roles" : [ {
+        "id" : "creator",
+        "title" : "Document Creator"
+      }, {
+        "id" : "contact",
+        "title" : "Contact"
+      } ],
+      "parties" : [ {
+        "uuid" : "1741c4fb-3b8b-41f2-af60-7c5565c916a4",
+        "type" : "organization",
+        "name" : "BloSS@M",
+        "email-addresses" : [ "blossom@nist.gov" ],
+        "addresses" : [ {
+          "addr-lines" : [ "National Institute of Standards and Technology", "Attn: Computer Security Division", "Information Technology Laboratory", "100 Bureau Drive (Mail Stop 8930)" ],
+          "city" : "Gaithersburg",
+          "state" : "MD",
+          "postal-code" : "20899-8930"
+        } ]
+      } ],
+      "responsible-parties" : [ {
+        "role-id" : "creator",
+        "party-uuids" : [ "1741c4fb-3b8b-41f2-af60-7c5565c916a4" ]
+      }, {
+        "role-id" : "contact",
+        "party-uuids" : [ "1741c4fb-3b8b-41f2-af60-7c5565c916a4" ]
+      } ]
+    },
+    "imports" : [ {
+      "href" : "#f4faee53-d96f-4fdb-b491-4a1a79066b9b",
+      "include-controls" : [ {
+        "with-ids" : [ "ac-2", "ac-2.1", "ac-2.2", "ac-2.3", "ac-2.4", "ac-2.5", "ac-2.13", "ac-3", "ac-6", "ac-6.1", "ac-6.2", "ac-6.5", "ac-6.7", "ac-6.9", "ac-6.10", "ac-7", "ac-8", "ac-17", "ac-17.1", "ac-17.2", "ac-17.3", "ac-17.4", "au-2", "au-3", "au-3.1", "au-12", "ia-2", "ia-2.1", "ia-2.2", "ia-2.8", "ia-2.12", "ra-5", "ra-5.2", "ra-5.5", "ra-5.11", "sa-11", "sc-2", "sc-5", "sc-7", "sc-7.3", "sc-7.4", "sc-7.5", "sc-7.7", "sc-7.8" ]
+      } ]
+    } ],
+    "merge" : {
+      "as-is" : true
+    },
+    "back-matter" : {
+      "resources" : [ {
+        "uuid" : "f4faee53-d96f-4fdb-b491-4a1a79066b9b",
+        "description" : "NIST OSCAL SP 800-53 Rev5 Moderate Baseline",
+        "rlinks" : [ {
+          "href" : "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.xml",
+          "media-type" : "application/oscal.profile+xml"
+        }, {
+          "href" : "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/json/NIST_SP-800-53_rev5_MODERATE-baseline_profile.json",
+          "media-type" : "application/oscal.catalog+json"
+        }, {
+          "href" : "https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/yaml/NIST_SP-800-53_rev5_MODERATE-baseline_profile.yaml",
+          "media-type" : "application/oscal.catalog+yaml"
+        } ]
+      } ]
+    }
+  }
+}
