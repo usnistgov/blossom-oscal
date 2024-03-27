@@ -57,7 +57,7 @@ jobs:
         with:
           name: artifact-ssp
       - name: Run oscal-cli Validation.
-        uses: oscal-club/oscal-cli-action@v1.0.0
+        uses: oscal-club/oscal-cli-action@v1.0.3
         id: validation
         with:
           args: ssp validate SSP.output.yaml
