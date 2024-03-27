@@ -11,7 +11,7 @@
         "value" : "libOSCAL-Java"
       } ],
       "links" : [ {
-        "href" : "file:///Users/miorga/Desktop/ALL_PROJECTS/GH/blossom-oscal/oscal-content/xml/profile/blossom_moderate_profile.xml",
+        "href" : "./blossom_moderate_profile.xml",
         "rel" : "source-profile"
       } ]
     },

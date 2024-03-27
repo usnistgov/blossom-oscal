@@ -10,7 +10,7 @@ catalog:
     - name: resolution-tool
       value: libOSCAL-Java
     links:
-    - href: file:///Users/miorga/Desktop/ALL_PROJECTS/GH/blossom-oscal/oscal-content/yaml/profile/blossom_moderate_profile.yaml
+    - href: ./blossom_moderate_profile.yaml
       rel: source-profile
   groups:
   - id: ac
