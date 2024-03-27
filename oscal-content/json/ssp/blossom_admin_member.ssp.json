@@ -25,6 +25,7 @@
       "props": [ 
         {
             "name": "ssp-data-type",
+            "ns": "https://csrc.nist.gov/ns/blossom",
             "value": "core SSP data"
         }
        ],
@@ -337,7 +338,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-555-1212"
+              "number": "2025551212"
             }
           ],
           "member-of-organizations": [
@@ -370,14 +371,14 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-000-0001"
+              "number": "2020000001"
             }
           ],
           "location-uuids": [
-            "27b78960-59ef-4619-82b0-ae20b9c709ac"
+            "1ef39fd9-d184-44c4-8ef4-36d2dbad70a2"
           ],
           "member-of-organizations": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -395,7 +396,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-000-0002"
+              "number": "2020000002"
             }
           ],
           "addresses": [
@@ -411,7 +412,7 @@
             }
           ],
           "member-of-organizations": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -429,7 +430,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-000-0003"
+              "number": "2020000003"
             }
           ],
           "addresses": [
@@ -445,7 +446,7 @@
             }
           ],
           "member-of-organizations": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -463,7 +464,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-000-0004"
+              "number": "2020000004"
             }
           ],
           "addresses": [
@@ -479,7 +480,7 @@
             }
           ],
           "member-of-organizations": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -497,7 +498,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-000-0005"
+              "number": "2020000005"
             }
           ],
           "addresses": [
@@ -513,7 +514,7 @@
             }
           ],
           "member-of-organizations": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -531,7 +532,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "301-975-0006"
+              "number": "3019750006"
             }
           ],
           "addresses": [
@@ -565,7 +566,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-000-0007"
+              "number": "2020000007"
             }
           ],
           "addresses": [
@@ -581,7 +582,7 @@
             }
           ],
           "member-of-organizations": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -599,7 +600,7 @@
         {
           "role-id": "cloud-service-provider",
           "party-uuids": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ],
           "remarks": "Exactly one"
         },
@@ -613,7 +614,7 @@
         {
           "role-id": "prepared-for",
           "party-uuids": [
-            "6b286b5d-8f07-4fa7-8847-1dd0d88f73fb"
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
           ]
         },
         {
@@ -679,9 +680,9 @@
           "remarks": "Exactly one"
         },
         {
-          "role-id": "fedramp-jab",
+          "role-id": "asset-administrator",
           "party-uuids": [
-            "49017ec3-9f51-4dbd-9253-858c2b1295fd"
+            "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
           ],
           "remarks": "Exactly one"
         }
@@ -740,7 +741,7 @@
       "system-information": {
         "props": [
           {
-            "name": "privacy-sensitive",
+            "name": "privacy-designation",
             "value": "no"
           },
           {
@@ -983,17 +984,17 @@
               }
             ],
             "confidentiality-impact": {
-              "base": "none",
+              "base": "fips-199-moderate",
               "selected": "fips-199-moderate",
               "adjustment-justification": "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance.\nThe Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
             },
             "integrity-impact": {
-              "base": "none",
+              "base": "fips-199-moderate",
               "selected": "fips-199-moderate",
               "adjustment-justification": "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance.\nThe Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
             },
             "availability-impact": {
-              "base": "none",
+              "base": "fips-199-moderate",
               "selected": "fips-199-moderate",
               "adjustment-justification": "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance.\nThe Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
             }
@@ -1228,7 +1229,7 @@
             }
           ],
           "role-ids": [
-            "external"
+            "system-owner"
           ],
           "authorized-privileges": [
             {
@@ -1259,7 +1260,7 @@
             }
           ],
           "role-ids": [
-            "program-director"
+            "system-owner"
           ],
           "authorized-privileges": [
             {
@@ -1566,6 +1567,7 @@
             },
             {
               "name": "login-url",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "https://admin.offering.com/login"
             },
             {
@@ -1591,6 +1593,7 @@
           "props": [
             {
               "name": "used-by",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "What uses this service?"
             }
           ],
@@ -1599,6 +1602,7 @@
           },
           "protocols": [
             {
+              "uuid": "007999c8-e7d0-4929-bd73-5a47e2cfc54a",
               "name": "http",
               "port-ranges": [
                 {
@@ -1609,6 +1613,7 @@
               ]
             },
             {
+              "uuid": "94171251-05a3-4f2a-9140-1d138c60f37f",
               "name": "https",
               "port-ranges": [
                 {
@@ -1644,7 +1649,8 @@
             },
             {
               "name": "direction",
-              "value": "incoming-outgoing"
+              "ns": "https://csrc.nist.gov/ns/blossom",
+              "value": "incoming or outgoing"
             },
             {
               "name": "information",
@@ -1713,10 +1719,12 @@
             },
             {
               "name": "ipv4-subnet",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "10.10.10.0/24"
             },
             {
               "name": "is-scanned",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "yes"
             }
           ],
@@ -1736,10 +1744,12 @@
             },
             {
               "name": "ipv4-subnet",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "10.10.20.0/24"
             },
             {
               "name": "is-scanned",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "yes"
             }
           ],
@@ -1795,6 +1805,7 @@
             },
             {
               "name": "version",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "V 0.0.0"
             },
             {
@@ -1803,14 +1814,15 @@
             },
             {
               "name": "vendor-name",
+              "ns": "https://csrc.nist.gov/ns/blossom",
               "value": "Vendor Name"
             },
             {
-              "name": "model",
+              "name": "hardware-model",
               "value": "Model Number"
             },
             {
-              "name": "patch-level",
+              "name": "software-patch-level",
               "value": "Patch-Level"
             },
             {
@@ -1886,6 +1898,12 @@
           "implemented-components": [
             {
               "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "98e37f90"
+                }
+              ],
               "remarks": "This links to a FIPS 140-2 validated software component that is used by this inventory item. This type of linkage to a validation through the component is preferable to the link[rel='validation'] example above."
             }
           ],
@@ -1932,7 +1950,7 @@
               "value": "netbios-name"
             },
             {
-              "name": "patch-level",
+              "name": "software-patch-level",
               "value": "Patch-Level"
             },
             {
@@ -1971,7 +1989,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd"
+              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "c916d3c5"
+                }
+              ]
             }
           ],
           "remarks": "COMMENTS: If needed, provide additional information about this inventory item."
@@ -1995,7 +2019,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "1541015b-6d19-42cb-a991-624cc082ed4d"
+              "component-uuid": "1541015b-6d19-42cb-a991-624cc082ed4d",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "37c00d5a"
+                }
+              ]
             }
           ]
         },
@@ -2018,7 +2048,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd"
+              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "fb7a84fb"
+                }
+              ]
             }
           ]
         },
@@ -2041,7 +2077,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "8f230d84-2f9b-44a3-acdb-019566ab2554"
+              "component-uuid": "8f230d84-2f9b-44a3-acdb-019566ab2554",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "779d4e89"
+                }
+              ]
             }
           ]
         },
@@ -2065,7 +2107,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd"
+              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "20b207d5"
+                }
+              ]
             }
           ]
         },
@@ -2088,7 +2136,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "1541015b-6d19-42cb-a991-624cc082ed4d"
+              "component-uuid": "1541015b-6d19-42cb-a991-624cc082ed4d",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "79b4f0d1"
+                }
+              ]
             }
           ]
         },
@@ -2112,7 +2166,13 @@
           ],
           "implemented-components": [
             {
-              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd"
+              "component-uuid": "05ceb8df-52e7-49db-9719-891723f366bd",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "b31b360d"
+                }
+              ]
             }
           ]
         }
@@ -2285,10 +2345,16 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "admin-unix"
+              "role-id": "admin-unix",
+              "party-uuids": [
+                "3360e343-9860-4bda-9dfc-ff427c3dfab6"
+              ]
             },
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -2340,11 +2406,14 @@
                   "export": {
                     "responsibilities": [
                       {
-                        "uuid": "11111111-0000-4000-9009-002001001001",
+                        "uuid": "09ad840f-aa79-43aa-9f22-25182c2ab11b",
                         "description": "Leveraged system's statement of a leveraging system's responsibilities in satisfaction of AC-2, part a.\n\nNot associated with inheritance, thus associated this with the by-component for \\\"this system\\\".",
                         "responsible-roles": [
                           {
-                            "role-id": "customer"
+                            "role-id": "prepared-by",
+                            "party-uuids": [
+                              "0cec09d9-20c6-470b-9ffc-85763375880b"
+                            ]
                           }
                         ]
                       }
@@ -2362,7 +2431,10 @@
                         "description": "Consumer-appropriate description of what may be inherited from this application component by a leveraging system.\n\nIn the context of the application component in satisfaction of AC-2, part a.",
                         "responsible-roles": [
                           {
-                            "role-id": "poc-for-customers"
+                            "role-id": "privacy-poc",
+                            "party-uuids": [
+                              "09ad840f-aa79-43aa-9f22-25182c2ab11b"
+                            ]
                           }
                         ]
                       }
@@ -2374,7 +2446,10 @@
                         "description": "Leveraging system's responsibilities with respect to inheriting this capability from this application.\n\nIn the context of the application component in satisfaction of AC-2, part a.",
                         "responsible-roles": [
                           {
-                            "role-id": "customer"
+                            "role-id": "system-owner",
+                            "party-uuids": [
+                              "09ad840f-aa79-43aa-9f22-25182c2ab11b"
+                            ]
                           }
                         ]
                       }
@@ -2428,7 +2503,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -2527,7 +2605,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -2638,7 +2719,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -2737,7 +2821,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -2836,7 +2923,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -2935,7 +3025,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3034,7 +3127,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3133,7 +3229,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3232,7 +3331,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3331,7 +3433,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3436,7 +3541,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3535,7 +3643,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3634,7 +3745,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3733,7 +3847,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3832,7 +3949,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -3931,7 +4051,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "program-director"
+              "role-id": "system-owner",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
             }
           ],
           "statements": [
@@ -4017,7 +4140,8 @@
           "props": [
             {
               "name": "type",
-              "value": "fedramp-citations"
+              "value": "fedramp-citations",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             }
           ],
           "rlinks": [
@@ -4033,7 +4157,8 @@
           "props": [
             {
               "name": "type",
-              "value": "fedramp-acronyms"
+              "value": "fedramp-acronyms",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             }
           ],
           "rlinks": [
@@ -4069,7 +4194,8 @@
             },
             {
               "name": "publication",
-              "value": "Publication Date"
+              "value": "Publication Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             }
           ],
           "document-ids": [
@@ -4094,11 +4220,13 @@
             },
             {
               "name": "type",
-              "value": "personally-identifiable-information"
+              "value": "personally-identifiable-information",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "publication",
-              "value": "Publication Date"
+              "value": "Publication Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             }
           ],
           "document-ids": [
@@ -4123,7 +4251,8 @@
             },
             {
               "name": "publication",
-              "value": "Publication Date"
+              "value": "Publication Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             }
           ],
           "document-ids": [
@@ -4144,7 +4273,8 @@
           "props": [
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4248,7 +4378,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4279,7 +4410,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4308,8 +4440,9 @@
               "value": "procedure"
             },
             {
-              "name": "publication",
-              "value": "Document Date"
+              "name": "published",
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4339,7 +4472,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4365,11 +4499,13 @@
           "props": [
             {
               "name": "type",
-              "value": "guide"
+              "value": "users-guide",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4394,11 +4530,13 @@
           "props": [
             {
               "name": "type",
-              "value": "privacy-impact-assessment"
+              "value": "privacy-impact-assessment",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4429,7 +4567,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4460,7 +4599,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4491,7 +4631,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4522,7 +4663,8 @@
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
@@ -4549,11 +4691,13 @@
           "props": [
             {
               "name": "type",
-              "value": "separation-of-duties"
+              "value": "separation-of-duties",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "publication",
-              "value": "Document Date"
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
             },
             {
               "name": "version",
