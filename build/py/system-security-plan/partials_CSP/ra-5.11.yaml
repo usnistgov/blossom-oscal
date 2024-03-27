@@ -1,0 +1,10 @@
+- uuid: {{ uuid:control }}
+  control-id: ra-5.11
+  statements: 
+    - statement-id: ra-5.11
+      uuid: {{ uuid:statement }}
+      by-components:
+        - component-uuid: {{ uuid:component-uuid }}
+          uuid: {{ uuid:by-component }}
+          description: >-
+            A cloud service provider website is available for the public to reported system vulnerabilities.
