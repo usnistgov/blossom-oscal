@@ -1,10 +1,10 @@
 {
   "system-security-plan": {
-    "uuid": "3b15e16a-8d7f-4f61-9f3a-dfb95682cfaf",
+    "uuid": "8c91b0ac-8eaa-4ac2-a2fb-eeff3b7efa20",
     "metadata": {
       "title": "BloSS@M System Security Plan",
       "published": "2022-04-05T00:00:00.00Z",
-      "last-modified": "2022-04-05T00:00:00.00Z",
+      "last-modified": "2024-03-27T00:00:00.00Z",
       "version": "0.1",
       "oscal-version": "1.0.0",
       "revisions": [
@@ -2400,19 +2400,34 @@
               "uuid": "24a85abb-25ad-4686-850c-5c0e8ab69a0c",
               "by-components": [
                 {
-                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
-                  "uuid": "b29d1505-69fa-4ad0-834b-d179e7f44f98",
+                  "component-uuid": "7a36cf53-156d-4d1f-9a8b-433f61cc57b7",
+                  "uuid": "b29d1505-69fa-4ad0-834b-d179e7f44fff",
                   "description": "Describe how AC-2, part a is statisfied within this sytem.\n\nThis points to the \\\"Ths System\\\" component, and is used any time a more specific component reference is not available.",
                   "export": {
+                    "provided": [
+                      {
+                        "uuid": "832dcc5e-dedb-4007-9b1d-41b7e6f1deff",
+                        "description": "Consumer-appropriate description of what a leveraging system may inherite from THIS SYSTEM in the context of satisfying satisfaction of AC-2, part a.",
+                        "responsible-roles": [
+                          {
+                            "role-id": "system-owner",
+                            "party-uuids": [
+                              "09ad840f-aa79-43aa-9f22-25182c2ab11b"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
                     "responsibilities": [
                       {
-                        "uuid": "09ad840f-aa79-43aa-9f22-25182c2ab11b",
+                        "uuid": "f4b616e3-8e6b-498a-a667-0cda3a7c804d",
+                        "provided-uuid": "832dcc5e-dedb-4007-9b1d-41b7e6f1deff",
                         "description": "Leveraged system's statement of a leveraging system's responsibilities in satisfaction of AC-2, part a.\n\nNot associated with inheritance, thus associated this with the by-component for \\\"this system\\\".",
                         "responsible-roles": [
                           {
-                            "role-id": "prepared-by",
+                            "role-id": "system-owner",
                             "party-uuids": [
-                              "0cec09d9-20c6-470b-9ffc-85763375880b"
+                              "09ad840f-aa79-43aa-9f22-25182c2ab11b"
                             ]
                           }
                         ]
