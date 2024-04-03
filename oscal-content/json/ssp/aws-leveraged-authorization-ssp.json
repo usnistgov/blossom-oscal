@@ -375,7 +375,7 @@
         ],
         "information-types": [
           {
-
+            "uuid": "27e034c9-2164-47c1-ba0b-8eb56c941842",
             "title": "Corrective Action (Policy/Regulation)",
             "description": "",
             "categorizations": [
@@ -387,16 +387,16 @@
               }
             ],
             "confidentiality-impact": {
-              "base": "fips-199-Low",
-              "selected": "fips-199-Low"
+              "base": "fips-199-low",
+              "selected": "fips-199-low"
             },
             "integrity-impact": {
-              "base": "fips-199-Low",
-              "selected": "fips-199-Low"
+              "base": "fips-199-low",
+              "selected": "fips-199-low"
             },
             "availability-impact": {
-              "base": "fips-199-Low",
-              "selected": "fips-199-Low"
+              "base": "fips-199-low",
+              "selected": "fips-199-low"
             }
           }
         ]
@@ -524,7 +524,10 @@
           ],
           "responsible-roles": [
             {
-              "role-id": "authorizing-official"
+              "role-id": "authorizing-official",
+              "party-uuids": [
+                "6c5ee0f8-85d4-45b7-ab7c-a1db4b93913b"
+              ]
             }
           ],
           "statements": [
@@ -541,6 +544,7 @@
                     "responsibilities": [
                       {
                         "uuid": "72b9e21f-67d0-4093-b7b0-116e89b493a9",
+                        "provided-uuid": "9c4a8b31-fe34-4b5f-933d-2a1c448a4ef2",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -567,6 +571,7 @@
                     "responsibilities": [
                       {
                         "uuid": "3082907a-b185-444b-a49b-51b5e0f978c0",
+                        "provided-uuid": "bbeec595-6c96-4102-ac5d-a7675ed6c529",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -653,6 +658,7 @@
                     "responsibilities": [
                       {
                         "uuid": "6130bdd9-2e24-45ee-87ab-2653c5a82de8",
+                        "provided-uuid": "6b0ef9b2-6b7d-4178-b8e8-1f9ffc471045",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -679,6 +685,7 @@
                     "responsibilities": [
                       {
                         "uuid": "ff58eb83-c09b-4756-9062-441cc3b6a6f5",
+                        "provided-uuid": "9af6d025-089c-4b60-aa2a-f2301a1f4ba1",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -705,6 +712,7 @@
                     "responsibilities": [
                       {
                         "uuid": "1e01709d-1b72-4fe5-b9bb-a8ed5f2e3283",
+                        "provided-uuid": "72a3d5fb-6021-4052-8b8d-645f445f1de9",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -731,6 +739,7 @@
                     "responsibilities": [
                       {
                         "uuid": "a72689a0-cd67-4681-b132-9439c158aaf5",
+                        "provided-uuid": "63b1f1a3-ed64-4b3b-91f0-80255ccfdd80",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -757,6 +766,7 @@
                     "responsibilities": [
                       {
                         "uuid": "7a93943c-dcda-4a9f-a2fd-3086424781ba",
+                        "provided-uuid": "6ba7424b-ec07-494c-a937-315be22012df",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -798,6 +808,7 @@
                 "responsibilities": [
                   {
                     "uuid": "6bb1a3ab-82ea-4c20-848c-5f863d89d1fd",
+                    "provided-uuid": "13f36d45-615b-41e2-9760-6731a543e3b5",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -837,6 +848,7 @@
                 "responsibilities": [
                   {
                     "uuid": "a191608b-03d2-433b-88c2-6dcdc474e96c",
+                    "provided-uuid": "c906e5b4-40ce-42e0-af33-6e70e2f93499",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -876,6 +888,7 @@
                 "responsibilities": [
                   {
                     "uuid": "df9c63db-77e9-4de7-8daa-8c752aa818ee",
+                    "provided-uuid": "dfa89026-ff35-47e6-8c3f-cc4b2b623dd6",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -927,6 +940,7 @@
                     "responsibilities": [
                       {
                         "uuid": "77a2412a-2813-4846-9d03-9d6a944d3385",
+                        "provided-uuid": "ebfb1122-fd4b-49d2-acc2-349d54db3c51",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -953,6 +967,7 @@
                     "responsibilities": [
                       {
                         "uuid": "b0bb3e3e-b963-4d2d-935f-910139b5c477",
+                        "provided-uuid": "6e8f46ce-8f4e-40f1-95a8-71430a769709",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -979,6 +994,7 @@
                     "responsibilities": [
                       {
                         "uuid": "0884d08e-ad30-4b51-bf63-ba8996ad94c6",
+                        "provided-uuid": "36d198cc-91e3-4f0b-a633-7cc256d29c42",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1005,6 +1021,7 @@
                     "responsibilities": [
                       {
                         "uuid": "959da6a1-ff58-4ff1-842a-fe7659c04900",
+                        "provided-uuid": "78df87ae-283c-4626-981a-e14291a0c8dd",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1050,6 +1067,7 @@
                     "responsibilities": [
                       {
                         "uuid": "b14601dc-803e-41c5-b617-4411c527bd66",
+                        "provided-uuid": "4d23c4d8-b0cb-4a8a-9d64-aa24da8ab619",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1076,6 +1094,7 @@
                     "responsibilities": [
                       {
                         "uuid": "8cbf8eea-c310-4984-b8da-688c62d926d4",
+                        "provided-uuid": "35ab73e0-937c-48c3-b02f-fc2d10b1a81e",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1102,6 +1121,7 @@
                     "responsibilities": [
                       {
                         "uuid": "8742f8c7-2aa9-4c03-bf11-ffaecec4be7a",
+                        "provided-uuid": "8b875c18-e130-40ef-9f54-479c9593dbb4",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1128,6 +1148,7 @@
                     "responsibilities": [
                       {
                         "uuid": "f27c8900-ef7e-4756-ab19-25608c4eecb5",
+                        "provided-uuid": "3486928c-60a9-4549-a090-1b56af560221",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1154,6 +1175,7 @@
                     "responsibilities": [
                       {
                         "uuid": "d8e145d6-218d-409a-85e6-0122160065f8",
+                        "provided-uuid": "f075f560-32f2-4ec6-bd12-868d3bdd2310",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1195,6 +1217,7 @@
                 "responsibilities": [
                   {
                     "uuid": "b9882eac-a855-4fdb-a62b-8ccb17913fd5",
+                    "provided-uuid": "d07af2dd-4725-4651-89d8-d732eb20fb22",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -1238,6 +1261,7 @@
                     "responsibilities": [
                       {
                         "uuid": "53505f46-bc32-4331-9edf-b0201e98282e",
+                        "provided-uuid": "bbf26c5d-bb82-4d70-b4f2-882afe6d9bf4",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1264,6 +1288,7 @@
                     "responsibilities": [
                       {
                         "uuid": "1bb98f8f-285f-4dba-9707-601af8e548ac",
+                        "provided-uuid": "faa72600-62e7-4440-b241-63ec94afd763",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1305,6 +1330,7 @@
                 "responsibilities": [
                   {
                     "uuid": "25806882-61bc-4e04-b82c-95bf5c3af2cb",
+                    "provided-uuid": "1d56cf05-5ccc-4491-b506-8cebae18963a",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -1348,6 +1374,7 @@
                     "responsibilities": [
                       {
                         "uuid": "f9bb24a5-0a91-41b7-8591-0299f48a7038",
+                        "provided-uuid": "441dadf2-bef9-4e06-8f43-dd03b441acdd",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1374,6 +1401,7 @@
                     "responsibilities": [
                       {
                         "uuid": "239a011d-be0e-40ed-aaf0-cf29cd8cc42e",
+                        "provided-uuid": "627ba3bb-1a54-4cf5-ad56-7155247f5280",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1400,6 +1428,7 @@
                     "responsibilities": [
                       {
                         "uuid": "eb3bcd58-2eae-4008-bab5-f95d7a8cf36a",
+                        "provided-uuid": "245d3044-c5f1-4167-9a6e-2c29388bba5e",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1445,6 +1474,7 @@
                     "responsibilities": [
                       {
                         "uuid": "c682bd3f-a5a9-4867-807e-6e00a80deea3",
+                        "provided-uuid": "f4a058aa-a41c-4c58-9758-6c79f980fd18",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1471,6 +1501,7 @@
                     "responsibilities": [
                       {
                         "uuid": "da8fed8e-1a67-4968-959f-e38f1c27c0f8",
+                        "provided-uuid": "86b5fad1-4e75-43da-b257-9467fff7acfe",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1526,6 +1557,7 @@
                 "responsibilities": [
                   {
                     "uuid": "ceaf5904-bd49-41d2-8df0-87de42717d66",
+                    "provided-uuid": "c81f9919-29f5-455b-a40d-3240093a0be5",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -1589,6 +1621,7 @@
                     "responsibilities": [
                       {
                         "uuid": "1e7d22bb-fe80-4b93-a9fd-8fa98f844aee",
+                        "provided-uuid": "32b76454-93db-4bd1-9222-9604e6c5f7c7",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1615,6 +1648,7 @@
                     "responsibilities": [
                       {
                         "uuid": "41274a29-f691-4a64-9062-1447150cb958",
+                        "provided-uuid": "b7367d62-0528-426b-8f97-f68a9530d619",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications. "
                       }
                     ],
@@ -1670,6 +1704,7 @@
                 "responsibilities": [
                   {
                     "uuid": "4d4dcac4-c4a2-4445-abb5-215b60a3c693",
+                    "provided-uuid": "52572cd0-59ae-4248-8f07-68757ed538ec",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -1727,6 +1762,7 @@
                     "responsibilities": [
                       {
                         "uuid": "1859c46b-2c97-4c36-9348-29b08811496d",
+                        "provided-uuid": "af8ae830-df78-443c-bf0f-dc164f0d90b3",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1753,6 +1789,7 @@
                     "responsibilities": [
                       {
                         "uuid": "204a0a85-109c-45ab-8645-03ceed6b5d9c",
+                        "provided-uuid": "ffc17fe4-0e82-4292-8fd0-493905941d48",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1812,6 +1849,7 @@
                     "responsibilities": [
                       {
                         "uuid": "f3af8990-a90f-481f-b3e8-002b1047b41e",
+                        "provided-uuid": "a02735f9-5446-4ed4-8c26-5ab744ae1b04",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1838,6 +1876,7 @@
                     "responsibilities": [
                       {
                         "uuid": "82a02406-931a-466a-9dc5-f2458d53242b",
+                        "provided-uuid": "70698d4a-e8c2-4b9c-9395-c0582d8b8022",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1897,6 +1936,7 @@
                     "responsibilities": [
                       {
                         "uuid": "461c1243-930e-4dd7-94a6-1c0e70c05bcb",
+                        "provided-uuid": "6056c6b8-60b1-498b-acf4-3d6c6fe8830a",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1923,6 +1963,7 @@
                     "responsibilities": [
                       {
                         "uuid": "9629a944-ddac-4b44-9e71-325c5a08d780",
+                        "provided-uuid": "01fa8cff-5d8e-4e04-af66-9384ee9c3606",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1949,6 +1990,7 @@
                     "responsibilities": [
                       {
                         "uuid": "c2df7e1d-5681-4320-9030-080ca071a98d",
+                        "provided-uuid": "03f61f6e-7c67-4701-a9cd-30563989a670",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -1975,6 +2017,7 @@
                     "responsibilities": [
                       {
                         "uuid": "a5efc7e9-3456-48b9-9fe7-47e8dd528a46",
+                        "provided-uuid": "769edda4-b4ed-4671-978d-85b16bfd564e",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2016,6 +2059,7 @@
                 "responsibilities": [
                   {
                     "uuid": "db990242-a792-479a-8b2a-f26d439140b1",
+                    "provided-uuid": "f7c948c9-b471-4a53-a56a-af75ece5d75e",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2073,6 +2117,7 @@
                     "responsibilities": [
                       {
                         "uuid": "f39dd91a-7e5f-4494-8af1-d9d103bcf43a",
+                        "provided-uuid": "80e0c1ad-0366-4d71-a228-e81f553daf70",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2099,6 +2144,7 @@
                     "responsibilities": [
                       {
                         "uuid": "acce9290-bc69-44b4-9001-c6ba80bc255a",
+                        "provided-uuid": "1b8d9da7-1c8e-4b05-af8c-b4887adcfe2a",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2140,6 +2186,7 @@
                 "responsibilities": [
                   {
                     "uuid": "67cdcee4-237d-4046-9718-a49f4a7199c4",
+                    "provided-uuid": "c803d36a-1e21-4f51-9380-29fdaca0c823",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2187,6 +2234,7 @@
                 "responsibilities": [
                   {
                     "uuid": "bfd0d514-6535-4fe7-8acb-42706f6715fa",
+                    "provided-uuid": "ad041938-5dff-484d-8ecd-3888b3f30781",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2234,6 +2282,7 @@
                 "responsibilities": [
                   {
                     "uuid": "e7d77b94-90da-48c2-90a8-b322178a173f",
+                    "provided-uuid": "373974c4-c109-4b09-81f7-bf16ab35794d",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2299,6 +2348,7 @@
                 "responsibilities": [
                   {
                     "uuid": "58c6e8f9-33f9-4310-a5b6-fb3e21ad1f8f",
+                    "provided-uuid": "c5ca7ce6-d6bd-4b15-bfff-222f9c04b23a",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2338,6 +2388,7 @@
                 "responsibilities": [
                   {
                     "uuid": "f2e62eae-3fd4-487f-9292-b317e57486bc",
+                    "provided-uuid": "01a0d189-d163-42ef-971e-f483eb1a89e3",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2401,6 +2452,7 @@
                     "responsibilities": [
                       {
                         "uuid": "f1668bec-f62a-4aca-b870-1fbcea41815a",
+                        "provided-uuid": "febe4d8a-4107-4e8f-9bca-c9a0c96d7cb0",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2427,6 +2479,7 @@
                     "responsibilities": [
                       {
                         "uuid": "313fe39c-e501-4b5e-9829-4e5a5b79dc33",
+                        "provided-uuid": "920d4c86-6f4a-4b57-a991-3ec6c62a5cfd",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2480,6 +2533,7 @@
                     "responsibilities": [
                       {
                         "uuid": "38ee6c55-2198-4439-8e63-38314b5dbc1e",
+                        "provided-uuid": "5643f75d-672b-465b-869e-c6c80962c9be",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2506,6 +2560,7 @@
                     "responsibilities": [
                       {
                         "uuid": "396f8a25-2c6f-4697-bbf5-f520909f8aed",
+                        "provided-uuid": "3301e8bd-5cdc-4cc6-835e-ac8af07d7f5c",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2532,6 +2587,7 @@
                     "responsibilities": [
                       {
                         "uuid": "f287fd0f-ad16-43b7-bc11-2f0ba3f40174",
+                        "provided-uuid": "cfeb89af-a484-49c4-9988-96237c86944e",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2558,6 +2614,7 @@
                     "responsibilities": [
                       {
                         "uuid": "96f1bf46-e2f9-4d16-ab9a-ddf31030dc4d",
+                        "provided-uuid": "e7024325-6340-4e1f-a4b8-c741d1e36bb4",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2659,6 +2716,7 @@
                     "responsibilities": [
                       {
                         "uuid": "88d492c9-3a4d-4a43-907a-7e3b677cfbad",
+                        "provided-uuid": "542b2329-5497-456f-b117-746e798b9929",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2685,6 +2743,7 @@
                     "responsibilities": [
                       {
                         "uuid": "9b3d7960-e590-45b5-a3f7-cff836cebc6c",
+                        "provided-uuid": "96ff07de-683f-4181-8813-ae4498d66f05",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2711,6 +2770,7 @@
                     "responsibilities": [
                       {
                         "uuid": "90800794-c0fa-495c-8bd0-398dc2d21b36",
+                        "provided-uuid": "f4c09934-895b-40e8-b122-aa08ea9b50ba",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2737,6 +2797,7 @@
                     "responsibilities": [
                       {
                         "uuid": "133b9bb1-2315-4929-98a3-a9dae5f08e65",
+                        "provided-uuid": "81660f14-0393-4219-98ac-9e2c8f7142f6",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2763,6 +2824,7 @@
                     "responsibilities": [
                       {
                         "uuid": "57d98317-6777-4b38-8021-a7cdf9a3f558",
+                        "provided-uuid": "0a453bbe-cb88-45c8-b6ae-5033bc09feff",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2789,6 +2851,7 @@
                     "responsibilities": [
                       {
                         "uuid": "9b38a582-4776-4bdd-96cc-4b901e0c8c13",
+                        "provided-uuid": "e7799c91-b885-4d4e-b198-a7988c76c3ad",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2815,6 +2878,7 @@
                     "responsibilities": [
                       {
                         "uuid": "87f4ae8c-384d-42fe-a5f6-c179367cfd20",
+                        "provided-uuid": "92842d62-9ca0-46f9-a431-abf9e6b4f594",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -2864,6 +2928,7 @@
                 "responsibilities": [
                   {
                     "uuid": "2d927a4b-843b-43a5-ab3f-19cc816b90c4",
+                    "provided-uuid": "c2ac04dc-acb4-418a-84e5-b58730f01dee",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2917,6 +2982,7 @@
                 "responsibilities": [
                   {
                     "uuid": "5b0a8f92-7aa5-41c2-bdce-4f47a7f63cfa",
+                    "provided-uuid": "cd19a3a6-00e2-4a44-9c63-bf795f9c93d1",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -2956,6 +3022,7 @@
                 "responsibilities": [
                   {
                     "uuid": "333200f0-9e02-47f6-b153-e37aa5711433",
+                    "provided-uuid": "259c0c8f-3bb9-4e43-877b-c896a20aee7d",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3013,6 +3080,7 @@
                     "responsibilities": [
                       {
                         "uuid": "50b8d1d8-6ff2-4a2b-9dd9-513ccdb4d79c",
+                        "provided-uuid": "f5320fa1-6ce9-4ef6-a6a8-422f619a41f9",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3039,6 +3107,7 @@
                     "responsibilities": [
                       {
                         "uuid": "08f38052-95c7-430f-9950-f4b22fdb966f",
+                        "provided-uuid": "b62d1197-e6c0-4b42-8f77-02b311b8faab",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3065,6 +3134,7 @@
                     "responsibilities": [
                       {
                         "uuid": "8a322448-bae3-470e-aadf-cc6c5e7e3251",
+                        "provided-uuid": "25356503-3b18-4a0e-b97a-cf243e4e174c",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3106,6 +3176,7 @@
                 "responsibilities": [
                   {
                     "uuid": "8e60ecbf-d2dc-4365-84d8-fcc4f4d397b9",
+                    "provided-uuid": "e9a252ad-ff10-43ca-a790-024d5c8771ae",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3153,6 +3224,7 @@
                 "responsibilities": [
                   {
                     "uuid": "dd4b5c0d-496d-4e98-b54b-4ca44cccd419",
+                    "provided-uuid": "59b5f4ea-33eb-4000-a636-aaa4004e29b0",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3210,6 +3282,7 @@
                     "responsibilities": [
                       {
                         "uuid": "e5f44493-351f-4ddb-bc78-e665b5b9a507",
+                        "provided-uuid": "9301b521-7676-45eb-9d3c-a7466b652b84",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3236,6 +3309,7 @@
                     "responsibilities": [
                       {
                         "uuid": "800fed0d-0246-4e6a-8274-9f84c1b5fe48",
+                        "provided-uuid": "dc217439-df1e-4d91-ae4c-10b790b961e4",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3277,6 +3351,7 @@
                 "responsibilities": [
                   {
                     "uuid": "4053b632-ef74-453f-89b7-4a9f80b46884",
+                    "provided-uuid": "2079e0b4-5fb6-403b-a69a-1f39fd96c0b7",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3316,6 +3391,7 @@
                 "responsibilities": [
                   {
                     "uuid": "95e653b7-4a12-43e2-9de2-6aaf09c7956a",
+                    "provided-uuid": "20679a94-74fe-4055-b7d8-3a2014dcc049",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3367,6 +3443,7 @@
                     "responsibilities": [
                       {
                         "uuid": "ca2e49eb-aaaf-4e6b-82bf-35ebde8479f0",
+                        "provided-uuid": "f556c40b-a2d8-4f2a-bdaa-5a37073548fe",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3393,6 +3470,7 @@
                     "responsibilities": [
                       {
                         "uuid": "62b21ddb-345b-469f-af68-70b4c5c0658f",
+                        "provided-uuid": "291bebf7-594a-401d-a2c0-d24d2aac6bf2",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3419,6 +3497,7 @@
                     "responsibilities": [
                       {
                         "uuid": "245083ff-add7-4f9c-a2ac-b25ba655c94a",
+                        "provided-uuid": "b37cec5a-2b40-477f-976d-f0e264dd2b8e",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3468,6 +3547,7 @@
                 "responsibilities": [
                   {
                     "uuid": "3ad48f72-a4d5-4c08-9ec5-d9603c7f3d70",
+                    "provided-uuid": "01f1d712-a58c-40b5-aa5b-ea123f03d7dc",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3507,6 +3587,7 @@
                 "responsibilities": [
                   {
                     "uuid": "7611e3ed-226d-4978-902c-69c3d3863ee9",
+                    "provided-uuid": "d6d16f6d-5ac5-4c94-8066-d9bc1c67eb82",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3546,6 +3627,7 @@
                 "responsibilities": [
                   {
                     "uuid": "40a6f9b0-4664-4ddf-a441-4b1a7024a1b7",
+                    "provided-uuid": "956fb932-4841-402b-9b3d-3393ad295dfd",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3585,6 +3667,7 @@
                 "responsibilities": [
                   {
                     "uuid": "03f41172-b266-4509-ae0a-1f4ab55bb628",
+                    "provided-uuid": "178d5628-b2fc-40ee-ad44-ba6b95888b99",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3638,6 +3721,7 @@
                 "responsibilities": [
                   {
                     "uuid": "9e907f75-72ea-4fff-ae79-27b1aa286d0c",
+                    "provided-uuid": "9f2515b3-e250-4449-9779-28bcd6faf77d",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3691,6 +3775,7 @@
                 "responsibilities": [
                   {
                     "uuid": "f812ebc1-a080-40e2-9d57-ba80dad19263",
+                    "provided-uuid": "e28bff74-96a4-454d-98d7-c59e122d63fb",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3730,6 +3815,7 @@
                 "responsibilities": [
                   {
                     "uuid": "5307534e-9da0-41b4-b9f1-b86ac4bfaa45",
+                    "provided-uuid": "d7caf3b3-f81b-42ef-9afc-926cee762d34",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3787,6 +3873,7 @@
                     "responsibilities": [
                       {
                         "uuid": "4d1ee262-d8f5-4d27-b554-f1b6dd698749",
+                        "provided-uuid": "24d459a8-dd81-4881-ae25-6f69a155a174",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3813,6 +3900,7 @@
                     "responsibilities": [
                       {
                         "uuid": "aea8560b-08bd-42c6-9922-d5b33465e4e8",
+                        "provided-uuid": "9ff9038d-e1f7-4d3f-a5b0-ff301848eeaf",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -3854,6 +3942,7 @@
                 "responsibilities": [
                   {
                     "uuid": "1de18121-26cf-4d47-b8f0-3029290eface",
+                    "provided-uuid": "a1ef191c-a130-4145-82ca-fa1895af11dd",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3893,6 +3982,7 @@
                 "responsibilities": [
                   {
                     "uuid": "d105d093-6d89-4509-90f1-7fa48d316d8b",
+                    "provided-uuid": "ac93fa47-dd7d-445a-a407-cb93947580ca",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3940,6 +4030,7 @@
                 "responsibilities": [
                   {
                     "uuid": "c37ba4aa-35ce-435b-a8ce-3b79be6baafd",
+                    "provided-uuid": "7b581e32-56d2-4243-9057-8d57c7ec842e",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -3987,6 +4078,7 @@
                 "responsibilities": [
                   {
                     "uuid": "580c7058-505a-4063-a67d-17c3c2c4bc7f",
+                    "provided-uuid": "4bb45439-3b70-4a5c-adcd-e4becd0b14c9",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],
@@ -4038,6 +4130,7 @@
                     "responsibilities": [
                       {
                         "uuid": "787313ee-87dd-48ae-8b04-168b467dfe83",
+                        "provided-uuid": "311bf6f3-8920-44bf-a216-3aad35b27614",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -4064,6 +4157,7 @@
                     "responsibilities": [
                       {
                         "uuid": "5e9dbf96-5dd9-454f-9e34-58e558fb8cc7",
+                        "provided-uuid": "7fd2e269-a354-440d-bc52-6a158fb2dbd4",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -4090,6 +4184,7 @@
                     "responsibilities": [
                       {
                         "uuid": "9364e97f-849a-4e2f-8c79-e2c2181c2c31",
+                        "provided-uuid": "81f4d2b6-91de-48eb-a0ad-8afe37eccd2d",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
@@ -4139,6 +4234,7 @@
                 "responsibilities": [
                   {
                     "uuid": "048d7c15-c85d-4881-9a07-2f5831c6c509",
+                    "provided-uuid": "78a2ecba-1b3b-4aac-ad0b-f0ce572aea46",
                     "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                   }
                 ],

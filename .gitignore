@@ -8,3 +8,4 @@ draft-*
 .venv*
 .pyenv*
 .env*
+oscal-cli.txt
