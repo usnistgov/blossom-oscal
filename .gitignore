@@ -1,5 +1,10 @@
 .DS_Store
+.vscode/*
 *.pyc
 __pycache__/
 draft-*
 *.output.*
+# Ignore virtual environments
+.venv*
+.pyenv*
+.env*
