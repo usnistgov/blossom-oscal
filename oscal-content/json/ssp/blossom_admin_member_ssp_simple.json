@@ -1,0 +1,1104 @@
+{
+  "system-security-plan": {
+    "uuid": "8c91b0ac-8eaa-4ac2-a2fb-eeff3b7efa20",
+    "metadata": {
+      "title": "BloSS@M System Security Plan",
+      "published": "2022-04-05T00:00:00.00Z",
+      "last-modified": "2024-03-27T00:00:00.00Z",
+      "version": "0.1",
+      "oscal-version": "1.0.0",
+      "roles": [
+        {
+          "id": "system-owner",
+          "title": "Information System Owner",
+          "description": "The individual within the organization who is ultimately accountable for everything related to this system."
+        },
+        {
+          "id": "authorizing-official",
+          "title": "Authorizing Official",
+          "description": "The individual or individuals who must grant this system an authorization to operate."
+        },
+        {
+          "id": "information-system-security-officer",
+          "title": "System Information System Security Officer (or Equivalent)",
+          "description": "The individual accountable for the security posture of the system on behalf of the system owner."
+        },
+        {
+          "id": "asset-administrator",
+          "title": "System Information System Security Officer (or Equivalent)",
+          "description": "The individual accountable for the security posture of the system on behalf of the system owner."
+        }
+      ],
+      "locations": [
+        {
+          "uuid": "1ef39fd9-d184-44c4-8ef4-36d2dbad70a2",
+          "title": "National Institute of Standards and Technology",
+          "address": {
+            "type": "work",
+            "addr-lines": [
+              "100 Bureau Drive"
+            ],
+            "city": "Gaithersburg",
+            "state": "MD",
+            "postal-code": "20899"
+          },
+          "remarks": "NIST ITL Computer Security Division's Secure Systems and Applications Group is the primary CSP for this project."
+        },
+        {
+          "uuid": "cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e",
+          "title": "AWS US East/West",
+          "address": {
+            "addr-lines": [
+              "13200 Woodland Park Rd"
+            ],
+            "city": "Herndon",
+            "state": "VA",
+            "postal-code": "20171"
+          },
+          "props": [
+            {
+              "name": "type",
+              "value": "data-center",
+              "class": "primary"
+            }
+          ],
+          "remarks": "This title must be kept as-is to match FedRAMP Marketplace listing. This is a a FedRAMP requirement. This official mailing address of Amazon's AWS commercial offering for the us-east-1 is provided, as Amazon not disclose the address of data-centers either on a region or availability zone basis."
+        }
+      ],
+      "parties": [
+        {
+          "uuid": "8aed7ffd-5158-445d-8d7c-eec5cf240cba",
+          "type": "organization",
+          "name": "National Institute of Standards and Technology IT Lab Computer Security Division Secure Systems and Applications Group",
+          "short-name": "NIST",
+          "links": [
+            {
+              "href": "#006babc9-4f57-4ab0-9941-15fcb65e0387",
+              "rel": "logo"
+            }
+          ],
+          "location-uuids": [
+            "1ef39fd9-d184-44c4-8ef4-36d2dbad70a2"
+          ],
+          "remarks": "Blossom network provider."
+        },
+        {
+          "uuid": "09ad840f-aa79-43aa-9f22-25182c2ab11b",
+          "type": "person",
+          "name": "Stan Owens",
+          "props": [
+            {
+              "name": "job-title",
+              "value": "System Owner"
+            }
+          ],
+          "email-addresses": [
+            "blossom@nist.gov"
+          ],
+          "member-of-organizations": [
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
+          ]
+        },
+        {
+          "uuid": "3360e343-9860-4bda-9dfc-ff427c3dfab6",
+          "type": "person",
+          "name": "Aurelian Officman",
+          "props": [
+            {
+              "name": "job-title",
+              "value": "Authorizing Official"
+            }
+          ],
+          "email-addresses": [
+            "blossom@nist.gov"
+          ],
+          "location-uuids": [
+            "1ef39fd9-d184-44c4-8ef4-36d2dbad70a2"
+          ],
+          "member-of-organizations": [
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
+          ]
+        },
+        {
+          "uuid": "132953a9-640c-46f7-9de9-3fa15ec99361",
+          "type": "person",
+          "name": "Infosso Persona",
+          "props": [
+            {
+              "name": "job-title",
+              "value": "Information System Security Officer"
+            }
+          ],
+          "email-addresses": [
+            "blossom@nist.gov"
+          ],
+          "location-uuids": [
+            "1ef39fd9-d184-44c4-8ef4-36d2dbad70a2"
+          ],
+          "member-of-organizations": [
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
+          ]
+        },
+        {
+          "uuid": "4fded5fd-7a65-47ea-bd76-df57c46e27d1",
+          "type": "person",
+          "name": "Admino Bloom",
+          "props": [
+            {
+              "name": "job-title",
+              "value": "Blossom Administrator"
+            }
+          ],
+          "email-addresses": [
+            "blossom@nist.gov"
+          ],
+          "location-uuids": [
+            "1ef39fd9-d184-44c4-8ef4-36d2dbad70a2"
+          ],
+          "member-of-organizations": [
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
+          ]
+        },
+        {
+          "uuid": "551b9706-d6a4-4d25-8207-f2ccec541016",
+          "type": "person",
+          "name": "Proga Managiaro",
+          "props": [
+            {
+              "name": "job-title",
+              "value": "Blossom PM"
+            }
+          ],
+          "email-addresses": [
+            "blossom@nist.gov"
+          ],
+          "member-of-organizations": [
+            "8aed7ffd-5158-445d-8d7c-eec5cf240cba"
+          ]
+        }
+      ],
+      "responsible-parties": [
+        {
+          "role-id": "system-owner",
+          "party-uuids": [
+            "09ad840f-aa79-43aa-9f22-25182c2ab11b",
+            "551b9706-d6a4-4d25-8207-f2ccec541016"
+          ]
+        },
+        {
+          "role-id": "authorizing-official",
+          "party-uuids": [
+            "3360e343-9860-4bda-9dfc-ff427c3dfab6",
+            "551b9706-d6a4-4d25-8207-f2ccec541016" 
+          ]
+        },
+        {
+          "role-id": "information-system-security-officer",
+          "party-uuids": [
+            "132953a9-640c-46f7-9de9-3fa15ec99361"
+          ],
+          "remarks": "Exactly one"
+        },
+        {
+          "role-id": "asset-administrator",
+          "party-uuids": [
+            "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+          ],
+          "remarks": "Exactly one"
+        }
+      ],
+      "remarks": "This SSP was created using a simplified version of OSCAL-based FedRAMP SSP Template for the FedRAMP Low, Moderate, and High baselines."
+    },
+    "import-profile": {
+      "href": "../../xml/profile/blossom_moderate_profile.xml",
+      "remarks": "This example points to the tailored FedRAMP Moderate 800-53 rev 5 baseline, adjusted accordingly for BloSS@M."
+    },
+    "system-characteristics": {
+      "system-ids": [
+        {
+          "identifier-type": "http://ietf.org/rfc/rfc4122",
+          "id": "8101e04d-8305-4e73-bb95-6b59f645b143"
+        }
+      ],
+      "system-name": "Blockchain-based Secure Software Assets Management",
+      "system-name-short": "Blossom",
+      "description": "TBD: Describe the purpose and functions of this system here.",
+      "props": [
+        {
+          "name": "identity-assurance-level",
+          "value": "2"
+        },
+        {
+          "name": "authenticator-assurance-level",
+          "value": "2"
+        },
+        {
+          "name": "federation-assurance-level",
+          "value": "2"
+        },
+        {
+          "name": "cloud-service-model",
+          "value": "saas"
+        },
+        {
+          "name": "cloud-deployment-model",
+          "ns": "https://fedramp.gov/ns/oscal",
+          "value": "public-cloud"
+        }
+      ],
+      "security-sensitivity-level": "fips-199-moderate",
+      "system-information": {
+        "props": [
+          {
+            "name": "privacy-designation",
+            "value": "no"
+          },
+          {
+            "name": "pta-1",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "no",
+            "class": "pta"
+          },
+          {
+            "name": "pta-2",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "no",
+            "class": "pta"
+          },
+          {
+            "name": "pta-3",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "no",
+            "class": "pta"
+          },
+          {
+            "name": "pta-4",
+            "ns": "https://fedramp.gov/ns/oscal",
+            "value": "no",
+            "class": "pta"
+          }
+        ],
+        "information-types": [
+          {
+            "uuid": "1c21b0ef-29af-4b81-9a38-dacd1e6967b1",
+            "title": "Blockchain-based Software Assets Management",
+            "description":"BloSS@M stores the minimally required identity and authorization metadata to authenitcate and authorize federal users of the system.",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.2.8.12"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-low",
+              "selected": "fips-199-moderate"
+            },
+            "integrity-impact": {
+              "base": "fips-199-low",
+              "selected": "fips-199-moderate",
+              "adjustment-justification": "The NIST Privacy Office and Office of Information Systems Management categorizes personal identity and authentication information with as FIPS-199 Low impact for integrity concerns.\nThis categorization is limited to federal employees when this data is for identification of these federal employees only."
+            },
+            "availability-impact": {
+              "base": "fips-199-low",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "0c9f7c06-bc4e-4006-b5a5-f150cf7ce1ac",
+            "title": "Inventory control information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.4.2"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "c7c42a0c-8fa6-49fb-b98f-8804609504a5",
+            "title": "Logistics management information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.4.3"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "f18905ed-6971-4a31-b29a-38d78c398d1f",
+            "title": "Services acquisition information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.4.4"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "4be97836-b11a-487d-8c27-174e3352d8d6",
+            "title": "Lifecycle and change management information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.5.2"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "fa4794ee-5d10-45e8-a8ab-154d4199cbd3",
+            "title": "Information security information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.5.5"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "514e0850-16ce-4a86-b589-ca546c4c645c",
+            "title": "Record retention information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.5.6"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "70b28c11-31c8-429b-855f-cc323fef59ea",
+            "title": "Information management information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.5.7"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "5820d24a-487a-4748-8bd2-ea4318337816",
+            "title": "Information sharing information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "C.3.5.9"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate",
+              "adjustment-justification": "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance.\nThe Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate",
+              "adjustment-justification": "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance.\nThe Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate",
+              "adjustment-justification": "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance.\nThe Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
+            }
+          },
+          {
+            "uuid": "abaf261d-3860-47aa-bd7a-58e5776bae44",
+            "title": "Scientific and technological research and innovation information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "D.19.1"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          },
+          {
+            "uuid": "88f10ac5-f2c8-43e3-af9e-d692360c61da",
+            "title": "Research and development information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "D.20.1"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-moderate"
+            }
+          },
+          {
+            "uuid": "53347cf4-8b06-4acc-a2fa-88177d7c937c",
+            "title": "Research and development information",
+            "description":"TBD",
+            "categorizations": [
+              {
+                "system": "https://doi.org/10.6028/NIST.SP.800-60v2r1",
+                "information-type-ids": [
+                  "D.20.4"
+                ]
+              }
+            ],
+            "confidentiality-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate",
+              "selected": "fips-199-low"
+            }
+          }
+        ]
+      },
+      "security-impact-level": {
+        "security-objective-confidentiality": "fips-199-moderate",
+        "security-objective-integrity": "fips-199-moderate",
+        "security-objective-availability": "fips-199-low"
+      },
+      "status": {
+        "state": "under-development"
+      },
+      "authorization-boundary": {
+        "description": "TBD: A holistic, top-level explanation of the system's authorization boundary.",
+        "diagrams": [
+          {
+            "uuid": "dbf46c27-52a9-49c4-beb6-b6399cd75497",
+            "description": "A diagram-specific explanation.",
+            "links": [
+              {
+                "href": "#d2eb3c18-6754-4e3a-a933-03d289e3fad5",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Authorization Boundary Diagram"
+          }
+        ]
+      },
+      "network-architecture": {
+        "description": "A holistic, top-level explanation of the network architecture.",
+        "diagrams": [
+          {
+            "uuid": "e97c3395-433a-48c1-8cc7-dd1e1555941c",
+            "description": "A diagram-specific explanation.",
+            "links": [
+              {
+                "href": "#61081e81-850b-43c1-bf43-1ecbddcb9e7f",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Network Diagram"
+          }
+        ]
+      },
+      "data-flow": {
+        "description": "A holistic, top-level explanation of the system's data flows.",
+        "diagrams": [
+          {
+            "uuid": "e3b98448-4219-46a5-b229-412423c566f3",
+            "description": "A diagram-specific explanation.",
+            "links": [
+              {
+                "href": "#ac5d7535-f3b8-45d3-bf3b-735c82c64547",
+                "rel": "diagram"
+              }
+            ],
+            "caption": "Data Flow Diagram"
+          }
+        ]
+      }
+    },
+    "system-implementation": {
+      "leveraged-authorizations": [
+        {
+          "uuid": "5a9c98ab-8e5e-433d-a7bd-515c07cd1497",
+          "title": "AWS Managed Blockchain",
+          "links": [
+            {
+              "href": "./aws_leveraged_authorization_ssp.json"
+            }
+          ],
+          "party-uuid": "77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d",
+          "date-authorized": "2024-01-01",
+          "remarks": "TBD: ssp-uuid: 73a7ca56-ac02-43b9-8664-62bcb05a7e91 will need to be added for oscal 1.2.0.\n\nThe leveraged authorization assembly is supposed to have a required uuid flag instead of an optional id flag. This will be fixed in the syntax shortly.\n\nUse one leveraged-authorization assembly for each underlying system. (In the legacy world, these may be general support systems.\n\nThe link fields are optional, but preferred where known. Often, a leveraging system's SSP author will not have access to the leveraged system's SSP, but should have access to the leveraged system's CRM."
+        }
+      ],
+      "users": [
+        {
+          "uuid": "9cb0fab0-78bd-44ba-bcb8-3e9801cc952f",
+          "title": "Administrator",
+          "props": [
+            {
+              "name": "sensitivity",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "high"
+            },
+            {
+              "name": "privilege-level",
+              "value": "privileged"
+            },
+            {
+              "name": "type",
+              "value": "internal"
+            }
+          ],
+          "role-ids": [
+            "asset-administrator"
+          ],
+          "authorized-privileges": [
+            {
+              "title": "Full administrative access rights",
+              "functions-performed": [
+                "add and remove users and hardware",
+                "install and configure deployments",
+                "system updates, patches and hotfixes",
+                "perform backups"
+              ]
+            }
+          ]
+        }
+      ],
+      "components": [
+        {
+          "uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+          "type": "this-system",
+          "title": "This System",
+          "description": "The entire Blossom system as depicted in the system authorization boundary",
+          "status": {
+            "state": "under-development"
+          }
+        },
+        {
+          "uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65",
+          "type": "leveraged-system",
+          "title": "AWS Managed Blockchain",
+          "description": "TBD: If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.",
+          "props": [
+            {
+              "name": "leveraged-authorization-uuid",
+              "value": "5a9c98ab-8e5e-433d-a7bd-515c07cd1497"
+            },
+            {
+              "name": "implementation-point",
+              "value": "external"
+            },
+            {
+              "name": "inherited-uuid",
+              "value": "73a7ca56-ac02-43b9-8664-62bcb05a7e91"
+            }
+          ],
+          "status": {
+            "state": "operational"
+          }
+        }
+      ],
+      "inventory-items": [
+        {
+          "uuid": "79b4f0d1-91ab-49e8-af28-045c12aa9272",
+          "description": "TBD: Description of Blossom inventory items 1",
+          "props": [
+            {
+              "name": "software-name",
+              "value": "Blossom SaaS",
+              "class": "blockchain-application"
+            },
+            {
+              "name": "software-version",
+              "value": "1.0.0",
+              "class": "blockchain-application"
+            },
+            {
+              "name": "asset-id",
+              "value": "BLOSSOM-SAAS-2222-01"
+            },
+            {
+              "name": "is-scanned",
+              "value": "yes"
+            }
+          ],
+          "implemented-components": [
+            {
+              "component-uuid": "1541015b-6d19-42cb-a991-624cc082ed4d",
+              "props": [
+                {
+                  "name": "asset-id",
+                  "value": "BLOSSOM-SAAS-2222"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "FedRAMP SSP Template Section 13\n\nThis description field is required by OSCAL.\n\nFedRAMP does not require any specific information here.",
+      "implemented-requirements": [
+        {
+          "uuid": "eee8697a-bc39-45aa-accc-d3e534932efb",
+          "control-id": "ac-1",
+          "props": [
+            {
+              "name": "planned-completion-date",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "2020-11-27Z"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "planned",
+              "remarks": "Describe the plan to complete the implementation."
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "sp-system"
+            }
+          ],
+          "statements": [
+            {
+              "statement-id": "ac-1_smt",
+              "uuid": "240fa015-01df-4741-bff5-6958c7fb85e5",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+                  "uuid": "d9d1ce66-ff47-474d-8596-5fdf2af60179",
+                  "description": "Describe how the control is satisfied within the system.",
+                  "set-parameters": [
+                    {
+                      "param-id": "ac-1_prm_1",
+                      "values": [
+                        "[replace with list of personnel or roles]"
+                      ]
+                    },
+                    {
+                      "param-id": "ac-1_prm_2",
+                      "values": [
+                        "[specify frequency]"
+                      ]
+                    },
+                    {
+                      "param-id": "ac-1_prm_3",
+                      "values": [
+                        "[specify frequency]"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "statement-id": "ac-1_smt.a.1",
+              "uuid": "fb4d039a-dc4f-46f5-9c1f-f6343eaf69bc",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+                  "uuid": "3f5612a4-cd1d-4c47-8cae-75d2eaa332cd",
+                  "description": "Describe how Part a is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the policy satisfies part a.\n\nIn this case, a link must be provided to the policy.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource.",
+                  "links": [
+                    {
+                      "href": "#090ab379-2089-4830-b9fd-26d0729e22e9",
+                      "rel": "policy"
+                    }
+                  ]
+                },
+                {
+                  "component-uuid": "F25E84BF-3E57-48C3-AC0B-7A567B3AF79E",
+                  "uuid": "2CF56836-6834-49A9-96CD-4F49C17AAB01",
+                  "description": "Describe how this policy component satisfies part a.\n\nComponent approach. This links to a component representing the Identity Management and Access Control Policy.\n\nThat component contains a link to the policy, so it does not have to be linked here too."
+                }
+              ],
+              "remarks": "The specified component is the system itself.\n\nAny control implementation response that can not be associated with another component is associated with the component representing the system."
+            },
+            {
+              "statement-id": "ac-1_smt.a.2",
+              "uuid": "c365cf95-5bc0-4599-9773-f4eddf69798d",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+                  "uuid": "00507a44-e0d7-4fe6-ad20-8d474a84ee15",
+                  "description": "Describe how Part b is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the procedure satisfies part b.\n\nIn this case, a link must be provided to the procedure.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource.",
+                  "links": [
+                    {
+                      "href": "#1002a58e-9e11-4aa6-9ab4-2bde52995952",
+                      "rel": "procedure"
+                    }
+                  ]
+                },
+                {
+                  "component-uuid": "fa90644a-8bf8-47da-b0d3-82bffc708afc",
+                  "uuid": "42ac379e-4abc-4716-809c-119c03b5ac64",
+                  "description": "Describe how Part b is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the procedure satisfies part b.\n\nIn this case, a link must be provided to the procedure.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource."
+                }
+              ],
+              "remarks": "The specified component is the system itself.\n\nAny control implementation response that can not be associated with another component is associated with the component representing the system."
+            },
+            {
+              "statement-id": "ac-1_smt.b.1",
+              "uuid": "b46f97ec-55c1-4249-a9b9-3a228f1e3791",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+                  "uuid": "767666cb-e558-484b-81ca-b0209932425c",
+                  "description": "Describe how Part b-1 is satisfied."
+                }
+              ]
+            },
+            {
+              "statement-id": "ac-1_smt.b.2",
+              "uuid": "59c67969-3d5c-45f1-8e3e-1e642249633f",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+                  "uuid": "5a869308-1625-4d92-9ed8-ff5d8bd13656",
+                  "description": "Describe how Part b-2 is satisfied."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "7a36cf53-156d-4d1f-9a8b-433f61cc57b7",
+          "control-id": "ac-2",
+          "props": [
+            {
+              "name": "planned-completion-date",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "Completion Date"
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "planned",
+              "remarks": "Describe the plan to complete the implementation."
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "partial",
+              "remarks": "Describe the portion of the control that is not satisfied."
+            },
+            {
+              "name": "implementation-status",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "not-applicable",
+              "remarks": "Describe the justification for marking this control Not Applicable."
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "sp-system"
+            },
+            {
+              "name": "control-origination",
+              "ns": "https://fedramp.gov/ns/oscal",
+              "value": "customer-configured",
+              "remarks": "Describe any customer-configured requirements for satisfying this control."
+            }
+          ],
+          "responsible-roles": [
+            {
+              "role-id": "asset-administrator",
+              "party-uuids": [
+                "4fded5fd-7a65-47ea-bd76-df57c46e27d1"
+              ]
+            },
+            {
+              "role-id": "system-owner",
+              "party-uuids": [
+                "09ad840f-aa79-43aa-9f22-25182c2ab11b"
+              ]
+            }
+          ],
+          "statements": [
+            {
+              "statement-id": "ac-2_smt",
+              "uuid": "4a2428eb-41eb-447a-81db-4f6d98a003ce",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d41751010",
+                  "uuid": "eb710146-1ede-4876-9a3b-02c18408e506",
+                  "description": "Describe how the control is satisfied within the system.",
+                  "set-parameters": [
+                    {
+                      "param-id": "ac-2_prm_1",
+                      "values": [
+                        "[SAMPLE]privileged, non-privileged"
+                      ]
+                    },
+                    {
+                      "param-id": "ac-2_prm_2",
+                      "values": [
+                        "[SAMPLE]all"
+                      ]
+                    },
+                    {
+                      "param-id": "ac-2_prm_3",
+                      "values": [
+                        "[SAMPLE]The Access Control Procedure"
+                      ]
+                    },
+                    {
+                      "param-id": "ac-2_prm_4",
+                      "values": [
+                        "[SAMPLE]annually"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "statement-id": "ac-2_smt.a",
+              "uuid": "24a85abb-25ad-4686-850c-5c0e8ab69a0c",
+              "by-components": [
+                {
+                  "component-uuid": "7a36cf53-156d-4d1f-9a8b-433f61cc57b7",
+                  "uuid": "b29d1505-69fa-4ad0-834b-d179e7f44fff",
+                  "description": "Describe how AC-2, part a is satisfied within This system.\n\nThis points to the \\\"Ths System\\\" component, and is used any time a more specific component reference is not available.",
+                  "implementation-status": {
+                    "state": "under-development"
+                  }
+                },
+                {
+                  "component-uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65", 
+                  "uuid": "84de735f-ba37-4bb4-b784-79760f986a40",
+                  "description": "For the portion inherited from an underlying AWS IaaS provider, describe **what** is inherited.",
+                  "inherited": [
+                    {
+                      "uuid": "780A3910-2019-4D33-A2F9-5C6AC91929D6",
+                      "provided-uuid": "11111111-0000-4000-9009-002001002001",
+                      "description": "TBD: provided-uuid needs to match the one in AWS SSP. \n\nOptional description.\n\nConsumer-appropriate description of what may be inherited as provided by the leveraged system.\n\nIn the context of this component in satisfaction of AC-2, part a.\n\nThe `provided-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritence and Responsibility Model)."
+                    }
+                  ],
+                  "satisfied": [
+                    {
+                      "uuid": "6486F725-1372-434F-9B1B-7CF3F50C32D1",
+                      "responsibility-uuid": "11111111-0000-4000-9009-002001002002",
+                      "description": "TBD: responsibility-uuid needs to match the one in AWS SSP. \n\nDescription of how the responsibility was satisfied.\n\nThe `responsibility-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritence and Responsibility Model).\n\nTools should use this to ensure all identified customer `responsiblity` statements have a corrisponding `satisfied` statement in the leveraging system's SSP.\n\nTool developers should be mindful that "
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "006babc9-4f57-4ab0-9941-15fcb65e0387",
+          "description": "National Institute of Standards and Technology's Logo",
+          "rlinks": [
+            {
+              "href": "https://www.nist.gov/sites/default/files/images/2017/09/20/645px-nist_logo-svg_1.png",
+              "media-type": "image/png"
+            }
+          ],
+          "base64": {
+            "filename": "logo.png",
+            "media-type": "image/png",
+            "value": "00000000"
+          },
+          "remarks": "May use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
+        },
+        {
+          "uuid": "d2eb3c18-6754-4e3a-a933-03d289e3fad5",
+          "description": "The primary authorization boundary diagram.",
+          "rlinks": [
+            {
+              "href": "./diagrams/boundary.png"
+            }
+          ],
+          "base64": {
+            "filename": "logo.png",
+            "media-type": "image/png",
+            "value": "00000000"
+          },
+          "remarks": "Section 9.2, Figure 9-1 Authorization Boundary Diagram (graphic)\n\nThis should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of \\\"#d2eb3c18-6754-4e3a-a933-03d289e3fad5\\\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
+        },
+        {
+          "uuid": "61081e81-850b-43c1-bf43-1ecbddcb9e7f",
+          "description": "The primary network diagram.",
+          "rlinks": [
+            {
+              "href": "./diagrams/network.png"
+            }
+          ],
+          "base64": {
+            "filename": "network.png",
+            "media-type": "image/png",
+            "value": "00000000"
+          },
+          "remarks": "Section 9.4, Figure 9-2 Network Diagram (graphic)\n\nThis should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of \\\"#61081e81-850b-43c1-bf43-1ecbddcb9e7f\\\"\n\nMay use `rlink` with a relative path, or embedded as `base64`.\n\nFedRAMP prefers `base64` for images and diagrams.\n\nImages must be in sufficient resolution to read all detail when rendered in a browser via HTML5."
+        },
+        {
+          "uuid": "fab59751-b855-40cb-93c1-492562e20e18",
+          "title": "Privacy Impact Assessment",
+          "props": [
+            {
+              "name": "type",
+              "value": "privacy-impact-assessment",
+              "ns": "https://csrc.nist.gov/ns/blossom"
+            },
+            {
+              "name": "publication",
+              "value": "Document Date",
+              "ns": "https://csrc.nist.gov/ns/blossom"
+            },
+            {
+              "name": "version",
+              "value": "Document Version"
+            }
+          ],
+          "rlinks": [
+            {
+              "href": "./documents/pia.docx",
+              "media-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+          ],
+          "base64": {
+            "filename": "pia.docx",
+            "media-type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "value": "00000000"
+          },
+          "remarks": "Table 15-1 Attachments: Privacy Impact Assessment\n\nMay use `rlink` with a relative path, or embedded as `base64`."
+        }
+      ]
+    }
+  }
+}
