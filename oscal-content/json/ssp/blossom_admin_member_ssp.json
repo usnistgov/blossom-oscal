@@ -1291,8 +1291,8 @@
         {
           "uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65",
           "type": "leveraged-system",
-          "title": "Name of Leveraged System",
-          "description": "If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property.",
+          "title": "AWS",
+          "description": "AWS infrastucture for authentication, data storage, and site hosting.",
           "props": [
             {
               "name": "leveraged-authorization-uuid",
@@ -2181,129 +2181,7 @@
     "control-implementation": {
       "description": "FedRAMP SSP Template Section 13\n\nThis description field is required by OSCAL.\n\nFedRAMP does not require any specific information here.",
       "implemented-requirements": [
-        {
-          "uuid": "eee8697a-bc39-45aa-accc-d3e534932efb",
-          "control-id": "ac-1",
-          "props": [
-            {
-              "name": "planned-completion-date",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "2020-11-27Z"
-            },
-            {
-              "name": "implementation-status",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "planned",
-              "remarks": "Describe the plan to complete the implementation."
-            },
-            {
-              "name": "control-origination",
-              "ns": "https://fedramp.gov/ns/oscal",
-              "value": "sp-system"
-            }
-          ],
-          "statements": [
-            {
-              "statement-id": "ac-1_smt",
-              "uuid": "240fa015-01df-4741-bff5-6958c7fb85e5",
-              "by-components": [
-                {
-                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
-                  "uuid": "d9d1ce66-ff47-474d-8596-5fdf2af60179",
-                  "description": "Describe how the control is satisfied within the system.",
-                  "set-parameters": [
-                    {
-                      "param-id": "ac-1_prm_1",
-                      "values": [
-                        "[replace with list of personnel or roles]"
-                      ]
-                    },
-                    {
-                      "param-id": "ac-1_prm_2",
-                      "values": [
-                        "[specify frequency]"
-                      ]
-                    },
-                    {
-                      "param-id": "ac-1_prm_3",
-                      "values": [
-                        "[specify frequency]"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-1_smt.a.1",
-              "uuid": "fb4d039a-dc4f-46f5-9c1f-f6343eaf69bc",
-              "by-components": [
-                {
-                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
-                  "uuid": "3f5612a4-cd1d-4c47-8cae-75d2eaa332cd",
-                  "description": "Describe how Part a is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the policy satisfies part a.\n\nIn this case, a link must be provided to the policy.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource.",
-                  "links": [
-                    {
-                      "href": "#090ab379-2089-4830-b9fd-26d0729e22e9",
-                      "rel": "policy"
-                    }
-                  ]
-                },
-                {
-                  "component-uuid": "F25E84BF-3E57-48C3-AC0B-7A567B3AF79E",
-                  "uuid": "2CF56836-6834-49A9-96CD-4F49C17AAB01",
-                  "description": "Describe how this policy component satisfies part a.\n\nComponent approach. This links to a component representing the Identity Management and Access Control Policy.\n\nThat component contains a link to the policy, so it does not have to be linked here too."
-                }
-              ],
-              "remarks": "The specified component is the system itself.\n\nAny control implementation response that can not be associated with another component is associated with the component representing the system."
-            },
-            {
-              "statement-id": "ac-1_smt.a.2",
-              "uuid": "c365cf95-5bc0-4599-9773-f4eddf69798d",
-              "by-components": [
-                {
-                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
-                  "uuid": "00507a44-e0d7-4fe6-ad20-8d474a84ee15",
-                  "description": "Describe how Part b is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the procedure satisfies part b.\n\nIn this case, a link must be provided to the procedure.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource.",
-                  "links": [
-                    {
-                      "href": "#1002a58e-9e11-4aa6-9ab4-2bde52995952",
-                      "rel": "procedure"
-                    }
-                  ]
-                },
-                {
-                  "component-uuid": "fa90644a-8bf8-47da-b0d3-82bffc708afc",
-                  "uuid": "42ac379e-4abc-4716-809c-119c03b5ac64",
-                  "description": "Describe how Part b is satisfied within the system.\n\nLegacy approach. If no policy component is defined, describe here how the procedure satisfies part b.\n\nIn this case, a link must be provided to the procedure.\n\nFedRAMP prefers all policies and procedures be attached as a resource in the back-matter. The link points to a resource."
-                }
-              ],
-              "remarks": "The specified component is the system itself.\n\nAny control implementation response that can not be associated with another component is associated with the component representing the system."
-            },
-            {
-              "statement-id": "ac-1_smt.b.1",
-              "uuid": "b46f97ec-55c1-4249-a9b9-3a228f1e3791",
-              "by-components": [
-                {
-                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
-                  "uuid": "767666cb-e558-484b-81ca-b0209932425c",
-                  "description": "Describe how Part b-1 is satisfied."
-                }
-              ]
-            },
-            {
-              "statement-id": "ac-1_smt.b.2",
-              "uuid": "59c67969-3d5c-45f1-8e3e-1e642249633f",
-              "by-components": [
-                {
-                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
-                  "uuid": "5a869308-1625-4d92-9ed8-ff5d8bd13656",
-                  "description": "Describe how Part b-2 is satisfied."
-                }
-              ]
-            }
-          ]
-        },
+
         {
           "uuid": "7a36cf53-156d-4d1f-9a8b-433f61cc57b7",
           "control-id": "ac-2",
@@ -2397,16 +2275,68 @@
             },
             {
               "statement-id": "ac-2_smt.a",
-              "uuid": "24a85abb-25ad-4686-850c-5c0e8ab69a0c",
+              "uuid": "f00a5abb-25ad-4686-850c-5c0e8ab69a0c",
               "by-components": [
                 {
-                  "component-uuid": "7a36cf53-156d-4d1f-9a8b-433f61cc57b7",
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
                   "uuid": "b29d1505-69fa-4ad0-834b-d179e7f44fff",
+                  "description": "Account management policy identifies that only user and system administrator accounts will be allowed on the system."
+                 
+                },
+                
+                {
+                  "component-uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65",
+                  "uuid": "53accb53-af53-4c3e-913d-6e98e7002d1e",
+                  "description": "Cloud service provider account management policy identifies that only user and system administrator accounts will be allowed on the system.",
+                  "inherited": [
+                    {
+                      "uuid": "0b806ee8-09ae-49af-b7d6-02f21587cd5f",
+                      "provided-uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65",
+                      "description": "Optional description.\n\n *Possibly duplicated description of what was inherited.* \n\nConsumer-appropriate description of what may be inherited.\n\nIn the context of the application component in satisfaction of AC-2, part a."
+                    }
+                  ],
+                  "satisfied": [
+                    {
+                      "uuid": "83167f38-34aa-4f0e-a65a-1af971b95071",
+                      "responsibility-uuid": "f00a5abb-25ad-4686-850c-5c0e8ab69a0c",
+                      "description": "Description of how the responsibility was satisfied."
+                    }
+                  ]
+                },
+
+                {
+                  "component-uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65",
+                  "uuid": "86924ff1-1505-4076-b84b-1bcdd8a1605a",
+                  "description": "For the portion inherited from an underlying FedRAMP-authorized provider, describe **what** is inherited.",
+                  "inherited": [
+                    {
+                      "uuid": "557ad005-66ed-4028-a4e0-39ea94894bd1",
+                      "provided-uuid": "e82e6e07-0c62-417e-8a19-3744991b4c65",
+                      "description": "Optional description.\n\nConsumer-appropriate description of what may be inherited as provided by the leveraged system.\n\nIn the context of this component in satisfaction of AC-2, part a.\n\nThe `provided-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritence and Responsibility Model)."
+                    }
+                  ],
+                  "satisfied": [
+                    {
+                      "uuid": "6c3eaf9d-41b9-46ba-a7d2-db8f2ef3846b",
+                      "responsibility-uuid": "f00a5abb-25ad-4686-850c-5c0e8ab69a0c",
+                      "description": "Description of how the responsibility was satisfied.\n\nThe `responsibility-uuid` links this to the same statement in the leveraged system's SSP.\n\nIt may be linked directly, but is more commonly provided via an OSCAL-based CRM (Inheritence and Responsibility Model).\n\nTools should use this to ensure all identified customer `responsiblity` statements have a corrisponding `satisfied` statement in the leveraging system's SSP.\n\nTool developers should be mindful that "
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "statement-id": "ac-2_smt.b",
+              "uuid": "2b0b5abb-25ad-4686-850c-5c0e8ab69a0c",
+              "by-components": [
+                {
+                  "component-uuid": "60f92bcf-f353-4236-9803-2a5d417555f4",
+                  "uuid": "2b9d1505-69fa-4ad0-834b-d179e7f44fff",
                   "description": "Describe how AC-2, part a is statisfied within this sytem.\n\nThis points to the \\\"Ths System\\\" component, and is used any time a more specific component reference is not available.",
                   "export": {
                     "provided": [
                       {
-                        "uuid": "832dcc5e-dedb-4007-9b1d-41b7e6f1deff",
+                        "uuid": "2b2dcc5e-dedb-4007-9b1d-41b7e6f1deff",
                         "description": "Consumer-appropriate description of what a leveraging system may inherite from THIS SYSTEM in the context of satisfying satisfaction of AC-2, part a.",
                         "responsible-roles": [
                           {
@@ -2420,7 +2350,7 @@
                     ],
                     "responsibilities": [
                       {
-                        "uuid": "f4b616e3-8e6b-498a-a667-0cda3a7c804d",
+                        "uuid": "2bb616e3-8e6b-498a-a667-0cda3a7c804d",
                         "provided-uuid": "832dcc5e-dedb-4007-9b1d-41b7e6f1deff",
                         "description": "Leveraged system's statement of a leveraging system's responsibilities in satisfaction of AC-2, part a.\n\nNot associated with inheritance, thus associated this with the by-component for \\\"this system\\\".",
                         "responsible-roles": [
