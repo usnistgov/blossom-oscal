@@ -6,7 +6,7 @@
         <published>2022-04-05T00:00:00Z</published>
         <last-modified>2024-03-27T00:00:00Z</last-modified>
         <version>0.1</version>
-        <oscal-version>1.0.0</oscal-version>
+        <oscal-version>1.1.2</oscal-version>
         <role id="system-owner">
             <title>Information System Owner</title>
             <description>
@@ -28,8 +28,14 @@
                     the system owner.</p>
             </description>
         </role>
+        <role id="administrator">
+            <title>Administrator of Licenses</title>
+            <description>
+                <p>The individual accountable for managing leased licenses.</p>
+            </description>
+        </role>
         <role id="asset-administrator">
-            <title>System Information System Security Officer (or Equivalent)</title>
+            <title>Blossom Member Administrator</title>
             <description>
                 <p>The individual accountable for the security posture of the system on behalf of
                     the system owner.</p>
@@ -65,8 +71,7 @@
             </remarks>
         </location>
         <party uuid="8aed7ffd-5158-445d-8d7c-eec5cf240cba" type="organization">
-            <name>National Institute of Standards and Technology IT Lab Computer Security Division
-                Secure Systems and Applications Group</name>
+            <name>National Institute of Standards and Technology IT Lab Computer Security Division Secure Systems and Applications Group</name>
             <short-name>NIST</short-name>
             <link href="#006babc9-4f57-4ab0-9941-15fcb65e0387" rel="logo" />
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
@@ -127,6 +132,12 @@
                 <p>Exactly one</p>
             </remarks>
         </responsible-party>
+        <responsible-party role-id="administrator">
+            <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
+            <remarks>
+                <p>Exactly one</p>
+            </remarks>
+        </responsible-party>
         <remarks>
             <p>This SSP was created using a simplified version of OSCAL-based FedRAMP SSP Template
                 for the FedRAMP Low, Moderate, and High baselines.</p>
@@ -139,8 +150,7 @@
         </remarks>
     </import-profile>
     <system-characteristics>
-        <system-id identifier-type="http://ietf.org/rfc/rfc4122">
-            8101e04d-8305-4e73-bb95-6b59f645b143</system-id>
+        <system-id identifier-type="http://ietf.org/rfc/rfc4122">8101e04d-8305-4e73-bb95-6b59f645b143</system-id>
         <system-name>Blockchain-based Secure Software Assets Management</system-name>
         <system-name-short>Blossom</system-name-short>
         <description>
@@ -316,7 +326,7 @@
             <information-type uuid="70b28c11-31c8-429b-855f-cc323fef59ea">
                 <title>Information management information</title>
                 <description>
-                    <p>TBD</p>
+                    <p>TBD:</p>
                 </description>
                 <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
                     <information-type-id>C.3.5.7</information-type-id>
@@ -478,7 +488,7 @@
                 <description>
                     <p>A diagram-specific explanation.</p>
                 </description>
-                <link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" />
+                <!-- link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" / -->
                 <caption>Data Flow Diagram</caption>
             </diagram>
         </data-flow>
@@ -656,8 +666,7 @@
             </statement>
         </implemented-requirement>
         <implemented-requirement uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7" control-id="ac-2">
-            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
-                value="Completion Date" />
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="Completion Date" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
                 <remarks>
                     <p>Describe the plan to complete the implementation.</p>
@@ -691,7 +700,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="eb710146-1ede-4876-9a3b-02c18408e506">
                     <description>
-                        <p>Describe how the control is satisfied within the system.</p>
+                        <p>The NGAC implementation in the two chaincodes manages the access control for the Blossom business layer users and the BC Member's ATO-related accounts.</p>
                     </description>
                     <set-parameter param-id="ac-2_prm_1">
                         <value>[SAMPLE]privileged, non-privileged</value>
@@ -711,17 +720,20 @@
                 <by-component component-uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7"
                     uuid="b29d1505-69fa-4ad0-834b-d179e7f44fff">
                     <description>
-                        <p>Describe how AC-2, part a is satisfied within This system.</p>
-                        <p>This points to the "Ths System" component, and is used any time a more
-                            specific component reference is not available.</p>
+                        <p>The system has privileged and non-privileged accounts associated with the business layer and the ATO processes.</p>
+                        <p>The following accounts are supported:</p>
+                        <ul>
+                            <li>Privileged accounts:
+                                <ul>TBD: list of roles</ul>
+                            </li>
+                        </ul>
                     </description>
                     <implementation-status state="under-development" />
                 </by-component>
                 <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
                     uuid="84de735f-ba37-4bb4-b784-79760f986a40">
                     <description>
-                        <p>For the portion inherited from an underlying AWS IaaS provider, describe <strong>
-                            what</strong> is inherited.</p>
+                        <p>The Blossom Member asset-administrator role is managed by the Leveraged AWS IaaS system.</p>
                     </description>
                     <inherited uuid="780a3910-2019-4d33-a2f9-5c6ac91929d6"
                         provided-uuid="11111111-0000-4000-9009-002001002001">
@@ -740,16 +752,7 @@
                     <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1"
                         responsibility-uuid="11111111-0000-4000-9009-002001002002">
                         <description>
-                            <p>TBD: responsibility-uuid needs to match the one in AWS SSP.</p>
-                            <p>Description of how the responsibility was satisfied.</p>
-                            <p>The <code>responsibility-uuid</code> links this to the same statement
-                                in the leveraged system's SSP.</p>
-                            <p>It may be linked directly, but is more commonly provided via an
-                                OSCAL-based CRM (Inheritence and Responsibility Model).</p>
-                            <p>Tools should use this to ensure all identified customer <code>
-                                responsiblity</code> statements have a corrisponding <code>satisfied</code>
-                                statement in the leveraging system's SSP.</p>
-                            <p>Tool developers should be mindful that</p>
+                            <p>TBD: We discussed that there is no responsibikity that needs to be satisfied for the Member admin. Assembly to be removed upon revision and clean up.</p>
                         </description>
                     </satisfied>
                 </by-component>
