@@ -1,0 +1,55 @@
+name: Account Management Request Form
+description: Submit an account related request
+labels: ['icam']
+body:
+  # - type: checkboxes
+  #   attributes:
+  #     label: Is there an existing request for this?
+  #     description: Please search to see if a request already exists for this user with similar action requested.
+  #     options:
+  #       - label: I have searched the existing issues
+  #         required: true
+  - type: textarea
+    id: first-name
+    attributes:
+      label: First Name
+      description: User's First Name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: textarea
+    id: last-name
+    attributes:
+      label: Last Name
+      description: User's First Name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: dropdown
+    id: action-requested
+    attributes:
+      label: What action is requested
+      description: Select the action from the drop-down
+      options:
+        - Create
+        - Disable
+        - Enable
+        - Delete permanently
+      multiple: true
+    validations:
+      required: true
+  # - type: textarea
+  #   id: bug-conditions
+  #   attributes:
+  #     label: When does this occur
+  #     description: Describe the conditions under which the bug is occuring
+  #   validations:
+  #     required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      description: |
+        Add any notes related to this request.
+
+    validations:
+      required: false
+
