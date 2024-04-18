@@ -9,18 +9,18 @@ body:
   #     options:
   #       - label: I have searched the existing issues
   #         required: true
-  - type: textarea
+  - type: input
     id: first-name
     attributes:
       label: First Name
-      placeholder: User's First Name as it appears in his/her ID.
+      placeholder: Type here user's first name as it appears in his/her ID.
     validations:
       required: true
-  - type: textarea
+  - type: input
     id: last-name
     attributes:
       label: Last Name
-      description: User's First Name as it appears in his/her ID.
+      placeholder: Type here user's last name as it appears in his/her ID.
     validations:
       required: true
   - type: dropdown
@@ -47,9 +47,7 @@ body:
     id: comments
     attributes:
       label: Comments
-      description: |
-        Add any notes related to this request.
-
+      placeholder: (optional) Type in here any additional information related to this request.
     validations:
       required: false
 
