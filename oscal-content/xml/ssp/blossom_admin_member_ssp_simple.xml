@@ -488,7 +488,7 @@
                 <description>
                     <p>A diagram-specific explanation.</p>
                 </description>
-                <!-- link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" / -->
+                <!--TBD: needds fixing link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" / -->
                 <caption>Data Flow Diagram</caption>
             </diagram>
         </data-flow>
@@ -533,7 +533,7 @@
             <status state="under-development" />
         </component>
         <component uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" type="leveraged-system">
-            <title>AWS Managed Blockchain</title>
+            <title>AWS Managed Blockchain (Leveraged System)</title>
             <description>
                 <p>TBD: If the leveraged system owner provides a UUID for their system (such as in
                     an OSCAL-based CRM), it should be reflected in the <code>inherited-uuid</code>
@@ -563,6 +563,9 @@
             <p>This description field is required by OSCAL.</p>
             <p>FedRAMP does not require any specific information here.</p>
         </description>
+        <!-- ####
+            AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not haev b.1 and b.2, but has c.1 and c.2 
+            #### -->
         <implemented-requirement uuid="eee8697a-bc39-45aa-accc-d3e534932efb" control-id="ac-1">
             <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
                 value="2020-11-27Z" />
@@ -602,7 +605,7 @@
                     </description>
                     <link href="#090ab379-2089-4830-b9fd-26d0729e22e9" rel="policy" />
                 </by-component>
-                <by-component component-uuid="f25e84bf-3e57-48c3-ac0b-7a567b3af79e"
+                <!-- by-component component-uuid="f25e84bf-3e57-48c3-ac0b-7a567b3af79e"
                     uuid="2cf56836-6834-49a9-96cd-4f49c17aab01">
                     <description>
                         <p>Describe how this policy component satisfies part a.</p>
@@ -611,7 +614,7 @@
                         <p>That component contains a link to the policy, so it does not have to be
                             linked here too.</p>
                     </description>
-                </by-component>
+                </by-component -->
                 <remarks>
                     <p>The specified component is the system itself.</p>
                     <p>Any control implementation response that can not be associated with another
@@ -665,6 +668,9 @@
                 </by-component>
             </statement>
         </implemented-requirement>
+        <!-- ####
+            AC-2
+            ######  -->
         <implemented-requirement uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7" control-id="ac-2">
             <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="Completion Date" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
@@ -717,13 +723,16 @@
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.a" uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c">
-                <by-component component-uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7"
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="b29d1505-69fa-4ad0-834b-d179e7f44fff">
                     <description>
                         <p>The system has privileged and non-privileged accounts associated with the business layer and the ATO processes.</p>
                         <p>The following accounts are supported:</p>
                         <ul>
                             <li>Privileged accounts:
+                                <ul>TBD: list of roles</ul>
+                            </li>
+                            <li>Non-Privileged accounts:
                                 <ul>TBD: list of roles</ul>
                             </li>
                         </ul>
