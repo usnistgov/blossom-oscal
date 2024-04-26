@@ -766,6 +766,149 @@
                     </satisfied>
                 </by-component>
             </statement>
+            <statement statement-id="ac-2_smt.b" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Assign account managers</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.c" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Require [Assignment: organization-defined prerequisites and criteria] for group and role membership;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d.1" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Specify Authorized users of the system</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d.2" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Specify Group and role membership</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d.3" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Specify Access authorizations (i.e., privileges) and [Assignment: organization-defined attributes (as required)] for each account;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.e" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Require approvals by [Assignment: organization-defined personnel or roles] for requests to create accounts;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.f" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Create, enable, modify, disable, and remove accounts in accordance with [Assignment: organization-defined policy, procedures, prerequisites, and criteria];</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.g" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Monitor the use of accounts;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h.1" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:
+                            1. [Assignment: organization-defined time period] when accounts are no longer required;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h.2" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: SNotify account managers and [Assignment: organization-defined personnel or roles] within:
+                            2. [Assignment: organization-defined time period] when users are terminated or transferred; </p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h.3" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:
+                            3. [Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;
+                            </p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i.1" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Authorize access to the system based on:
+                            1. A valid access authorization;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i.2" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Authorize access to the system based on:
+                            2. Intended system usage; </p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i.3" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Authorize access to the system based on:
+                            3. [Assignment: organization-defined attributes (as required)];</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.j" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Review accounts for compliance with account management requirements [Assignment: organization-defined frequency];</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.k" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.l" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>TBD: Align account management processes with personnel termination and transfer processes.</p>
+                    </description>
+                </by-component>
+            </statement>
         </implemented-requirement>
     </control-implementation>
     <back-matter>
