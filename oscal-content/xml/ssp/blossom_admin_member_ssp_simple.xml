@@ -566,6 +566,7 @@
         <!-- ####
             AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not haev b.1 and b.2, but has c.1 and c.2 
             #### -->
+        <!-- AC-1 will not be implemented now. 
         <implemented-requirement uuid="eee8697a-bc39-45aa-accc-d3e534932efb" control-id="ac-1">
             <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
                 value="2020-11-27Z" />
@@ -605,16 +606,6 @@
                     </description>
                     <link href="#090ab379-2089-4830-b9fd-26d0729e22e9" rel="policy" />
                 </by-component>
-                <!-- by-component component-uuid="f25e84bf-3e57-48c3-ac0b-7a567b3af79e"
-                    uuid="2cf56836-6834-49a9-96cd-4f49c17aab01">
-                    <description>
-                        <p>Describe how this policy component satisfies part a.</p>
-                        <p>Component approach. This links to a component representing the Identity
-                            Management and Access Control Policy.</p>
-                        <p>That component contains a link to the policy, so it does not have to be
-                            linked here too.</p>
-                    </description>
-                </by-component -->
                 <remarks>
                     <p>The specified component is the system itself.</p>
                     <p>Any control implementation response that can not be associated with another
@@ -668,6 +659,7 @@
                 </by-component>
             </statement>
         </implemented-requirement>
+    -->
         <!-- ####
             AC-2
             ######  -->
@@ -730,10 +722,12 @@
                         <p>The following accounts are supported:</p>
                         <ul>
                             <li>Privileged accounts:
-                                <ul>TBD: list of roles</ul>
+                                <ul>License Owner (LO)</ul>
                             </li>
                             <li>Non-Privileged accounts:
-                                <ul>TBD: list of roles</ul>
+                                <ul>Acquisition Officer (ACQ)</ul>
+                                <ul>Technical Point of Contact (TPOC)</ul>
+                                <ul>License Administrator (LA)</ul>
                             </li>
                         </ul>
                     </description>
@@ -742,20 +736,24 @@
                 <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
                     uuid="84de735f-ba37-4bb4-b784-79760f986a40">
                     <description>
-                        <p>The Blossom Member asset-administrator role is managed by the Leveraged AWS IaaS system.</p>
+                        <p>The Blossom Member actors that are managed by the Leveraged AWS IaaS are:</p>
+                        <ul>
+                            <li>Privileged accounts:
+                                <ul>System Owner (SO)</ul>
+                                <ul>System Administrator (SA)</ul>
+                            </li>
+                            <li>Non-Privileged accounts:
+                                <ul>Assessor (A)</ul>
+                                <ul>Authorizing Official (AO)</ul>
+                                <ul>License Administrator (LA)</ul>
+                            </li>
+                        </ul>
                     </description>
                     <inherited uuid="780a3910-2019-4d33-a2f9-5c6ac91929d6"
                         provided-uuid="11111111-0000-4000-9009-002001002001">
                         <description>
                             <p>TBD: provided-uuid needs to match the one in AWS SSP.</p>
-                            <p>Optional description.</p>
-                            <p>Consumer-appropriate description of what may be inherited as provided
-                                by the leveraged system.</p>
-                            <p>In the context of this component in satisfaction of AC-2, part a.</p>
-                            <p>The <code>provided-uuid</code> links this to the same statement in
-                                the leveraged system's SSP.</p>
-                            <p>It may be linked directly, but is more commonly provided via an
-                                OSCAL-based CRM (Inheritence and Responsibility Model).</p>
+                            <p>All privileged and non-privileged accounts that can access the managed infrastructure are managed by AWS IaaS through NIST Single Sign On and Access Control List.</p>
                         </description>
                     </inherited>
                     <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1"
@@ -843,7 +841,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                     <description>
-                        <p>TBD: SNotify account managers and [Assignment: organization-defined personnel or roles] within:
+                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:
                             2. [Assignment: organization-defined time period] when users are terminated or transferred; </p>
                     </description>
                 </by-component>
