@@ -8,37 +8,40 @@
         <version>0.1</version>
         <oscal-version>1.1.2</oscal-version>
         <role id="system-owner">
-            <title>Information System Owner</title>
+            <title>System Owner (SO)</title>
             <description>
-                <p>The individual within the organization who is ultimately accountable for
-                    everything related to this system.</p>
+                <p>The individual within the organization who is ultimately accountable for everything related to the deployment, assessemnt, authorization and operations of the Blossom Member which provides the software assets leasing service (here in known as "this system").</p>
+            </description>
+        </role>
+        <role id="license-owner">
+            <title>License Owner (LO)</title>
+            <description>
+                <p>The individual within the service provider organization who is accountable for managing the pool of software resources made available for leasing to USG agencies.</p>
+                <p>The License Owner role exists only within the service provider agency.</p>
             </description>
         </role>
         <role id="authorizing-official">
             <title>Authorizing Official</title>
             <description>
-                <p>The individual or individuals who must grant this system an authorization to
-                    operate.</p>
+                <p>The individual or individuals who are ultimatly accountable for reviewing the assessemnt package, discuss with the SO the findings and grant an authorization to operate (ATO) to "this system".</p>
             </description>
         </role>
-        <role id="information-system-security-officer">
-            <title>System Information System Security Officer (or Equivalent)</title>
+        <role id="sys-sec-assessor">
+            <title>System Security Assessor (SSA)</title>
             <description>
-                <p>The individual accountable for the security posture of the system on behalf of
-                    the system owner.</p>
+                <p>The individual accountable for assessing the security posture of the system on behalf of the system owner.</p>
             </description>
         </role>
-        <role id="administrator">
-            <title>Administrator of Licenses</title>
+        <role id="license-administrator">
+            <title>License Administrator (LA)</title>
             <description>
-                <p>The individual accountable for managing leased licenses.</p>
+                <p>The individual accountable for managing leased licenses (checkout, install, uninstall, return).</p>
             </description>
         </role>
-        <role id="asset-administrator">
-            <title>Blossom Member Administrator</title>
+        <role id="system-administrator">
+            <title>System Administrator (SA)</title>
             <description>
-                <p>The individual accountable for the security posture of the system on behalf of
-                    the system owner.</p>
+                <p>The individual accountable for the deployment, configuration, testing and operations of the system on behalf of the System Owner.</p>
             </description>
         </role>
         <location uuid="1ef39fd9-d184-44c4-8ef4-36d2dbad70a2">
@@ -85,6 +88,12 @@
             <email-address>blossom@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
+        <party uuid="51588d7c-aa79-43aa-9f22-25182c2cd22d" type="person">
+            <name>Licenta Owens</name>
+            <prop name="job-title" value="License Owner" />
+            <email-address>blossom@nist.gov</email-address>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
         <party uuid="3360e343-9860-4bda-9dfc-ff427c3dfab6" type="person">
             <name>Aurelian Officman</name>
             <prop name="job-title" value="Authorizing Official" />
@@ -93,21 +102,28 @@
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="132953a9-640c-46f7-9de9-3fa15ec99361" type="person">
-            <name>Infosso Persona</name>
-            <prop name="job-title" value="Information System Security Officer" />
+            <name>Steve S. Asesoro</name>
+            <prop name="job-title" value="System Security Assessor" />
+            <email-address>blossom@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="c46e27d1-7a65-47ea-bd76-df574fded5fd" type="person">
+            <name>Licenta Admino</name>
+            <prop name="job-title" value="License Administrator" />
             <email-address>blossom@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="4fded5fd-7a65-47ea-bd76-df57c46e27d1" type="person">
-            <name>Admino Bloom</name>
-            <prop name="job-title" value="Blossom Administrator" />
+            <name>Simon Admino</name>
+            <prop name="job-title" value="System Administrator" />
             <email-address>blossom@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="551b9706-d6a4-4d25-8207-f2ccec541016" type="person">
-            <name>Proga Managiaro</name>
+            <name>ManoGiana Bloom</name>
             <prop name="job-title" value="Blossom PM" />
             <email-address>blossom@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
@@ -116,26 +132,29 @@
             <party-uuid>09ad840f-aa79-43aa-9f22-25182c2ab11b</party-uuid>
             <party-uuid>551b9706-d6a4-4d25-8207-f2ccec541016</party-uuid>
         </responsible-party>
-        <responsible-party role-id="authorizing-official">
-            <party-uuid>3360e343-9860-4bda-9dfc-ff427c3dfab6</party-uuid>
+        <responsible-party role-id="license-owner">
+            <party-uuid>51588d7c-aa79-43aa-9f22-25182c2cd22d</party-uuid>
             <party-uuid>551b9706-d6a4-4d25-8207-f2ccec541016</party-uuid>
         </responsible-party>
-        <responsible-party role-id="information-system-security-officer">
+        <responsible-party role-id="authorizing-official">
+            <party-uuid>3360e343-9860-4bda-9dfc-ff427c3dfab6</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="sys-sec-assessor">
             <party-uuid>132953a9-640c-46f7-9de9-3fa15ec99361</party-uuid>
             <remarks>
                 <p>Exactly one</p>
             </remarks>
         </responsible-party>
-        <responsible-party role-id="asset-administrator">
-            <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
+        <responsible-party role-id="license-administrator">
+            <party-uuid>c46e27d1-7a65-47ea-bd76-df574fded5fd</party-uuid>
             <remarks>
-                <p>Exactly one</p>
+                <p>Manages leased liceses for the agency and is responsible to checkout, install, uninstall and return licenses to the pool the agency purchased.</p>
             </remarks>
         </responsible-party>
-        <responsible-party role-id="administrator">
+        <responsible-party role-id="system-administrator">
             <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
             <remarks>
-                <p>Exactly one</p>
+                <p>This party has development, deployment, configuration and operations responsibilities for "this system" supporting the system owner.</p>
             </remarks>
         </responsible-party>
         <remarks>
@@ -512,11 +531,11 @@
             </remarks>
         </leveraged-authorization>
         <user uuid="9cb0fab0-78bd-44ba-bcb8-3e9801cc952f">
-            <title>Administrator</title>
+            <title>System Administrator</title>
             <prop name="sensitivity" ns="https://fedramp.gov/ns/oscal" value="high" />
             <prop name="privilege-level" value="privileged" />
             <prop name="type" value="internal" />
-            <role-id>asset-administrator</role-id>
+            <role-id>system-administrator</role-id>
             <authorized-privilege>
                 <title>Full administrative access rights</title>
                 <function-performed>add and remove users and hardware</function-performed>
@@ -688,7 +707,7 @@
                     <p>Describe any customer-configured requirements for satisfying this control.</p>
                 </remarks>
             </prop>
-            <responsible-role role-id="asset-administrator">
+            <responsible-role role-id="system-administrator">
                 <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
             </responsible-role>
             <responsible-role role-id="system-owner">
@@ -719,15 +738,20 @@
                     uuid="b29d1505-69fa-4ad0-834b-d179e7f44fff">
                     <description>
                         <p>The system has privileged and non-privileged accounts associated with the business layer and the ATO processes.</p>
-                        <p>The following accounts are supported:</p>
+                        <p>The following accounts are supported for the business operations:</p>
                         <ul>
                             <li>Privileged accounts:
                                 <ul>License Owner (LO)</ul>
                             </li>
                             <li>Non-Privileged accounts:
                                 <ul>Acquisition Officer (ACQ)</ul>
-                                <ul>Technical Point of Contact (TPOC)</ul>
                                 <ul>License Administrator (LA)</ul>
+                            </li>
+                        </ul>
+                        <p>The following account is supported for the ATO process (ATO attestation submission and review of other Blossom members):</p>
+                        <ul>
+                            <li>Non-Privileged accounts:
+                                <ul>Authorizing Official (AO)</ul>
                             </li>
                         </ul>
                     </description>
@@ -736,14 +760,14 @@
                 <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
                     uuid="84de735f-ba37-4bb4-b784-79760f986a40">
                     <description>
-                        <p>The Blossom Member actors that are managed by the Leveraged AWS IaaS are:</p>
+                        <p>The accounts of the Blossom Member managed by the Leveraged AWS IaaS are:</p>
                         <ul>
                             <li>Privileged accounts:
                                 <ul>System Owner (SO)</ul>
                                 <ul>System Administrator (SA)</ul>
                             </li>
                             <li>Non-Privileged accounts:
-                                <ul>Assessor (A)</ul>
+                                <ul>System Security Assessor (SSA)</ul>
                                 <ul>Authorizing Official (AO)</ul>
                                 <ul>License Administrator (LA)</ul>
                             </li>
@@ -752,14 +776,14 @@
                     <inherited uuid="780a3910-2019-4d33-a2f9-5c6ac91929d6"
                         provided-uuid="11111111-0000-4000-9009-002001002001">
                         <description>
-                            <p>TBD: provided-uuid needs to match the one in AWS SSP.</p>
-                            <p>All privileged and non-privileged accounts that can access the managed infrastructure are managed by AWS IaaS through NIST Single Sign On and Access Control List.</p>
+                            <p>TBD: provided-uuid needs to match the one in the AWS' SSP.</p>
+                            <p>All privileged and non-privileged accounts that are granted access to the AWS infrastructure and are responsible for the Blossom member (this sysstem), are managed by the AWS IaaS (leveraged ATO system) which uses an Access Control List (ACL) for the NIST employees assigned Blossom roles.</p>
                         </description>
                     </inherited>
                     <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1"
                         responsibility-uuid="11111111-0000-4000-9009-002001002002">
                         <description>
-                            <p>TBD: We discussed that there is no responsibikity that needs to be satisfied for the Member admin. Assembly to be removed upon revision and clean up.</p>
+                            <p>For all responsible parties with roles managed by the AWS IaaS system, accounts creation/deletion are requested, approved/revoked by the System Owner or the Blossom PM and are added to or delete from the ACL list.</p>
                         </description>
                     </satisfied>
                 </by-component>
