@@ -46,3 +46,10 @@ body:
       multiple: false
     validations:
       required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      placeholder: (optional) Type in here any additional information related to this authorization.
+    validations:
+      required: false
