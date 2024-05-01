@@ -24,15 +24,77 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: action-requested
+    id: account-requested-by
     attributes:
-      label: What action is requested
+      label: Who requested the account
+      description: Select the action from the drop-down
+      options:
+        - System Owner
+        - Admin
+        - Security
+        - User
+        - Account Manager
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-type
+    attributes:
+      label: What account type is requested
+      description: Select the action from the drop-down
+      options:
+        - Admin
+        - User
+        - Assessor
+        - ISSO
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-managers
+    attributes:
+      label: Account approvers
+      description: Select the action from the drop-down
+      options:
+        - Michaela
+        - Dmitry
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-group-or-role
+    attributes:
+      label: What account group or role
+      description: Select the action from the drop-down
+      options:
+        - Admin
+        - User
+        - Security
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-privileges
+    attributes:
+      label: What account privilege is requested
+      description: Select the action from the drop-down
+      options:
+        - Read
+        - Read/Write
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-modification
+    attributes:
+      label: What account modification is requested
       description: Select the action from the drop-down
       options:
         - Create
         - Disable
         - Enable
-        - Delete permanently
+        - Modify
+        - Remove
       multiple: true
     validations:
       required: true
