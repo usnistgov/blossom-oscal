@@ -804,11 +804,19 @@
                     </description>
                 </by-component>
             </statement>
+            <statement statement-id="ac-2_smt.d" uuid="a0ae8e3a-83b9-4a07-ba9b-3ba0d7a7104c">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="779d08e3-4ed0-4a83-84ab-2ca2c9ec3745">
+                    <description>
+                        <p>TBD: Specify</p>
+                    </description>
+                </by-component>
+            </statement>
             <statement statement-id="ac-2_smt.d.1" uuid="4c65972e-1580-49dd-aede-b3e4af0703e1">
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="49c1dab6-3c75-4758-8119-120e01f163d7">
                     <description>
-                        <p>TBD: Specify Authorized users of the system</p>
+                        <p>TBD: Authorized users of the system</p>
                     </description>
                 </by-component>
             </statement>
@@ -816,7 +824,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="df7fbdc2-78e2-4391-9981-bb9f682a363a">
                     <description>
-                        <p>TBD: Specify Group and role membership</p>
+                        <p>TBD: Group and role membership</p>
                     </description>
                 </by-component>
             </statement>
@@ -824,7 +832,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
-                        <p>TBD: Specify Access authorizations (i.e., privileges) and [Assignment: organization-defined attributes (as required)] for each account;</p>
+                        <p>TBD: Access authorizations (i.e., privileges) and [Assignment: organization-defined attributes (as required)] for each account;</p>
                     </description>
                 </by-component>
             </statement>
@@ -852,12 +860,19 @@
                     </description>
                 </by-component>
             </statement>
+            <statement statement-id="ac-2_smt.h" uuid="17fe835f-b916-4966-a168-6249b54a9275">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
+                    <description>
+                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:</p>
+                    </description>
+                </by-component>
+            </statement>
             <statement statement-id="ac-2_smt.h.1" uuid="e3d29dc5-7247-4045-862b-8b233824937a">
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
                     <description>
-                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:
-                            1. [Assignment: organization-defined time period] when accounts are no longer required;</p>
+                        <p>[Assignment: organization-defined time period] when accounts are no longer required;</p>
                     </description>
                 </by-component>
             </statement>
@@ -865,8 +880,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                     <description>
-                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:
-                            2. [Assignment: organization-defined time period] when users are terminated or transferred; </p>
+                        <p>[Assignment: organization-defined time period] when users are terminated or transferred; </p>
                     </description>
                 </by-component>
             </statement>
@@ -874,9 +888,16 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
                     <description>
-                        <p>TBD: Notify account managers and [Assignment: organization-defined personnel or roles] within:
-                            3. [Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;
+                        <p>[Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;
                             </p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i" uuid="8089db43-a930-4b05-b661-f6bdaf602de0">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="f793018d-36df-48bf-a2f0-996364d3f46e">
+                    <description>
+                        <p>TBD: Authorize access to the system based on:</p>
                     </description>
                 </by-component>
             </statement>
@@ -884,8 +905,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5d96adf-2313-48c2-98e1-73f1b7044d68">
                     <description>
-                        <p>TBD: Authorize access to the system based on:
-                            1. A valid access authorization;</p>
+                        <p>A valid access authorization;</p>
                     </description>
                 </by-component>
             </statement>
@@ -893,8 +913,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="54fc3c61-3717-4ad2-8291-fd521b6b9d0d">
                     <description>
-                        <p>TBD: Authorize access to the system based on:
-                            2. Intended system usage; </p>
+                        <p>Intended system usage; </p>
                     </description>
                 </by-component>
             </statement>
@@ -902,8 +921,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
                     <description>
-                        <p>TBD: Authorize access to the system based on:
-                            3. [Assignment: organization-defined attributes (as required)];</p>
+                        <p>[Assignment: organization-defined attributes (as required)];</p>
                     </description>
                 </by-component>
             </statement>
