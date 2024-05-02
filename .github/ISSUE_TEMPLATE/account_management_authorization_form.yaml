@@ -13,6 +13,39 @@ body:
       multiple: false
     validations:
       required: true
+  - type: input
+    id: Account holder full name
+    attributes:
+      label: First Middle Last Names
+      placeholder: Type here account holder full name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: dropdown
+    id: account-type
+    attributes:
+      label: What role/attribute is requested for the account holder
+      description: Select the action from the drop-down
+      options:
+        - System Owner
+        - License Owner
+        - Authorizing Official
+        - System Sec Assessor
+        - System Administrator
+        - Technical Point of Contact
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-privilege
+    attributes:
+      label: What account privilege is requested
+      description: Select the action from the drop-down
+      options:
+        - non-privileged (user:read/write)
+        - privileged (root:read/write/execute)
+      multiple: false
+    validations:
+      required: true
   - type: dropdown
     id: account-created
     attributes:
@@ -20,7 +53,11 @@ body:
       description: Select the action from the drop-down
       options:
         - Created
-        - Not created
+        - Modified
+        - Disabled
+        - Enabled
+        - Deleted
+        - Not done
       multiple: false
     validations:
       required: true
@@ -30,19 +67,19 @@ body:
       label: Account creation by
       description: Select the action from the drop-down
       options:
-        - Admin
-        - Account manager
+        - System Administrator
+        - Accounts Manager
       multiple: false
     validations:
       required: true
   - type: dropdown
     id: account-approved-by
     attributes:
-      label: Account approval by
+      label: Account approved by
       description: Select the action from the drop-down
       options:
-        - Michaela
-        - Dmitry
+        - Program Manager (for privileged accounts)
+        - System Owner (for non-privileged accounts)
       multiple: false
     validations:
       required: true

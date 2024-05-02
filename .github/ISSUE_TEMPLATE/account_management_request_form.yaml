@@ -1,14 +1,7 @@
-name: Account Management Request Form
+name: Account Request Form
 description: Submit an account related request
 labels: ['icam']
 body:
-  # - type: checkboxes
-  #   attributes:
-  #     label: Is there an existing request for this?
-  #     description: Please search to see if a request already exists for this user with similar action requested.
-  #     options:
-  #       - label: I have searched the existing issues
-  #         required: true
   - type: input
     id: first-name
     attributes:
@@ -23,30 +16,42 @@ body:
       placeholder: Type here user's last name as it appears in his/her ID.
     validations:
       required: true
+  - type: input
+    id: requester-name
+    attributes:
+      label: Who requests the account on behalf of the account holder
+      placeholder: Type here requester's full name.
+    validations:
+      required: true
   - type: dropdown
     id: account-requested-by
     attributes:
-      label: Who requested the account
-      description: Select the action from the drop-down
+      label: What role the requester currently has
+      description: Select from the drop-down the current role of the requester
       options:
+        - Accounts Manager
         - System Owner
-        - Admin
-        - Security
-        - User
-        - Account Manager
+        - License Owner
+        - Authorizing Official
+        - System Sec Assessor
+        - System Administrator
+        - Technical Point of Contact
+        - No current role
       multiple: false
     validations:
       required: true
   - type: dropdown
     id: account-type
     attributes:
-      label: What account type is requested
+      label: What role/attribute is requested for the account holder
       description: Select the action from the drop-down
       options:
-        - Admin
-        - User
-        - Assessor
-        - ISSO
+        - System Owner
+        - License Owner
+        - Authorizing Official
+        - System Sec Assessor
+        - System Administrator
+        - Technical Point of Contact
       multiple: false
     validations:
       required: true
@@ -56,31 +61,19 @@ body:
       label: Account approvers
       description: Select the action from the drop-down
       options:
-        - Michaela
-        - Dmitry
+        - Program Manager (for privileged accounts)
+        - System Owner (for non-privileged accounts)
       multiple: false
     validations:
       required: true
   - type: dropdown
-    id: account-group-or-role
-    attributes:
-      label: What account group or role
-      description: Select the action from the drop-down
-      options:
-        - Admin
-        - User
-        - Security
-      multiple: false
-    validations:
-      required: true
-  - type: dropdown
-    id: account-privileges
+    id: account-privilege
     attributes:
       label: What account privilege is requested
       description: Select the action from the drop-down
       options:
-        - Read
-        - Read/Write
+        - non-privileged (user:read/write)
+        - privileged (root:read/write/execute)
       multiple: false
     validations:
       required: true
@@ -91,25 +84,25 @@ body:
       description: Select the action from the drop-down
       options:
         - Create
+        - Modify
         - Disable
         - Enable
-        - Modify
-        - Remove
+        - Delete
       multiple: true
     validations:
       required: true
-  # - type: textarea
-  #   id: bug-conditions
-  #   attributes:
-  #     label: When does this occur
-  #     description: Describe the conditions under which the bug is occuring
-  #   validations:
-  #     required: true
+  - type: checkboxes
+     attributes:
+       label: To the best of my knowledge I attest that there is no other active submitted form for the same request
+       description: Please search to see if a request already exists for this user with similar action requested.
+       options:
+         - label: I have searched the existing issues
+           required: true
   - type: textarea
     id: comments
     attributes:
       label: Comments
-      placeholder: (optional) Type in here any additional information related to this request.
+      placeholder: (optional) Type in here any additional information related to this request
     validations:
       required: false
 
