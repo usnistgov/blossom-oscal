@@ -92,10 +92,10 @@ body:
     validations:
       required: true
   - type: checkboxes
-     attributes:
-        options:
-         - label: I attest that there is no other active form for a similar request
-           required: true
+    attributes:
+      options:
+      - label: I attest that there is no other active form for a similar request
+      required: true
   - type: textarea
     id: comments
     attributes:
