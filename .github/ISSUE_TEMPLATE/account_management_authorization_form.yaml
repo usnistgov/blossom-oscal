@@ -14,9 +14,9 @@ body:
     validations:
       required: true
   - type: input
-    id: Account holder full name
+    id: account-holder-full-name
     attributes:
-      label: First Middle Last Names
+      label: Account holder full name
       placeholder: Type here account holder full name as it appears in his/her ID.
     validations:
       required: true

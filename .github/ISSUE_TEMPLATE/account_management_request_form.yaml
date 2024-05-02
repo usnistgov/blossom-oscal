@@ -5,28 +5,28 @@ body:
   - type: input
     id: first-name
     attributes:
-      label: First Name
+      label: Account Holder First Name
       placeholder: Type here user's first name as it appears in his/her ID.
     validations:
       required: true
   - type: input
     id: last-name
     attributes:
-      label: Last Name
+      label: Account Holder Last Name
       placeholder: Type here user's last name as it appears in his/her ID.
     validations:
       required: true
   - type: input
     id: requester-name
     attributes:
-      label: Who requests the account on behalf of the account holder
+      label: Requester's Full Name 
       placeholder: Type here requester's full name.
     validations:
       required: true
   - type: dropdown
     id: account-requested-by
     attributes:
-      label: What role the requester currently has
+      label: Requester's currently role
       description: Select from the drop-down the current role of the requester
       options:
         - Accounts Manager
