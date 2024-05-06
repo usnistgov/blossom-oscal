@@ -24,6 +24,7 @@
             <title>Authorizing Official</title>
             <description>
                 <p>The individual or individuals who are ultimatly accountable for reviewing the assessemnt package, discuss with the SO the findings and grant an authorization to operate (ATO) to "this system".</p>
+                <p>The Authorizing Official is the only entity responsible for the security posture of the system that gets access to the ATO channel (chainecode). The AO signs the MOU on behalf of the agency.</p>
             </description>
         </role>
         <role id="sys-sec-assessor">
