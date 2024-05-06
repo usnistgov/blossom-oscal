@@ -1,0 +1,109 @@
+name: Account Request Form
+description: Submit an account related request
+labels: ['icam']
+body:
+  - type: input
+    id: first-name
+    attributes:
+      label: Account Holder First Name
+      placeholder: Type here user's first name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: input
+    id: last-name
+    attributes:
+      label: Account Holder Last Name
+      placeholder: Type here user's last name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: input
+    id: requester-name
+    attributes:
+      label: Requester's Full Name 
+      placeholder: Type here requester's full name.
+    validations:
+      required: true
+  - type: dropdown
+    id: account-requested-by
+    attributes:
+      label: Requester's currently role
+      description: Select from the drop-down the current role of the requester
+      options:
+        - Accounts Manager
+        - System Owner
+        - License Owner
+        - Authorizing Official
+        - System Sec Assessor
+        - System Administrator
+        - Technical Point of Contact
+        - No current role
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-type
+    attributes:
+      label: What role/attribute is requested for the account holder
+      description: Select the action from the drop-down
+      options:
+        - System Owner
+        - License Owner
+        - Authorizing Official
+        - System Sec Assessor
+        - System Administrator
+        - Technical Point of Contact
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-managers
+    attributes:
+      label: Account approvers
+      description: Select the action from the drop-down
+      options:
+        - Program Manager (for privileged accounts)
+        - System Owner (for non-privileged accounts)
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-privilege
+    attributes:
+      label: What account privilege is requested
+      description: Select the action from the drop-down
+      options:
+        - non-privileged (user:read/write)
+        - privileged (root:read/write/execute)
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-modification
+    attributes:
+      label: What account modification is requested
+      description: Select the action from the drop-down
+      options:
+        - Create
+        - Modify
+        - Disable
+        - Enable
+        - Delete
+      multiple: true
+    validations:
+      required: true
+  - type: checkboxes
+    id: attestation
+    attributes:
+      label: attestation
+      description: Ensure all previously submitted forms are reviewed and no similar request has been submitted earlier
+      options:
+        - label: I attest that there is no other active form for a similar request
+          required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      placeholder: (optional) Type in here any additional information related to this request
+    validations:
+      required: false
+
