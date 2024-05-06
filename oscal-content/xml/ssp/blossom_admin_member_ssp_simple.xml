@@ -720,16 +720,34 @@
                         <p>The NGAC implementation in the two chaincodes manages the access control for the Blossom business layer users and the BC Member's ATO-related accounts.</p>
                     </description>
                     <set-parameter param-id="ac-2_prm_1">
-                        <value>[SAMPLE]privileged, non-privileged</value>
+                        <value>business need</value>
                     </set-parameter>
                     <set-parameter param-id="ac-2_prm_2">
-                        <value>[SAMPLE]all</value>
+                        <value>business need</value>
                     </set-parameter>
                     <set-parameter param-id="ac-2_prm_3">
-                        <value>[SAMPLE]The Access Control Procedure</value>
+                        <value>System Owner (SO)</value>
                     </set-parameter>
                     <set-parameter param-id="ac-2_prm_4">
-                        <value>[SAMPLE]annually</value>
+                        <value>Types of User Accounts for Blossom</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_5">
+                        <value>System Owner (SO)</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_6">
+                        <value>1 business day</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_7">
+                        <value>1 business day</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_8">
+                        <value>1 business day</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_9">
+                        <value>System Owner (SO)</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_10">
+                        <value>every 6 months</value>
                     </set-parameter>
                 </by-component>
             </statement>
@@ -792,7 +810,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1">
                     <description>
-                        <p>TBD: Assign account managers</p>
+                        <p>Assign account managers</p>
                     </description>
                 </by-component>
             </statement>
@@ -800,7 +818,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c72b52e1-1943-4a52-be48-7bcce7df2f6d">
                     <description>
-                        <p>TBD: Require <insert type="param" id-ref="ac-02_odp.01" />[Assignment: organization-defined prerequisites and criteria] for group and role membership;</p>
+                        <p>Require <insert type="param" id-ref="ac-2_prm_1" />[Assignment: organization-defined prerequisites and criteria] for group and role membership;</p>
                     </description>
                 </by-component>
             </statement>
@@ -816,7 +834,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="49c1dab6-3c75-4758-8119-120e01f163d7">
                     <description>
-                        <p>TBD: Authorized users of the system</p>
+                        <p>Authorized users of the system</p>
                     </description>
                 </by-component>
             </statement>
@@ -824,7 +842,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="df7fbdc2-78e2-4391-9981-bb9f682a363a">
                     <description>
-                        <p>TBD: Group and role membership</p>
+                        <p>Group and role membership</p>
                     </description>
                 </by-component>
             </statement>
@@ -832,8 +850,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
-                        <p>TBD: Access authorizations (i.e., privileges) and <insert type="param"
-                            id-ref="ac-02_odp.02" />[Assignment: organization-defined attributes (as required)] for each account;</p>
+                        <p>Access authorizations (i.e., privileges) and <insert type="param"
+                            id-ref="ac-2_prm_2" />[Assignment: organization-defined attributes (as required)] for each account;</p>
                     </description>
                 </by-component>
             </statement>
@@ -841,7 +859,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
                     <description>
-                        <p>TBD: Require approvals by <insert type="param" id-ref="ac-02_odp.03" />[Assignment: organization-defined personnel or roles] for requests to create accounts;</p>
+                        <p>Require approvals by <insert type="param" id-ref="ac-2_prm_3" />[Assignment: organization-defined personnel or roles] for requests to create accounts;</p>
                     </description>
                 </by-component>
             </statement>
@@ -849,8 +867,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="02d4c648-5a86-4155-bd73-02c3439262b4">
                     <description>
-                        <p>TBD: Create, enable, modify, disable, and remove accounts in accordance with <insert
-                            type="param" id-ref="ac-02_odp.04" />[Assignment: organization-defined policy, procedures, prerequisites, and criteria];</p>
+                        <p>Create, enable, modify, disable, and remove accounts in accordance with <insert
+                            type="param" id-ref="ac-2_prm_4" />[Assignment: organization-defined policy, procedures, prerequisites, and criteria];</p>
                     </description>
                 </by-component>
             </statement>
@@ -858,7 +876,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="ab679286-80e7-4b6d-b08c-34931bb56073">
                     <description>
-                        <p>TBD: Monitor the use of accounts;</p>
+                        <p>Monitor the use of accounts;</p>
                     </description>
                 </by-component>
             </statement>
@@ -866,7 +884,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
                     <description>
-                        <p>TBD: Notify account managers and <insert type="param" id-ref="ac-02_odp.05" />[Assignment: organization-defined personnel or roles] within:</p>
+                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment: organization-defined personnel or roles] within:</p>
                     </description>
                 </by-component>
             </statement>
@@ -874,7 +892,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.06" />[Assignment: organization-defined time period] when accounts are no longer required;</p>
+                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment: system owner] within:<insert type="param" id-ref="ac-2_prm_6" />[Assignment: 1 business day] when accounts are no longer required;</p>
                     </description>
                 </by-component>
             </statement>
@@ -882,7 +900,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.07" />[Assignment: organization-defined time period] when users are terminated or transferred; </p>
+                        <p><insert type="param" id-ref="ac-2_prm_7" />[Assignment: organization-defined time period] when users are terminated or transferred; </p>
                     </description>
                 </by-component>
             </statement>
@@ -890,7 +908,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.08" />[Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;</p>
+                        <p><insert type="param" id-ref="ac-2_prm_8" />[Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;</p>
                     </description>
                 </by-component>
             </statement>
@@ -898,7 +916,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f793018d-36df-48bf-a2f0-996364d3f46e">
                     <description>
-                        <p>TBD: Authorize access to the system based on:</p>
+                        <p>Authorize access to the system based on:</p>
                     </description>
                 </by-component>
             </statement>
@@ -922,7 +940,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.09" />[Assignment: organization-defined attributes (as required)];</p>
+                        <p><insert type="param" id-ref="ac-2_prm_9" />[Assignment: organization-defined attributes (as required)];</p>
                     </description>
                 </by-component>
             </statement>
@@ -930,8 +948,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
                     <description>
-                        <p>TBD: Review accounts for compliance with account management requirements <insert
-                            type="param" id-ref="ac-02_odp.10" />[Assignment: organization-defined frequency];</p>
+                        <p>Review accounts for compliance with account management requirements <insert
+                            type="param" id-ref="ac-2_prm_10" />[Assignment: organization-defined frequency];</p>
                     </description>
                 </by-component>
             </statement>
@@ -939,7 +957,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="d0cdfbc2-aef5-418e-94dc-9906341bcc12">
                     <description>
-                        <p>TBD: Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group;</p>
+                        <p>Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group;</p>
                     </description>
                 </by-component>
             </statement>
@@ -947,7 +965,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f23d55dd-1204-42f9-862e-2a07200b5c6e">
                     <description>
-                        <p>TBD: Align account management processes with personnel termination and transfer processes.</p>
+                        <p>Align account management processes with personnel termination and transfer processes.</p>
                     </description>
                 </by-component>
             </statement>
