@@ -1,0 +1,92 @@
+name: Account Management Authorization Form
+description: Submit an account related authorization
+labels: ['icam']
+body:
+  - type: dropdown
+    id: account-authorized
+    attributes:
+      label: Account authorization
+      description: Select the action from the drop-down
+      options:
+        - Approved
+        - Not approved
+      multiple: false
+    validations:
+      required: true
+  - type: input
+    id: account-holder-full-name
+    attributes:
+      label: Account holder full name
+      placeholder: Type here account holder full name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: dropdown
+    id: account-type
+    attributes:
+      label: What role/attribute is requested for the account holder
+      description: Select the action from the drop-down
+      options:
+        - System Owner
+        - License Owner
+        - Authorizing Official
+        - System Sec Assessor
+        - System Administrator
+        - Technical Point of Contact
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-privilege
+    attributes:
+      label: What account privilege is requested
+      description: Select the action from the drop-down
+      options:
+        - non-privileged (user:read/write)
+        - privileged (root:read/write/execute)
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-created
+    attributes:
+      label: Account creation
+      description: Select the action from the drop-down
+      options:
+        - Created
+        - Modified
+        - Disabled
+        - Enabled
+        - Deleted
+        - Not done
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-created-by
+    attributes:
+      label: Account creation by
+      description: Select the action from the drop-down
+      options:
+        - System Administrator
+        - Accounts Manager
+      multiple: false
+    validations:
+      required: true
+  - type: dropdown
+    id: account-approved-by
+    attributes:
+      label: Account approved by
+      description: Select the action from the drop-down
+      options:
+        - Program Manager (for privileged accounts)
+        - System Owner (for non-privileged accounts)
+      multiple: false
+    validations:
+      required: true
+  - type: textarea
+    id: comments
+    attributes:
+      label: Comments
+      placeholder: (optional) Type in here any additional information related to this authorization.
+    validations:
+      required: false
