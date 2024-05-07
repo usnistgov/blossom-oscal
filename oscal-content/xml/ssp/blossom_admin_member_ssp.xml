@@ -515,9 +515,10 @@
     </system-characteristics>
     <system-implementation>
         <leveraged-authorization uuid="5a9c98ab-8e5e-433d-a7bd-515c07cd1497">
-            <title>AWS Managed Blockchain</title>
-            <link href="./aws_leveraged_authorization_ssp.json" />
-            <party-uuid>77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d</party-uuid>
+            <title>AWS Managed Blockchain (AMB)</title>
+            <link href="./aws_leveraged_authorization_ssp.xml"/>
+            <!-- The Leveraged Authorization POC is the AMB's Authorizing Official in this case. -->
+            <party-uuid>e63e870d-bf43-40dc-98a0-37d5e39b2dd1</party-uuid>
             <date-authorized>2024-01-01</date-authorized>
             <remarks>
                 <p>TBD: ssp-uuid: 73a7ca56-ac02-43b9-8664-62bcb05a7e91 will need to be added for
@@ -553,7 +554,7 @@
             <status state="under-development" />
         </component>
         <component uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" type="leveraged-system">
-            <title>AWS Managed Blockchain (Leveraged System)</title>
+            <title>AWS Managed Blockchain (AMB) - Leveraged System</title>
             <description>
                 <p>TBD: If the leveraged system owner provides a UUID for their system (such as in
                     an OSCAL-based CRM), it should be reflected in the <code>inherited-uuid</code>
@@ -561,6 +562,7 @@
             </description>
             <prop name="leveraged-authorization-uuid" value="5a9c98ab-8e5e-433d-a7bd-515c07cd1497" />
             <prop name="implementation-point" value="external" />
+            <!-- The value of inherited-uuid is the uuid of the component of the leveraged system which provides the control implementation. In thsi case will be the AMB's "this-system"-->
             <prop name="inherited-uuid" value="73a7ca56-ac02-43b9-8664-62bcb05a7e91" />
             <status state="operational" />
         </component>
@@ -584,7 +586,7 @@
             <p>FedRAMP does not require any specific information here.</p>
         </description>
         <!-- ####
-            AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not haev b.1 and b.2, but has c.1 and c.2 
+            AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not have a b.1 and b.2, but it has b and c) 
             #### -->
         <!-- AC-1 will not be implemented now. 
         <implemented-requirement uuid="eee8697a-bc39-45aa-accc-d3e534932efb" control-id="ac-1">
@@ -684,28 +686,30 @@
             AC-2
             ######  -->
         <implemented-requirement uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7" control-id="ac-2">
-            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="Completion Date" />
-            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
-                <remarks>
-                    <p>Describe the plan to complete the implementation.</p>
-                </remarks>
-            </prop>
+            <!-- TBD: The following <prop>s must be reviewed, updated and only one option kept based on AC-2 implementation of the inherited control for manageing the Authorizing Official's account -->
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2024/05/30" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="partial">
                 <remarks>
-                    <p>Describe the portion of the control that is not satisfied.</p>
+                    <p>AMB provides access control to the infrastracter for the entities identified below. The Consumer's responsibility is to update the ACL ith the identities authorized to access the resource.</p>
                 </remarks>
             </prop>
-            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal"
-                value="not-applicable">
+            <!-- NOT APPLICABLE VALUES - TO BE REMOVED AT THE END
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
                 <remarks>
-                    <p>Describe the justification for marking this control Not Applicable.</p>
+                    <p>TBD: Describe the portion of the control that is not satisfied.</p>
                 </remarks>
             </prop>
-            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="sp-system" />
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="not-applicable">
+                <remarks>
+                    <p>TBD: Describe the justification for marking this control Not Applicable.</p>
+                </remarks>
+            </prop>  
+            -->        
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged-system" />
             <prop name="control-origination" ns="https://fedramp.gov/ns/oscal"
                 value="customer-configured">
                 <remarks>
-                    <p>Describe any customer-configured requirements for satisfying this control.</p>
+                    <p>TBD: Describe any customer-configured requirements for satisfying this control.</p>
                 </remarks>
             </prop>
             <responsible-role role-id="system-administrator">

@@ -3,12 +3,21 @@
   uuid="73a7ca56-ac02-43b9-8664-62bcb05a7e91">
   <metadata>
     <title>Amazon Web Services (AWS) Cloud SSP</title>
-    <published>2022-06-16T09:00:00-04:00</published>
-    <last-modified>2022-06-16T09:00:00-04:00</last-modified>
+    <published>2024-03-16T09:00:00-04:00</published>
+    <last-modified>2024-04-09T09:00:00-04:00</last-modified>
     <version>0.0.2</version>
-    <oscal-version>1.0.4</oscal-version>
-    <prop name="marking" ns="https://fedramp.gov/ns/oscal"
+    <oscal-version>1.1.2</oscal-version>
+    <prop name="marking" ns="https://csrc.nist.gov/ns/blossom"
       value="Controlled Unclassified Information" />
+    <!-- AMB roles -->
+    <role id="system-owner">
+      <title>System Owner</title>
+      <short-name>System Owner</short-name>
+      <description>
+        <p>An organizational official responsible for the procurement, development, integration,
+          modification, operation, maintenance, and disposal of a system.</p>
+      </description>
+    </role>
     <role id="authorizing-official">
       <title>Authorizing Official</title>
       <short-name>AO</short-name>
@@ -18,130 +27,8 @@
           operate.</p>
       </description>
     </role>
-    <role id="authorizing-designated-representative">
-      <title>Authorizing Official's Designated Representative</title>
-      <short-name>AODR</short-name>
-      <description>
-        <p>An organizational official designated by the authorizing official who is empowered to act
-          on behalf of the authorizing official to coordinate and conduct the day-to-day activities
-          associated with managing risk to information systems and organizations.</p>
-      </description>
-    </role>
-    <role id="chief-acquisition-officer">
-      <title>Chief Acquisition Officer</title>
-      <short-name>Acq Chief</short-name>
-      <description>
-        <p>An organizational official designated by the head of an agency to advise and assist the
-          head of agency and other agency officials to ensure that the mission of the agency is
-          achieved through the management of the agency’s acquisition activities.</p>
-      </description>
-    </role>
-    <role id="chief-information-officer">
-      <title>Chief Information Officer</title>
-      <short-name>CIO</short-name>
-      <description>
-        <p>An organizational official responsible for designating a senior agency information
-          security officer; developing and maintaining security policies, procedures, and control
-          techniques to address security requirements; overseeing personnel with significant
-          responsibilities for security and ensuring that the personnel are adequately trained;
-          assisting senior organizational officials concerning their security responsibilities; and
-          reporting to the head of the agency on the effectiveness of the organization’s security
-          program, including progress of remedial actions.</p>
-      </description>
-    </role>
-    <role id="common-control-provider">
-      <title>Common Control Provider</title>
-      <short-name>CCP</short-name>
-      <description>
-        <p>An individual, group, or organization that is responsible for the implementation,
-          assessment, and monitoring of common controls (i.e., controls inherited by organizational
-          systems).</p>
-      </description>
-    </role>
-    <role id="control-assessor">
-      <title>Control Assessor</title>
-      <short-name>CA</short-name>
-      <description>
-        <p>An individual, group, or organization responsible for conducting a comprehensive
-          assessment of implemented controls and control enhancements to determine the effectiveness
-          of the controls.</p>
-      </description>
-    </role>
-    <role id="enterprise-architect">
-      <title>Enterprise Architect</title>
-      <short-name>EA</short-name>
-      <description>
-        <p>An individual or group responsible for working with the leadership and subject matter
-          experts in an organization to build a holistic view of the organization's missions and
-          business functions, mission/business processes, information, and information technology
-          assets.</p>
-      </description>
-    </role>
-    <role id="head-of-agency">
-      <title>Head of Agency</title>
-      <short-name>Agency Head</short-name>
-      <description>
-        <p>An individual responsible and accountable for providing information security protections
-          commensurate with the risk to organizational operations and assets, individuals, other
-          organizations, and the Nation.</p>
-      </description>
-    </role>
-    <role id="information-owner">
-      <title>Information Owner</title>
-      <short-name>Info Owner</short-name>
-      <description>
-        <p>An organizational official with statutory, management, or operational authority for
-          specified information and the responsibility for establishing the policies and procedures
-          governing its generation, collection, processing, dissemination, and disposal.</p>
-      </description>
-    </role>
-    <role id="leveraged-authorization-provider">
-      <title>Leveraged Authorization Provider</title>
-      <short-name>LAP</short-name>
-      <description>
-        <p>An individual, group, or organization that is responsible for the implementation,
-          assessment, and monitoring of a leveraged authorization (i.e., controls inherited by
-          organizational systems).</p>
-      </description>
-    </role>
-    <role id="mission-or-business-owner">
-      <title>Mission or Business Owner</title>
-      <short-name>Biz Owner</short-name>
-      <description>
-        <p>The senior official or executive within an organization with specific mission or line of
-          business responsibilities and that has a security or privacy interest in the
-          organizational systems supporting those missions or lines of business.</p>
-      </description>
-    </role>
-    <role id="risk-executive">
-      <title>Risk Executive</title>
-      <short-name>Risk Executive</short-name>
-      <description>
-        <p>An individual or group within an organization that provides a comprehensive,
-          organization-wide approach to risk management.</p>
-      </description>
-    </role>
-    <role id="security-or-privacy-architect">
-      <title>Security or Privacy Architect</title>
-      <short-name>Sec/Priv Architect</short-name>
-      <description>
-        <p>An individual, group, or organization responsible for ensuring that stakeholder
-          protection needs and the corresponding system requirements necessary to protect
-          organizational missions and business functions and individuals’ privacy are adequately
-          addressed in the enterprise architecture.</p>
-      </description>
-    </role>
-    <role id="senior-accountable-official-for-risk-management">
-      <title>Senior Accountable Official for Risk Management</title>
-      <short-name>Sr. Risk Management Officer</short-name>
-      <description>
-        <p>The individual that leads and manages the risk executive (function) in an organization
-          and is responsible for aligning information security and privacy risk management processes
-          with strategic, operational, and budgetary planning processes.</p>
-      </description>
-    </role>
-    <role id="senior-agency-information-security-officer">
-      <title>Senior Agency Information Security Officer</title>
+    <role id="chief-information-security-officer">
+      <title>AWS Chief Information Security Officer</title>
       <short-name>CISO</short-name>
       <description>
         <p>An organizational official responsible for carrying out the chief information officer
@@ -150,37 +37,12 @@
           control providers, and system security officers.</p>
       </description>
     </role>
-    <role id="senior-agency-official-for-privacy">
-      <title>Senior Agency Official for Privacy</title>
-      <short-name>Privacy Officer</short-name>
-      <description>
-        <p>The senior official or executive with agency-wide responsibility and accountability for
-          ensuring compliance with applicable privacy requirements and managing privacy risk.</p>
-      </description>
-    </role>
     <role id="system-administrator">
       <title>System Administrator</title>
-      <short-name>SysAdmin</short-name>
+      <short-name>Sys Admin</short-name>
       <description>
         <p>An individual, group, or organization responsible for setting up and maintaining a system
           or specific system elements.</p>
-      </description>
-    </role>
-    <role id="system-owner">
-      <title>System Owner</title>
-      <short-name>System Owner</short-name>
-      <description>
-        <p>An organizational official responsible for the procurement, development, integration,
-          modification, operation, maintenance, and disposal of a system.</p>
-      </description>
-    </role>
-    <role id="system-security-or-privacy-officer">
-      <title>System Security or Privacy Officer</title>
-      <short-name>Sec/Priv Officer</short-name>
-      <description>
-        <p>An individual responsible for ensuring that the security and privacy posture is
-          maintained for an organizational system and works in close collaboration with the system
-          owner.</p>
       </description>
     </role>
     <role id="system-user">
@@ -191,97 +53,105 @@
           access information and information systems to perform assigned duties.</p>
       </description>
     </role>
-    <role id="system-security-or-privacy-engineer">
-      <title>System Security or Privacy Engineer</title>
-      <short-name>Sec/Priv Engineer</short-name>
-      <description>
-        <p>An individual, group, or organization responsible for conducting systems security or
-          privacy engineering activities as part of the SDLC.</p>
-      </description>
-    </role>
+    <location uuid="cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e">
+      <title>AWS US East/West</title>
+      <address>
+        <addr-line>13200 Woodland Park Rd</addr-line>
+        <city>Herndon</city>
+        <state>VA</state>
+        <postal-code>20171</postal-code>
+      </address>
+      <telephone-number>7033031000</telephone-number>
+      <prop name="type" value="data-center" class="primary" />
+      <remarks>
+        <p>This title must be kept as-is to match FedRAMP Marketplace listing. This is a a
+          FedRAMP requirement. This official mailing address of Amazon's AWS commercial
+          offering for the us-east-1 is provided, as Amazon not disclose the address of
+          data-centers either on a region or availability zone basis.</p>
+      </remarks>
+    </location>
     <party uuid="77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d" type="organization">
-      <name>Organization One</name>
-      <telephone-number>2023031000</telephone-number>
-      <address>
-        <addr-line>Org1-address</addr-line>
-        <city>Org1-city</city>
-        <state>Org1-state</state>
-        <postal-code>20001</postal-code>
-      </address>
+      <name>AWS US East/West</name>
+      <short-name>AWS</short-name>
+      <location-uuid>cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e</location-uuid>
       <remarks>
-        <p>Org1-description</p>
-      </remarks>
-    </party>
-    <party uuid="89c04836-4a39-42a8-92df-cea491419f3f" type="organization">
-      <name>Organization Two</name>
-      <telephone-number>2023032000</telephone-number>
-      <address>
-        <addr-line>Org2-address</addr-line>
-        <city>Org2-city</city>
-        <state>Org2-state</state>
-        <postal-code>20002</postal-code>
-      </address>
-      <remarks>
-        <p>Org2-description</p>
-      </remarks>
-    </party>
-    <party uuid="df109ab9-9d22-404c-b1f4-17352538c8e7" type="organization">
-      <name>Organization Three</name>
-      <telephone-number>2023033000</telephone-number>
-      <address>
-        <addr-line>Org3-address</addr-line>
-        <city>Org3-city</city>
-        <state>Org3-state</state>
-        <postal-code>20003</postal-code>
-      </address>
-      <remarks>
-        <p>Org3-description</p>
+        <p>IaaS Service Provider.</p>
       </remarks>
     </party>
     <party uuid="6c5ee0f8-85d4-45b7-ab7c-a1db4b93913b" type="person">
-      <name>Person One</name>
-      <prop name="job-title" value="Person1-jobtitle" />
-      <email-address>person.one@orgone.com</email-address>
-      <telephone-number>2023031001</telephone-number>
+      <name>Samuel W. Owns</name>
+      <prop name="job-title" value="System Owner" />
+      <email-address>awsmith@aws.com</email-address>
+      <telephone-number>7033031001</telephone-number>
+      <location-uuid>cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e</location-uuid>
       <member-of-organization>77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d</member-of-organization>
       <remarks>
-        <p>Person1-description. This person is a member of Organization One.</p>
+        <p>This person is a member of IaaS AWS.</p>
       </remarks>
     </party>
     <party uuid="e63e870d-bf43-40dc-98a0-37d5e39b2dd1" type="person">
-      <name>Person Two</name>
-      <prop name="job-title" value="Person2-jobtitle" />
-      <email-address>person.two@orgtwo.com</email-address>
-      <telephone-number>2023032001</telephone-number>
-      <member-of-organization>89c04836-4a39-42a8-92df-cea491419f3f</member-of-organization>
+      <name>Alice Officione</name>
+      <prop name="job-title" value="Authorizing Official" />
+      <email-address>aofficione@aws.com</email-address>
+      <telephone-number>7033032001</telephone-number>
+      <location-uuid>cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e</location-uuid>
+      <member-of-organization>77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d</member-of-organization>
       <remarks>
-        <p>Person2-description. This person is a member of Organization Two.</p>
+        <p> This person is a member of Organization Two.</p>
       </remarks>
     </party>
-    <responsible-party role-id="authorizing-official">
+    <party uuid="692e10c9-47e9-4b58-9b40-0e5032ee9bd5" type="person">
+      <name>Charles Isoman</name>
+      <prop name="job-title" value="Chief Information Security Officer" />
+      <email-address>cisoman@aws.com</email-address>
+      <telephone-number>7033032001</telephone-number>
+      <location-uuid>cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e</location-uuid>
+      <member-of-organization>77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d</member-of-organization>
+      <remarks>
+        <p> This person is the CISO responsible for securing the Leveraged IaaS.</p>
+      </remarks>
+    </party>
+    <party uuid="4860332a-b69e-43b9-9dde-5788fd97ac13" type="person">
+      <name>Sam Adminado</name>
+      <prop name="job-title" value="System Administrator" />
+      <email-address>sadminado@aws.com</email-address>
+      <telephone-number>7033032001</telephone-number>
+      <location-uuid>cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e</location-uuid>
+      <member-of-organization>77e0e2c8-2560-4fe9-ac78-c3ff4ffc9f6d</member-of-organization>
+      <remarks>
+        <p> This person is a member of AWS.</p>
+      </remarks>
+    </party>
+    <responsible-party role-id="system-owner">
       <party-uuid>6c5ee0f8-85d4-45b7-ab7c-a1db4b93913b</party-uuid>
       <remarks>
-        <p>Authorizing Official role assigned to Person One</p>
+        <p>System ownership assigned to this person.</p>
       </remarks>
     </responsible-party>
-    <responsible-party role-id="authorizing-designated-representative">
+    <responsible-party role-id="chief-information-security-officer">
+      <party-uuid>692e10c9-47e9-4b58-9b40-0e5032ee9bd5</party-uuid>
+      <remarks>
+        <p>Information Security responsibilities assigned to CISO</p>
+      </remarks>
+    </responsible-party>
+    <responsible-party role-id="authorizing-official">
       <party-uuid>e63e870d-bf43-40dc-98a0-37d5e39b2dd1</party-uuid>
       <remarks>
-        <p>Authorizing Official's Designated Representative role assigned to Person Two</p>
+        <p>Authorizing Official's Designated Representative role assigned to Alice Officione.</p>
       </remarks>
     </responsible-party>
-    <responsible-party role-id="control-assessor">
-      <party-uuid>df109ab9-9d22-404c-b1f4-17352538c8e7</party-uuid>
+    <responsible-party role-id="system-administrator">
+      <party-uuid>4860332a-b69e-43b9-9dde-5788fd97ac13</party-uuid>
       <remarks>
-        <p>Control Assessor role assigned to Organization Three</p>
+        <p>AWS Managed Blockchain's (AMB) system administrator</p>
       </remarks>
     </responsible-party>
   </metadata>
-  <import-profile href="765d7b9f-ae9d-4f61-913f-15805ef08f31">
+  <import-profile href="../profile/blossom_moderate_profile.xml">
     <remarks>
       <p>The import-profile href points to a OSCAL-based profile data model that was custom-created
-        specifically for this system by ATO as a Service. See the corresponding back-matter
-        reference for further details.</p>
+        specifically for this system by ATO as a Service. A back-matter
+        reference can be included for further details.</p>
     </remarks>
   </import-profile>
   <system-characteristics>
@@ -344,7 +214,9 @@
       <diagram uuid="2d92b6f3-1260-421c-9bda-5c4a7739f0d2" />
     </network-architecture>
     <data-flow>
-      <description></description>
+      <description>
+        <p>TBD: Data flow description.</p>
+      </description>
       <diagram uuid="3d92b6f3-1260-421c-9bda-5c4a7739f0d3" />
     </data-flow>
   </system-characteristics>
@@ -354,13 +226,13 @@
     <prop name="users-internal-future" ns="https://fedramp.gov/ns/oscal" value="2400" />
     <prop name="users-external-future" ns="https://fedramp.gov/ns/oscal" value="44000" />
     <user uuid="cde944a3-56ab-4db4-bb37-a88e2fce035c">
-      <title>Unidentified User Placeholder</title>
+      <title>Customer of this IaaS</title>
     </user>
     <component uuid="2d92b6f3-1260-421c-9bda-5c4a7739fcd3" type="this-system">
-      <title>This System</title>
+      <title>AWS Managed Blockchain (AMB)</title>
       <description>
-        <p>The system described by this SSP.</p>
-        <p>This text was auto-generated by the OSCAL M3-RC1 data upgrade converter.</p>
+        <p>The AWS deployment of the Hyperledger Fabric v2.2.3 managed by AWS and made available as
+          an IaaS system.</p>
       </description>
       <status state="operational" />
     </component>
@@ -373,7 +245,103 @@
     </component>
   </system-implementation>
   <control-implementation>
-    <description></description>
+    <description>
+      <p>The following implemented requirements are a subset of the controls implemented by this
+        system. </p>
+      <p>For the sake of bravety, this SSP is not documenting all implemented controls.</p>
+      <p>The focus is on the controls that are provided and can be inherited by the AWS Managed
+        Blockchain (AMB).</p>
+    </description>
+    <!-- #####
+         AC-2
+         #####-->
+    <implemented-requirement uuid="02bba06c-8221-455d-9bc6-94a94c9199e4" control-id="AC-2">
+      <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal"
+        value="Partially Implemented" />
+      <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="Shared" />
+      <set-parameter param-id="ac-2_prm_1">
+        <value>TBD: business need</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_2">
+          <value>TBD: business need</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_3">
+          <value>TBD: System Owner (SO)</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_4">
+          <value>TBD: Types of User Accounts for Blossom</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_5">
+          <value>TBD: System Owner (SO)</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_6">
+          <value>TBD: 1 business day</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_7">
+          <value>TBD: 1 business day</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_8">
+          <value>TBD: 1 business day</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_9">
+          <value>TBD: System Owner (SO)</value>
+      </set-parameter>
+      <set-parameter param-id="ac-2_prm_10">
+          <value>TBD: every 6 months</value>
+      </set-parameter>
+      <responsible-role role-id="authorizing-official">
+        <party-uuid>e63e870d-bf43-40dc-98a0-37d5e39b2dd1</party-uuid>
+      </responsible-role>
+      <statement statement-id="ac-2_smt.a" uuid="75cb125e-62f9-4355-8ca0-02c8daefb2b4">
+        <!-- ## AMB has 2 components described above: this-system and service which might not be needed if we want to simplify ## -->
+        <by-component component-uuid="2d92b6f3-1260-421c-9bda-5c4a7739fcd3" uuid="3353be30-2622-4452-ad36-7cd34cbfa191">
+          <description>
+            <p>TBD:</p>
+          </description>
+          <export>
+            <description>
+              <p>The AMB manages access control to the infrastructure for the AWS authorized personnel.</p> 
+              <p>Consumer's responsible parties can be included in an Access Control List (ACL) used by AWS to grant access to AMB infrastructure for administrative reasons.</p> 
+              <p>Responsible parties' account management and ACL update are Consumer's responsibilities.</p>
+            </description>
+            <provided uuid="0dd795bd-d1fd-487c-8bab-11edcf25f544">
+              <description>
+                <p>The AMB manages access control to the infrastructure for the Consumer's responsible parties identified in an Access Control List (ACL)</p>
+              </description>
+            </provided>
+            <responsibility uuid="72b9e21f-67d0-4093-b7b0-116e89b493a9" provided-uuid="9c4a8b31-fe34-4b5f-933d-2a1c448a4ef2">
+              <description>
+                <p>It is Customer's responsibility to identify the responsible parties which need access to the AMB infractrusture and their roles, and to update the ACL used by AMB to enforce access to the resources.</p>
+              </description>
+            </responsibility>
+          </export>
+        </by-component>
+      </statement>
+      <statement statement-id="ac-2_smt.b" uuid="68b3a53d-4f77-4c50-9f2d-897204c315e9">
+        <by-component component-uuid="2d92b6f3-1260-421c-9bda-5c4a7739fcd3" uuid="1398d737-8041-4774-bed3-668d90617860">
+          <description>
+            <p>TBD:</p>
+          </description>
+          <export>
+            <description></description>
+            <provided uuid="f5c1b59c-04ff-4821-980a-e10c18e379a8">
+              <description>
+                <p>TBD:</p>
+              </description>
+            </provided>
+            <responsibility uuid="3082907a-b185-444b-a49b-51b5e0f978c0"
+              provided-uuid="f5c1b59c-04ff-4821-980a-e10c18e379a8">
+              <description>
+                <p>TBD:</p>
+              </description>
+            </responsibility>
+          </export>
+        </by-component>
+      </statement>
+      <remarks>
+        <p>Insert a remark if needed</p>
+      </remarks>
+    </implemented-requirement>
     <implemented-requirement uuid="398cb789-fcf5-4106-98a3-63c0b6de48c4" control-id="ma-1">
       <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal"
         value="Partially Implemented" />
