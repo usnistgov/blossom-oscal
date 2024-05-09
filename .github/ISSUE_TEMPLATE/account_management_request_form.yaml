@@ -1,6 +1,6 @@
 name: Account Request Form
 description: Submit an account related request
-labels: ['icam']
+labels: ['ACCOUNT_REQUEST_RECORD']
 body:
   - type: input
     id: first-name
