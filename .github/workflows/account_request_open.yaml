@@ -1,0 +1,27 @@
+name: Account Request Open
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  # When an issue is created by account management request form
+  # Label of account management request form is ACCOUNT_REQUEST_RECORD
+  request-opened:
+    if: github.event.label.name == 'ACCOUNT_REQUEST_RECORD'
+    runs-on: ubuntu-20.04
+    steps:
+    permissions:
+      issues: write
+    steps:
+      - name: Add comment
+        run: gh issue comment "$NUMBER" --body "$BODY"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          BODY: >
+            Account management request CREATED
+
+

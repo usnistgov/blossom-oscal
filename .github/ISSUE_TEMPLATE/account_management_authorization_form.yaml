@@ -1,6 +1,6 @@
 name: Account Management Authorization Form
 description: Submit an account related authorization
-labels: ['icam']
+labels: ['ACCOUNT_AUTHORIZED_RECORD']
 body:
   - type: dropdown
     id: account-authorized
