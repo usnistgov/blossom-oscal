@@ -11,7 +11,6 @@ jobs:
   request-approve:
     if: github.event.label.name == 'ACCOUNT_APPROVED'
     runs-on: ubuntu-20.04
-    steps:
     permissions:
       issues: write
     steps:
