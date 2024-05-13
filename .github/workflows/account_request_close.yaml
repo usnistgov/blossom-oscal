@@ -27,7 +27,6 @@ jobs:
   request-reject:
     if: github.event.label.name == 'ACCOUNT_REJECTED'
     runs-on: ubuntu-20.04
-    steps:
     permissions:
       issues: write
     steps:
