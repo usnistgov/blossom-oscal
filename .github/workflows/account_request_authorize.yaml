@@ -8,7 +8,7 @@ on:
 jobs:
   # When an issue is created by account management authorization form
   # Label of account management request form is ACCOUNT_AUTHORIZED_RECORD
-  request-approved:
+  request-authorized:
     if: github.event.label.name == 'ACCOUNT_AUTHORIZED_RECORD'
     runs-on: ubuntu-20.04
     permissions:
