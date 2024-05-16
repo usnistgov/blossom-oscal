@@ -2,17 +2,6 @@ name: Account Management Authorization Form
 description: Submit an account related authorization
 labels: ['ACCOUNT_AUTHORIZED_RECORD']
 body:
-  - type: dropdown
-    id: account-authorized
-    attributes:
-      label: Account authorization
-      description: Select the action from the drop-down
-      options:
-        - Approved
-        - Not approved
-      multiple: false
-    validations:
-      required: true
   - type: input
     id: account-holder-full-name
     attributes:
