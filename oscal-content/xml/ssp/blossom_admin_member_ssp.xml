@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+    uuid="8c91b0ac-8eaa-4ac2-a2fb-eeff3b7efa20">
+    <metadata>
+        <title>BloSS@M System Security Plan</title>
+        <published>2022-04-05T00:00:00Z</published>
+        <last-modified>2024-03-27T00:00:00Z</last-modified>
+        <version>0.1</version>
+        <oscal-version>1.1.2</oscal-version>
+        <role id="system-owner">
+            <title>System Owner (SO)</title>
+            <description>
+                <p>The individual within the organization who is ultimately accountable for everything related to the deployment, assessemnt, authorization and operations of the Blossom Member which provides the software assets leasing service (here in known as "this system").</p>
+            </description>
+        </role>
+        <role id="license-owner">
+            <title>License Owner (LO)</title>
+            <description>
+                <p>The individual within the service provider organization who is accountable for managing the pool of software resources made available for leasing to USG agencies.</p>
+                <p>The License Owner role exists only within the service provider agency.</p>
+            </description>
+        </role>
+        <role id="authorizing-official">
+            <title>Authorizing Official</title>
+            <description>
+                <p>The individual or individuals who are ultimatly accountable for reviewing the assessemnt package, discuss with the SO the findings and grant an authorization to operate (ATO) to "this system".</p>
+                <p>The Authorizing Official is the only entity responsible for the security posture of the system that gets access to the ATO channel (chainecode). The AO signs the MOU on behalf of the agency.</p>
+            </description>
+        </role>
+        <role id="sys-sec-assessor">
+            <title>System Security Assessor (SSA)</title>
+            <description>
+                <p>The individual accountable for assessing the security posture of the system on behalf of the system owner.</p>
+            </description>
+        </role>
+        <role id="tpoc">
+            <title>Technical Point of Contact (TPOC)</title>
+            <description>
+                <p>The individual accountable for managing leased licenses (checkout, install, uninstall, return).</p>
+            </description>
+        </role>
+        <role id="system-administrator">
+            <title>System Administrator (SA)</title>
+            <description>
+                <p>The individual accountable for the deployment, configuration, testing and operations of the system on behalf of the System Owner.</p>
+            </description>
+        </role>
+        <location uuid="1ef39fd9-d184-44c4-8ef4-36d2dbad70a2">
+            <title>National Institute of Standards and Technology</title>
+            <address type="work">
+                <addr-line>100 Bureau Drive</addr-line>
+                <city>Gaithersburg</city>
+                <state>MD</state>
+                <postal-code>20899</postal-code>
+            </address>
+            <remarks>
+                <p>NIST ITL Computer Security Division's Secure Systems and Applications Group is
+                    the primary CSP for this project.</p>
+            </remarks>
+        </location>
+        <location uuid="cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e">
+            <title>AWS US East/West</title>
+            <address>
+                <addr-line>13200 Woodland Park Rd</addr-line>
+                <city>Herndon</city>
+                <state>VA</state>
+                <postal-code>20171</postal-code>
+            </address>
+            <prop name="type" value="data-center" class="primary" />
+            <remarks>
+                <p>This title must be kept as-is to match FedRAMP Marketplace listing. This is a a
+                    FedRAMP requirement. This official mailing address of Amazon's AWS commercial
+                    offering for the us-east-1 is provided, as Amazon not disclose the address of
+                    data-centers either on a region or availability zone basis.</p>
+            </remarks>
+        </location>
+        <party uuid="8aed7ffd-5158-445d-8d7c-eec5cf240cba" type="organization">
+            <name>National Institute of Standards and Technology IT Lab Computer Security Division Secure Systems and Applications Group</name>
+            <short-name>NIST</short-name>
+            <link href="#006babc9-4f57-4ab0-9941-15fcb65e0387" rel="logo" />
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <remarks>
+                <p>Blossom network provider.</p>
+            </remarks>
+        </party>
+        <party uuid="09ad840f-aa79-43aa-9f22-25182c2ab11b" type="person">
+            <name>Stan Owens</name>
+            <prop name="job-title" value="System Owner" />
+            <email-address>blossom@nist.gov</email-address>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="51588d7c-aa79-43aa-9f22-25182c2cd22d" type="person">
+            <name>Licenta Owens</name>
+            <prop name="job-title" value="License Owner" />
+            <email-address>blossom@nist.gov</email-address>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="3360e343-9860-4bda-9dfc-ff427c3dfab6" type="person">
+            <name>Aurelian Officman</name>
+            <prop name="job-title" value="Authorizing Official" />
+            <email-address>blossom@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="132953a9-640c-46f7-9de9-3fa15ec99361" type="person">
+            <name>Steve S. Asesoro</name>
+            <prop name="job-title" value="System Security Assessor" />
+            <email-address>blossom@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="c46e27d1-7a65-47ea-bd76-df574fded5fd" type="person">
+            <name>Tom Poc</name>
+            <prop name="job-title" value="Technical Point of Contact" />
+            <email-address>blossom@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="4fded5fd-7a65-47ea-bd76-df57c46e27d1" type="person">
+            <name>Simon Admino</name>
+            <prop name="job-title" value="System Administrator" />
+            <email-address>blossom@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="551b9706-d6a4-4d25-8207-f2ccec541016" type="person">
+            <name>ManoGiana Bloom</name>
+            <prop name="job-title" value="Blossom PM" />
+            <email-address>blossom@nist.gov</email-address>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <responsible-party role-id="system-owner">
+            <party-uuid>09ad840f-aa79-43aa-9f22-25182c2ab11b</party-uuid>
+            <party-uuid>551b9706-d6a4-4d25-8207-f2ccec541016</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="license-owner">
+            <party-uuid>51588d7c-aa79-43aa-9f22-25182c2cd22d</party-uuid>
+            <party-uuid>551b9706-d6a4-4d25-8207-f2ccec541016</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="authorizing-official">
+            <party-uuid>3360e343-9860-4bda-9dfc-ff427c3dfab6</party-uuid>
+        </responsible-party>
+        <responsible-party role-id="sys-sec-assessor">
+            <party-uuid>132953a9-640c-46f7-9de9-3fa15ec99361</party-uuid>
+            <remarks>
+                <p>The party responsible to assess the security controls on behalf of the system owner.</p>
+            </remarks>
+        </responsible-party>
+        <responsible-party role-id="tpoc">
+            <party-uuid>c46e27d1-7a65-47ea-bd76-df574fded5fd</party-uuid>
+            <remarks>
+                <p>Manages leased liceses for the agency and is responsible to checkout, install, uninstall and return licenses to the pool for each order the agency places.</p>
+            </remarks>
+        </responsible-party>
+        <responsible-party role-id="system-administrator">
+            <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
+            <remarks>
+                <p>This party has development, deployment, configuration and operations responsibilities for "this system" supporting the system owner.</p>
+            </remarks>
+        </responsible-party>
+        <remarks>
+            <p>This SSP was created using a simplified version of OSCAL-based FedRAMP SSP Template
+                for the FedRAMP Low, Moderate, and High baselines.</p>
+        </remarks>
+    </metadata>
+    <import-profile href="../../xml/profile/blossom_moderate_profile.xml">
+        <remarks>
+            <p>This example points to the tailored FedRAMP Moderate 800-53 rev 5 baseline, adjusted
+                accordingly for BloSS@M.</p>
+        </remarks>
+    </import-profile>
+    <system-characteristics>
+        <system-id identifier-type="http://ietf.org/rfc/rfc4122">8101e04d-8305-4e73-bb95-6b59f645b143</system-id>
+        <system-name>Blockchain-based Secure Software Assets Management</system-name>
+        <system-name-short>Blossom</system-name-short>
+        <description>
+            <p>TBD: Describe the purpose and functions of this system here.</p>
+        </description>
+        <prop name="identity-assurance-level" value="2" />
+        <prop name="authenticator-assurance-level" value="2" />
+        <prop name="federation-assurance-level" value="2" />
+        <prop name="cloud-service-model" value="saas" />
+        <prop name="cloud-deployment-model" ns="https://fedramp.gov/ns/oscal" value="public-cloud" />
+        <security-sensitivity-level>fips-199-moderate</security-sensitivity-level>
+        <system-information>
+            <prop name="privacy-designation" value="no" />
+            <prop name="pta-1" ns="https://fedramp.gov/ns/oscal" value="no" class="pta" />
+            <prop name="pta-2" ns="https://fedramp.gov/ns/oscal" value="no" class="pta" />
+            <prop name="pta-3" ns="https://fedramp.gov/ns/oscal" value="no" class="pta" />
+            <prop name="pta-4" ns="https://fedramp.gov/ns/oscal" value="no" class="pta" />
+            <information-type uuid="1c21b0ef-29af-4b81-9a38-dacd1e6967b1">
+                <title>Blockchain-based Software Assets Management</title>
+                <description>
+                    <p>BloSS@M stores the minimally required identity and authorization metadata to
+                        authenitcate and authorize federal users of the system.</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.2.8.12</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-moderate</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-moderate</selected>
+                    <adjustment-justification>
+                        <p>The NIST Privacy Office and Office of Information Systems Management
+                            categorizes personal identity and authentication information with as
+                            FIPS-199 Low impact for integrity concerns.
+                            This categorization is limited to federal employees when this data is
+                            for identification of these federal employees only.</p>
+                    </adjustment-justification>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-low</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="0c9f7c06-bc4e-4006-b5a5-f150cf7ce1ac">
+                <title>Inventory control information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.4.2</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="c7c42a0c-8fa6-49fb-b98f-8804609504a5">
+                <title>Logistics management information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.4.3</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="f18905ed-6971-4a31-b29a-38d78c398d1f">
+                <title>Services acquisition information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.4.4</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="4be97836-b11a-487d-8c27-174e3352d8d6">
+                <title>Lifecycle and change management information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.5.2</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="fa4794ee-5d10-45e8-a8ab-154d4199cbd3">
+                <title>Information security information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.5.5</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="514e0850-16ce-4a86-b589-ca546c4c645c">
+                <title>Record retention information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.5.6</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="70b28c11-31c8-429b-855f-cc323fef59ea">
+                <title>Information management information</title>
+                <description>
+                    <p>TBD:</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.5.7</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="5820d24a-487a-4748-8bd2-ea4318337816">
+                <title>Information sharing information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>C.3.5.9</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                    <adjustment-justification>
+                        <p>This information has no base recommendation in SP 800-60 Volume 2
+                            Revision 1 guidance.
+                            The Office of Information Systems Management's consulted the BloSS@M
+                            Team and the NIST system owner, who categorized this information sharing
+                            at FIPS-199 Moderate impact.</p>
+                    </adjustment-justification>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                    <adjustment-justification>
+                        <p>This information has no base recommendation in SP 800-60 Volume 2
+                            Revision 1 guidance.
+                            The Office of Information Systems Management's consulted the BloSS@M
+                            Team and the NIST system owner, who categorized this information sharing
+                            at FIPS-199 Moderate impact.</p>
+                    </adjustment-justification>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                    <adjustment-justification>
+                        <p>This information has no base recommendation in SP 800-60 Volume 2
+                            Revision 1 guidance.
+                            The Office of Information Systems Management's consulted the BloSS@M
+                            Team and the NIST system owner, who categorized this information sharing
+                            at FIPS-199 Moderate impact.</p>
+                    </adjustment-justification>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="abaf261d-3860-47aa-bd7a-58e5776bae44">
+                <title>Scientific and technological research and innovation information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>D.19.1</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="88f10ac5-f2c8-43e3-af9e-d692360c61da">
+                <title>Research and development information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>D.20.1</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-moderate</selected>
+                </availability-impact>
+            </information-type>
+            <information-type uuid="53347cf4-8b06-4acc-a2fa-88177d7c937c">
+                <title>Research and development information</title>
+                <description>
+                    <p>TBD</p>
+                </description>
+                <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
+                    <information-type-id>D.20.4</information-type-id>
+                </categorization>
+                <confidentiality-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </integrity-impact>
+                <availability-impact>
+                    <base>fips-199-moderate</base>
+                    <selected>fips-199-low</selected>
+                </availability-impact>
+            </information-type>
+        </system-information>
+        <security-impact-level>
+            <security-objective-confidentiality>fips-199-moderate</security-objective-confidentiality>
+            <security-objective-integrity>fips-199-moderate</security-objective-integrity>
+            <security-objective-availability>fips-199-low</security-objective-availability>
+        </security-impact-level>
+        <status state="under-development" />
+        <authorization-boundary>
+            <description>
+                <p>TBD: A holistic, top-level explanation of the system's authorization boundary.</p>
+            </description>
+            <diagram uuid="dbf46c27-52a9-49c4-beb6-b6399cd75497">
+                <description>
+                    <p>A diagram-specific explanation.</p>
+                </description>
+                <link href="#d2eb3c18-6754-4e3a-a933-03d289e3fad5" rel="diagram" />
+                <caption>Authorization Boundary Diagram</caption>
+            </diagram>
+        </authorization-boundary>
+        <network-architecture>
+            <description>
+                <p>A holistic, top-level explanation of the network architecture.</p>
+            </description>
+            <diagram uuid="e97c3395-433a-48c1-8cc7-dd1e1555941c">
+                <description>
+                    <p>A diagram-specific explanation.</p>
+                </description>
+                <link href="#61081e81-850b-43c1-bf43-1ecbddcb9e7f" rel="diagram" />
+                <caption>Network Diagram</caption>
+            </diagram>
+        </network-architecture>
+        <data-flow>
+            <description>
+                <p>A holistic, top-level explanation of the system's data flows.</p>
+            </description>
+            <diagram uuid="e3b98448-4219-46a5-b229-412423c566f3">
+                <description>
+                    <p>A diagram-specific explanation.</p>
+                </description>
+                <!--TBD: needds fixing link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" / -->
+                <caption>Data Flow Diagram</caption>
+            </diagram>
+        </data-flow>
+    </system-characteristics>
+    <system-implementation>
+        <leveraged-authorization uuid="5a9c98ab-8e5e-433d-a7bd-515c07cd1497">
+            <title>AWS Managed Blockchain (AMB)</title>
+            <link href="./aws_leveraged_authorization_ssp.xml"/>
+            <!-- The Leveraged Authorization POC is the AMB's Authorizing Official in this case. -->
+            <party-uuid>e63e870d-bf43-40dc-98a0-37d5e39b2dd1</party-uuid>
+            <date-authorized>2024-01-01</date-authorized>
+            <remarks>
+                <p>TBD: ssp-uuid: 73a7ca56-ac02-43b9-8664-62bcb05a7e91 will need to be added for
+                    oscal 1.2.0.</p>
+                <p>The leveraged authorization assembly is supposed to have a required uuid flag
+                    instead of an optional id flag. This will be fixed in the syntax shortly.</p>
+                <p>Use one leveraged-authorization assembly for each underlying system. (In the
+                    legacy world, these may be general support systems.</p>
+                <p>The link fields are optional, but preferred where known. Often, a leveraging
+                    system's SSP author will not have access to the leveraged system's SSP, but
+                    should have access to the leveraged system's CRM.</p>
+            </remarks>
+        </leveraged-authorization>
+        <user uuid="9cb0fab0-78bd-44ba-bcb8-3e9801cc952f">
+            <title>System Administrator</title>
+            <prop name="sensitivity" ns="https://fedramp.gov/ns/oscal" value="high" />
+            <prop name="privilege-level" value="privileged" />
+            <prop name="type" value="internal" />
+            <role-id>system-administrator</role-id>
+            <authorized-privilege>
+                <title>Full administrative access rights</title>
+                <function-performed>add and remove users and hardware</function-performed>
+                <function-performed>install and configure deployments</function-performed>
+                <function-performed>system updates, patches and hotfixes</function-performed>
+                <function-performed>perform backups</function-performed>
+            </authorized-privilege>
+        </user>
+        <component uuid="60f92bcf-f353-4236-9803-2a5d41751010" type="this-system">
+            <title>This System</title>
+            <description>
+                <p>The entire Blossom system as depicted in the system authorization boundary</p>
+            </description>
+            <status state="under-development" />
+        </component>
+        <component uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" type="leveraged-system">
+            <title>AWS Managed Blockchain (AMB) - Leveraged System</title>
+            <description>
+                <p>TBD: If the leveraged system owner provides a UUID for their system (such as in
+                    an OSCAL-based CRM), it should be reflected in the <code>inherited-uuid</code>
+                    property.</p>
+            </description>
+            <prop name="leveraged-authorization-uuid" value="5a9c98ab-8e5e-433d-a7bd-515c07cd1497" />
+            <prop name="implementation-point" value="external" />
+            <!-- The value of inherited-uuid is the uuid of the component of the leveraged system which provides the control implementation. In thsi case will be the AMB's "this-system"-->
+            <prop name="inherited-uuid" value="73a7ca56-ac02-43b9-8664-62bcb05a7e91" />
+            <status state="operational" />
+        </component>
+        <inventory-item uuid="79b4f0d1-91ab-49e8-af28-045c12aa9272">
+            <description>
+                <p>TBD: Description of Blossom inventory items 1</p>
+            </description>
+            <prop name="software-name" value="Blossom SaaS" class="blockchain-application" />
+            <prop name="software-version" value="1.0.0" class="blockchain-application" />
+            <prop name="asset-id" value="BLOSSOM-SAAS-2222-01" />
+            <prop name="is-scanned" value="yes" />
+            <implemented-component component-uuid="1541015b-6d19-42cb-a991-624cc082ed4d">
+                <prop name="asset-id" value="BLOSSOM-SAAS-2222" />
+            </implemented-component>
+        </inventory-item>
+    </system-implementation>
+    <control-implementation>
+        <description>
+            <p>FedRAMP SSP Template Section 13</p>
+            <p>This description field is required by OSCAL.</p>
+            <p>FedRAMP does not require any specific information here.</p>
+        </description>
+        <!-- ####
+            AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not have a b.1 and b.2, but it has b and c) 
+            #### -->
+        <!-- AC-1 will not be implemented now. 
+        <implemented-requirement uuid="eee8697a-bc39-45aa-accc-d3e534932efb" control-id="ac-1">
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
+                value="2020-11-27Z" />
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
+                <remarks>
+                    <p>Describe the plan to complete the implementation.</p>
+                </remarks>
+            </prop>
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="sp-system" />
+            <statement statement-id="ac-1_smt" uuid="240fa015-01df-4741-bff5-6958c7fb85e5">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="d9d1ce66-ff47-474d-8596-5fdf2af60179">
+                    <description>
+                        <p>Describe how the control is satisfied within the system.</p>
+                    </description>
+                    <set-parameter param-id="ac-1_prm_1">
+                        <value>[replace with list of personnel or roles]</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-1_prm_2">
+                        <value>[specify frequency]</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-1_prm_3">
+                        <value>[specify frequency]</value>
+                    </set-parameter>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-1_smt.a.1" uuid="fb4d039a-dc4f-46f5-9c1f-f6343eaf69bc">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="3f5612a4-cd1d-4c47-8cae-75d2eaa332cd">
+                    <description>
+                        <p>Describe how Part a is satisfied within the system.</p>
+                        <p>Legacy approach. If no policy component is defined, describe here how the
+                            policy satisfies part a.</p>
+                        <p>In this case, a link must be provided to the policy.</p>
+                        <p>FedRAMP prefers all policies and procedures be attached as a resource in
+                            the back-matter. The link points to a resource.</p>
+                    </description>
+                    <link href="#090ab379-2089-4830-b9fd-26d0729e22e9" rel="policy" />
+                </by-component>
+                <remarks>
+                    <p>The specified component is the system itself.</p>
+                    <p>Any control implementation response that can not be associated with another
+                        component is associated with the component representing the system.</p>
+                </remarks>
+            </statement>
+            <statement statement-id="ac-1_smt.a.2" uuid="c365cf95-5bc0-4599-9773-f4eddf69798d">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="00507a44-e0d7-4fe6-ad20-8d474a84ee15">
+                    <description>
+                        <p>Describe how Part b is satisfied within the system.</p>
+                        <p>Legacy approach. If no policy component is defined, describe here how the
+                            procedure satisfies part b.</p>
+                        <p>In this case, a link must be provided to the procedure.</p>
+                        <p>FedRAMP prefers all policies and procedures be attached as a resource in
+                            the back-matter. The link points to a resource.</p>
+                    </description>
+                    <link href="#1002a58e-9e11-4aa6-9ab4-2bde52995952" rel="procedure" />
+                </by-component>
+                <by-component component-uuid="fa90644a-8bf8-47da-b0d3-82bffc708afc"
+                    uuid="42ac379e-4abc-4716-809c-119c03b5ac64">
+                    <description>
+                        <p>Describe how Part b is satisfied within the system.</p>
+                        <p>Legacy approach. If no policy component is defined, describe here how the
+                            procedure satisfies part b.</p>
+                        <p>In this case, a link must be provided to the procedure.</p>
+                        <p>FedRAMP prefers all policies and procedures be attached as a resource in
+                            the back-matter. The link points to a resource.</p>
+                    </description>
+                </by-component>
+                <remarks>
+                    <p>The specified component is the system itself.</p>
+                    <p>Any control implementation response that can not be associated with another
+                        component is associated with the component representing the system.</p>
+                </remarks>
+            </statement>
+            <statement statement-id="ac-1_smt.b.1" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                    <description>
+                        <p>Describe how Part b-1 is satisfied.</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-1_smt.b.2" uuid="59c67969-3d5c-45f1-8e3e-1e642249633f">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="5a869308-1625-4d92-9ed8-ff5d8bd13656">
+                    <description>
+                        <p>Describe how Part b-2 is satisfied.</p>
+                    </description>
+                </by-component>
+            </statement>
+        </implemented-requirement>
+    -->
+        <!-- ####
+            AC-2
+            ######  -->
+        <implemented-requirement uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7" control-id="ac-2">
+            <!-- TBD: The following <prop>s must be reviewed, updated and only one option kept based on AC-2 implementation of the inherited control for manageing the Authorizing Official's account -->
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2024/05/30" />
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="partial">
+                <remarks>
+                    <p>AMB provides access control to the infrastracter for the entities identified below. The Consumer's responsibility is to update the ACL ith the identities authorized to access the resource.</p>
+                </remarks>
+            </prop>
+            <!-- NOT APPLICABLE VALUES - TO BE REMOVED AT THE END
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
+                <remarks>
+                    <p>TBD: Describe the portion of the control that is not satisfied.</p>
+                </remarks>
+            </prop>
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="not-applicable">
+                <remarks>
+                    <p>TBD: Describe the justification for marking this control Not Applicable.</p>
+                </remarks>
+            </prop>  
+            -->        
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged-system" />
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal"
+                value="customer-configured">
+                <remarks>
+                    <p>TBD: Describe any customer-configured requirements for satisfying this control.</p>
+                </remarks>
+            </prop>
+            <responsible-role role-id="system-administrator">
+                <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
+            </responsible-role>
+            <responsible-role role-id="system-owner">
+                <party-uuid>09ad840f-aa79-43aa-9f22-25182c2ab11b</party-uuid>
+            </responsible-role>
+            <statement statement-id="ac-2_smt" uuid="4a2428eb-41eb-447a-81db-4f6d98a003ce">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="eb710146-1ede-4876-9a3b-02c18408e506">
+                    <description>
+                        <p>The NGAC implementation in the two chaincodes manages the access control for the Blossom business layer users and the BC Member's ATO-related accounts.</p>
+                    </description>
+                    <set-parameter param-id="ac-2_prm_1">
+                        <value>business need</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_2">
+                        <value>business need</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_3">
+                        <value>System Owner (SO)</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_4">
+                        <value>Types of User Accounts for Blossom</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_5">
+                        <value>System Owner (SO)</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_6">
+                        <value>1 business day</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_7">
+                        <value>1 business day</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_8">
+                        <value>1 business day</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_9">
+                        <value>System Owner (SO)</value>
+                    </set-parameter>
+                    <set-parameter param-id="ac-2_prm_10">
+                        <value>every 6 months</value>
+                    </set-parameter>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.a" uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="b29d1505-69fa-4ad0-834b-d179e7f44fff">
+                    <description>
+                        <p>The system has privileged and non-privileged accounts associated with the business layer and the ATO processes.</p>
+                        <p>These accounts are managed by the NGAC implementation in the chaincodes for the ATO and for the assets management (business) processes.</p>
+                        <p>The following accounts are supported for the business operations (assets management):</p>
+                        <ul>
+                            <li>Privileged accounts:
+                                <ul>License Owner (LO)</ul>
+                            </li>
+                            <li>Non-Privileged accounts:
+                                <ul>Acquisition Officer (ACQ)</ul>
+                                <ul>Technical Point of Contact (TPOC)</ul>
+                            </li>
+                        </ul>
+                        <p>The following account is supported for the ATO process (ATO attestation submission and review of other Blossom members):</p>
+                        <ul>
+                            <li>Non-Privileged accounts:
+                                <ul>Authorizing Official (AO)</ul>
+                            </li>
+                        </ul>
+                    </description>
+                    <implementation-status state="under-development" />
+                </by-component>
+                <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
+                    uuid="84de735f-ba37-4bb4-b784-79760f986a40">
+                    <description>
+                        <p>The accounts of the Blossom Member managed by the Leveraged AWS IaaS are:</p>
+                        <ul>
+                            <li>Privileged accounts:
+                                <ul>System Owner (SO)</ul>
+                                <ul>System Administrator (SA)</ul>
+                            </li>
+                            <li>Non-Privileged accounts:
+                                <ul>System Security Assessor (SSA)</ul>
+                                <ul>Authorizing Official (AO)</ul>
+                            </li>
+                        </ul>
+                    </description>
+                    <inherited uuid="780a3910-2019-4d33-a2f9-5c6ac91929d6"
+                        provided-uuid="11111111-0000-4000-9009-002001002001">
+                        <description>
+                            <p>TBD: provided-uuid needs to match the one in the AWS' SSP.</p>
+                            <p>All privileged and non-privileged accounts that are granted access to the AWS infrastructure and are responsible for the Blossom member (this sysstem), are managed by the AWS IaaS (leveraged ATO system) which uses an Access Control List (ACL) for the NIST employees assigned Blossom roles.</p>
+                        </description>
+                    </inherited>
+                    <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1"
+                        responsibility-uuid="11111111-0000-4000-9009-002001002002">
+                        <description>
+                            <p>For all responsible parties with roles managed by the AWS IaaS system, accounts creation/deletion are requested, approved/revoked by the System Owner or the Blossom PM and are added to or delete from the ACL list.</p>
+                        </description>
+                    </satisfied>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.b" uuid="bb2476f6-0f78-4e64-94f1-1b58b80db8e0">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1">
+                    <description>
+                        <p>Assign account managers</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.c" uuid="297d7975-c0fa-46f3-bbbd-585b2e2bae3f">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="c72b52e1-1943-4a52-be48-7bcce7df2f6d">
+                    <description>
+                        <p>Require <insert type="param" id-ref="ac-2_prm_1" />[Assignment: organization-defined prerequisites and criteria] for group and role membership;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d" uuid="a0ae8e3a-83b9-4a07-ba9b-3ba0d7a7104c">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="779d08e3-4ed0-4a83-84ab-2ca2c9ec3745">
+                    <description>
+                        <p>Specify:</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d.1" uuid="4c65972e-1580-49dd-aede-b3e4af0703e1">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="49c1dab6-3c75-4758-8119-120e01f163d7">
+                    <description>
+                        <p>Authorized users of the system</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d.2" uuid="77ab4262-292a-4542-be4f-3bbf136adaf7">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="df7fbdc2-78e2-4391-9981-bb9f682a363a">
+                    <description>
+                        <p>Group and role membership</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.d.3" uuid="0a95af0d-8d11-41cb-a5cf-e7352b0cafe8">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
+                    <description>
+                        <p>Access authorizations (i.e., privileges) and <insert type="param"
+                            id-ref="ac-2_prm_2" />[Assignment: organization-defined attributes (as required)] for each account;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.e" uuid="f14d12a4-470a-4d97-b0d1-8a8bd72749f0">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
+                    <description>
+                        <p>Require approvals by <insert type="param" id-ref="ac-2_prm_3" />[Assignment: organization-defined personnel or roles] for requests to create accounts;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.f" uuid="25468357-e8b1-4703-aecb-b6a37ccccd9e">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="02d4c648-5a86-4155-bd73-02c3439262b4">
+                    <description>
+                        <p>Create, enable, modify, disable, and remove accounts in accordance with <insert
+                            type="param" id-ref="ac-2_prm_4" />[Assignment: organization-defined policy, procedures, prerequisites, and criteria];</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.g" uuid="a4de4fa5-0c77-4a13-8a57-13739bcfc1ae">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="ab679286-80e7-4b6d-b08c-34931bb56073">
+                    <description>
+                        <p>Monitor the use of accounts;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h" uuid="17fe835f-b916-4966-a168-6249b54a9275">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
+                    <description>
+                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment: organization-defined personnel or roles] within:</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h.1" uuid="e3d29dc5-7247-4045-862b-8b233824937a">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
+                    <description>
+                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment: system owner] within:<insert type="param" id-ref="ac-2_prm_6" />[Assignment: 1 business day] when accounts are no longer required;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h.2" uuid="a48f76ce-c4d3-4b65-ab88-9d9de0eb5408">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
+                    <description>
+                        <p><insert type="param" id-ref="ac-2_prm_7" />[Assignment: organization-defined time period] when users are terminated or transferred; </p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.h.3" uuid="07fa50b6-54a6-4e82-8d50-b732868be673">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
+                    <description>
+                        <p><insert type="param" id-ref="ac-2_prm_8" />[Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i" uuid="8089db43-a930-4b05-b661-f6bdaf602de0">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="f793018d-36df-48bf-a2f0-996364d3f46e">
+                    <description>
+                        <p>Authorize access to the system based on:</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i.1" uuid="d39d826f-5eda-46f5-ba6e-c1876c5c9a44">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="c5d96adf-2313-48c2-98e1-73f1b7044d68">
+                    <description>
+                        <p>A valid access authorization;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i.2" uuid="3bc04bba-c4bb-4134-be58-00b1c9e639e1">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="54fc3c61-3717-4ad2-8291-fd521b6b9d0d">
+                    <description>
+                        <p>Intended system usage; </p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.i.3" uuid="c6e80ed4-f36e-4e6b-9bb2-2ef200bda619">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
+                    <description>
+                        <p><insert type="param" id-ref="ac-2_prm_9" />[Assignment: organization-defined attributes (as required)];</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.j" uuid="6d66a726-f59a-478c-b1ab-071293318857">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
+                    <description>
+                        <p>Review accounts for compliance with account management requirements <insert
+                            type="param" id-ref="ac-2_prm_10" />[Assignment: organization-defined frequency];</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.k" uuid="781332d1-017d-4c97-8f42-ec618914bcb3">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="d0cdfbc2-aef5-418e-94dc-9906341bcc12">
+                    <description>
+                        <p>Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group;</p>
+                    </description>
+                </by-component>
+            </statement>
+            <statement statement-id="ac-2_smt.l" uuid="ea940e91-f316-4adc-8a99-ffa8a7609127">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
+                    uuid="f23d55dd-1204-42f9-862e-2a07200b5c6e">
+                    <description>
+                        <p>Align account management processes with personnel termination and transfer processes.</p>
+                    </description>
+                </by-component>
+            </statement>
+        </implemented-requirement>
+    </control-implementation>
+    <back-matter>
+        <resource uuid="006babc9-4f57-4ab0-9941-15fcb65e0387">
+            <description>
+                <p>National Institute of Standards and Technology's Logo</p>
+            </description>
+            <rlink
+                href="https://www.nist.gov/sites/default/files/images/2017/09/20/645px-nist_logo-svg_1.png"
+                media-type="image/png" />
+            <base64 filename="logo.png" media-type="image/png">00000000</base64>
+            <remarks>
+                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .</p>
+                <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
+                <p>Images must be in sufficient resolution to read all detail when rendered in a
+                    browser via HTML5.</p>
+            </remarks>
+        </resource>
+        <resource uuid="d2eb3c18-6754-4e3a-a933-03d289e3fad5">
+            <description>
+                <p>The primary authorization boundary diagram.</p>
+            </description>
+            <rlink href="./diagrams/boundary.png" />
+            <base64 filename="logo.png" media-type="image/png">00000000</base64>
+            <remarks>
+                <p>Section 9.2, Figure 9-1 Authorization Boundary Diagram (graphic)</p>
+                <p>This should be referenced in the
+                    system-characteristics/authorization-boundary/diagram/link/@href flag using a
+                    value of "#d2eb3c18-6754-4e3a-a933-03d289e3fad5"</p>
+                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .</p>
+                <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
+                <p>Images must be in sufficient resolution to read all detail when rendered in a
+                    browser via HTML5.</p>
+            </remarks>
+        </resource>
+        <resource uuid="61081e81-850b-43c1-bf43-1ecbddcb9e7f">
+            <description>
+                <p>The primary network diagram.</p>
+            </description>
+            <rlink href="./diagrams/network.png" />
+            <base64 filename="network.png" media-type="image/png">00000000</base64>
+            <remarks>
+                <p>Section 9.4, Figure 9-2 Network Diagram (graphic)</p>
+                <p>This should be referenced in the
+                    system-characteristics/network-architecture/diagram/link/@href flag using a
+                    value of "#61081e81-850b-43c1-bf43-1ecbddcb9e7f"</p>
+                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .</p>
+                <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
+                <p>Images must be in sufficient resolution to read all detail when rendered in a
+                    browser via HTML5.</p>
+            </remarks>
+        </resource>
+        <resource uuid="fab59751-b855-40cb-93c1-492562e20e18">
+            <title>Privacy Impact Assessment</title>
+            <prop name="type" ns="https://csrc.nist.gov/ns/blossom"
+                value="privacy-impact-assessment" />
+            <prop name="publication" ns="https://csrc.nist.gov/ns/blossom" value="Document Date" />
+            <prop name="version" value="Document Version" />
+            <rlink href="./documents/pia.docx"
+                media-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+            <base64 filename="pia.docx"
+                media-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                00000000</base64>
+            <remarks>
+                <p>Table 15-1 Attachments: Privacy Impact Assessment</p>
+                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .</p>
+            </remarks>
+        </resource>
+    </back-matter>
+</system-security-plan>

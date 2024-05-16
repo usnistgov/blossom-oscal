@@ -1,3 +1,5 @@
+ipykernel
+
 chevron
 pydantic
 PyYAML

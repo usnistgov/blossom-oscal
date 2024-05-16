@@ -1,0 +1,834 @@
+---
+system-security-plan:
+  uuid: 8c91b0ac-8eaa-4ac2-a2fb-eeff3b7efa20
+  metadata:
+    title: BloSS@M System Security Plan
+    published: 2022-04-05T00:00:00Z
+    last-modified: 2024-03-27T00:00:00Z
+    version: "0.1"
+    oscal-version: 1.1.2
+    roles:
+    - id: system-owner
+      title: System Owner (SO)
+      description: "The individual within the organization who is ultimately accountable for everything related to the deployment, assessemnt, authorization and operations of the Blossom Member which provides the software assets leasing service (here in known as \"this system\")."
+    - id: license-owner
+      title: License Owner (LO)
+      description: |-
+        The individual within the service provider organization who is accountable for managing the pool of software resources made available for leasing to USG agencies.
+
+        The License Owner role exists only within the service provider agency.
+    - id: authorizing-official
+      title: Authorizing Official
+      description: |-
+        The individual or individuals who are ultimatly accountable for reviewing the assessemnt package, discuss with the SO the findings and grant an authorization to operate (ATO) to "this system".
+
+        The Authorizing Official is the only entity responsible for the security posture of the system that gets access to the ATO channel (chainecode). The AO signs the MOU on behalf of the agency.
+    - id: sys-sec-assessor
+      title: System Security Assessor (SSA)
+      description: The individual accountable for assessing the security posture of the system on behalf of the system owner.
+    - id: tpoc
+      title: Technical Point of Contact (TPOC)
+      description: "The individual accountable for managing leased licenses (checkout, install, uninstall, return)."
+    - id: system-administrator
+      title: System Administrator (SA)
+      description: "The individual accountable for the deployment, configuration, testing and operations of the system on behalf of the System Owner."
+    locations:
+    - uuid: 1ef39fd9-d184-44c4-8ef4-36d2dbad70a2
+      title: National Institute of Standards and Technology
+      address:
+        type: work
+        addr-lines:
+        - 100 Bureau Drive
+        city: Gaithersburg
+        state: MD
+        postal-code: "20899"
+      remarks: NIST ITL Computer Security Division's Secure Systems and Applications Group is the primary CSP for this project.
+    - uuid: cd8b83a8-3c8e-4b0e-abd3-bbb57e2c404e
+      title: AWS US East/West
+      address:
+        addr-lines:
+        - 13200 Woodland Park Rd
+        city: Herndon
+        state: VA
+        postal-code: "20171"
+      props:
+      - name: type
+        value: data-center
+        class: primary
+      remarks: "This title must be kept as-is to match FedRAMP Marketplace listing. This is a a FedRAMP requirement. This official mailing address of Amazon's AWS commercial offering for the us-east-1 is provided, as Amazon not disclose the address of data-centers either on a region or availability zone basis."
+    parties:
+    - uuid: 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+      type: organization
+      name: National Institute of Standards and Technology IT Lab Computer Security Division Secure Systems and Applications Group
+      short-name: NIST
+      links:
+      - href: '#006babc9-4f57-4ab0-9941-15fcb65e0387'
+        rel: logo
+      location-uuids:
+      - 1ef39fd9-d184-44c4-8ef4-36d2dbad70a2
+      remarks: Blossom network provider.
+    - uuid: 09ad840f-aa79-43aa-9f22-25182c2ab11b
+      type: person
+      name: Stan Owens
+      props:
+      - name: job-title
+        value: System Owner
+      email-addresses:
+      - blossom@nist.gov
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    - uuid: 51588d7c-aa79-43aa-9f22-25182c2cd22d
+      type: person
+      name: Licenta Owens
+      props:
+      - name: job-title
+        value: License Owner
+      email-addresses:
+      - blossom@nist.gov
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    - uuid: 3360e343-9860-4bda-9dfc-ff427c3dfab6
+      type: person
+      name: Aurelian Officman
+      props:
+      - name: job-title
+        value: Authorizing Official
+      email-addresses:
+      - blossom@nist.gov
+      location-uuids:
+      - 1ef39fd9-d184-44c4-8ef4-36d2dbad70a2
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    - uuid: 132953a9-640c-46f7-9de9-3fa15ec99361
+      type: person
+      name: Steve S. Asesoro
+      props:
+      - name: job-title
+        value: System Security Assessor
+      email-addresses:
+      - blossom@nist.gov
+      location-uuids:
+      - 1ef39fd9-d184-44c4-8ef4-36d2dbad70a2
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    - uuid: c46e27d1-7a65-47ea-bd76-df574fded5fd
+      type: person
+      name: Tom Poc
+      props:
+      - name: job-title
+        value: Technical Point of Contact
+      email-addresses:
+      - blossom@nist.gov
+      location-uuids:
+      - 1ef39fd9-d184-44c4-8ef4-36d2dbad70a2
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    - uuid: 4fded5fd-7a65-47ea-bd76-df57c46e27d1
+      type: person
+      name: Simon Admino
+      props:
+      - name: job-title
+        value: System Administrator
+      email-addresses:
+      - blossom@nist.gov
+      location-uuids:
+      - 1ef39fd9-d184-44c4-8ef4-36d2dbad70a2
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    - uuid: 551b9706-d6a4-4d25-8207-f2ccec541016
+      type: person
+      name: ManoGiana Bloom
+      props:
+      - name: job-title
+        value: Blossom PM
+      email-addresses:
+      - blossom@nist.gov
+      member-of-organizations:
+      - 8aed7ffd-5158-445d-8d7c-eec5cf240cba
+    responsible-parties:
+    - role-id: system-owner
+      party-uuids:
+      - 09ad840f-aa79-43aa-9f22-25182c2ab11b
+      - 551b9706-d6a4-4d25-8207-f2ccec541016
+    - role-id: license-owner
+      party-uuids:
+      - 51588d7c-aa79-43aa-9f22-25182c2cd22d
+      - 551b9706-d6a4-4d25-8207-f2ccec541016
+    - role-id: authorizing-official
+      party-uuids:
+      - 3360e343-9860-4bda-9dfc-ff427c3dfab6
+    - role-id: sys-sec-assessor
+      party-uuids:
+      - 132953a9-640c-46f7-9de9-3fa15ec99361
+      remarks: The party responsible to assess the security controls on behalf of the system owner.
+    - role-id: tpoc
+      party-uuids:
+      - c46e27d1-7a65-47ea-bd76-df574fded5fd
+      remarks: "Manages leased liceses for the agency and is responsible to checkout, install, uninstall and return licenses to the pool for each order the agency places."
+    - role-id: system-administrator
+      party-uuids:
+      - 4fded5fd-7a65-47ea-bd76-df57c46e27d1
+      remarks: "This party has development, deployment, configuration and operations responsibilities for \"this system\" supporting the system owner."
+    remarks: "This SSP was created using a simplified version of OSCAL-based FedRAMP SSP Template for the FedRAMP Low, Moderate, and High baselines."
+  import-profile:
+    href: ../../xml/profile/blossom_moderate_profile.xml
+    remarks: "This example points to the tailored FedRAMP Moderate 800-53 rev 5 baseline, adjusted accordingly for BloSS@M."
+  system-characteristics:
+    system-ids:
+    - identifier-type: http://ietf.org/rfc/rfc4122
+      id: 8101e04d-8305-4e73-bb95-6b59f645b143
+    system-name: Blockchain-based Secure Software Assets Management
+    system-name-short: Blossom
+    description: "TBD: Describe the purpose and functions of this system here."
+    props:
+    - name: identity-assurance-level
+      value: "2"
+    - name: authenticator-assurance-level
+      value: "2"
+    - name: federation-assurance-level
+      value: "2"
+    - name: cloud-service-model
+      value: saas
+    - name: cloud-deployment-model
+      ns: https://fedramp.gov/ns/oscal
+      value: public-cloud
+    security-sensitivity-level: fips-199-moderate
+    system-information:
+      props:
+      - name: privacy-designation
+        value: "no"
+      - name: pta-1
+        ns: https://fedramp.gov/ns/oscal
+        value: "no"
+        class: pta
+      - name: pta-2
+        ns: https://fedramp.gov/ns/oscal
+        value: "no"
+        class: pta
+      - name: pta-3
+        ns: https://fedramp.gov/ns/oscal
+        value: "no"
+        class: pta
+      - name: pta-4
+        ns: https://fedramp.gov/ns/oscal
+        value: "no"
+        class: pta
+      information-types:
+      - uuid: 1c21b0ef-29af-4b81-9a38-dacd1e6967b1
+        title: Blockchain-based Software Assets Management
+        description: BloSS@M stores the minimally required identity and authorization metadata to authenitcate and authorize federal users of the system.
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.2.8.12
+        confidentiality-impact:
+          base: fips-199-low
+          selected: fips-199-moderate
+        integrity-impact:
+          base: fips-199-low
+          selected: fips-199-moderate
+          adjustment-justification: The NIST Privacy Office and Office of Information Systems Management categorizes personal identity and authentication information with as FIPS-199 Low impact for integrity concerns. This categorization is limited to federal employees when this data is for identification of these federal employees only.
+        availability-impact:
+          base: fips-199-low
+          selected: fips-199-low
+      - uuid: 0c9f7c06-bc4e-4006-b5a5-f150cf7ce1ac
+        title: Inventory control information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.4.2
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: c7c42a0c-8fa6-49fb-b98f-8804609504a5
+        title: Logistics management information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.4.3
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: f18905ed-6971-4a31-b29a-38d78c398d1f
+        title: Services acquisition information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.4.4
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: 4be97836-b11a-487d-8c27-174e3352d8d6
+        title: Lifecycle and change management information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.5.2
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: fa4794ee-5d10-45e8-a8ab-154d4199cbd3
+        title: Information security information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.5.5
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: 514e0850-16ce-4a86-b589-ca546c4c645c
+        title: Record retention information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.5.6
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: 70b28c11-31c8-429b-855f-cc323fef59ea
+        title: Information management information
+        description: 'TBD:'
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.5.7
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: 5820d24a-487a-4748-8bd2-ea4318337816
+        title: Information sharing information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - C.3.5.9
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+          adjustment-justification: "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance. The Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+          adjustment-justification: "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance. The Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+          adjustment-justification: "This information has no base recommendation in SP 800-60 Volume 2 Revision 1 guidance. The Office of Information Systems Management's consulted the BloSS@M Team and the NIST system owner, who categorized this information sharing at FIPS-199 Moderate impact."
+      - uuid: abaf261d-3860-47aa-bd7a-58e5776bae44
+        title: Scientific and technological research and innovation information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - D.19.1
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+      - uuid: 88f10ac5-f2c8-43e3-af9e-d692360c61da
+        title: Research and development information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - D.20.1
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-moderate
+      - uuid: 53347cf4-8b06-4acc-a2fa-88177d7c937c
+        title: Research and development information
+        description: TBD
+        categorizations:
+        - system: https://doi.org/10.6028/NIST.SP.800-60v2r1
+          information-type-ids:
+          - D.20.4
+        confidentiality-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        integrity-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+        availability-impact:
+          base: fips-199-moderate
+          selected: fips-199-low
+    security-impact-level:
+      security-objective-confidentiality: fips-199-moderate
+      security-objective-integrity: fips-199-moderate
+      security-objective-availability: fips-199-low
+    status:
+      state: under-development
+    authorization-boundary:
+      description: "TBD: A holistic, top-level explanation of the system's authorization boundary."
+      diagrams:
+      - uuid: dbf46c27-52a9-49c4-beb6-b6399cd75497
+        description: A diagram-specific explanation.
+        links:
+        - href: '#d2eb3c18-6754-4e3a-a933-03d289e3fad5'
+          rel: diagram
+        caption: Authorization Boundary Diagram
+    network-architecture:
+      description: "A holistic, top-level explanation of the network architecture."
+      diagrams:
+      - uuid: e97c3395-433a-48c1-8cc7-dd1e1555941c
+        description: A diagram-specific explanation.
+        links:
+        - href: '#61081e81-850b-43c1-bf43-1ecbddcb9e7f'
+          rel: diagram
+        caption: Network Diagram
+    data-flow:
+      description: "A holistic, top-level explanation of the system's data flows."
+      diagrams:
+      - uuid: e3b98448-4219-46a5-b229-412423c566f3
+        description: A diagram-specific explanation.
+        caption: Data Flow Diagram
+  system-implementation:
+    leveraged-authorizations:
+    - uuid: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
+      title: AWS Managed Blockchain (AMB)
+      links:
+      - href: ./aws_leveraged_authorization_ssp.xml
+      party-uuid: e63e870d-bf43-40dc-98a0-37d5e39b2dd1
+      date-authorized: 2024-01-01
+      remarks: |-
+        TBD: ssp-uuid: 73a7ca56-ac02-43b9-8664-62bcb05a7e91 will need to be added for oscal 1.2.0.
+
+        The leveraged authorization assembly is supposed to have a required uuid flag instead of an optional id flag. This will be fixed in the syntax shortly.
+
+        Use one leveraged-authorization assembly for each underlying system. (In the legacy world, these may be general support systems.
+
+        The link fields are optional, but preferred where known. Often, a leveraging system's SSP author will not have access to the leveraged system's SSP, but should have access to the leveraged system's CRM.
+    users:
+    - uuid: 9cb0fab0-78bd-44ba-bcb8-3e9801cc952f
+      title: System Administrator
+      props:
+      - name: sensitivity
+        ns: https://fedramp.gov/ns/oscal
+        value: high
+      - name: privilege-level
+        value: privileged
+      - name: type
+        value: internal
+      role-ids:
+      - system-administrator
+      authorized-privileges:
+      - title: Full administrative access rights
+        functions-performed:
+        - add and remove users and hardware
+        - install and configure deployments
+        - "system updates, patches and hotfixes"
+        - perform backups
+    components:
+    - uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+      type: this-system
+      title: This System
+      description: The entire Blossom system as depicted in the system authorization boundary
+      status:
+        state: under-development
+    - uuid: e82e6e07-0c62-417e-8a19-3744991b4c65
+      type: leveraged-system
+      title: AWS Managed Blockchain (AMB) - Leveraged System
+      description: "TBD: If the leveraged system owner provides a UUID for their system (such as in an OSCAL-based CRM), it should be reflected in the `inherited-uuid` property."
+      props:
+      - name: leveraged-authorization-uuid
+        value: 5a9c98ab-8e5e-433d-a7bd-515c07cd1497
+      - name: implementation-point
+        value: external
+      - name: inherited-uuid
+        value: 73a7ca56-ac02-43b9-8664-62bcb05a7e91
+      status:
+        state: operational
+    inventory-items:
+    - uuid: 79b4f0d1-91ab-49e8-af28-045c12aa9272
+      description: "TBD: Description of Blossom inventory items 1"
+      props:
+      - name: software-name
+        value: Blossom SaaS
+        class: blockchain-application
+      - name: software-version
+        value: 1.0.0
+        class: blockchain-application
+      - name: asset-id
+        value: BLOSSOM-SAAS-2222-01
+      - name: is-scanned
+        value: "yes"
+      implemented-components:
+      - component-uuid: 1541015b-6d19-42cb-a991-624cc082ed4d
+        props:
+        - name: asset-id
+          value: BLOSSOM-SAAS-2222
+  control-implementation:
+    description: |-
+      FedRAMP SSP Template Section 13
+
+      This description field is required by OSCAL.
+
+      FedRAMP does not require any specific information here.
+    implemented-requirements:
+    - uuid: 7a36cf53-156d-4d1f-9a8b-433f61cc57b7
+      control-id: ac-2
+      props:
+      - name: planned-completion-date
+        ns: https://fedramp.gov/ns/oscal
+        value: 2024/05/30
+      - name: implementation-status
+        ns: https://fedramp.gov/ns/oscal
+        value: partial
+        remarks: AMB provides access control to the infrastracter for the entities identified below. The Consumer's responsibility is to update the ACL ith the identities authorized to access the resource.
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
+        value: leveraged-system
+      - name: control-origination
+        ns: https://fedramp.gov/ns/oscal
+        value: customer-configured
+        remarks: "TBD: Describe any customer-configured requirements for satisfying this control."
+      responsible-roles:
+      - role-id: system-administrator
+        party-uuids:
+        - 4fded5fd-7a65-47ea-bd76-df57c46e27d1
+      - role-id: system-owner
+        party-uuids:
+        - 09ad840f-aa79-43aa-9f22-25182c2ab11b
+      statements:
+      - statement-id: ac-2_smt
+        uuid: 4a2428eb-41eb-447a-81db-4f6d98a003ce
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: eb710146-1ede-4876-9a3b-02c18408e506
+          description: The NGAC implementation in the two chaincodes manages the access control for the Blossom business layer users and the BC Member's ATO-related accounts.
+          set-parameters:
+          - param-id: ac-2_prm_1
+            values:
+            - business need
+          - param-id: ac-2_prm_2
+            values:
+            - business need
+          - param-id: ac-2_prm_3
+            values:
+            - System Owner (SO)
+          - param-id: ac-2_prm_4
+            values:
+            - Types of User Accounts for Blossom
+          - param-id: ac-2_prm_5
+            values:
+            - System Owner (SO)
+          - param-id: ac-2_prm_6
+            values:
+            - 1 business day
+          - param-id: ac-2_prm_7
+            values:
+            - 1 business day
+          - param-id: ac-2_prm_8
+            values:
+            - 1 business day
+          - param-id: ac-2_prm_9
+            values:
+            - System Owner (SO)
+          - param-id: ac-2_prm_10
+            values:
+            - every 6 months
+      - statement-id: ac-2_smt.a
+        uuid: 24a85abb-25ad-4686-850c-5c0e8ab69a0c
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: b29d1505-69fa-4ad0-834b-d179e7f44fff
+          description: |-
+            The system has privileged and non-privileged accounts associated with the business layer and the ATO processes.
+
+            These accounts are managed by the NGAC implementation in the chaincodes for the ATO and for the assets management (business) processes.
+
+            The following accounts are supported for the business operations (assets management):
+
+            - Privileged accounts: License Owner (LO)
+
+            - Non-Privileged accounts: Acquisition Officer (ACQ)
+
+              <!-- -->
+
+              Technical Point of Contact (TPOC)
+
+            The following account is supported for the ATO process (ATO attestation submission and review of other Blossom members):
+
+            - Non-Privileged accounts: Authorizing Official (AO)
+          implementation-status:
+            state: under-development
+        - component-uuid: e82e6e07-0c62-417e-8a19-3744991b4c65
+          uuid: 84de735f-ba37-4bb4-b784-79760f986a40
+          description: |-
+            The accounts of the Blossom Member managed by the Leveraged AWS IaaS are:
+
+            - Privileged accounts: System Owner (SO)
+
+              <!-- -->
+
+              System Administrator (SA)
+
+            - Non-Privileged accounts: System Security Assessor (SSA)
+
+              <!-- -->
+
+              Authorizing Official (AO)
+          inherited:
+          - uuid: 780a3910-2019-4d33-a2f9-5c6ac91929d6
+            provided-uuid: 11111111-0000-4000-9009-002001002001
+            description: |-
+              TBD: provided-uuid needs to match the one in the AWS' SSP.
+
+              All privileged and non-privileged accounts that are granted access to the AWS infrastructure and are responsible for the Blossom member (this sysstem), are managed by the AWS IaaS (leveraged ATO system) which uses an Access Control List (ACL) for the NIST employees assigned Blossom roles.
+          satisfied:
+          - uuid: 6486f725-1372-434f-9b1b-7cf3f50c32d1
+            responsibility-uuid: 11111111-0000-4000-9009-002001002002
+            description: "For all responsible parties with roles managed by the AWS IaaS system, accounts creation/deletion are requested, approved/revoked by the System Owner or the Blossom PM and are added to or delete from the ACL list."
+      - statement-id: ac-2_smt.b
+        uuid: bb2476f6-0f78-4e64-94f1-1b58b80db8e0
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1
+          description: Assign account managers
+      - statement-id: ac-2_smt.c
+        uuid: 297d7975-c0fa-46f3-bbbd-585b2e2bae3f
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: c72b52e1-1943-4a52-be48-7bcce7df2f6d
+          description: "Require {{ insert: param, ac-2_prm_1 }}\\[Assignment: organization-defined prerequisites and criteria\\] for group and role membership;"
+      - statement-id: ac-2_smt.d
+        uuid: a0ae8e3a-83b9-4a07-ba9b-3ba0d7a7104c
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 779d08e3-4ed0-4a83-84ab-2ca2c9ec3745
+          description: 'Specify:'
+      - statement-id: ac-2_smt.d.1
+        uuid: 4c65972e-1580-49dd-aede-b3e4af0703e1
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 49c1dab6-3c75-4758-8119-120e01f163d7
+          description: Authorized users of the system
+      - statement-id: ac-2_smt.d.2
+        uuid: 77ab4262-292a-4542-be4f-3bbf136adaf7
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: df7fbdc2-78e2-4391-9981-bb9f682a363a
+          description: Group and role membership
+      - statement-id: ac-2_smt.d.3
+        uuid: 0a95af0d-8d11-41cb-a5cf-e7352b0cafe8
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 37e94c9b-acb8-458f-8a95-c1d110ead856
+          description: "Access authorizations (i.e., privileges) and {{ insert: param, ac-2_prm_2 }}\\[Assignment: organization-defined attributes (as required)\\] for each account;"
+      - statement-id: ac-2_smt.e
+        uuid: f14d12a4-470a-4d97-b0d1-8a8bd72749f0
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 40d40fbc-aed0-4323-9846-2ed3dc0f321e
+          description: "Require approvals by {{ insert: param, ac-2_prm_3 }}\\[Assignment: organization-defined personnel or roles\\] for requests to create accounts;"
+      - statement-id: ac-2_smt.f
+        uuid: 25468357-e8b1-4703-aecb-b6a37ccccd9e
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 02d4c648-5a86-4155-bd73-02c3439262b4
+          description: "Create, enable, modify, disable, and remove accounts in accordance with {{ insert: param, ac-2_prm_4 }}\\[Assignment: organization-defined policy, procedures, prerequisites, and criteria\\];"
+      - statement-id: ac-2_smt.g
+        uuid: a4de4fa5-0c77-4a13-8a57-13739bcfc1ae
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: ab679286-80e7-4b6d-b08c-34931bb56073
+          description: Monitor the use of accounts;
+      - statement-id: ac-2_smt.h
+        uuid: 17fe835f-b916-4966-a168-6249b54a9275
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: c555e31a-7b0d-437a-b415-e9ba5f2e1ef0
+          description: "Notify account managers and {{ insert: param, ac-2_prm_5 }}\\[Assignment: organization-defined personnel or roles\\] within:"
+      - statement-id: ac-2_smt.h.1
+        uuid: e3d29dc5-7247-4045-862b-8b233824937a
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: f1606d4f-3c5e-4c25-9649-94a12edbc113
+          description: "Notify account managers and {{ insert: param, ac-2_prm_5 }}\\[Assignment: system owner\\] within:{{ insert: param, ac-2_prm_6 }}\\[Assignment: 1 business day\\] when accounts are no longer required;"
+      - statement-id: ac-2_smt.h.2
+        uuid: a48f76ce-c4d3-4b65-ab88-9d9de0eb5408
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: c5a6312a-6123-4aa4-8097-3b4e30e70b72
+          description: "{{ insert: param, ac-2_prm_7 }}\\[Assignment: organization-defined time period\\] when users are terminated or transferred;"
+      - statement-id: ac-2_smt.h.3
+        uuid: 07fa50b6-54a6-4e82-8d50-b732868be673
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 1d085fa3-94d9-4f4c-a62b-963cc4640f12
+          description: "{{ insert: param, ac-2_prm_8 }}\\[Assignment: organization-defined time period\\] when system usage or need-to-know changes for an individual;"
+      - statement-id: ac-2_smt.i
+        uuid: 8089db43-a930-4b05-b661-f6bdaf602de0
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: f793018d-36df-48bf-a2f0-996364d3f46e
+          description: 'Authorize access to the system based on:'
+      - statement-id: ac-2_smt.i.1
+        uuid: d39d826f-5eda-46f5-ba6e-c1876c5c9a44
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: c5d96adf-2313-48c2-98e1-73f1b7044d68
+          description: A valid access authorization;
+      - statement-id: ac-2_smt.i.2
+        uuid: 3bc04bba-c4bb-4134-be58-00b1c9e639e1
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 54fc3c61-3717-4ad2-8291-fd521b6b9d0d
+          description: Intended system usage;
+      - statement-id: ac-2_smt.i.3
+        uuid: c6e80ed4-f36e-4e6b-9bb2-2ef200bda619
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: 587c32c5-701a-4e5c-83a7-2438ab3d71b1
+          description: "{{ insert: param, ac-2_prm_9 }}\\[Assignment: organization-defined attributes (as required)\\];"
+      - statement-id: ac-2_smt.j
+        uuid: 6d66a726-f59a-478c-b1ab-071293318857
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: b7932e43-9aa3-4bba-86a8-439a74e1e79a
+          description: "Review accounts for compliance with account management requirements {{ insert: param, ac-2_prm_10 }}\\[Assignment: organization-defined frequency\\];"
+      - statement-id: ac-2_smt.k
+        uuid: 781332d1-017d-4c97-8f42-ec618914bcb3
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: d0cdfbc2-aef5-418e-94dc-9906341bcc12
+          description: Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group;
+      - statement-id: ac-2_smt.l
+        uuid: ea940e91-f316-4adc-8a99-ffa8a7609127
+        by-components:
+        - component-uuid: 60f92bcf-f353-4236-9803-2a5d41751010
+          uuid: f23d55dd-1204-42f9-862e-2a07200b5c6e
+          description: Align account management processes with personnel termination and transfer processes.
+  back-matter:
+    resources:
+    - uuid: 006babc9-4f57-4ab0-9941-15fcb65e0387
+      description: National Institute of Standards and Technology's Logo
+      rlinks:
+      - href: https://www.nist.gov/sites/default/files/images/2017/09/20/645px-nist_logo-svg_1.png
+        media-type: image/png
+      base64:
+        filename: logo.png
+        media-type: image/png
+        value: "00000000"
+      remarks: |-
+        May use `rlink` with a relative path, or embedded as `base64` .
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+    - uuid: d2eb3c18-6754-4e3a-a933-03d289e3fad5
+      description: The primary authorization boundary diagram.
+      rlinks:
+      - href: ./diagrams/boundary.png
+      base64:
+        filename: logo.png
+        media-type: image/png
+        value: "00000000"
+      remarks: |-
+        Section 9.2, Figure 9-1 Authorization Boundary Diagram (graphic)
+
+        This should be referenced in the system-characteristics/authorization-boundary/diagram/link/@href flag using a value of "#d2eb3c18-6754-4e3a-a933-03d289e3fad5"
+
+        May use `rlink` with a relative path, or embedded as `base64` .
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+    - uuid: 61081e81-850b-43c1-bf43-1ecbddcb9e7f
+      description: The primary network diagram.
+      rlinks:
+      - href: ./diagrams/network.png
+      base64:
+        filename: network.png
+        media-type: image/png
+        value: "00000000"
+      remarks: |-
+        Section 9.4, Figure 9-2 Network Diagram (graphic)
+
+        This should be referenced in the system-characteristics/network-architecture/diagram/link/@href flag using a value of "#61081e81-850b-43c1-bf43-1ecbddcb9e7f"
+
+        May use `rlink` with a relative path, or embedded as `base64` .
+
+        FedRAMP prefers `base64` for images and diagrams.
+
+        Images must be in sufficient resolution to read all detail when rendered in a browser via HTML5.
+    - uuid: fab59751-b855-40cb-93c1-492562e20e18
+      title: Privacy Impact Assessment
+      props:
+      - name: type
+        ns: https://csrc.nist.gov/ns/blossom
+        value: privacy-impact-assessment
+      - name: publication
+        ns: https://csrc.nist.gov/ns/blossom
+        value: Document Date
+      - name: version
+        value: Document Version
+      rlinks:
+      - href: ./documents/pia.docx
+        media-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+      base64:
+        filename: pia.docx
+        media-type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+        value: "00000000"
+      remarks: |-
+        Table 15-1 Attachments: Privacy Impact Assessment
+
+        May use `rlink` with a relative path, or embedded as `base64` .
