@@ -26,7 +26,7 @@ body:
   - type: dropdown
     id: account-requested-by
     attributes:
-      label: Requester's currently role
+      label: Requester's current role
       description: Select from the drop-down the current role of the requester
       options:
         - Accounts Manager
@@ -88,13 +88,13 @@ body:
         - Disable
         - Enable
         - Delete
-      multiple: true
+      multiple: false
     validations:
       required: true
   - type: checkboxes
     id: attestation
     attributes:
-      label: attestation
+      label: Attestation
       description: Ensure all previously submitted forms are reviewed and no similar request has been submitted earlier
       options:
         - label: I attest that there is no other active form for a similar request
