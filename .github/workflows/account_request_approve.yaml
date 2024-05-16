@@ -21,4 +21,4 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
             Account management request APPROVED by Blossom Management.
-            @blossom-sysdevs please review and submit Account Management Authorization Form.
+            @usnistgov/blossom-sysdevs please review, implement, and submit Account Management Authorization Form.
