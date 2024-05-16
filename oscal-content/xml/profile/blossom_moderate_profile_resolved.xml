@@ -6,7 +6,7 @@
         <version>0.0.1</version>
         <oscal-version>1.1.2</oscal-version>
         <prop name="resolution-tool" value="libOSCAL-Java" />
-        <link href="file:///Users/syx/Documents/oscal-cli/NIST_blossom_moderate_profile.xml"
+        <link href="./blossom_moderate_profile.xml"
             rel="source-profile" />
     </metadata>
     <group id="ac" class="family">

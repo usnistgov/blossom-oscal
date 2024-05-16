@@ -9,21 +9,26 @@ on:
   pull_request: {}
 jobs:
   partial_ssp:
+    
     runs-on: ubuntu-20.04
     defaults:
       run:
         working-directory: .
     steps:
+
       - name: Check out repository code.
         uses: actions/checkout@v3
+
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10' 
+
       - name: Check environment.
         run: |
           ls -ltra
           python --version
           pip --version
+
       - name: Install dependencies.
         run: |
           pip install -r requirements.txt
@@ -33,6 +38,7 @@ jobs:
       - name: Execute script.
         run: |
           python oscal_leveraged.py
+
       - name: Save SSP.
         uses: actions/upload-artifact@v3
         with:

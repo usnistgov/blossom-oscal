@@ -159,7 +159,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-303-1000"
+              "number": "2023031000"
             }
           ],
           "remarks": "Org1-description"
@@ -180,7 +180,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-303-2000"
+              "number": "2023032000"
             }
           ],
           "remarks": "Org2-description"
@@ -201,7 +201,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-303-3000"
+              "number": "2023033000"
             }
           ],
           "remarks": "Org3-description"
@@ -218,7 +218,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-303-1001"
+              "number": "2023031001"
             }
           ],
           "email-addresses": [
@@ -241,7 +241,7 @@
           ],
           "telephone-numbers": [
             {
-              "number": "202-303-2001"
+              "number": "2023032001"
             }
           ],
           "email-addresses": [
@@ -310,17 +310,17 @@
         {
           "name": "identity-assurance-level",
           "ns": "https://fedramp.gov/ns/oscal",
-          "value": "IAL2"
+          "value": "2"
         },
         {
           "name": "authenticator-assurance-level",
           "ns": "https://fedramp.gov/ns/oscal",
-          "value": "AAL2"
+          "value": "2"
         },
         {
           "name": "federation-assurance-level",
           "ns": "https://fedramp.gov/ns/oscal",
-          "value": "FAL2"
+          "value": "2"
         },
         {
           "name": "cloud-service-model",
@@ -625,6 +625,7 @@
                     "responsibilities": [
                       {
                         "uuid": "ec432c5d-5506-4335-aa07-0026e8f955ca",
+                        "provided-uuid": "9678dd9d-6125-45b7-ba22-9fa41f03f72e",
                         "description": "The customer organization is responsible for any part of the control that is applicable to customer-controlled equipment and facilities, and the customer's configurable portion of the AWS logical infrastructure, including the Operating systems on EC2 instances and the customer's applications."
                       }
                     ],
