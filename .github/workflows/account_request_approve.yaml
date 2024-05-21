@@ -9,7 +9,7 @@ jobs:
   # When ACCOUNT_APPROVED label is added to account management request
   request-approved:
     if: github.event.label.name == 'ACCOUNT_APPROVED'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     permissions:
       issues: write
     steps:
