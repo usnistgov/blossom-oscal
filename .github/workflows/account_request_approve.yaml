@@ -20,6 +20,6 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           COMMENT: >
-            Account management request APPROVED by Blossom Management.
-            @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.
+            Account management request APPROVED by Blossom Management. Closing request as "completed".\
+            @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.\
             Then submit the [Account Management Authorization Form](https://github.com/usnistgov/blossom-oscal/issues/new?assignees=&labels=ACCOUNT_AUTHORIZED_RECORD&projects=&template=account_management_authorization_form.yaml)
