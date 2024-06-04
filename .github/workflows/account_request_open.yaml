@@ -10,7 +10,7 @@ jobs:
   # Label of account management request form is ACCOUNT_REQUEST_RECORD
   request-opened:
     if: github.event.label.name == 'ACCOUNT_REQUEST_RECORD'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     permissions:
       issues: write
     steps:
