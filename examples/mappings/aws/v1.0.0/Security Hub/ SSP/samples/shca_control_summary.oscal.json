@@ -1,0 +1,74 @@
+{
+  "system-security-plan": {
+    "uuid": "123e4567-e89b-42d3-a456-426614174000",
+    "import-profile": {
+      "href": "profile-uuid"
+    },
+    "metadata": {
+      "title": "Compliance Findings",
+      "last-modified": "2024-06-03T07:38:49.142000+00:00",
+      "oscal-version": "1.1.2",
+      "version": "1.1.2"
+    },
+    "system-characteristics": {
+      "system-name": "AWS",
+      "description": "Mission Owner Environment",
+      "security-sensitivity-level": "moderate",
+      "system-information": {
+        "information-types": [
+          {
+            "title": "web app",
+            "description": "web application"
+          }
+        ]
+      },
+      "system-ids": [
+        {
+          "id": "111111111111"
+        }
+      ],
+      "status": {
+        "state": "operational"
+      },
+      "authorization-boundary": {
+        "description": "Authorization boundary description"
+      }
+    },
+    "system-implementation": {
+      "users": [
+        {
+          "uuid": "123e4567-e89b-42d3-a456-426614174000",
+          "title": "AC-17(2)",
+          "description": "partially compliant"
+        }
+      ],
+      "components": [
+        {
+          "uuid": "123e4567-e89b-42d3-a456-426614174000",
+          "type": "software",
+          "title": "System Component",
+          "description": "An inventory item",
+          "status": {
+            "state": "operational"
+          }
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "As of the most recent evaluation on June 03, 2024 at 07:38 AM UTC, our Amazon Web Services (AWS) environment has been assessed as partially compliant with AC-17(2), according to NIST 800-53 rev 5 Operational Best Practices. This assessment utilized AWS Security Hub rules ELB.8, CloudFront.3, ELB.1, CloudFront.9, CloudFront.10, ELB.2, ElastiCache.5, CloudFront.7, Opensearch.8, ELB.3, APIGateway.2, ES.8, S3.5 and identified a 60.53% compliance rate for AC-17(2), which indicates a partially compliant implementation of this control.",
+              "implemented-requirements": [
+        {
+          "uuid": "123e4567-e89b-42d3-a456-426614174000",
+          "control-id": "AC-17_2",
+          "remarks": "60.53%",
+          "statements": [
+            {
+              "uuid": "123e4567-e89b-42d3-a456-426614174000",
+              "statement-id": "statement-1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
