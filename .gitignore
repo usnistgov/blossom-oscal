@@ -9,3 +9,5 @@ draft-*
 .pyenv*
 .env*
 oscal-cli.txt
+# Ignore validation tool oscal-cli 
+build/oscal-cli

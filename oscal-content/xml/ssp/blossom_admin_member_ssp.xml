@@ -581,7 +581,7 @@
     </system-implementation>
     <control-implementation>
         <description>
-            <p>FedRAMP SSP Template Section 13</p>
+            <p>This is a palceholder for the FedRAMP SSP Template Section 13</p>
             <p>This description field is required by OSCAL.</p>
             <p>FedRAMP does not require any specific information here.</p>
         </description>

@@ -1,12 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="b3a34ee2-d735-4ccd-81bb-a872163c015a">
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="869579ff-2f43-4f60-9f88-d753858e6c01">
     <metadata>
         <title>NIST BloSS@M Tailored Moderate Baseline</title>
-        <last-modified>2024-03-20T21:24:47.769914Z</last-modified>
+        <last-modified>2024-05-30T18:28:59.688431Z</last-modified>
         <version>0.0.1</version>
         <oscal-version>1.1.2</oscal-version>
         <prop name="resolution-tool" value="libOSCAL-Java" />
-        <link href="./blossom_moderate_profile.xml"
+        <link
+            href="file:///Users/miorga/Desktop/ALL_PROJECTS/GH/blossom-oscal/oscal-content/xml/profile/blossom_moderate_profile.xml"
             rel="source-profile" />
     </metadata>
     <group id="ac" class="family">
