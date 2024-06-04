@@ -1,5 +1,5 @@
 # Event Dossier: Amazon Security Hub Finding
-### Amazon Security Hub CSPM finding in ASFF format
+### Amazon Security Hub Cloud Security Posture Management (CSPM) finding in ASFF format
 - **Description**: Translates Amazon Security Hub CSPM finding in ASFF format to OSCAL.
 - **Event References**:
     - [NIST OSCAL Site](https://pages.nist.gov/OSCAL/)
