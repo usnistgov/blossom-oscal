@@ -5,6 +5,8 @@
     - [NIST OSCAL Site](https://pages.nist.gov/OSCAL/)
     - [OSCAL Assessment Results JSON Schema](https://pages.nist.gov/OSCAL-Reference/models/v1.1.2/assessment-results/json-reference/)
     - [OSCAL GitHub Repository](https://github.com/usnistgov/OSCAL)
+    - [AWS Security Finding Format (ASFF) syntax](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format-syntax.html/)
+  
 
 
 # Transforming Compliance Findings from Security Hub in ASFF to OSCAL Assessment Results Schema
