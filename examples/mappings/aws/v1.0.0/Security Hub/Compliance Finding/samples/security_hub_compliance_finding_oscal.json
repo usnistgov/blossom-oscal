@@ -1,0 +1,113 @@
+{
+  "assessment-results": {
+    "uuid": "3d9ee082-e7bf-454d-8be6-9aa607062371",
+    "metadata": {
+      "title": "Security Hub Assessment Results",
+      "last-modified": "2024-06-03T17:35:36.260Z",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2"
+    },
+    "import-ap": {
+      "href": "URL-to-assessment-plan"
+    },
+    "results": [
+      {
+        "uuid": "3d9ee082-e7bf-454d-8be6-9aa607062371",
+        "title": "EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT",
+        "description": "This AWS control checks whether the status of the AWS Systems Manager association compliance is COMPLIANT or NON_COMPLIANT after the association is executed on an instance.",
+        "start": "2024-06-03T17:35:36.260Z",
+        "end": "2024-06-03T17:35:45.224Z",
+        "props": [
+          {
+            "name": "aws_account_id",
+            "value": "111111111111"
+          },
+          {
+            "name": "region",
+            "value": "us-east-1"
+          },
+          {
+            "name": "severity",
+            "value": "LOW"
+          }
+        ],
+        "links": [
+          {
+            "href": "https://docs.aws.amazon.com/console/securityhub/SSM.3/remediation",
+            "rel": "reference",
+            "media-type": "text/html",
+            "text": "AWS Security Hub controls documentation"
+          }
+        ],
+        "reviewed-controls": {
+          "control-selections": [
+            {
+              "description": "NIST.800-53.r5 CA-9(1), NIST.800-53.r5 CM-2, NIST.800-53.r5 CM-2(2), NIST.800-53.r5 CM-8, NIST.800-53.r5 CM-8(1), NIST.800-53.r5 CM-8(3), NIST.800-53.r5 SI-2(3), PCI DSS v3.2.1/2.4",
+              "include-controls": [
+                {
+                  "control-id": "SSM.3"
+                }
+              ]
+            }
+          ]
+        },
+        "observations": [
+          {
+            "uuid": "3d9ee082-e7bf-454d-8be6-9aa607062371",
+            "description": "Failed compliance status",
+            "collected": "2024-06-03T17:35:36.260Z",
+            "methods": [
+              "automated"
+            ],
+            "props": [
+              {
+                "name": "first_observed_at",
+                "value": "2024-06-03T17:35:36.260Z"
+              },
+              {
+                "name": "last_observed_at",
+                "value": "2024-06-03T17:35:45.224Z"
+              }
+            ],
+            "remarks": "This finding was observed as part of the continuous monitoring activities."
+          }
+        ],
+        "risks": [
+          {
+            "uuid": "3d9ee082-e7bf-454d-8be6-9aa607062371",
+            "title": "Risk of non-compliance with regulatory standards",
+            "description": "This control was not compliant with the required standards.",
+            "statement": "This control was not compliant with the required standards.",
+            "status": "open",
+            "props": [
+              {
+                "name": "risk_level",
+                "value": "LOW"
+              }
+            ]
+          }
+        ],
+        "findings": [
+          {
+            "uuid": "3d9ee082-e7bf-454d-8be6-9aa607062371",
+            "title": "Non-compliance with SSM.3 control",
+            "description": "Non-compliance with SSM.3 control",
+            "props": [
+              {
+                "name": "severity",
+                "value": "LOW"
+              }
+            ],
+            "target": {
+              "type": "statement-id",
+              "target-id": "SSM.3",
+              "status": {
+                "state": "not-satisfied"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

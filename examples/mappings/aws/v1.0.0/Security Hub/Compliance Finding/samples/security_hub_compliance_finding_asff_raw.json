@@ -1,0 +1,88 @@
+[
+    {
+        "SchemaVersion": "2018-10-08",
+        "Id": "arn:aws:securityhub:us-east-1:111111111111:security-control/SSM.3/finding/3d9ee082-e7bf-454d-8be6-9aa607062371",
+        "ProductArn": "arn:aws:securityhub:us-east-1::product/aws/securityhub",
+        "ProductName": "Security Hub",
+        "CompanyName": "AWS",
+        "Region": "us-east-1",
+        "GeneratorId": "security-control/SSM.3",
+        "AwsAccountId": "111111111111",
+        "Types": [
+            "Software and Configuration Checks/Industry and Regulatory Standards"
+        ],
+        "FirstObservedAt": "2024-06-03T17:35:36.260Z",
+        "LastObservedAt": "2024-06-03T17:35:45.224Z",
+        "CreatedAt": "2024-06-03T17:35:36.260Z",
+        "UpdatedAt": "2024-06-03T17:35:36.260Z",
+        "Severity": {
+            "Label": "LOW",
+            "Normalized": 1,
+            "Original": "LOW"
+        },
+        "Title": "EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT",
+        "Description": "This AWS control checks whether the status of the AWS Systems Manager association compliance is COMPLIANT or NON_COMPLIANT after the association is executed on an instance.",
+        "Remediation": {
+            "Recommendation": {
+                "Text": "For information on how to correct this issue, consult the AWS Security Hub controls documentation.",
+                "Url": "https://docs.aws.amazon.com/console/securityhub/SSM.3/remediation"
+            }
+        },
+        "ProductFields": {
+            "RelatedAWSResources:0/name": "securityhub-ec2-managedinstance-association-compliance-status-check-2e1b7d32",
+            "RelatedAWSResources:0/type": "AWS::Config::ConfigRule",
+            "aws/securityhub/ProductName": "Security Hub",
+            "aws/securityhub/CompanyName": "AWS",
+            "Resources:0/Id": "arn:aws:ssm:us-east-1:111111111111:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-0ad1d56766da9857b",
+            "aws/securityhub/FindingId": "arn:aws:securityhub:us-east-1::product/aws/securityhub/arn:aws:securityhub:us-east-1:111111111111:security-control/SSM.3/finding/3d9ee082-e7bf-454d-8be6-9aa607062371"
+        },
+        "Resources": [
+            {
+                "Type": "AwsSsmAssociationCompliance",
+                "Id": "arn:aws:ssm:us-east-1:111111111111:associationcompliance/AWS::SSM::ManagedInstanceInventory/i-0ad1d56766da9857b",
+                "Partition": "aws",
+                "Region": "us-east-1"
+            }
+        ],
+        "Compliance": {
+            "Status": "FAILED",
+            "RelatedRequirements": [
+                "NIST.800-53.r5 CA-9(1)",
+                "NIST.800-53.r5 CM-2",
+                "NIST.800-53.r5 CM-2(2)",
+                "NIST.800-53.r5 CM-8",
+                "NIST.800-53.r5 CM-8(1)",
+                "NIST.800-53.r5 CM-8(3)",
+                "NIST.800-53.r5 SI-2(3)",
+                "PCI DSS v3.2.1/2.4"
+            ],
+            "SecurityControlId": "SSM.3",
+            "AssociatedStandards": [
+                {
+                    "StandardsId": "standards/aws-foundational-security-best-practices/v/1.0.0"
+                },
+                {
+                    "StandardsId": "standards/nist-800-53/v/5.0.0"
+                },
+                {
+                    "StandardsId": "standards/pci-dss/v/3.2.1"
+                }
+            ]
+        },
+        "WorkflowState": "NEW",
+        "Workflow": {
+            "Status": "NEW"
+        },
+        "RecordState": "ACTIVE",
+        "FindingProviderFields": {
+            "Severity": {
+                "Label": "LOW",
+                "Original": "LOW"
+            },
+            "Types": [
+                "Software and Configuration Checks/Industry and Regulatory Standards"
+            ]
+        },
+        "ProcessedAt": "2024-06-03T17:35:48.327Z"
+    }
+]
