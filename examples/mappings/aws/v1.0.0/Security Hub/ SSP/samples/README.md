@@ -1,4 +1,4 @@
-# Transforming Compliance Finding Information to OSCAL System Security Plan (SSP) Schema
+# Transforming Compliance Control Information to OSCAL System Security Plan (SSP) Schema
 
 This document provides a detailed mapping and example for transforming compliance finding information into the OSCAL System Security Plan (SSP) model.
 
