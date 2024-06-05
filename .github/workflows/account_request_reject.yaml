@@ -14,11 +14,11 @@ jobs:
       issues: write
     steps:
       - name: Close rejected account request
-        run: gh issue close "$NUMBER" --comment "$COMMENT"
+        run: gh issue close "$NUMBER" --comment "$COMMENT" --reason "not planned"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           COMMENT: >
-            Account management request REJECTED by Blossom Management.
-            Closing request.
+            Account management request REJECTED by Blossom Management.\
+            Closing request as "not planned".

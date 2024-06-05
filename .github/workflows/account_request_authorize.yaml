@@ -21,7 +21,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
-            Account management AUTHORIZED
+            @usnistgov/blossom-management An approved account modification has been implemented.
 
 
 # Contact AWS Cognito to show users
