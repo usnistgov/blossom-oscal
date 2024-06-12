@@ -20,5 +20,5 @@ jobs:
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           COMMENT: >
-            Account management request REJECTED by Blossom Management.\
+            Account management request REJECTED by Blossom Management.
             Closing request as "not planned".
