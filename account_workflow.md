@@ -26,26 +26,27 @@ sequenceDiagram
         participant EC2 as EC2-VPC
         participant Cog as CognitoX
     end
+    loop Approval Process
+        loop Admin Request  
+            Rq->>+GH: Creates Account Request
+            GH--)+Man: Notifies of Request
+            Man--)Man: Reviews Request
+            Man->>-GH: Adds Label [ACCOUNT_APPROVED or ACCOUNT_REJECTED]
+        end
 
-    loop Admin Request  
-        Rq->>+GH: Creates Account Request
-        GH--)+Man: Notifies of Request
-        Man--)Man: Reviews Request
-        Man->>-GH: Adds Label [ACCOUNT_APPROVED or ACCOUNT_REJECTED]
+        loop Implementation
+            create actor Sys as Sys-Dev
+            GH--)+Sys: On ACCOUNT_APPROVED: 'Creating Account Holder'
+            Note left of Sys: Create Account    
+
+            Sys->>Cog: Creates [Account Holder] Record and Attributes
+            Sys->>EC2: Registers [Account Holder] With Blockchain
+            Note right of Sys: Account Created 
+
+            Sys->>GH: Account Created
+        end
     end
-
-    loop Implementation
-        create actor Sys as Sys-Dev
-        GH--)+Sys: On ACCOUNT_APPROVED: 'Creating Account Holder'
-        Note left of Sys: Create Account    
-
-        Sys->>Cog: Creates [Account Holder] Record and Attributes
-        Sys->>EC2: Registers [Account Holder] With Blockchain
-        Note right of Sys: Account Created 
-
-        Sys->>GH: Account Created
-    end
-
+    
     Sys->>-GH: Start Account Management - Authorization Form
 
     create actor AH as Account Holder
