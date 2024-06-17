@@ -22,4 +22,5 @@ jobs:
           BODY: >
             Account management request APPROVED by Blossom Management.
             @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.
-            Link this account request issue to the PR with the implementation.
+            When implemented, add the ACCOUNT_IMPLEMENTED label and 
+            link this account request issue to the PR with the implementation.
