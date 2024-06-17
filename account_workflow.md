@@ -18,34 +18,37 @@ sequenceDiagram
     actor Rq as Requester
     actor Man as Manager
         
-    box rgb(66,0,66)  Form + Actions
+    box Form + Actions
         participant GH as GitHub
     end
     
-    box rgb(9,9,66)  AWS-Infrastructure
+    box  AWS-Infrastructure
         participant EC2 as EC2-VPC
         participant Cog as CognitoX
     end
 
-    Rq->>+GH: Creates Account Request
-    GH--)+Man: Notifies of Request
-    Man--)Man: Reviews Request
-    Man->>-GH: Adds Label [ACCOUNT_APPROVED or ACCOUNT_REJECTED]
-    
-    create actor Sys as Sys-Dev
-    GH--)+Sys: On ACCOUNT_APPROVED: 'Creating Account Holder'
-    Note left of Sys: Create Account    
+    loop Admin Request  
+        Rq->>+GH: Creates Account Request
+        GH--)+Man: Notifies of Request
+        Man--)Man: Reviews Request
+        Man->>-GH: Adds Label [ACCOUNT_APPROVED or ACCOUNT_REJECTED]
+    end
 
-    Sys->>Cog: Creates [Account Holder] Record and Attributes
-    Sys->>EC2: Registers [Account Holder] With Blockchain
-    Note right of Sys: Account Created 
+    loop Implementation
+        create actor Sys as Sys-Dev
+        GH--)+Sys: On ACCOUNT_APPROVED: 'Creating Account Holder'
+        Note left of Sys: Create Account    
 
-    Sys->>-GH: Report the Account Created
-    Sys->>GH: Start Account Management - Authorization Form
+        Sys->>Cog: Creates [Account Holder] Record and Attributes
+        Sys->>EC2: Registers [Account Holder] With Blockchain
+        Note right of Sys: Account Created 
+
+        Sys->>GH: Account Created
+    end
+
+    Sys->>-GH: Start Account Management - Authorization Form
 
     create actor AH as Account Holder
     GH--)AH: Maybe Welcome, Created User!
-
-
 
 ```
