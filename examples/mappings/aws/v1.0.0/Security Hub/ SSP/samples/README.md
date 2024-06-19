@@ -156,7 +156,7 @@ The following data is required for the OSCAL SSP but cannot be derived directly 
 
 Example of `statements` structure:
 
-\`\`\`json
+```json
 {
   "statement-id": "ac-4-21",
   "uuid": "f3887a91-9ed3-425c-b305-21e4634a1c34",
@@ -168,4 +168,4 @@ Example of `statements` structure:
     }
   ]
 }
-\`\`\`
+```
