@@ -12,7 +12,6 @@ This document explains the workflow of GitHub actions used to automate Blossom s
 - [ ] Upon merging the Pull Request that implements the account, the relevant updated controls are re-assessed automatically. The Blossom Assessors group is then notified to monitor the automated assessment.
 - [ ] TBD: STEPS FOR AUTOMATED ASSESSMENT
 
-
 ## Account Disable
 [TBD]
 
