@@ -14,12 +14,13 @@ jobs:
       issues: write
     steps:
       - name: Notify Blossom Sysdevs about Approved Account
-        run: gh issue close "$NUMBER" --comment "$COMMENT" --reason "completed"
+        run: gh issue comment "$NUMBER" --body "$BODY"
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
-          COMMENT: >
-            Account management request APPROVED by Blossom Management. Closing request as "completed".\
-            @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.\
-            Then submit the [Account Management Authorization Form](https://github.com/usnistgov/blossom-oscal/issues/new?assignees=&labels=ACCOUNT_AUTHORIZED_RECORD&projects=&template=account_management_authorization_form.yaml)
+          BODY: >
+            Account management request APPROVED by Blossom Management.
+            @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.
+            When implemented, add the ACCOUNT_IMPLEMENTED label and 
+            link this account request issue to the PR with the implementation.
