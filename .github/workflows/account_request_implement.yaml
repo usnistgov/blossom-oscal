@@ -22,3 +22,15 @@ jobs:
           BODY: >
             @usnistgov/blossom-assessors An edit to the ACL and/or SSP has been implemented.
             Please monitor the automated assessment.
+      
+      - name: Checkout repo to access handshake file
+        uses: actions/checkout@v3
+      
+      - name: Initiate handshake to S3 bucket
+        uses: shallwefootball/s3-upload-action@v1.3.3
+        with:
+          aws_key_id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_KEY }}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: '.sims/handshake'
+          destination_dir: ''
