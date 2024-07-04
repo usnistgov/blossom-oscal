@@ -10,39 +10,58 @@
         <role id="system-owner">
             <title>System Owner (SO)</title>
             <description>
-                <p>The individual within the organization who is ultimately accountable for everything related to the deployment, assessemnt, authorization and operations of the Blossom Member which provides the software assets leasing service (here in known as "this system").</p>
-            </description>
-        </role>
-        <role id="license-owner">
-            <title>License Owner (LO)</title>
-            <description>
-                <p>The individual within the service provider organization who is accountable for managing the pool of software resources made available for leasing to USG agencies.</p>
-                <p>The License Owner role exists only within the service provider agency.</p>
+                <p>The individual within the organization who is ultimately accountable for
+                    everything related to the deployment, assessemnt, authorization and operations
+                    of the Blossom Member which provides the software assets leasing service (here
+                    in known as "this system").</p>
             </description>
         </role>
         <role id="authorizing-official">
             <title>Authorizing Official</title>
             <description>
-                <p>The individual or individuals who are ultimatly accountable for reviewing the assessemnt package, discuss with the SO the findings and grant an authorization to operate (ATO) to "this system".</p>
-                <p>The Authorizing Official is the only entity responsible for the security posture of the system that gets access to the ATO channel (chainecode). The AO signs the MOU on behalf of the agency.</p>
+                <p>The individual or individuals who are ultimatly accountable for reviewing the
+                    assessemnt package, discuss with the SO the findings and grant an authorization
+                    to operate (ATO) to "this system".</p>
+                <p>The Authorizing Official is the only entity responsible for the security posture
+                    of the system that gets access to the ATO channel (chainecode). The AO signs the
+                    MOU on behalf of the agency.</p>
             </description>
         </role>
         <role id="sys-sec-assessor">
             <title>System Security Assessor (SSA)</title>
             <description>
-                <p>The individual accountable for assessing the security posture of the system on behalf of the system owner.</p>
+                <p>The individual accountable for assessing the security posture of the system on
+                    behalf of the system owner.</p>
             </description>
         </role>
         <role id="tpoc">
             <title>Technical Point of Contact (TPOC)</title>
             <description>
-                <p>The individual accountable for managing leased licenses (checkout, install, uninstall, return).</p>
+                <p>The individual accountable for managing leased licenses (checkout, install,
+                    uninstall, return).</p>
             </description>
         </role>
         <role id="system-administrator">
             <title>System Administrator (SA)</title>
             <description>
-                <p>The individual accountable for the deployment, configuration, testing and operations of the system on behalf of the System Owner.</p>
+                <p>The individual accountable for the deployment, configuration, testing and
+                    operations of the system on behalf of the System Owner.</p>
+            </description>
+        </role>
+        <role id="license-owner">
+            <title>License Owner (LO)</title>
+            <description>
+                <p>The individual within the service provider organization who is accountable for
+                    managing the pool of software resources made available for leasing to USG
+                    agencies.</p>
+                <p>The License Owner role exists only within the service provider agency.</p>
+            </description>
+        </role>
+        <role id="acquisition-officer">
+            <title>Acquisition Officer</title>
+            <description>
+                <p>The individual within the Agency which is responsible for approving and 
+                    processing the payment of the leased pool of software licenses.</p>
             </description>
         </role>
         <location uuid="1ef39fd9-d184-44c4-8ef4-36d2dbad70a2">
@@ -86,18 +105,22 @@
         <party uuid="09ad840f-aa79-43aa-9f22-25182c2ab11b" type="person">
             <name>Stan Owens</name>
             <prop name="job-title" value="System Owner" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
             <email-address>blossom@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
-        <party uuid="51588d7c-aa79-43aa-9f22-25182c2cd22d" type="person">
-            <name>Licenta Owens</name>
-            <prop name="job-title" value="License Owner" />
+        <party uuid="551b9706-d6a4-4d25-8207-f2ccec541016" type="person">
+            <name>ManoGiana Bloom</name>
+            <prop name="job-title" value="Blossom Program Manager" />
             <email-address>blossom@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
-        <party uuid="3360e343-9860-4bda-9dfc-ff427c3dfab6" type="person">
-            <name>Aurelian Officman</name>
-            <prop name="job-title" value="Authorizing Official" />
+        <party uuid="4fded5fd-7a65-47ea-bd76-df57c46e27d1" type="person">
+            <name>Simmon Admino</name>
+            <prop name="job-title" value="System Administrator" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
             <email-address>blossom@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
@@ -105,58 +128,98 @@
         <party uuid="132953a9-640c-46f7-9de9-3fa15ec99361" type="person">
             <name>Steve S. Asesoro</name>
             <prop name="job-title" value="System Security Assessor" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
             <email-address>blossom@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <!-- The UUIDs of the following parties need to be registered in Cognito first
+          and the UUID generated by Cognito needs to be used as the party's UUID.
+          Any update in Cognito will have to trigger an update of the SSP -->
+        <party uuid="3360e343-9860-4bda-9dfc-ff427c3dfab6" type="person">
+            <name>Aurelian Officeman</name>
+            <prop name="job-title" value="Authorizing Official" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
+            <email-address>blossom@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="51588d7c-aa79-43aa-9f22-25182c2cd22d" type="person">
+            <name>Licenta Owens</name>
+            <prop name="job-title" value="License Owner" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
+            <email-address>blossom@nist.gov</email-address>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="7380b1a3-5f04-4b6a-bada-ee13a1d78f3a" type="person">
+            <name>Acquia Officiale</name>
+            <prop name="job-title" value="Acquisition Officer" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
+            <email-address>blossom@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="c46e27d1-7a65-47ea-bd76-df574fded5fd" type="person">
-            <name>Tom Poc</name>
+            <name>Tom Pock</name>
             <prop name="job-title" value="Technical Point of Contact" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
             <email-address>blossom@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
-        <party uuid="4fded5fd-7a65-47ea-bd76-df57c46e27d1" type="person">
-            <name>Simon Admino</name>
-            <prop name="job-title" value="System Administrator" />
-            <email-address>blossom@nist.gov</email-address>
-            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
-            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
-        </party>
-        <party uuid="551b9706-d6a4-4d25-8207-f2ccec541016" type="person">
-            <name>ManoGiana Bloom</name>
-            <prop name="job-title" value="Blossom PM" />
-            <email-address>blossom@nist.gov</email-address>
-            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
-        </party>
+        <!-- ###
+             Entities with access to the infrastructure
+         ### -->
+         <!-- Privileged Roles -->
         <responsible-party role-id="system-owner">
             <party-uuid>09ad840f-aa79-43aa-9f22-25182c2ab11b</party-uuid>
             <party-uuid>551b9706-d6a4-4d25-8207-f2ccec541016</party-uuid>
         </responsible-party>
-        <responsible-party role-id="license-owner">
-            <party-uuid>51588d7c-aa79-43aa-9f22-25182c2cd22d</party-uuid>
-            <party-uuid>551b9706-d6a4-4d25-8207-f2ccec541016</party-uuid>
-        </responsible-party>
-        <responsible-party role-id="authorizing-official">
-            <party-uuid>3360e343-9860-4bda-9dfc-ff427c3dfab6</party-uuid>
-        </responsible-party>
-        <responsible-party role-id="sys-sec-assessor">
-            <party-uuid>132953a9-640c-46f7-9de9-3fa15ec99361</party-uuid>
-            <remarks>
-                <p>The party responsible to assess the security controls on behalf of the system owner.</p>
-            </remarks>
-        </responsible-party>
-        <responsible-party role-id="tpoc">
-            <party-uuid>c46e27d1-7a65-47ea-bd76-df574fded5fd</party-uuid>
-            <remarks>
-                <p>Manages leased liceses for the agency and is responsible to checkout, install, uninstall and return licenses to the pool for each order the agency places.</p>
-            </remarks>
-        </responsible-party>
         <responsible-party role-id="system-administrator">
             <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
             <remarks>
-                <p>This party has development, deployment, configuration and operations responsibilities for "this system" supporting the system owner.</p>
+                <p>This party has development, deployment, configuration and operations
+                    responsibilities for "this system" supporting the system owner.</p>
             </remarks>
+        </responsible-party>
+        <!-- Non-Privileged Roles -->
+        <responsible-party role-id="sys-sec-assessor">
+            <party-uuid>132953a9-640c-46f7-9de9-3fa15ec99361</party-uuid>
+            <remarks>
+                <p>The party responsible to assess the security controls on behalf of the system
+                    owner.</p>
+            </remarks>
+        </responsible-party>
+        <!-- ###
+             Entities with access to the assets/business private channel 
+         ### -->
+         <!-- Privileged Roles -->
+        <responsible-party role-id="license-owner">
+            <party-uuid>51588d7c-aa79-43aa-9f22-25182c2cd22d</party-uuid>
+        </responsible-party>
+         <!-- Non-Privileged Roles -->
+        <responsible-party role-id="tpoc">
+            <party-uuid>c46e27d1-7a65-47ea-bd76-df574fded5fd</party-uuid>
+            <remarks>
+                <p>Interfaces with the other agencies and need only read access to the ledger to review the assets (licenses) processed.</p>
+            </remarks>
+        </responsible-party>
+        <responsible-party role-id="acquisition-officer">
+            <party-uuid>c46e27d1-7a65-47ea-bd76-df574fded5fd</party-uuid>
+            <remarks>
+                <p>Interfaces with the other agencies and need only read access to the ledger to review the assets (licenses) processed.</p>
+            </remarks>
+        </responsible-party>
+        <!-- ###
+            Entities with access to the Authorization private channel 
+         ### -->
+         <!-- Privileged Roles -->
+        <responsible-party role-id="authorizing-official">
+            <party-uuid>3360e343-9860-4bda-9dfc-ff427c3dfab6</party-uuid>
         </responsible-party>
         <remarks>
             <p>This SSP was created using a simplified version of OSCAL-based FedRAMP SSP Template
@@ -508,7 +571,8 @@
                 <description>
                     <p>A diagram-specific explanation.</p>
                 </description>
-                <!--TBD: needds fixing link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" / -->
+                <!--TBD:
+                needds fixing link href="#ac5d7535-f3b8-45d3-bf3b-735c82c64547" rel="diagram" / -->
                 <caption>Data Flow Diagram</caption>
             </diagram>
         </data-flow>
@@ -516,7 +580,7 @@
     <system-implementation>
         <leveraged-authorization uuid="5a9c98ab-8e5e-433d-a7bd-515c07cd1497">
             <title>AWS Managed Blockchain (AMB)</title>
-            <link href="./aws_leveraged_authorization_ssp.xml"/>
+            <link href="./aws_leveraged_authorization_ssp.xml" />
             <!-- The Leveraged Authorization POC is the AMB's Authorizing Official in this case. -->
             <party-uuid>e63e870d-bf43-40dc-98a0-37d5e39b2dd1</party-uuid>
             <date-authorized>2024-01-01</date-authorized>
@@ -534,16 +598,43 @@
         </leveraged-authorization>
         <user uuid="9cb0fab0-78bd-44ba-bcb8-3e9801cc952f">
             <title>System Administrator</title>
-            <prop name="sensitivity" ns="https://fedramp.gov/ns/oscal" value="high" />
+            <prop name="sensitivity" ns="https://csrc.nist.gov/ns/blossom" value="high" />
             <prop name="privilege-level" value="privileged" />
             <prop name="type" value="internal" />
             <role-id>system-administrator</role-id>
             <authorized-privilege>
                 <title>Full administrative access rights</title>
-                <function-performed>add and remove users and hardware</function-performed>
+                <function-performed>add and remove users, software-name and hardware</function-performed>
                 <function-performed>install and configure deployments</function-performed>
                 <function-performed>system updates, patches and hotfixes</function-performed>
                 <function-performed>perform backups</function-performed>
+            </authorized-privilege>
+        </user>
+        <user uuid="046ea806-2220-4ab4-9de0-1304f6be0b66">
+            <title>System Owner</title>
+            <prop name="sensitivity" ns="https://csrc.nist.gov/ns/blossom" value="high" />
+            <prop name="privilege-level" value="privileged" />
+            <prop name="type" value="internal" />
+            <role-id>system-owner</role-id>
+            <authorized-privilege>
+                <title>Privileged access rights</title>
+                <function-performed>add and remove users, software-name and hardware</function-performed>
+                <function-performed>install and configure deployments</function-performed>
+                <function-performed>system updates, patches and hotfixes</function-performed>
+                <function-performed>perform backups</function-performed>
+            </authorized-privilege>
+        </user>
+        <user uuid="f93d5a58-0688-4e48-8aaa-0c4d20c57f9b">
+            <title>System Security Assessor</title>
+            <prop name="sensitivity" ns="https://csrc.nist.gov/ns/blossom" value="high" />
+            <prop name="privilege-level" value="non-privileged" />
+            <prop name="type" value="internal" />
+            <role-id>sys-sec-assessor</role-id>
+            <authorized-privilege>
+                <title>Non-privileged access rights (read only)</title>
+                <function-performed>review system documentation and security configurations</function-performed>
+                <function-performed>review if system updates, patches and hotfixes are documented and successfully completed</function-performed>
+                <function-performed>review disaster recovery procedures and system backups existance</function-performed>
             </authorized-privilege>
         </user>
         <component uuid="60f92bcf-f353-4236-9803-2a5d41751010" type="this-system">
@@ -562,7 +653,9 @@
             </description>
             <prop name="leveraged-authorization-uuid" value="5a9c98ab-8e5e-433d-a7bd-515c07cd1497" />
             <prop name="implementation-point" value="external" />
-            <!-- The value of inherited-uuid is the uuid of the component of the leveraged system which provides the control implementation. In thsi case will be the AMB's "this-system"-->
+            <!-- The value of inherited-uuid is the uuid of the component of the leveraged system
+            which provides the control implementation. In thsi case will be the AMB's
+            "this-system"-->
             <prop name="inherited-uuid" value="73a7ca56-ac02-43b9-8664-62bcb05a7e91" />
             <status state="operational" />
         </component>
@@ -586,7 +679,8 @@
             <p>FedRAMP does not require any specific information here.</p>
         </description>
         <!-- ####
-            AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not have a b.1 and b.2, but it has b and c) 
+            AC-1 is not in our profile. If we include it, we meed to correct the errors (AC-1.b does not have a
+        b.1 and b.2, but it has b and c) 
             #### -->
         <!-- AC-1 will not be implemented now. 
         <implemented-requirement uuid="eee8697a-bc39-45aa-accc-d3e534932efb" control-id="ac-1">
@@ -686,74 +780,104 @@
             AC-2
             ######  -->
         <implemented-requirement uuid="7a36cf53-156d-4d1f-9a8b-433f61cc57b7" control-id="ac-2">
-            <!-- TBD: The following <prop>s must be reviewed, updated and only one option kept based on AC-2 implementation of the inherited control for manageing the Authorizing Official's account -->
-            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2024/05/30" />
+            <!-- TBD: The following <prop>s must be reviewed, updated and only one option kept based
+            on AC-2 implementation of the inherited control for manageing the Authorizing Official's
+            account -->
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
+                value="2024/05/30" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="partial">
                 <remarks>
-                    <p>AMB provides access control to the infrastracter for the entities identified below. The Consumer's responsibility is to update the ACL ith the identities authorized to access the resource.</p>
+                    <p>Per the documentation available in the Blossom Wiki, the AWS Managed
+                        Blockchain (AMB) provides access control to the infrastracture for the
+                        entities identified below which require access to IaaS to maintain and
+                        deploy system components. The blockchain's chaincode is implementing Next
+                        Generation Access Control (NGAC) standard to manage the access to resources
+                        for the roles docuemnted in the Blossom specification. Access control policy
+                        machines are implemented for the two private channels of the AMB: the ATO or
+                        "Authorization" channel and the "Businness" channel.</p>
                 </remarks>
             </prop>
-            <!-- NOT APPLICABLE VALUES - TO BE REMOVED AT THE END
-            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
+            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="implemented">
                 <remarks>
-                    <p>TBD: Describe the portion of the control that is not satisfied.</p>
+                    <p>The policy machines are controling the access to the two chaincodes
+                        (Authorization and Business) used by the system.</p>
                 </remarks>
             </prop>
+            <!-- Use this prop for not applicable controls
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="not-applicable">
                 <remarks>
                     <p>TBD: Describe the justification for marking this control Not Applicable.</p>
                 </remarks>
             </prop>  
-            -->        
-            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged-system" />
+            -->
+            <!-- Control origination varies per role. See by-component under ac-2_smt
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal"
+                value="leveraged-system" />
             <prop name="control-origination" ns="https://fedramp.gov/ns/oscal"
                 value="customer-configured">
                 <remarks>
-                    <p>TBD: Describe any customer-configured requirements for satisfying this control.</p>
+                    <p>TBD: Describe any customer-configured requirements for satisfying this
+                        control.</p>
                 </remarks>
             </prop>
+            -->
+            <link rel="documentation" href="#c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c" />
+            <set-parameter param-id="ac-2_prm_1">
+                <value>business need</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_2">
+                <value>business need</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_3">
+                <value>System Owner (SO)</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_4">
+                <value>Types of User Accounts for Blossom</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_5">
+                <value>System Owner (SO)</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_6">
+                <value>1 business day</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_7">
+                <value>1 business day</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_8">
+                <value>1 business day</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_9">
+                <value>System Owner (SO)</value>
+            </set-parameter>
+            <set-parameter param-id="ac-2_prm_10">
+                <value>every 6 months</value>
+            </set-parameter>
             <responsible-role role-id="system-administrator">
                 <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
             </responsible-role>
             <responsible-role role-id="system-owner">
                 <party-uuid>09ad840f-aa79-43aa-9f22-25182c2ab11b</party-uuid>
             </responsible-role>
-            <statement statement-id="ac-2_smt" uuid="4a2428eb-41eb-447a-81db-4f6d98a003ce">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="eb710146-1ede-4876-9a3b-02c18408e506">
+            <statement statement-id="ac-2_smt" uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="9d06a5a6-0c30-43cb-a18a-baabd616ddfb">
                     <description>
-                        <p>The NGAC implementation in the two chaincodes manages the access control for the Blossom business layer users and the BC Member's ATO-related accounts.</p>
+                        <p>For the IAM entities that have a business need, and which have accounts created in Cognito, the Policy machines which implement NGAC in the two chaincodes are managing the access control for the Blossom business layer users and the BC Member's Authorizing Official that is uploading the ATO Attestation to the Authorization channel.</p>
                     </description>
-                    <set-parameter param-id="ac-2_prm_1">
-                        <value>business need</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_2">
-                        <value>business need</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_3">
-                        <value>System Owner (SO)</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_4">
-                        <value>Types of User Accounts for Blossom</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_5">
-                        <value>System Owner (SO)</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_6">
-                        <value>1 business day</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_7">
-                        <value>1 business day</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_8">
-                        <value>1 business day</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_9">
-                        <value>System Owner (SO)</value>
-                    </set-parameter>
-                    <set-parameter param-id="ac-2_prm_10">
-                        <value>every 6 months</value>
-                    </set-parameter>
+                    <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="customer-configured">
+                        <remarks>
+                            <p>The Blossom system System Owner and System Administrator are repsonsible for approving, creating and managing access by maintainit accurate information in Cognito and updating the access control policies in the chaincode for each channel.</p>
+                        </remarks>
+                    </prop>
+                </by-component>
+                <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" uuid="eb710146-1ede-4876-9a3b-02c18408e506">
+                    <description>
+                        <p>AWS provide access to the system to approved entities, for deployment, maintenance, and operations.</p>
+                    </description>
+                    <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged">
+                        <remarks>
+                            <p>Keep the ACL list current at all times.</p>
+                        </remarks>
+                    </prop>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.a" uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c">
@@ -764,18 +888,21 @@
                         <p>These accounts are managed by the NGAC implementation in the chaincodes for the ATO and for the assets management (business) processes.</p>
                         <p>The following accounts are supported for the business operations (assets management):</p>
                         <ul>
-                            <li>Privileged accounts:
-                                <ul>License Owner (LO)</ul>
+                            <li>Privileged accounts: 
+                                <ul>License Owner</ul>
                             </li>
-                            <li>Non-Privileged accounts:
-                                <ul>Acquisition Officer (ACQ)</ul>
-                                <ul>Technical Point of Contact (TPOC)</ul>
+                            <li>Non-Privileged accounts: 
+                                <ul>Acquisition Officer</ul>
+                                <ul>Technical Point of Contact</ul>
                             </li>
                         </ul>
-                        <p>The following account is supported for the ATO process (ATO attestation submission and review of other Blossom members):</p>
+                        <p>The Authorizing Official is responsible for reviewing the ATO package prepared by the System Owner and signing/authorizing the system to operate.</p>
+                        <p>The System Owner remains the custodian of all system ATO related artifacts.</p>
+                        <p>Upon approval, teh AO is responsible for generating automatically the ATO attestation and upload it to the ATO channel.</p>
+                        <p>The following account is supported for the ATO processes. :</p>
                         <ul>
-                            <li>Non-Privileged accounts:
-                                <ul>Authorizing Official (AO)</ul>
+                            <li>Privileged accounts:
+                                 <ul>Authorizing Official</ul>
                             </li>
                         </ul>
                     </description>
@@ -784,15 +911,20 @@
                 <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
                     uuid="84de735f-ba37-4bb4-b784-79760f986a40">
                     <description>
-                        <p>The accounts of the Blossom Member managed by the Leveraged AWS IaaS are:</p>
+                        <p>The following accounts of the Blossom System of NIST Member managed by the Leveraged AWS IaaS are:</p>
                         <ul>
-                            <li>Privileged accounts:
-                                <ul>System Owner (SO)</ul>
-                                <ul>System Administrator (SA)</ul>
+                            <li>Privileged accounts: 
+                                <ul>System Owner</ul>
+                                <ul>System Administrator</ul>
                             </li>
-                            <li>Non-Privileged accounts:
-                                <ul>System Security Assessor (SSA)</ul>
-                                <ul>Authorizing Official (AO)</ul>
+                            <li>Non-Privileged accounts: 
+                                <ul>System Security Assessor</ul>
+                                <!-- 
+                                NOTE: Authorizing Official will not have access to the infrastructure. 
+                                 System Owner is responsible to prepare the ATO package in collaboration 
+                                 with the System Security Assessor. Removing the AO from this list.
+                                <ul>Authorizing Official</ul>
+                                -->
                             </li>
                         </ul>
                     </description>
@@ -800,13 +932,21 @@
                         provided-uuid="11111111-0000-4000-9009-002001002001">
                         <description>
                             <p>TBD: provided-uuid needs to match the one in the AWS' SSP.</p>
-                            <p>All privileged and non-privileged accounts that are granted access to the AWS infrastructure and are responsible for the Blossom member (this sysstem), are managed by the AWS IaaS (leveraged ATO system) which uses an Access Control List (ACL) for the NIST employees assigned Blossom roles.</p>
+                            <p>All privileged and non-privileged accounts that are granted access to
+                                the AWS infrastructure and are responsible for the Blossom System deployment and maintenance
+                                (this system), are managed by the AWS IaaS (leveraged ATO system)
+                                which uses an Access Control List (ACL) for the NIST employees
+                                assigned Blossom roles.</p>
                         </description>
                     </inherited>
                     <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1"
                         responsibility-uuid="11111111-0000-4000-9009-002001002002">
                         <description>
-                            <p>For all responsible parties with roles managed by the AWS IaaS system, accounts creation/deletion are requested, approved/revoked by the System Owner or the Blossom PM and are added to or delete from the ACL list.</p>
+                            <p>The Access Control List (ACL) updates are Blossom system's responsibility (as customers of AWS)
+                                For all roles listed above which are managed by the AWS IaaS
+                                system, account creation/revokation/deletion requests are approved
+                                by the Blossom system's System Owner or the Blossom PM and are added to or delete
+                                from the ACL list by the System Administrator.</p>
                         </description>
                     </satisfied>
                 </by-component>
@@ -815,7 +955,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1">
                     <description>
-                        <p>Assign account managers</p>
+                        <p>For this system, the entity with the System Administratore role
+                             acts as the Accounts Manager and is responsible for creating, 
+                             revoking, delete accounts per decissions made by the System Owner.</p>
                     </description>
                 </by-component>
             </statement>
@@ -823,7 +965,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c72b52e1-1943-4a52-be48-7bcce7df2f6d">
                     <description>
-                        <p>Require <insert type="param" id-ref="ac-2_prm_1" />[Assignment: organization-defined prerequisites and criteria] for group and role membership;</p>
+                        <p>Require <insert type="param" id-ref="ac-2_prm_1" />[Assignment:
+                            organization-defined prerequisites and criteria] for group and role
+                            membership;</p>
                     </description>
                 </by-component>
             </statement>
@@ -856,7 +1000,8 @@
                     uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
                         <p>Access authorizations (i.e., privileges) and <insert type="param"
-                            id-ref="ac-2_prm_2" />[Assignment: organization-defined attributes (as required)] for each account;</p>
+                                id-ref="ac-2_prm_2" />[Assignment: organization-defined attributes
+                            (as required)] for each account;</p>
                     </description>
                 </by-component>
             </statement>
@@ -864,7 +1009,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
                     <description>
-                        <p>Require approvals by <insert type="param" id-ref="ac-2_prm_3" />[Assignment: organization-defined personnel or roles] for requests to create accounts;</p>
+                        <p>Require approvals by <insert type="param" id-ref="ac-2_prm_3" />[Assignment:
+                            organization-defined personnel or roles] for requests to create
+                            accounts;</p>
                     </description>
                 </by-component>
             </statement>
@@ -873,7 +1020,8 @@
                     uuid="02d4c648-5a86-4155-bd73-02c3439262b4">
                     <description>
                         <p>Create, enable, modify, disable, and remove accounts in accordance with <insert
-                            type="param" id-ref="ac-2_prm_4" />[Assignment: organization-defined policy, procedures, prerequisites, and criteria];</p>
+                                type="param" id-ref="ac-2_prm_4" />[Assignment: organization-defined
+                            policy, procedures, prerequisites, and criteria];</p>
                     </description>
                 </by-component>
             </statement>
@@ -889,7 +1037,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
                     <description>
-                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment: organization-defined personnel or roles] within:</p>
+                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment:
+                            organization-defined personnel or roles] within:</p>
                     </description>
                 </by-component>
             </statement>
@@ -897,7 +1046,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
                     <description>
-                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment: system owner] within:<insert type="param" id-ref="ac-2_prm_6" />[Assignment: 1 business day] when accounts are no longer required;</p>
+                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment:
+                            system owner] within:<insert type="param" id-ref="ac-2_prm_6" />[Assignment:
+                            1 business day] when accounts are no longer required;</p>
                     </description>
                 </by-component>
             </statement>
@@ -905,7 +1056,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                     <description>
-                        <p><insert type="param" id-ref="ac-2_prm_7" />[Assignment: organization-defined time period] when users are terminated or transferred; </p>
+                        <p><insert type="param" id-ref="ac-2_prm_7" />[Assignment:
+                            organization-defined time period] when users are terminated or
+                            transferred; </p>
                     </description>
                 </by-component>
             </statement>
@@ -913,7 +1066,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
                     <description>
-                        <p><insert type="param" id-ref="ac-2_prm_8" />[Assignment: organization-defined time period] when system usage or need-to-know changes for an individual;</p>
+                        <p><insert type="param" id-ref="ac-2_prm_8" />[Assignment:
+                            organization-defined time period] when system usage or need-to-know
+                            changes for an individual;</p>
                     </description>
                 </by-component>
             </statement>
@@ -945,7 +1100,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
                     <description>
-                        <p><insert type="param" id-ref="ac-2_prm_9" />[Assignment: organization-defined attributes (as required)];</p>
+                        <p><insert type="param" id-ref="ac-2_prm_9" />[Assignment:
+                            organization-defined attributes (as required)];</p>
                     </description>
                 </by-component>
             </statement>
@@ -954,7 +1110,8 @@
                     uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
                     <description>
                         <p>Review accounts for compliance with account management requirements <insert
-                            type="param" id-ref="ac-2_prm_10" />[Assignment: organization-defined frequency];</p>
+                                type="param" id-ref="ac-2_prm_10" />[Assignment:
+                            organization-defined frequency];</p>
                     </description>
                 </by-component>
             </statement>
@@ -962,7 +1119,9 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="d0cdfbc2-aef5-418e-94dc-9906341bcc12">
                     <description>
-                        <p>Establish and implement a process for changing shared or group account authenticators (if deployed) when individuals are removed from the group;</p>
+                        <p>Establish and implement a process for changing shared or group account
+                            authenticators (if deployed) when individuals are removed from the
+                            group;</p>
                     </description>
                 </by-component>
             </statement>
@@ -970,13 +1129,25 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f23d55dd-1204-42f9-862e-2a07200b5c6e">
                     <description>
-                        <p>Align account management processes with personnel termination and transfer processes.</p>
+                        <p>Align account management processes with personnel termination and
+                            transfer processes.</p>
                     </description>
                 </by-component>
             </statement>
         </implemented-requirement>
     </control-implementation>
     <back-matter>
+        <resource uuid="c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c">
+            <description>
+                <p>Blossom Wiki</p>
+            </description>
+            <rlink
+                href="https://github.com/usnistgov/blossom-nist-member/wiki"
+                media-type="multipart/alternative" />
+            <remarks>
+                <p>Project's Wiki which provides descriptions for the ATO and business processes.</p>
+            </remarks>
+        </resource>
         <resource uuid="006babc9-4f57-4ab0-9941-15fcb65e0387">
             <description>
                 <p>National Institute of Standards and Technology's Logo</p>
