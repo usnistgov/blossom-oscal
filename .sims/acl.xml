@@ -21,21 +21,21 @@
         <ID>09ad840f-aa79-43aa-9f22-25182c2ab11b</ID>
         <DisplayName>System Owner</DisplayName>
       </Grantee>
-      <Permission>READ_ACP</Permission>
+      <Permission>WRITE</Permission>
     </Grant>
     <Grant>
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
         <ID>09ad840f-aa79-43aa-9f22-25182c2ab11b</ID>
         <DisplayName>System Owner</DisplayName>
       </Grantee>
-      <Permission>WRITE</Permission>
+      <Permission>READ_ACP</Permission>
     </Grant>
     <Grant>
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
         <ID>551b9706-d6a4-4d25-8207-f2ccec541016</ID>
         <DisplayName>System Owner</DisplayName>
       </Grantee>
-      <Permission>READ</Permission>
+      <Permission>WRITE_ACP</Permission>
     </Grant>
     <Grant>
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
@@ -89,20 +89,6 @@
     <Grant>
       <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
         <ID>132953a9-640c-46f7-9de9-3fa15ec99361</ID>
-        <DisplayName>System Security Assessor</DisplayName>
-      </Grantee>
-      <Permission>READ_ACP</Permission>
-    </Grant>
-    <Grant>
-      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
-        <ID>user1-canonical-user-ID</ID>
-        <DisplayName>System Security Assessor</DisplayName>
-      </Grantee>
-      <Permission>READ</Permission>
-    </Grant>
-    <Grant>
-      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
-        <ID>user1-canonical-user-ID</ID>
         <DisplayName>System Security Assessor</DisplayName>
       </Grantee>
       <Permission>READ_ACP</Permission>
