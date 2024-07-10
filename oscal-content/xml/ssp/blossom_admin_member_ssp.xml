@@ -843,34 +843,34 @@
             </prop>
             -->
             <link rel="documentation" href="#c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c" />
-            <set-parameter param-id="ac-2_prm_1">
+            <set-parameter param-id="ac-02_odp.01">
                 <value>have an organization-sponsored email address to demonstrate employment and have been approved by the System Owner based on the business need of the individual</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_2">
+            <set-parameter param-id="ac-02_odp.02">
                 <value>business need</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_3">
+            <set-parameter param-id="ac-02_odp.03">
                 <value>System Owner (SO)</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_4">
+            <set-parameter param-id="ac-02_odp.04">
                 <value>Types of User Accounts for Blossom</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_5">
+            <set-parameter param-id="ac-02_odp.0_5">
                 <value>System Owner (SO)</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_6">
+            <set-parameter param-id="ac-02_odp.06">
                 <value>1 business day</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_7">
+            <set-parameter param-id="ac-02_odp.07">
                 <value>1 business day</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_8">
+            <set-parameter param-id="ac-02_odp.08">
                 <value>1 business day</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_9">
+            <set-parameter param-id="ac-02_odp.09">
                 <value>System Owner</value>
             </set-parameter>
-            <set-parameter param-id="ac-2_prm_10">
+            <set-parameter param-id="ac-02_odp.10">
                 <value>every 6 months</value>
             </set-parameter>
             <responsible-role role-id="system-administrator">
@@ -986,10 +986,10 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c72b52e1-1943-4a52-be48-7bcce7df2f6d">
                     <description>
-                        <!-- ac-2_prm_1= "have an organization-sponsored email address to demonstrate employment and
+                        <!-- ac-02_odp.01= "have an organization-sponsored email address to demonstrate employment and
                           have been approved by the System Owner based on the business need of the individual" -->
                         <p>For each identified role, access to the system for each role will be individually 
-                            analyzed and granted if the requesters proves they <insert type="param" id-ref="ac-2_prm_1" /> 
+                            analyzed and granted if the requesters proves they <insert type="param" id-ref="ac-02_odp.01" /> 
                             for the respective group and role membership.</p>
                     </description>
                 </by-component>
@@ -1001,7 +1001,7 @@
                         <p>1. All authorized users are listed and accuratelly maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
                         <p>2. All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
                             This system does not support groups. </p>
-                        <p>3. All access authorizations are docuemnted in this SSP in the "metadata" as "responsible-party" with "role-id" mathing the respective roles or attributes.</p>
+                        <p>3. All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with "role-id" mathing the respective roles or attributes.</p>
                     </description>
                 </by-component>
             </statement>
@@ -1026,7 +1026,7 @@
                     uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
                         <p>Access authorizations (i.e., privileges) and <insert type="param"
-                                id-ref="ac-2_prm_2" />[Assignment: organization-defined attributes
+                                id-ref="ac-02_odp.0_2" />[Assignment: organization-defined attributes
                             (as required)] for each account;</p>
                     </description>
                 </by-component>
@@ -1035,7 +1035,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
                     <description>
-                        <p>Require approvals by <insert type="param" id-ref="ac-2_prm_3" />[Assignment:
+                        <p>Require approvals by <insert type="param" id-ref="ac-02_odp.03" />[Assignment:
                             organization-defined personnel or roles] for requests to create
                             accounts;</p>
                     </description>
@@ -1046,7 +1046,7 @@
                     uuid="02d4c648-5a86-4155-bd73-02c3439262b4">
                     <description>
                         <p>Create, enable, modify, disable, and remove accounts in accordance with <insert
-                                type="param" id-ref="ac-2_prm_4" />[Assignment: organization-defined
+                                type="param" id-ref="ac-02_odp.04" />[Assignment: organization-defined
                             policy, procedures, prerequisites, and criteria];</p>
                     </description>
                 </by-component>
@@ -1063,7 +1063,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
                     <description>
-                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment:
+                        <p>Notify account managers and <insert type="param" id-ref="ac-02_odp.05" />[Assignment:
                             organization-defined personnel or roles] within:</p>
                     </description>
                 </by-component>
@@ -1072,8 +1072,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
                     <description>
-                        <p>Notify account managers and <insert type="param" id-ref="ac-2_prm_5" />[Assignment:
-                            system owner] within:<insert type="param" id-ref="ac-2_prm_6" />[Assignment:
+                        <p>Notify account managers and <insert type="param" id-ref="ac-02_odp.05" />[Assignment:
+                            system owner] within:<insert type="param" id-ref="ac-02_odp.06" />[Assignment:
                             1 business day] when accounts are no longer required;</p>
                     </description>
                 </by-component>
@@ -1082,7 +1082,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                     <description>
-                        <p><insert type="param" id-ref="ac-2_prm_7" />[Assignment:
+                        <p><insert type="param" id-ref="ac-02_odp.07" />[Assignment:
                             organization-defined time period] when users are terminated or
                             transferred; </p>
                     </description>
@@ -1092,7 +1092,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
                     <description>
-                        <p><insert type="param" id-ref="ac-2_prm_8" />[Assignment:
+                        <p><insert type="param" id-ref="ac-02_odp.08" />[Assignment:
                             organization-defined time period] when system usage or need-to-know
                             changes for an individual;</p>
                     </description>
@@ -1126,7 +1126,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
                     <description>
-                        <p><insert type="param" id-ref="ac-2_prm_9" />[Assignment:
+                        <p><insert type="param" id-ref="ac-02_odp.09" />[Assignment:
                             organization-defined attributes (as required)];</p>
                     </description>
                 </by-component>
@@ -1136,7 +1136,7 @@
                     uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
                     <description>
                         <p>Review accounts for compliance with account management requirements <insert
-                                type="param" id-ref="ac-2_prm_10" />[Assignment:
+                                type="param" id-ref="ac-02_odp.10" />[Assignment:
                             organization-defined frequency];</p>
                     </description>
                 </by-component>
