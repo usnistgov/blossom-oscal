@@ -3,17 +3,24 @@ description: Submit an account related request
 labels: ['ACCOUNT_REQUEST_RECORD']
 body:
   - type: input
-    id: first-name
+    id: user-first-name
     attributes:
       label: Account Holder First Name
       placeholder: Type here user's first name as it appears in his/her ID.
     validations:
       required: true
   - type: input
-    id: last-name
+    id: user-last-name
     attributes:
       label: Account Holder Last Name
       placeholder: Type here user's last name as it appears in his/her ID.
+    validations:
+      required: true
+  - type: input
+    id: user-email
+    attributes:
+      label: Account Holder Email
+      placeholder: Type here user's email
     validations:
       required: true
   - type: input
