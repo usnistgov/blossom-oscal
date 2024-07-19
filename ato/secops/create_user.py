@@ -6,8 +6,8 @@ from datetime import datetime
 @click.option('--user-name', required=True, help='Name of user to create')
 @click.option('--user-email', required=True, help='Email of user to create')
 @click.option('--user-role', required=True, help='Role of user to create')
-@click.option('--location-uuid', default='00000000-0000-0000-0000-000000000000', help='UUID of physical location of user')
-@click.option('--org-member', default='00000000-0000-0000-0000-000000000000', help='UUID of organization that user is member of')
+@click.option('--location-uuid', help='UUID of physical location of user')
+@click.option('--org-member', help='UUID of organization that user is member of')
 def create_user(user_name, user_email, user_role, location_uuid, org_member):
     # Structure of yaml file
     cmd = {
