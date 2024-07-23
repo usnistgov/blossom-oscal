@@ -844,34 +844,36 @@
             -->
             <link rel="documentation" href="#c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c" />
             <set-parameter param-id="ac-02_odp.01">
-                <value>have an organization-sponsored email address to demonstrate employment and have been approved by the System Owner based on the business need of the individual</value>
+                <value>have an organization-sponsored email address to demonstrate employment,complete training, and have been approved by the System Owner based on the business need of the individual</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.02">
-                <value>business need</value>
+                <value>Access tagging</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.03">
-                <value>System Owner (SO)</value>
+                <value>Accounts Manager(s): System Owner and Program Manager.</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.04">
-                <value>Types of User Accounts for Blossom</value>
+                <value>Organizational access control policies, standards and procedures, as documented in the AC-02.a statement implementation (statement-id="ac-2_smt.a", uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c").</value>
             </set-parameter>
-            <set-parameter param-id="ac-02_odp.0_5">
-                <value>System Owner (SO)</value>
+            <set-parameter param-id="ac-02_odp.05">
+                <!-- e.g. the security monitoring team-->
+                <value>System Administrator</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.06">
                 <value>1 business day</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.07">
-                <value>1 business day</value>
+                <value>within one hour</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.08">
-                <value>1 business day</value>
+                <value>within openxmlformats-officedocument hours</value>
             </set-parameter>
+            <!-- AC-2_ODP[09] reads: "attributes needed to authorize system access"-->
             <set-parameter param-id="ac-02_odp.09">
-                <value>System Owner</value>
+                <value>need to know</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.10">
-                <value>every 6 months</value>
+                <value>every 6 months or when a change takes place</value>
             </set-parameter>
             <responsible-role role-id="system-administrator">
                 <party-uuid>4fded5fd-7a65-47ea-bd76-df57c46e27d1</party-uuid>
@@ -919,8 +921,8 @@
                         </ul>
                         <p>The Authorizing Official is responsible for reviewing the ATO package prepared by the System Owner and signing/authorizing the system to operate.</p>
                         <p>The System Owner remains the custodian of all system ATO related artifacts.</p>
-                        <p>Upon approval, teh AO is responsible for generating automatically the ATO attestation and upload it to the ATO channel.</p>
-                        <p>The following account is supported for the ATO processes. :</p>
+                        <p>Upon approval, the Authorizing official is responsible for automatically generating the ATO attestation and uploading it to the ATO channel.</p>
+                        <p>The following account is supported for the ATO processes.</p>
                         <ul>
                             <li>Privileged accounts:
                                  <ul>Authorizing Official</ul>
@@ -932,7 +934,7 @@
                 <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
                     uuid="84de735f-ba37-4bb4-b784-79760f986a40">
                     <description>
-                        <p>The following accounts of the Blossom System of NIST Member managed by the Leveraged AWS IaaS are:</p>
+                        <p>The following accounts of the NIST Member of the Blossom System are managed by the Leveraged AWS IaaS:</p>
                         <ul>
                             <li>Privileged accounts: 
                                 <ul>System Owner</ul>
@@ -966,7 +968,7 @@
                             <p>The Access Control List (ACL) updates are Blossom system's responsibility (as customers of AWS)
                                 For all roles listed above which are managed by the AWS IaaS
                                 system, account creation/revokation/deletion requests are approved
-                                by the Blossom system's System Owner or the Blossom PM and are added to or delete
+                                by the Blossom system's System Owner or the Program Manager and are added to or delete
                                 from the ACL list by the System Administrator.</p>
                         </description>
                     </satisfied>
@@ -978,7 +980,7 @@
                     <description>
                         <p>For this system, the entity with the System Administrator role
                              acts as the Accounts Manager and is responsible for creating, 
-                             revoking, delete accounts per decissions made by the System Owner.</p>
+                             revoking, deleting accounts per decisions made by the System Owner and the Program Manager.</p>
                     </description>
                 </by-component>
             </statement>
@@ -1009,7 +1011,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="49c1dab6-3c75-4758-8119-120e01f163d7">
                     <description>
-                        <p>Authorized users of the system</p>
+                        <p>Authorized Blossom users are documented in the Blossom SSP.</p>
                     </description>
                 </by-component>
             </statement>
@@ -1035,9 +1037,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
                     <description>
-                        <p>Require approvals by <insert type="param" id-ref="ac-02_odp.03" />[Assignment:
-                            organization-defined personnel or roles] for requests to create
-                            accounts;</p>
+                        <p>Request to create accounts are approved <insert type="param" id-ref="ac-02_odp.03" />by the System Owner and the Program Manager;    </p>
                     </description>
                 </by-component>
             </statement>
@@ -1045,9 +1045,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="02d4c648-5a86-4155-bd73-02c3439262b4">
                     <description>
-                        <p>Create, enable, modify, disable, and remove accounts in accordance with <insert
-                                type="param" id-ref="ac-02_odp.04" />[Assignment: organization-defined
-                            policy, procedures, prerequisites, and criteria];</p>
+                        <p>Blossom user accounts are created, enabled, modified, disabled, and removed according to <insert
+                                type="param" id-ref="ac-02_odp.04" />the types of Blossom accounts (privileged or non-privileged);</p>
                     </description>
                 </by-component>
             </statement>
@@ -1063,8 +1062,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
                     <description>
-                        <p>Notify account managers and <insert type="param" id-ref="ac-02_odp.05" />[Assignment:
-                            organization-defined personnel or roles] within:</p>
+                        <p>Account managers, <insert type="param" id-ref="ac-02_odp.05" />System Owner, and Program Manager are notified within:</p>
                     </description>
                 </by-component>
             </statement>
@@ -1072,9 +1070,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
                     <description>
-                        <p>Notify account managers and <insert type="param" id-ref="ac-02_odp.05" />[Assignment:
-                            system owner] within:<insert type="param" id-ref="ac-02_odp.06" />[Assignment:
-                            1 business day] when accounts are no longer required;</p>
+                        <p>Account managers, <insert type="param" id-ref="ac-02_odp.05" />System Owner, and Program Manager are notified within<insert type="param" id-ref="ac-02_odp.06" />1 business day when accounts are no longer required;</p>
                     </description>
                 </by-component>
             </statement>
@@ -1082,8 +1078,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.07" />[Assignment:
-                            organization-defined time period] when users are terminated or
+                        <p><insert type="param" id-ref="ac-02_odp.07" />within 1 business day when users are terminated or
                             transferred; </p>
                     </description>
                 </by-component>
@@ -1092,8 +1087,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.08" />[Assignment:
-                            organization-defined time period] when system usage or need-to-know
+                        <p><insert type="param" id-ref="ac-02_odp.08" />within 1 business day when system usage or need-to-know
                             changes for an individual;</p>
                     </description>
                 </by-component>
@@ -1102,7 +1096,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f793018d-36df-48bf-a2f0-996364d3f46e">
                     <description>
-                        <p>Authorize access to the system based on:</p>
+                        <p>System access authorization is based on:</p>
                     </description>
                 </by-component>
             </statement>
@@ -1126,8 +1120,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
                     <description>
-                        <p><insert type="param" id-ref="ac-02_odp.09" />[Assignment:
-                            organization-defined attributes (as required)];</p>
+                        <p><insert type="param" id-ref="ac-02_odp.09" />Business need of the individual;</p>
                     </description>
                 </by-component>
             </statement>
@@ -1135,9 +1128,8 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
                     <description>
-                        <p>Review accounts for compliance with account management requirements <insert
-                                type="param" id-ref="ac-02_odp.10" />[Assignment:
-                            organization-defined frequency];</p>
+                        <p>Accounts are reviewed for compliance with account management requirements <insert
+                                type="param" id-ref="ac-02_odp.10" />every 6 months.;</p>
                     </description>
                 </by-component>
             </statement>
@@ -1145,9 +1137,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="d0cdfbc2-aef5-418e-94dc-9906341bcc12">
                     <description>
-                        <p>Establish and implement a process for changing shared or group account
-                            authenticators (if deployed) when individuals are removed from the
-                            group;</p>
+                        <p>There are no group or shared accounts created for accessing Blossom;</p>
                     </description>
                 </by-component>
             </statement>
@@ -1155,8 +1145,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
                     uuid="f23d55dd-1204-42f9-862e-2a07200b5c6e">
                     <description>
-                        <p>Align account management processes with personnel termination and
-                            transfer processes.</p>
+                        <p>All Blossom user accounts are updated by the system administrator when they are terminated or are transferred where their Blossom account is not required.</p>
                     </description>
                 </by-component>
             </statement>
