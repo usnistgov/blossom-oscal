@@ -24,18 +24,37 @@ jobs:
             @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.
             When implemented, add the ACCOUNT_IMPLEMENTED label and 
             link this account request issue to the PR with the implementation.
-  create-user:
+
+  parse-issue:
     needs: request-approved
     runs-on: ubuntu-20.04
+    outputs:
+      account-modification: ${{ steps.issue-parser.outputs.issueparser_account-modification }}
+      user-first-name: ${{ steps.issue-parser.outputs.issueparser_user-first-name }}
+      user-last-name: ${{ steps.issue-parser.outputs.issueparser_user-last-name }}
+      user-email: ${{ steps.issue-parser.outputs.issueparser_user-email }}
+      account-type: ${{ steps.issue-parser.outputs.issueparser_account-type }}
     steps:        
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/ISSUE_TEMPLATE/account_management_request_form.yaml
+          sparse-checkout-cone-mode: false
 
       - name: Parse issue body
         uses: stefanbuck/github-issue-parser@v3.2.1
         id: issue-parser
         with:
           template-path: ".github/ISSUE_TEMPLATE/account_management_request_form.yaml"
+
+  create-user:
+    needs: parse-issue
+    if: ${{ needs.parse-issue.outputs.account-modification == 'Create' }}
+    runs-on: ubuntu-20.04
+    steps: 
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Ensure directory exists for created users
         run: |
@@ -47,9 +66,9 @@ jobs:
 
       - name: Create yaml file for automated user creation
         env:
-          USER_NAME: "${{ steps.issue-parser.outputs.issueparser_user-first-name }} ${{ steps.issue-parser.outputs.issueparser_user-last-name }}"
-          USER_EMAIL: ${{ steps.issue-parser.outputs.issueparser_user-email }}
-          USER_ROLE: ${{ steps.issue-parser.outputs.issueparser_account-type }}
+          USER_NAME: "${{ needs.parse-issue.outputs.user-first-name }} ${{ needs.parse-issue.outputs.user-last-name }}"
+          USER_EMAIL: ${{ needs.parse-issue.outputs.user-email }}
+          USER_ROLE: ${{ needs.parse-issue.outputs.account-type }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
           python ato/secops/create_user.py --user-name "$USER_NAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER"
