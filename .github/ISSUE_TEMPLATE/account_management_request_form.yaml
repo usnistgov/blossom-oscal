@@ -24,6 +24,13 @@ body:
     validations:
       required: true
   - type: input
+    id: user-username
+    attributes:
+      label: Account Holder Username
+      placeholder: Type here user's username
+    validations:
+      required: true
+  - type: input
     id: requester-name
     attributes:
       label: Requester's Full Name 

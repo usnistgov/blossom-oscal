@@ -32,6 +32,7 @@ jobs:
       account-modification: ${{ steps.issue-parser.outputs.issueparser_account-modification }}
       user-first-name: ${{ steps.issue-parser.outputs.issueparser_user-first-name }}
       user-last-name: ${{ steps.issue-parser.outputs.issueparser_user-last-name }}
+      user-username: ${{ steps.issue-parser.outputs.issueparser_user-username }}
       user-email: ${{ steps.issue-parser.outputs.issueparser_user-email }}
       account-type: ${{ steps.issue-parser.outputs.issueparser_account-type }}
     steps:        
@@ -67,11 +68,12 @@ jobs:
       - name: Create yaml file for automated user creation
         env:
           USER_NAME: "${{ needs.parse-issue.outputs.user-first-name }} ${{ needs.parse-issue.outputs.user-last-name }}"
+          USER_USERNAME: ${{ needs.parse-issue.outputs.user-username }}
           USER_EMAIL: ${{ needs.parse-issue.outputs.user-email }}
           USER_ROLE: ${{ needs.parse-issue.outputs.account-type }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
         run: |
-          python ato/secops/create_user.py --user-name "$USER_NAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER"
+          python ato/secops/create_user.py --user-name "$USER_NAME" --user-username "$USER_USERNAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER"
 
       - name: Store user yaml in repo
         run: |
@@ -86,15 +88,15 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           BRANCH_NAME: "account-request-${{ github.event.issue.number }}"
   
-      - name: Configure AWS CLI
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-region: ${{ secrets.AWS_REGION }}
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+      # - name: Configure AWS CLI
+      #   uses: aws-actions/configure-aws-credentials@v4
+      #   with:
+      #     aws-region: ${{ secrets.AWS_REGION }}
+      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
       
-      - name: Copy reference yaml to bucket
-        run: |
-          aws s3 cp --recursive ato/oscal-artifacts/reference_created_users/ s3://"$AWS_BUCKET"
-        env:
-          AWS_BUCKET: ${{ secrets.AWS_BUCKET }}
+      # - name: Copy reference yaml to bucket
+      #   run: |
+      #     aws s3 cp --recursive ato/oscal-artifacts/reference_created_users/ s3://"$AWS_BUCKET"
+      #   env:
+      #     AWS_BUCKET: ${{ secrets.AWS_BUCKET }}
