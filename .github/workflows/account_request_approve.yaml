@@ -88,15 +88,15 @@ jobs:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           BRANCH_NAME: "account-request-${{ github.event.issue.number }}"
   
-      # - name: Configure AWS CLI
-      #   uses: aws-actions/configure-aws-credentials@v4
-      #   with:
-      #     aws-region: ${{ secrets.AWS_REGION }}
-      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
-      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
       
-      # - name: Copy reference yaml to bucket
-      #   run: |
-      #     aws s3 cp --recursive ato/oscal-artifacts/reference_created_users/ s3://"$AWS_BUCKET"
-      #   env:
-      #     AWS_BUCKET: ${{ secrets.AWS_BUCKET }}
+      - name: Copy reference yaml to bucket
+        run: |
+          aws s3 cp --recursive ato/oscal-artifacts/reference_created_users/ s3://"$AWS_BUCKET"
+        env:
+          AWS_BUCKET: ${{ secrets.AWS_BUCKET }}

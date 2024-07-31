@@ -7,8 +7,11 @@ This document explains the workflow of GitHub actions used to automate Blossom s
 - [ ] The Blossom Management group is automatically notified to review the request through GitHub.
 - [ ] One of the Blossom Management (a member of the Blossom Management group) reviews the request and adds a new label to the issue: ACCOUNT_APPROVED or ACCOUNT_REJECTED
 - [ ] If ACCOUNT_REJECTED, the account request issue is automatically closed.
-- [ ] If the account is approved and the label ACCOUNT_APPROVED is added, the Blossom Sysdevs group is automatically notified to implement the account.
-- [ ] Upon completion of creating the account requested, the Blossom Sysdev links the Account Request issue to the Pull Request that implements the account.
+- [ ] If the account is approved and the label ACCOUNT_APPROVED is added, the Blossom Sysdevs group is automatically notified about implementation.
+- [ ] A YAML file is automatically created from information submitted through the Account Request Form, which is pushed to the GitHub repo as a new branch and a condensed version is sent to S3 bucket.
+- [ ] S3 bucket receives the file about the new user to create and sends a trigger to EC2, which implements the new user in Cognito, SSM, ACL, AMB as necessary.
+- [ ] The new user is inserted into the SSP, which is pushed into the GitHub repo to the new branch.
+- [ ] Upon completion of creating the account requested, a Pull Request is automatically created, to link the branch with the Account Request issue.
 - [ ] Upon merging the Pull Request that implements the account, the relevant updated controls are re-assessed automatically. The Blossom Assessors group is then notified to monitor the automated assessment.
 - [ ] TBD: STEPS FOR AUTOMATED ASSESSMENT
 
