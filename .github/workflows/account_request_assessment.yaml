@@ -12,10 +12,9 @@ jobs:
   if_merged:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-20.04
-    permissions:
-      issues: write
+#     permissions:
+#       issues: write
     steps:
     - name: Run automated assessment
       run: echo "assessment"
-      # 1. dump empty file to s3 bucket, to initiate connection
-      # 2. query chaincode, code to execute on chaincode for list of supported roles, API command
+      # query chaincode, code to execute on chaincode for list of supported roles, API command
