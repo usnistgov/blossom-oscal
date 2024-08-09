@@ -2,6 +2,10 @@
 
 This document explains the workflow of GitHub actions used to automate Blossom service's accounts management.
 
+## Requirements to run Actions
+- [ ] Repository secrets: AWS_ACCESS_KEY, AWS_SECRET_KEY, AWS_REGION, AWS_BUCKET
+- [ ] Issue labels: ACCOUNT_REQUEST_RECORD, ACCOUNT_APPROVED, ACCOUNT_REJECTED, ACCOUNT_IMPLEMENTED
+
 ## Account Request and Creation
 - [ ] The requester requests an account for the Account Holder by creating a new GitHub issue using the Account Request Form.
 - [ ] The Blossom Management group is automatically notified to review the request through GitHub.

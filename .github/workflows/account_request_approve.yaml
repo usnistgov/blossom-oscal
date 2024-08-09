@@ -21,7 +21,7 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
             Account management request APPROVED by Blossom Management.
-            @usnistgov/blossom-sysdevs please implement by updating the ACL and the SSP.
+            @usnistgov/blossom-sysdevs please review the automated update to the ACL and/or SSP and user modification in AWS.
             When implemented, add the ACCOUNT_IMPLEMENTED label and 
             link this account request issue to the PR with the implementation.
 
