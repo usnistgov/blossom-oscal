@@ -21,4 +21,82 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
             Account management request APPROVED by Blossom Management.
-            @blossom-sysdevs please review and submit Account Management Authorization Form.
+            @usnistgov/blossom-sysdevs please ensure the ACL and/or Cognito are updated and the SSP is in sync with the update.
+            When implemented, add the ACCOUNT_IMPLEMENTED label and 
+            link this account request issue to the PR with the implementation.
+
+  parse-issue:
+    needs: request-approved
+    runs-on: ubuntu-20.04
+    outputs:
+      account-modification: ${{ steps.issue-parser.outputs.issueparser_account-modification }}
+      user-first-name: ${{ steps.issue-parser.outputs.issueparser_user-first-name }}
+      user-last-name: ${{ steps.issue-parser.outputs.issueparser_user-last-name }}
+      user-username: ${{ steps.issue-parser.outputs.issueparser_user-username }}
+      user-email: ${{ steps.issue-parser.outputs.issueparser_user-email }}
+      account-type: ${{ steps.issue-parser.outputs.issueparser_account-type }}
+    steps:        
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/ISSUE_TEMPLATE/account_management_request_form.yaml
+          sparse-checkout-cone-mode: false
+
+      - name: Parse issue body
+        uses: stefanbuck/github-issue-parser@v3.2.1
+        id: issue-parser
+        with:
+          template-path: ".github/ISSUE_TEMPLATE/account_management_request_form.yaml"
+
+  create-user:
+    needs: parse-issue
+    if: ${{ needs.parse-issue.outputs.account-modification == 'Create' }}
+    runs-on: ubuntu-20.04
+    steps: 
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ensure directory exists for created users
+        run: |
+          mkdir -p ato/oscal-artifacts/created_users/
+      
+      - name: Ensure directory exists for created users references
+        run: |
+          mkdir -p ato/oscal-artifacts/reference_created_users/
+
+      - name: Create yaml file for automated user creation
+        env:
+          USER_NAME: "${{ needs.parse-issue.outputs.user-first-name }} ${{ needs.parse-issue.outputs.user-last-name }}"
+          USER_USERNAME: ${{ needs.parse-issue.outputs.user-username }}
+          USER_EMAIL: ${{ needs.parse-issue.outputs.user-email }}
+          USER_ROLE: ${{ needs.parse-issue.outputs.account-type }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          python ato/secops/create_user.py --user-name "$USER_NAME" --user-username "$USER_USERNAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER"
+
+      - name: Store user yaml in repo
+        run: |
+          git config --global user.name "create-user-action[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH_NAME"
+          git add "ato/oscal-artifacts/created_users/*"
+          git add "ato/oscal-artifacts/reference_created_users/*"
+          git commit -m "Create user request #$ISSUE_NUMBER"
+          git push origin "$BRANCH_NAME"
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          BRANCH_NAME: "account-request-${{ github.event.issue.number }}"
+  
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+      
+      - name: Copy reference yaml to bucket
+        run: |
+          aws s3 cp --recursive ato/oscal-artifacts/reference_created_users/ s3://"$AWS_BUCKET"
+        env:
+          AWS_BUCKET: ${{ secrets.AWS_BUCKET }}

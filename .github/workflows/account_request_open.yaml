@@ -22,5 +22,5 @@ jobs:
           NUMBER: ${{ github.event.issue.number }}
           BODY: >
             Account management request CREATED.
-            @blossom-management please review and approve/reject this request 
-            by adding ACCOUNT_APPROVED or ACCOUNT_REJECTED label.
+            @usnistgov/blossom-management please review and approve/reject this request 
+            by adding ACCOUNT_APPROVED or ACCOUNT_REJECTED label to this issue.

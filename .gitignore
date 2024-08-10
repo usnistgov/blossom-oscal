@@ -1,5 +1,6 @@
 .DS_Store
 .vscode/*
+.history/*
 *.pyc
 __pycache__/
 draft-*
@@ -9,3 +10,5 @@ draft-*
 .pyenv*
 .env*
 oscal-cli.txt
+# Ignore validation tool oscal-cli 
+build/oscal-cli

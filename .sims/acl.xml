@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccessControlPolicy xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+  <Owner>
+    <ID>09ad840f-aa79-43aa-9f22-25182c2ab11b</ID>
+    <DisplayName>System Owner</DisplayName>
+  </Owner>
+  <Owner>
+    <ID>551b9706-d6a4-4d25-8207-f2ccec541016</ID>
+    <DisplayName>System Owner</DisplayName>
+  </Owner>
+  <AccessControlList>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>09ad840f-aa79-43aa-9f22-25182c2ab11b</ID>
+        <DisplayName>System Owner</DisplayName>
+      </Grantee>
+      <Permission>READ</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>09ad840f-aa79-43aa-9f22-25182c2ab11b</ID>
+        <DisplayName>System Owner</DisplayName>
+      </Grantee>
+      <Permission>WRITE</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>09ad840f-aa79-43aa-9f22-25182c2ab11b</ID>
+        <DisplayName>System Owner</DisplayName>
+      </Grantee>
+      <Permission>READ_ACP</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>551b9706-d6a4-4d25-8207-f2ccec541016</ID>
+        <DisplayName>System Owner</DisplayName>
+      </Grantee>
+      <Permission>WRITE_ACP</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>551b9706-d6a4-4d25-8207-f2ccec541016</ID>
+        <DisplayName>System Owner</DisplayName>
+      </Grantee>
+      <Permission>READ_ACP</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>551b9706-d6a4-4d25-8207-f2ccec541016</ID>
+        <DisplayName>System Owner</DisplayName>
+      </Grantee>
+      <Permission>WRITE</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>4fded5fd-7a65-47ea-bd76-df57c46e27d1</ID>
+        <DisplayName>System Administrator</DisplayName>
+      </Grantee>
+      <Permission>READ</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>4fded5fd-7a65-47ea-bd76-df57c46e27d1</ID>
+        <DisplayName>System Administrator</DisplayName>
+      </Grantee>
+      <Permission>WRITE</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>4fded5fd-7a65-47ea-bd76-df57c46e27d1</ID>
+        <DisplayName>System Administrator</DisplayName>
+      </Grantee>
+      <Permission>READ_ACP</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>4fded5fd-7a65-47ea-bd76-df57c46e27d1</ID>
+        <DisplayName>System Administrator</DisplayName>
+      </Grantee>
+      <Permission>WRITE_ACP</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>132953a9-640c-46f7-9de9-3fa15ec99361</ID>
+        <DisplayName>System Security Assessor</DisplayName>
+      </Grantee>
+      <Permission>READ</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CanonicalUser">
+        <ID>132953a9-640c-46f7-9de9-3fa15ec99361</ID>
+        <DisplayName>System Security Assessor</DisplayName>
+      </Grantee>
+      <Permission>READ_ACP</Permission>
+    </Grant>
+    <Grant>
+      <Grantee xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="Group">
+        <URI>http://acs.amazonaws.com/groups/global/AllUsers</URI>
+      </Grantee>
+      <Permission>READ</Permission>
+    </Grant>
+  </AccessControlList>
+</AccessControlPolicy>

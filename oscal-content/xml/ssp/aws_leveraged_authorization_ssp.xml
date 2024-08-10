@@ -181,7 +181,7 @@
       <prop name="sorn-id" ns="https://fedramp.gov/ns/oscal" value="n/a" class="pta" />
       <information-type uuid="27e034c9-2164-47c1-ba0b-8eb56c941842">
         <title>Corrective Action (Policy/Regulation)</title>
-        <description></description>
+        <description><p>TBD</p></description>
         <categorization system="https://doi.org/10.6028/NIST.SP.800-60v2r1">
           <information-type-id>C.2.1.1</information-type-id>
         </categorization>
@@ -206,11 +206,11 @@
     </security-impact-level>
     <status state="operational" />
     <authorization-boundary>
-      <description></description>
+      <description><p>TBD</p></description>
       <diagram uuid="1d92b6f3-1260-421c-9bda-5c4a7739f0d1" />
     </authorization-boundary>
     <network-architecture>
-      <description></description>
+      <description><p>TBD</p></description>
       <diagram uuid="2d92b6f3-1260-421c-9bda-5c4a7739f0d2" />
     </network-architecture>
     <data-flow>
@@ -323,7 +323,7 @@
             <p>TBD:</p>
           </description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="f5c1b59c-04ff-4821-980a-e10c18e379a8">
               <description>
                 <p>TBD:</p>
@@ -361,9 +361,9 @@
       <statement statement-id="ma-1_smt.a" uuid="75cb125e-62f9-4355-8ca0-02c8daefb2b4">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="fdecdd89-e6ce-40d7-97a9-55d3a57abb8c">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="9c4a8b31-fe34-4b5f-933d-2a1c448a4ef2">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -387,9 +387,9 @@
       <statement statement-id="ma-1_smt.b" uuid="68b3a53d-4f77-4c50-9f2d-897204c315e9">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="2cd8b8e6-673a-4470-8534-13b5e2c9a240">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="bbeec595-6c96-4102-ac5d-a7675ed6c529">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -426,9 +426,9 @@
       <statement statement-id="ma-2_smt.a" uuid="5f8dffe3-ae68-4f7c-8e70-b447eac788d3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="8103b498-0f37-4106-92e0-d88886da6eb3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="9678dd9d-6125-45b7-ba22-9fa41f03f72e">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -452,9 +452,9 @@
       <statement statement-id="ma-2_smt.b" uuid="60bf759d-9dcd-4fe1-bf65-8f280b5c7452">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="ea52159a-8bc8-4a7e-b552-6cfd49291a6b">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="6b0ef9b2-6b7d-4178-b8e8-1f9ffc471045">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -478,9 +478,9 @@
       <statement statement-id="ma-2_smt.c" uuid="9eaab6a5-cacd-49a7-bd65-65486bbaeeac">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="8ed49eba-7071-4d05-8a72-7170cd70e073">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="9af6d025-089c-4b60-aa2a-f2301a1f4ba1">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -504,9 +504,9 @@
       <statement statement-id="ma-2_smt.d" uuid="4b2754cf-3ec7-46e5-8db4-7f326758114a">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="aed2636d-73bc-4484-aa02-744c7d7766e3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="72a3d5fb-6021-4052-8b8d-645f445f1de9">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -530,9 +530,9 @@
       <statement statement-id="ma-2_smt.e" uuid="92384784-fa20-44c5-aa2d-b77fd67b5580">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="eaaf5c14-f217-4f73-9a05-6238ee9e2e00">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="63b1f1a3-ed64-4b3b-91f0-80255ccfdd80">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -556,9 +556,9 @@
       <statement statement-id="ma-2_smt.f" uuid="a6ce1628-0215-488b-bc98-5d2c880a9acc">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="d4182aa0-508a-4bf4-97d7-7c351b34f8c9">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="6ba7424b-ec07-494c-a937-315be22012df">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -588,9 +588,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="bd636006-e24a-48a6-826d-e140ce79688b">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="13f36d45-615b-41e2-9760-6731a543e3b5">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -619,9 +619,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="c938abfb-d25c-4810-acba-7676d2462a88">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="c906e5b4-40ce-42e0-af33-6e70e2f93499">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -650,9 +650,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="17a3d2b4-9caa-405c-bfe3-ef4f43b7f7bf">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="dfa89026-ff35-47e6-8c3f-cc4b2b623dd6">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -685,9 +685,9 @@
       <statement statement-id="ma-3.3_smt.a" uuid="ef1ee2f0-36e0-447d-8852-6d9180b7dba9">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="7a32cdf4-0904-4c26-8f1d-9906d35ede53">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="ebfb1122-fd4b-49d2-acc2-349d54db3c51">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -711,9 +711,9 @@
       <statement statement-id="ma-3.3_smt.b" uuid="49974331-353f-49d8-9490-f631c913b7db">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="e06595df-f3b7-4ce5-a510-6ca8fe068b72">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="6e8f46ce-8f4e-40f1-95a8-71430a769709">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -737,9 +737,9 @@
       <statement statement-id="ma-3.3_smt.c" uuid="068c726c-93af-480d-8573-0a787f01a62f">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="cc0efa05-1f76-46d3-a974-3d96b3257d64">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="36d198cc-91e3-4f0b-a633-7cc256d29c42">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -763,9 +763,9 @@
       <statement statement-id="ma-3.3_smt.d" uuid="8b03d644-f625-4c1d-a1ab-d3f63e4af9e3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="0702e1b5-f95a-47b8-8244-a66ab38b0908">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="78df87ae-283c-4626-981a-e14291a0c8dd">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -796,9 +796,9 @@
       <statement statement-id="ma-4_smt.a" uuid="534d9827-d24e-4d72-bd58-ca872339e2ea">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="a68e4b6a-b77e-485d-aa8a-e785fc158085">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="4d23c4d8-b0cb-4a8a-9d64-aa24da8ab619">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -822,9 +822,9 @@
       <statement statement-id="ma-4_smt.b" uuid="fce5db07-1512-46ca-bbcc-1bee7566e9bf">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="42c76696-a674-464a-9229-6c6c3efae55d">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="35ab73e0-937c-48c3-b02f-fc2d10b1a81e">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -848,9 +848,9 @@
       <statement statement-id="ma-4_smt.c" uuid="e221ff63-592d-4fc2-bc91-2c3e4aa835f3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="d6522c04-d78d-4672-b4d5-297e035a4a47">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="8b875c18-e130-40ef-9f54-479c9593dbb4">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -874,9 +874,9 @@
       <statement statement-id="ma-4_smt.d" uuid="bc1e4825-edc4-4135-a8f9-f44728e7bfb3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="b2c30e47-7e20-4d8c-a8a5-76e14371f047">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="3486928c-60a9-4549-a090-1b56af560221">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -900,9 +900,9 @@
       <statement statement-id="ma-4_smt.e" uuid="103a952c-8e5c-4460-bc18-209aafc7e638">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="a0710b8a-49a7-42f9-9c6b-c15345f3fbee">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="f075f560-32f2-4ec6-bd12-868d3bdd2310">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -932,9 +932,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="c190a70f-74f3-4f4a-bf1b-b7a373816d48">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="d07af2dd-4725-4651-89d8-d732eb20fb22">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -964,9 +964,9 @@
       <statement statement-id="ma-4.3_smt.a" uuid="b042ccd2-364d-4b56-bca6-6c60e8345daf">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="ffe84fd7-6541-4b14-b09e-dbd792d76ef3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="bbf26c5d-bb82-4d70-b4f2-882afe6d9bf4">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -990,9 +990,9 @@
       <statement statement-id="ma-4.3_smt.b" uuid="96e6369a-1a61-43a5-8a2d-90434fcde3f1">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="747dc783-b19e-49bb-ab71-f095f7b3011f">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="faa72600-62e7-4440-b241-63ec94afd763">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1022,9 +1022,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="f42c46cb-443d-459e-9aae-8bbf3b82edaf">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="1d56cf05-5ccc-4491-b506-8cebae18963a">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1054,9 +1054,9 @@
       <statement statement-id="ma-5_smt.a" uuid="667a498d-4506-4e12-877f-1ba358af0429">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="d8cc5638-2afe-459d-a3cb-a01976aeac85">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="441dadf2-bef9-4e06-8f43-dd03b441acdd">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1080,9 +1080,9 @@
       <statement statement-id="ma-5_smt.b" uuid="a1260a7d-8d8f-4c96-a7e6-96356d7de2dd">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="96892541-9b58-440e-b44e-3998a4a7be84">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="627ba3bb-1a54-4cf5-ad56-7155247f5280">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1106,9 +1106,9 @@
       <statement statement-id="ma-5_smt.c" uuid="074b97bf-22ed-4ea4-bb3f-ff513fd72b10">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="02655970-983a-4b85-a49f-587749ce3d19">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="245d3044-c5f1-4167-9a6e-2c29388bba5e">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1139,9 +1139,9 @@
       <statement statement-id="ma-5.1_smt.a" uuid="c7880006-48e7-4695-9cd8-c2baea2beb9b">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="24ee516c-0d3f-4960-90b7-afa66abc28a9">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="f4a058aa-a41c-4c58-9758-6c79f980fd18">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1165,9 +1165,9 @@
       <statement statement-id="ma-5.1_smt.b" uuid="9261d0ff-39df-495c-890d-222266da9e46">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="7fe0f375-88a4-4fb0-b38c-d4a500e3b1d9">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="86b5fad1-4e75-43da-b257-9467fff7acfe">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1203,9 +1203,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="409c1e47-be79-43bf-aa2c-0fed0889c6d0">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="c81f9919-29f5-455b-a40d-3240093a0be5">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1244,9 +1244,9 @@
       <statement statement-id="mp-1_smt.a" uuid="d6c5e233-9c58-4995-b066-ae0096db33b6">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="092bfd62-aa7b-4409-a875-5fff7d2975b5">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="32b76454-93db-4bd1-9222-9604e6c5f7c7">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1270,9 +1270,9 @@
       <statement statement-id="mp-1_smt.b" uuid="55367813-21da-4944-ade8-e5bfa51158fc">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="d862d207-64d0-4d00-bcbe-097ea62ba6f5">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="b7367d62-0528-426b-8f97-f68a9530d619">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1308,9 +1308,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="9aaadee4-d49f-4de8-87ae-558fc6352e13">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="52572cd0-59ae-4248-8f07-68757ed538ec">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1346,9 +1346,9 @@
       <statement statement-id="mp-3_smt.a" uuid="a12cc57f-73c6-46f7-96c5-1d7569dc7b16">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="3d05b563-2cb8-4e38-8f56-694f60a2453f">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="af8ae830-df78-443c-bf0f-dc164f0d90b3">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1372,9 +1372,9 @@
       <statement statement-id="mp-3_smt.b" uuid="a70fb01b-23b1-4114-b7cd-3167170fa844">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="bda847e5-11cc-4d9f-857a-45f8819fd230">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="ffc17fe4-0e82-4292-8fd0-493905941d48">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1411,9 +1411,9 @@
       <statement statement-id="mp-4_smt.a" uuid="062d392a-53e1-4246-b740-b15bb9e2e03d">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="2e132311-f565-4aed-9614-ccc6a77158e2">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="a02735f9-5446-4ed4-8c26-5ab744ae1b04">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1437,9 +1437,9 @@
       <statement statement-id="mp-4_smt.b" uuid="db618aa6-8036-4926-b0a6-e4b2eb4a96f1">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="91fa9408-1373-4254-9159-cb2695e615a8">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="70698d4a-e8c2-4b9c-9395-c0582d8b8022">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1476,9 +1476,9 @@
       <statement statement-id="mp-5_smt.a" uuid="f8cec15a-d299-414c-9c64-73e7246e02ad">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="c487bf9a-c8fc-4180-92dc-ee528ece1949">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="6056c6b8-60b1-498b-acf4-3d6c6fe8830a">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1502,9 +1502,9 @@
       <statement statement-id="mp-5_smt.b" uuid="c3ee7827-ea71-45ec-a42f-e57861475613">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="40d22136-bb9c-4366-889b-6e59f8332069">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="01fa8cff-5d8e-4e04-af66-9384ee9c3606">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1528,9 +1528,9 @@
       <statement statement-id="mp-5_smt.c" uuid="0bf36497-e148-4a90-91c4-7a2ea27f9fce">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="4c84e881-7969-45ce-be75-7b223d4d1be3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="03f61f6e-7c67-4701-a9cd-30563989a670">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1554,9 +1554,9 @@
       <statement statement-id="mp-5_smt.d" uuid="83e4d0bf-9026-4e65-b154-3e032ee5333e">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="dee24e7a-a80e-4598-b281-e15f6d247e4d">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="769edda4-b4ed-4671-978d-85b16bfd564e">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1586,9 +1586,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="902a1af4-6479-4833-8d22-3efdf7d30edc">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="f7c948c9-b471-4a53-a56a-af75ece5d75e">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1624,9 +1624,9 @@
       <statement statement-id="mp-6_smt.a" uuid="d10d7dbd-0aa8-4231-a0d2-125b5773d41b">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="7e5a2ff0-9bb8-4e96-b3ea-8ee6c7ae189e">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="80e0c1ad-0366-4d71-a228-e81f553daf70">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1650,9 +1650,9 @@
       <statement statement-id="mp-6_smt.b" uuid="57d24452-7cf3-4f65-813d-94d5bbf06199">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="2f0f0bfa-fa0e-4245-b54a-926b349f5f6b">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="1b8d9da7-1c8e-4b05-af8c-b4887adcfe2a">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1682,9 +1682,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="3c52d224-4181-42e6-a477-96862a7547ea">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="c803d36a-1e21-4f51-9380-29fdaca0c823">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1716,9 +1716,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="5bf37408-0101-487e-82d3-6aef883b259d">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="ad041938-5dff-484d-8ecd-3888b3f30781">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1750,9 +1750,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="f5ac2d2d-abeb-4ad5-be32-83225ff6a8da">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="373974c4-c109-4b09-81f7-bf16ab35794d">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1793,9 +1793,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="e93f9b10-7017-4bbb-beb2-c0c60a11570e">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="c5ca7ce6-d6bd-4b15-bfff-222f9c04b23a">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1824,9 +1824,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="4e1cfda5-3463-4dff-ab6f-ee82d4fc12d4">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="01a0d189-d163-42ef-971e-f483eb1a89e3">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -1865,9 +1865,9 @@
       <statement statement-id="pe-1_smt.a" uuid="b5a77d0d-138f-4589-b1a4-b377fd1375ec">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="5f8020ca-afa5-41d3-8b8c-29372db8af1d">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="febe4d8a-4107-4e8f-9bca-c9a0c96d7cb0">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1891,9 +1891,9 @@
       <statement statement-id="pe-1_smt.b" uuid="be60b9f4-b8bc-4bb1-b16d-ecbd0bc20a72">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="5b81c845-e335-4854-9189-bbbdeeb8c220">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="920d4c86-6f4a-4b57-a991-3ec6c62a5cfd">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1927,9 +1927,9 @@
       <statement statement-id="pe-2_smt.a" uuid="0c63729b-9915-4b8d-8351-a4451962d905">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="c463ebb0-ec05-4bdf-af2e-b44b0ab9ed7e">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="5643f75d-672b-465b-869e-c6c80962c9be">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1953,9 +1953,9 @@
       <statement statement-id="pe-2_smt.b" uuid="a7ea7ab6-02ed-436d-8f69-9161826386ab">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="0a8cdb94-3fbc-4c0e-a4a1-5bbbeb85aca2">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="3301e8bd-5cdc-4cc6-835e-ac8af07d7f5c">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -1979,9 +1979,9 @@
       <statement statement-id="pe-2_smt.c" uuid="a6fb6a64-b831-42cc-a56b-6c59bc5d5a72">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="8b94c5b1-f4c9-47e4-b2e6-1b3ba3ff0808">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="cfeb89af-a484-49c4-9988-96237c86944e">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2005,9 +2005,9 @@
       <statement statement-id="pe-2_smt.d" uuid="e3f2df89-19bf-4027-b560-67dc9424bd28">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="2f9fe10b-ba9e-4291-98b5-13bb6fc0c58c">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="e7024325-6340-4e1f-a4b8-c741d1e36bb4">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2065,9 +2065,9 @@
       <statement statement-id="pe-3_smt.a" uuid="27e29dda-49f9-40e3-a3fa-fd488a7ad3a0">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="3b3ecf6b-d4a9-499c-a5d1-2887b4987aca">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="542b2329-5497-456f-b117-746e798b9929">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2091,9 +2091,9 @@
       <statement statement-id="pe-3_smt.b" uuid="f734a63b-e2fe-4ce0-a7c5-693e79622d3d">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="ead33ba5-eb15-48e3-900e-8a3e9cf289d9">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="96ff07de-683f-4181-8813-ae4498d66f05">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2117,9 +2117,9 @@
       <statement statement-id="pe-3_smt.c" uuid="39f7c51b-a622-4dfd-91db-6f0e334e8b78">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="66ece908-ee7b-468b-a5b4-e900aa724ea1">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="f4c09934-895b-40e8-b122-aa08ea9b50ba">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2143,9 +2143,9 @@
       <statement statement-id="pe-3_smt.d" uuid="7e392408-98ff-4769-9de1-03d4323a1385">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="2db60ecd-c0a9-4be8-a6b5-c4bb45d9ec49">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="81660f14-0393-4219-98ac-9e2c8f7142f6">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2169,9 +2169,9 @@
       <statement statement-id="pe-3_smt.e" uuid="145b751f-7073-49b2-bc08-165465d34fe3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="72dfa4c9-d24a-4ac2-8c66-46e0992e9158">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="0a453bbe-cb88-45c8-b6ae-5033bc09feff">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2195,9 +2195,9 @@
       <statement statement-id="pe-3_smt.f" uuid="6a119ed5-0b0a-4b86-92b7-a8f94dd785b9">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="27000dc4-4d7c-4e0c-aa8a-581babfe7745">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="e7799c91-b885-4d4e-b198-a7988c76c3ad">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2221,9 +2221,9 @@
       <statement statement-id="pe-3_smt.g" uuid="1144efba-4812-442c-8fa3-b031018fdd74">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="2040d1a5-ddd0-405d-8edd-e58f77a59ad3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="92842d62-9ca0-46f9-a431-abf9e6b4f594">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2256,9 +2256,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="6d925c2b-0462-4a75-aa45-03b73c017307">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="c2ac04dc-acb4-418a-84e5-b58730f01dee">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2293,9 +2293,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="bec2e74d-c33d-4232-a4ac-424abf2637ff">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="cd19a3a6-00e2-4a44-9c63-bf795f9c93d1">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2324,9 +2324,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="4a99e9c6-ff33-4a37-abc9-b6b9ca7d4657">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="259c0c8f-3bb9-4e43-877b-c896a20aee7d">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2362,9 +2362,9 @@
       <statement statement-id="pe-6_smt.a" uuid="ab2e243e-38e6-46e4-a95f-3dcc2c1572ba">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="6fd8dba3-df21-4c25-9994-95a66c3c74be">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="f5320fa1-6ce9-4ef6-a6a8-422f619a41f9">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2388,9 +2388,9 @@
       <statement statement-id="pe-6_smt.b" uuid="36a84be2-8ef6-4a2b-a339-e8f8ab398ea3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="4d196aef-1385-4bf2-8b00-28258e22b677">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="b62d1197-e6c0-4b42-8f77-02b311b8faab">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2414,9 +2414,9 @@
       <statement statement-id="pe-6_smt.c" uuid="779dd08e-58f0-4763-8744-0da98254e3ac">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="c148993e-862d-40b1-b670-f19db4114e95">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="25356503-3b18-4a0e-b97a-cf243e4e174c">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2446,9 +2446,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="70e9c839-37dc-48c9-ac6a-d34bf6dbaa17">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="e9a252ad-ff10-43ca-a790-024d5c8771ae">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2480,9 +2480,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="8727a64e-a367-4b17-86b1-742dada3a0c1">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="59b5f4ea-33eb-4000-a636-aaa4004e29b0">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2518,9 +2518,9 @@
       <statement statement-id="pe-8_smt.a" uuid="04cb6129-5768-45ea-9c73-ef570eb7adc7">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="83d8d2e9-abb0-442a-a232-b6b3ade4040e">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="9301b521-7676-45eb-9d3c-a7466b652b84">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2544,9 +2544,9 @@
       <statement statement-id="pe-8_smt.b" uuid="2336cea0-410f-43b5-ae7b-a29b99ec0589">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="36ab955e-ac9b-4fd5-83a9-2cc35c5fa5b8">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="dc217439-df1e-4d91-ae4c-10b790b961e4">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2576,9 +2576,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="5e212f76-bae7-47ce-b7bc-c093b7133dfc">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="2079e0b4-5fb6-403b-a69a-1f39fd96c0b7">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2607,9 +2607,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="476a42e2-6778-4b2b-8f9b-77aec5a538dd">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="20679a94-74fe-4055-b7d8-3a2014dcc049">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2642,9 +2642,9 @@
       <statement statement-id="pe-10_smt.a" uuid="02b0b8c7-777b-47ce-869b-d5cccc151d99">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="d1b09916-2698-4642-bddd-7e3f6b69e1e1">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="f556c40b-a2d8-4f2a-bdaa-5a37073548fe">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2668,9 +2668,9 @@
       <statement statement-id="pe-10_smt.b" uuid="44948122-7c33-4405-a59c-38b61dd749e8">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="7600b228-0413-4e7b-91ae-24537ad02f25">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="291bebf7-594a-401d-a2c0-d24d2aac6bf2">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2694,9 +2694,9 @@
       <statement statement-id="pe-10_smt.c" uuid="8dbf42f3-959a-4a1e-83b9-24e0b50034bc">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="b8c7793c-8209-4280-97ec-8637c6e55fd3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="b37cec5a-2b40-477f-976d-f0e264dd2b8e">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2729,9 +2729,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="4e691a77-ec56-4ad4-b532-7ed71b9b08aa">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="01f1d712-a58c-40b5-aa5b-ea123f03d7dc">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2760,9 +2760,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="7a0ef9ab-66e7-47a6-b25a-3db8378d04f8">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="d6d16f6d-5ac5-4c94-8066-d9bc1c67eb82">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2791,9 +2791,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="7153a18a-1c44-43f9-b897-a7c51f024d40">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="956fb932-4841-402b-9b3d-3393ad295dfd">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2822,9 +2822,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="12f7481f-055d-46d3-bb53-86d7e3651e26">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="178d5628-b2fc-40ee-ad44-ba6b95888b99">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2859,9 +2859,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="d68dcfcc-48bd-440d-a7e0-8c0699449ad6">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="9f2515b3-e250-4449-9779-28bcd6faf77d">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2896,9 +2896,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="4ede96a6-6cac-4dfb-9769-40f341192bea">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="e28bff74-96a4-454d-98d7-c59e122d63fb">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2927,9 +2927,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="47f93be9-2806-4939-b7cb-4dc13784717a">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="d7caf3b3-f81b-42ef-9afc-926cee762d34">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -2965,9 +2965,9 @@
       <statement statement-id="pe-14_smt.a" uuid="9d92c32b-1310-4f6a-a2fd-b26ddc9dc213">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="bd8d9613-c072-44fe-8674-147d13925382">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="24d459a8-dd81-4881-ae25-6f69a155a174">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -2991,9 +2991,9 @@
       <statement statement-id="pe-14_smt.b" uuid="350236fb-96f3-4638-acfe-ad8168e789f3">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="e126ea00-6678-4b2d-a171-d75a0a0f3d9a">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="9ff9038d-e1f7-4d3f-a5b0-ff301848eeaf">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -3023,9 +3023,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="20c0da71-a712-46c1-84a2-856fd428f7f3">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="a1ef191c-a130-4145-82ca-fa1895af11dd">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -3054,9 +3054,9 @@
       <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="organization" />
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="3b39a1d5-d58b-40cc-a800-126c564f7da4">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="ac93fa47-dd7d-445a-a407-cb93947580ca">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -3088,9 +3088,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="00c98ea4-1a92-4f46-ad19-49934bbba173">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="7b581e32-56d2-4243-9057-8d57c7ec842e">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -3122,9 +3122,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="f8d231f5-d9be-42cc-be78-dad690e480c1">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="4bb45439-3b70-4a5c-adcd-e4becd0b14c9">
             <description>
               <p>This control associated with hardware components within AWS is generally either
@@ -3157,9 +3157,9 @@
       <statement statement-id="pe-17_smt.a" uuid="d963c814-c496-4547-b9dc-6c3559cd34ce">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="965e16bb-a4b1-4396-b523-baa8e0b9a5bc">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="311bf6f3-8920-44bf-a216-3aad35b27614">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -3183,9 +3183,9 @@
       <statement statement-id="pe-17_smt.b" uuid="3dae23b7-cb0e-4c94-becf-24a6fd9e1670">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="7091b24c-1aa1-49d7-9ad6-bae60f88d0e3">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="7fd2e269-a354-440d-bc52-6a158fb2dbd4">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -3209,9 +3209,9 @@
       <statement statement-id="pe-17_smt.c" uuid="15ffd4f8-6e97-4eb7-8764-4e155be417d7">
         <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
           uuid="4df3485f-407d-42b8-ab8e-8c634216c51b">
-          <description></description>
+          <description><p>TBD</p></description>
           <export>
-            <description></description>
+            <description><p>TBD</p></description>
             <provided uuid="81f4d2b6-91de-48eb-a0ad-8afe37eccd2d">
               <description>
                 <p>This control associated with hardware components within AWS is generally either
@@ -3244,9 +3244,9 @@
       </set-parameter>
       <by-component component-uuid="463e6979-b660-4e61-b475-90777d228307"
         uuid="15a1aa21-71d2-4728-9b0b-38fbe10f8b86">
-        <description></description>
+        <description><p>TBD</p></description>
         <export>
-          <description></description>
+          <description><p>TBD</p></description>
           <provided uuid="78a2ecba-1b3b-4aac-ad0b-f0ce572aea46">
             <description>
               <p>This control associated with hardware components within AWS is generally either

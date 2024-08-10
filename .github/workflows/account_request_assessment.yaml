@@ -1,0 +1,20 @@
+name: Account Request Assessment
+
+on:
+  pull_request:
+    types:
+      - closed
+    paths:
+      - 'blossom_admin_member_ssp.xml'
+
+# If a Pull Request updating the SSP is merged
+jobs:
+  if_merged:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-20.04
+#     permissions:
+#       issues: write
+    steps:
+    - name: Run automated assessment
+      run: echo "assessment"
+      # query chaincode, code to execute on chaincode for list of supported roles, API command
