@@ -59,7 +59,7 @@ jobs:
           distribution: adopt
           java-version: 11
       - name: Download SSP.
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: artifact-leveraged-ssp
       - name: Run oscal-cli Validation.
