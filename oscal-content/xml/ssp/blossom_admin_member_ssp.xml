@@ -113,7 +113,7 @@
             <prop name="job-title" value="System Owner" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
             <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
-            <email-address>blossom@nist.gov</email-address>
+            <email-address>blossom-so@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="551b9706-d6a4-4d25-8207-f2ccec541016" type="person">
@@ -127,7 +127,7 @@
             <prop name="job-title" value="System Administrator" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
             <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
-            <email-address>blossom@nist.gov</email-address>
+            <email-address>blossom-admin@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
@@ -136,7 +136,7 @@
             <prop name="job-title" value="System Security Assessor" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
             <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
-            <email-address>blossom@nist.gov</email-address>
+            <email-address>blossom-assessor@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
@@ -150,7 +150,7 @@
             <prop name="job-title" value="Authorizing Official" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
             <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
-            <email-address>blossom@nist.gov</email-address>
+            <email-address>blossom-ao@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
@@ -159,7 +159,7 @@
             <prop name="job-title" value="License Owner" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
             <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
-            <email-address>blossom@nist.gov</email-address>
+            <email-address>blossom-lo@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="7380b1a3-5f04-4b6a-bada-ee13a1d78f3a" type="person">
@@ -167,7 +167,7 @@
             <prop name="job-title" value="Acquisition Officer" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
             <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
-            <email-address>blossom@nist.gov</email-address>
+            <email-address>blossom-aco@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
         <party uuid="c46e27d1-7a65-47ea-bd76-df574fded5fd" type="person">
@@ -1007,39 +1007,49 @@
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.d" uuid="a0ae8e3a-83b9-4a07-ba9b-3ba0d7a7104c">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="779d08e3-4ed0-4a83-84ab-2ca2c9ec3745">
-                    <description>
-                        <p>1. All authorized users are listed and accuratelly maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
-                        <p>2. All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
+                <remarks>
+                    <p>1. All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                    <p>2. All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
                             This system does not support groups. </p>
-                        <p>3. All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with "role-id" mathing the respective roles or attributes.</p>
-                    </description>
-                </by-component>
+                    <p>3. All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with "role-id" matching the respective roles or attributes.</p>
+                    <p> All the implementation details for thsi statement are provided below for each subrequirement.</p>
+                </remarks>
             </statement>
             <statement statement-id="ac-2_smt.d.1" uuid="4c65972e-1580-49dd-aede-b3e4af0703e1">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="49c1dab6-3c75-4758-8119-120e01f163d7">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="49c1dab6-3c75-4758-8119-120e01f163d7">
                     <description>
-                        <p>Authorized Blossom users are documented in the Blossom SSP.</p>
+                        <p>All authorized users that have access to the business layer are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                        <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
+                    </description>
+                </by-component>
+                <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" uuid="1c5d832e-01c9-40a1-89d5-5045dca81de3">
+                    <description>
+                        <p>All authorized users that have access to the infrastructure are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                        <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
                     </description>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.d.2" uuid="77ab4262-292a-4542-be4f-3bbf136adaf7">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="df7fbdc2-78e2-4391-9981-bb9f682a363a">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="df7fbdc2-78e2-4391-9981-bb9f682a363a">
                     <description>
-                        <p>Group and role membership</p>
+                        <p>All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
+                            This system does not support groups. </p>
+                        <p>Each "party" documented in the "metadata" of this SSP, with the type="person" and the "prop" with name="iam-manager" and value="Cognito-NGAC", has a "prop" with name="job-title" which has a "value" identifying the entity's role. </p>
+                    </description>
+                </by-component>
+                <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" uuid="fe28f9e3-22ec-4491-aaef-8a6edd651456">
+                    <description>
+                        <p>All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
+                            This system does not support groups. </p>
+                        <p>Each "party" documented in the "metadata" of this SSP, with the type="person" and the "prop" with name="iam-manager" and value="AWS", has a "prop" with name="job-title" which has a "value" identifying the entity's role. </p>
                     </description>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.d.3" uuid="0a95af0d-8d11-41cb-a5cf-e7352b0cafe8">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
-                        <p>Access authorizations (i.e., privileges) and <insert type="param"
-                                id-ref="ac-02_odp.0_2" />[Assignment: organization-defined attributes
-                            (as required)] for each account;</p>
+                        <p>Access authorizations (i.e., privileges) and <insert type="param" id-ref="ac-02_odp.0_2" />[Assignment: organization-defined attributes
+                                (as required)] for each account;</p>
                     </description>
                 </by-component>
             </statement>
