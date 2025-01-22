@@ -990,7 +990,7 @@
                     uuid="d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1">
                     <description>
                         <p>For this system, the entity with the System Owner role will play teh role of the Account Manager approve creation, 
-                             revokation, deletion of accounts and delegate the entity with teh System Adminstrator role to implement the decisions.</p>
+                             revocation, deletion of accounts and delegate the entity with teh System Administrator role to implement the decisions.</p>
                     </description>
                 </by-component>
             </statement>
@@ -1012,7 +1012,7 @@
                     <p>2. All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
                             This system does not support groups. </p>
                     <p>3. All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with "role-id" matching the respective roles or attributes.</p>
-                    <p> All the implementation details for thsi statement are provided below for each subrequirement.</p>
+                    <p> All the implementation details for This statement are provided below for each sub-requirement.</p>
                 </remarks>
             </statement>
             <statement statement-id="ac-2_smt.d.1" uuid="4c65972e-1580-49dd-aede-b3e4af0703e1">
