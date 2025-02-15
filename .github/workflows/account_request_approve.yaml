@@ -35,6 +35,7 @@ jobs:
       user-username: ${{ steps.issue-parser.outputs.issueparser_user-username }}
       user-email: ${{ steps.issue-parser.outputs.issueparser_user-email }}
       account-type: ${{ steps.issue-parser.outputs.issueparser_account-type }}
+      ssp-file-path: ${{ steps.issue-parser.outputs.issueparser_ssp-file-path }}
     steps:        
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -44,7 +45,7 @@ jobs:
           sparse-checkout-cone-mode: false
 
       - name: Parse issue body
-        uses: stefanbuck/github-issue-parser@v3.2.1
+        uses: stefanbuck/github-issue-parser@2d2ff50d4aae06ab58d26bf59468d98086605f11 # v3.2.1
         id: issue-parser
         with:
           template-path: ".github/ISSUE_TEMPLATE/account_management_request_form.yaml"
@@ -72,24 +73,28 @@ jobs:
           USER_EMAIL: ${{ needs.parse-issue.outputs.user-email }}
           USER_ROLE: ${{ needs.parse-issue.outputs.account-type }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
+          SSP_FILE_PATH: ${{ needs.parse-issue.outputs.ssp-file-path }}
         run: |
-          python ato/secops/create_user.py --user-name "$USER_NAME" --user-username "$USER_USERNAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER"
+          python ato/secops/create_user.py --user-name "$USER_NAME" --user-username "$USER_USERNAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER" --ssp-path "$SSP_FILE_PATH"
 
       - name: Store user yaml in repo
         run: |
-          git config --global user.name "create-user-action[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH_NAME"
+          git config user.name "create-user-action[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase false
+          git fetch --all
+          git checkout "$BRANCH_NAME" || git checkout -b "$BRANCH_NAME"
+          git pull origin "$BRANCH_NAME"
           git add "ato/oscal-artifacts/created_users/*"
           git add "ato/oscal-artifacts/reference_created_users/*"
           git commit -m "Create user request #$ISSUE_NUMBER"
           git push origin "$BRANCH_NAME"
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          BRANCH_NAME: "account-request-${{ github.event.issue.number }}"
+          BRANCH_NAME: "account-request"
   
       - name: Configure AWS CLI
-        uses: aws-actions/configure-aws-credentials@v4
+        uses: aws-actions/configure-aws-credentials@8c3f20df09ac63af7b3ae3d7c91f105f857d8497 # v4
         with:
           aws-region: ${{ secrets.AWS_REGION }}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}

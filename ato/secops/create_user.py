@@ -10,7 +10,8 @@ from datetime import datetime
 @click.option('--location-uuid', help='UUID of physical location of user')
 @click.option('--org-member', help='UUID of organization that user is member of')
 @click.option('--issue-number', help='Issue number of user account request')
-def create_user(user_name, user_username, user_email, user_role, location_uuid, org_member, issue_number):
+@click.option('--ssp-path', help='File path of SSP to update')
+def create_user(user_name, user_username, user_email, user_role, location_uuid, org_member, issue_number, ssp_path):
     """
     Creates a yaml file containing information about a new user
 
@@ -22,11 +23,12 @@ def create_user(user_name, user_username, user_email, user_role, location_uuid, 
         location_uuid (string): String containing UUID of physical location of user
         org_member (string): String containing UUID of organization that user is member of
         issue_number (string): String containing issue number of user account request
+        ssp_path (string): String containing file path of SSP to update
     """
     
     # Structure of yaml file
     cmd = {
-    "command" : "create-acl-user|create-cognito-user",
+    "command" : "create-user",
     "user" : {
         "name" : f"{user_name}",
         "username" : f"{user_username}",
@@ -34,6 +36,7 @@ def create_user(user_name, user_username, user_email, user_role, location_uuid, 
         "role":f"{user_role}",
         "location-uuid":f"{location_uuid}",
         "member-of-organization":f"{org_member}",
+        "ssp-path": f"{ssp_path}",
         },
     }
     
@@ -41,7 +44,7 @@ def create_user(user_name, user_username, user_email, user_role, location_uuid, 
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
     
     # Write to user yaml file (stored in repo)
-    filename = "ato/oscal-artifacts/created_users/created_user_" + timestamp + ".yaml"
+    filename = "ato/oscal-artifacts/created_users/" + timestamp + "_created_user.yaml"
     with open(filename, 'w') as f:
         print(f"\n\n{yaml.safe_dump(cmd, default_flow_style=False)}", file=f)
         
@@ -49,11 +52,11 @@ def create_user(user_name, user_username, user_email, user_role, location_uuid, 
     reference = {
         "file": f"{filename}",
         "issue_number": f"{issue_number}",
-        "branch_name": f"account-request-{issue_number}"
+        "branch_name": f"account-request"
     }
     
     # Write to user reference yaml file (sent to S3)
-    filename_reference = "ato/oscal-artifacts/reference_created_users/reference_created_user_" + timestamp + ".yaml"
+    filename_reference = "ato/oscal-artifacts/reference_created_users/" + timestamp + "_reference_user.yaml"
     with open(filename_reference, 'w') as f:
         print(f"\n\n{yaml.safe_dump(reference, default_flow_style=False)}", file=f)
 
