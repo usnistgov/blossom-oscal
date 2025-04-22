@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-    uuid="8c91b0ac-8eaa-4ac2-a2fb-eeff3b7efa20">
+
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="8c91b0ac-8eaa-4ac2-a2fb-eeff3b7efa20">
     <metadata>
         <title>BloSS@M System Security Plan</title>
         <published>2022-04-05T00:00:00Z</published>
@@ -183,7 +183,7 @@
         <!-- ###
              Entities with access to the infrastructure
         ### -->
-            <!-- #### 
+        <!-- #### 
              Privileged Roles 
             #### -->
         <responsible-party role-id="system-owner">
@@ -197,7 +197,7 @@
                     responsibilities for "this system" supporting the system owner.</p>
             </remarks>
         </responsible-party>
-            <!-- ####
+        <!-- ####
              Non-Privileged Roles 
              #### -->
         <responsible-party role-id="sys-sec-assessor">
@@ -210,7 +210,7 @@
         <!-- ###
              Entities with access to the assets/business private channel 
          ### -->
-            <!-- #### 
+        <!-- #### 
              Privileged Roles 
              #### -->
         <responsible-party role-id="license-owner">
@@ -219,7 +219,7 @@
                 <p>The license owner is responsible for managing the licenses a Blossom Member leases, and is also responsible for uploading to the asset chaincode the MOA signed by the TPOC and Acquisition Officer.</p>
             </remarks>
         </responsible-party>
-            <!-- ####
+        <!-- ####
              Non-Privileged Roles 
              #### -->
         <responsible-party role-id="tpoc">
@@ -238,7 +238,7 @@
         <!-- ###
             Entities with access to the Authorization private channel 
          ### -->
-         <!-- Privileged Roles -->
+        <!-- Privileged Roles -->
         <responsible-party role-id="authorizing-official">
             <party-uuid>3360e343-9860-4bda-9dfc-ff427c3dfab6</party-uuid>
         </responsible-party>
@@ -248,7 +248,7 @@
                 for the FedRAMP Low, Moderate, and High baselines.</p>
         </remarks>
     </metadata>
-    <import-profile href="../../xml/profile/blossom_moderate_profile.xml">
+    <import-profile href="../profile/blossom_moderate_profile.xml">
         <remarks>
             <p>This example points to the tailored FedRAMP Moderate 800-53 rev 5 baseline, adjusted
                 accordingly for BloSS@M.</p>
@@ -707,8 +707,7 @@
             #### -->
         <!-- AC-1 will not be implemented now. 
         <implemented-requirement uuid="eee8697a-bc39-45aa-accc-d3e534932efb" control-id="ac-1">
-            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
-                value="2020-11-27Z" />
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2020-11-27Z" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="planned">
                 <remarks>
                     <p>Describe the plan to complete the implementation.</p>
@@ -716,8 +715,7 @@
             </prop>
             <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="sp-system" />
             <statement statement-id="ac-1_smt" uuid="240fa015-01df-4741-bff5-6958c7fb85e5">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="d9d1ce66-ff47-474d-8596-5fdf2af60179">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="d9d1ce66-ff47-474d-8596-5fdf2af60179">
                     <description>
                         <p>Describe how the control is satisfied within the system.</p>
                     </description>
@@ -733,8 +731,7 @@
                 </by-component>
             </statement>
             <statement statement-id="ac-1_smt.a.1" uuid="fb4d039a-dc4f-46f5-9c1f-f6343eaf69bc">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="3f5612a4-cd1d-4c47-8cae-75d2eaa332cd">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="3f5612a4-cd1d-4c47-8cae-75d2eaa332cd">
                     <description>
                         <p>Describe how Part a is satisfied within the system.</p>
                         <p>Legacy approach. If no policy component is defined, describe here how the
@@ -752,8 +749,7 @@
                 </remarks>
             </statement>
             <statement statement-id="ac-1_smt.a.2" uuid="c365cf95-5bc0-4599-9773-f4eddf69798d">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="00507a44-e0d7-4fe6-ad20-8d474a84ee15">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="00507a44-e0d7-4fe6-ad20-8d474a84ee15">
                     <description>
                         <p>Describe how Part b is satisfied within the system.</p>
                         <p>Legacy approach. If no policy component is defined, describe here how the
@@ -764,8 +760,7 @@
                     </description>
                     <link href="#1002a58e-9e11-4aa6-9ab4-2bde52995952" rel="procedure" />
                 </by-component>
-                <by-component component-uuid="fa90644a-8bf8-47da-b0d3-82bffc708afc"
-                    uuid="42ac379e-4abc-4716-809c-119c03b5ac64">
+                <by-component component-uuid="fa90644a-8bf8-47da-b0d3-82bffc708afc" uuid="42ac379e-4abc-4716-809c-119c03b5ac64">
                     <description>
                         <p>Describe how Part b is satisfied within the system.</p>
                         <p>Legacy approach. If no policy component is defined, describe here how the
@@ -782,16 +777,14 @@
                 </remarks>
             </statement>
             <statement statement-id="ac-1_smt.b.1" uuid="b46f97ec-55c1-4249-a9b9-3a228f1e3791">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="767666cb-e558-484b-81ca-b0209932425c">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="767666cb-e558-484b-81ca-b0209932425c">
                     <description>
                         <p>Describe how Part b-1 is satisfied.</p>
                     </description>
                 </by-component>
             </statement>
             <statement statement-id="ac-1_smt.b.2" uuid="59c67969-3d5c-45f1-8e3e-1e642249633f">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="5a869308-1625-4d92-9ed8-ff5d8bd13656">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="5a869308-1625-4d92-9ed8-ff5d8bd13656">
                     <description>
                         <p>Describe how Part b-2 is satisfied.</p>
                     </description>
@@ -806,8 +799,7 @@
             <!-- TBD: The following <prop>s must be reviewed, updated and only one option kept based
             on AC-2 implementation of the inherited control for manageing the Authorizing Official's
             account -->
-            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal"
-                value="2024/05/30" />
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2024/05/30" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="partial">
                 <remarks>
                     <p>Per the documentation available in the Blossom Wiki, the AWS Managed
@@ -834,10 +826,8 @@
             </prop>  
             -->
             <!-- Control origination varies per role. See by-component under ac-2_smt
-            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal"
-                value="leveraged-system" />
-            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal"
-                value="customer-configured">
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged-system" />
+            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="customer-configured">
                 <remarks>
                     <p>TBD: Describe any customer-configured requirements for satisfying this
                         control.</p>
@@ -846,7 +836,7 @@
             -->
             <link rel="documentation" href="#c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c" />
             <set-parameter param-id="ac-02_odp.01">
-                <value>have an organization-sponsored email address to demonstrate employment,complete training, and have been approved by the System Owner based on the business need of the individual</value>
+                <value>have an organization-sponsored email address to demonstrate employment,complete training, and have been          approved by the System Owner based on the business need of the individual</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.02">
                 <value>Access tagging</value>
@@ -856,7 +846,7 @@
                 <value>System Owner and Program Manager</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.04">
-                <value>Organizational access control policies, standards and procedures, as documented in the AC-02.a statement implementation (statement-id="ac-2_smt.a", uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c").</value>
+                <value>Organizational access control policies, standards and procedures, as documented in the AC-02.a statement       implementation (statement-id="ac-2_smt.a", uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c").</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.05">
                 <!-- e.g. the security monitoring team-->
@@ -886,7 +876,7 @@
             </responsible-role>
             <statement statement-id="ac-2_smt" uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e">
                 <!--AC-2 control does not have an overall statement that needs to be satisfied. We document herein the overall, 
-                by-component, control sadisfaction to ensure all parts of the control are consistently implemented.-->
+                by-component, control satisfaction to ensure all parts of the control are consistently implemented.-->
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="9d06a5a6-0c30-43cb-a18a-baabd616ddfb">
                     <description>
                         <p>For the Blossom business layer users and for the BC Member's Authorizing Official that is uploading
@@ -895,9 +885,9 @@
                     </description>
                     <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="customer-configured">
                         <remarks>
-                            <p>The Blossom system's <insert type="param" id-ref="ac-02_odp.03" /> are repsonsible for approving the creation, modification and deletion of accounts
-                                 and for delegating the System Administrator to act as Account Manager and implement the decissions which will grant or denie access to the system,
-                                  by maintaining accurate information in Cognito and updating the access control policies such as the Access Control Lists (ACLs).</p>
+                            <p>The Blossom system's <insert type="param" id-ref="ac-02_odp.03" />
+                                are repsonsible for approving the creation, modification and deletion of accounts
+                                 and for delegating the System Administrator to act as Account Manager and implement the decisions which will grant or deny access to the system, by maintaining accurate information in Cognito and updating the access control policies such as the Access Control Lists (ACLs).</p>
                         </remarks>
                     </prop>
                 </by-component>
@@ -909,14 +899,13 @@
                     <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged">
                         <remarks>
                             <p>The entities granted privileges to deploy and maintain the system, are responsible for keeping the ACL
-                                 list current at all times so the leveraged system enforces them.</p>
+                                list current at all times so the leveraged system enforces them.</p>
                         </remarks>
                     </prop>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.a" uuid="24a85abb-25ad-4686-850c-5c0e8ab69a0c">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="b29d1505-69fa-4ad0-834b-d179e7f44fff">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="b29d1505-69fa-4ad0-834b-d179e7f44fff">
                     <description>
                         <p>The system has privileged and non-privileged accounts associated with the business layer and the ATO processes.</p>
                         <p>These accounts are managed by the NGAC implementation in the chaincodes for the ATO and for the assets management (business) processes.</p>
@@ -936,14 +925,13 @@
                         <p>The following account is supported for the ATO processes.</p>
                         <ul>
                             <li>Privileged accounts:
-                                 <ul>Authorizing Official</ul>
+                                <ul>Authorizing Official</ul>
                             </li>
                         </ul>
                     </description>
                     <implementation-status state="under-development" />
                 </by-component>
-                <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65"
-                    uuid="84de735f-ba37-4bb4-b784-79760f986a40">
+                <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" uuid="84de735f-ba37-4bb4-b784-79760f986a40">
                     <description>
                         <p>The following accounts of the NIST Member of the Blossom System are managed by the Leveraged AWS IaaS:</p>
                         <ul>
@@ -962,8 +950,7 @@
                             </li>
                         </ul>
                     </description>
-                    <inherited uuid="780a3910-2019-4d33-a2f9-5c6ac91929d6"
-                        provided-uuid="11111111-0000-4000-9009-002001002001">
+                    <inherited uuid="780a3910-2019-4d33-a2f9-5c6ac91929d6" provided-uuid="11111111-0000-4000-9009-002001002001">
                         <description>
                             <p>TBD: provided-uuid needs to match the one in the AWS' SSP.</p>
                             <p>All privileged and non-privileged accounts that are granted access to
@@ -973,8 +960,7 @@
                                 assigned Blossom roles.</p>
                         </description>
                     </inherited>
-                    <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1"
-                        responsibility-uuid="11111111-0000-4000-9009-002001002002">
+                    <satisfied uuid="6486f725-1372-434f-9b1b-7cf3f50c32d1" responsibility-uuid="11111111-0000-4000-9009-002001002002">
                         <description>
                             <p>The Access Control List (ACL) updates are Blossom system's responsibility (as customers of AWS)
                                 For all roles listed above which are managed by the AWS IaaS
@@ -986,22 +972,19 @@
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.b" uuid="bb2476f6-0f78-4e64-94f1-1b58b80db8e0">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="d52db118-3e6f-4b39-8fd9-a3a65dfcb6b1">
                     <description>
-                        <p>For this system, the entity with the System Owner role will play teh role of the Account Manager approve creation, 
-                             revocation, deletion of accounts and delegate the entity with teh System Administrator role to implement the decisions.</p>
+                        <p>For this system, the entity with the System Owner role will play the role of the Account Manager approve creation, revocation, deletion of accounts and delegate the entity with the System Administrator role to implement the decisions.</p>
                     </description>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.c" uuid="297d7975-c0fa-46f3-bbbd-585b2e2bae3f">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="c72b52e1-1943-4a52-be48-7bcce7df2f6d">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c72b52e1-1943-4a52-be48-7bcce7df2f6d">
                     <description>
                         <!-- ac-02_odp.01= "have an organization-sponsored email address to demonstrate employment and
                           have been approved by the System Owner based on the business need of the individual" -->
                         <p>For each identified role, access to the system for each role will be individually 
-                            analyzed and granted if the requesters proves they <insert type="param" id-ref="ac-02_odp.01" /> 
+                            analyzed and granted if the requesters proves they <insert type="param" id-ref="ac-02_odp.01" />
                             for the respective group and role membership.</p>
                     </description>
                 </by-component>
@@ -1048,209 +1031,229 @@
             <statement statement-id="ac-2_smt.d.3" uuid="0a95af0d-8d11-41cb-a5cf-e7352b0cafe8">
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
-                        <p>Access authorizations (i.e., privileges) and <insert type="param" id-ref="ac-02_odp.0_2" />[Assignment: organization-defined attributes
-                                (as required)] for each account;</p>
+                        <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                        <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
+                    </description>
+                </by-component>
+                <by-component component-uuid="789dca83-d20b-421b-8210-284223278e54" uuid="cfa9519b-2c71-4a82-b862-6e9017337f16">
+                    <description>
+                        <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                        <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
                     </description>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.e" uuid="f14d12a4-470a-4d97-b0d1-8a8bd72749f0">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
+                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
                     <description>
-                        <p>Request to create accounts are approved by <insert type="param" id-ref="ac-02_odp.03" />;    </p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.f" uuid="25468357-e8b1-4703-aecb-b6a37ccccd9e">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="02d4c648-5a86-4155-bd73-02c3439262b4">
-                    <description>
-                        <p>Blossom user accounts are created, enabled, modified, disabled, and removed according to <insert
-                                type="param" id-ref="ac-02_odp.04" />the types of Blossom accounts (privileged or non-privileged);</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.g" uuid="a4de4fa5-0c77-4a13-8a57-13739bcfc1ae">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="ab679286-80e7-4b6d-b08c-34931bb56073">
-                    <description>
-                        <p>Monitor the use of accounts;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.h" uuid="17fe835f-b916-4966-a168-6249b54a9275">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
-                    <description>
-                        <p>Account managers, <insert type="param" id-ref="ac-02_odp.05" />System Owner, and Program Manager are notified within:</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.h.1" uuid="e3d29dc5-7247-4045-862b-8b233824937a">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
-                    <description>
-                        <p>Account managers, <insert type="param" id-ref="ac-02_odp.05" />System Owner, and Program Manager are notified within<insert type="param" id-ref="ac-02_odp.06" />1 business day when accounts are no longer required;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.h.2" uuid="a48f76ce-c4d3-4b65-ab88-9d9de0eb5408">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
-                    <description>
-                        <p><insert type="param" id-ref="ac-02_odp.07" />within 1 business day when users are terminated or
-                            transferred; </p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.h.3" uuid="07fa50b6-54a6-4e82-8d50-b732868be673">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
-                    <description>
-                        <p><insert type="param" id-ref="ac-02_odp.08" />within 1 business day when system usage or need-to-know
-                            changes for an individual;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.i" uuid="8089db43-a930-4b05-b661-f6bdaf602de0">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="f793018d-36df-48bf-a2f0-996364d3f46e">
-                    <description>
-                        <p>System access authorization is based on:</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.i.1" uuid="d39d826f-5eda-46f5-ba6e-c1876c5c9a44">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="c5d96adf-2313-48c2-98e1-73f1b7044d68">
-                    <description>
-                        <p>A valid access authorization;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.i.2" uuid="3bc04bba-c4bb-4134-be58-00b1c9e639e1">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="54fc3c61-3717-4ad2-8291-fd521b6b9d0d">
-                    <description>
-                        <p>Intended system usage; </p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.i.3" uuid="c6e80ed4-f36e-4e6b-9bb2-2ef200bda619">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
-                    <description>
-                        <p><insert type="param" id-ref="ac-02_odp.09" />Business need of the individual;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.j" uuid="6d66a726-f59a-478c-b1ab-071293318857">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
-                    <description>
-                        <p>Accounts are reviewed for compliance with account management requirements <insert
-                                type="param" id-ref="ac-02_odp.10" />every 6 months.;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.k" uuid="781332d1-017d-4c97-8f42-ec618914bcb3">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="d0cdfbc2-aef5-418e-94dc-9906341bcc12">
-                    <description>
-                        <p>There are no group or shared accounts created for accessing Blossom;</p>
-                    </description>
-                </by-component>
-            </statement>
-            <statement statement-id="ac-2_smt.l" uuid="ea940e91-f316-4adc-8a99-ffa8a7609127">
-                <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010"
-                    uuid="f23d55dd-1204-42f9-862e-2a07200b5c6e">
-                    <description>
-                        <p>All Blossom user accounts are updated by the system administrator when they are terminated or are transferred where their Blossom account is not required.</p>
-                    </description>
-                </by-component>
-            </statement>
-        </implemented-requirement>
-    </control-implementation>
-    <back-matter>
-        <resource uuid="c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c">
-            <description>
-                <p>Blossom Wiki</p>
-            </description>
-            <rlink
-                href="https://github.com/usnistgov/blossom-nist-member/wiki"
-                media-type="multipart/alternative" />
-            <remarks>
-                <p>Project's Wiki which provides descriptions for the ATO and business processes.</p>
-            </remarks>
-        </resource>
-        <resource uuid="006babc9-4f57-4ab0-9941-15fcb65e0387">
-            <description>
-                <p>National Institute of Standards and Technology's Logo</p>
-            </description>
-            <rlink
-                href="https://www.nist.gov/sites/default/files/images/2017/09/20/645px-nist_logo-svg_1.png"
-                media-type="image/png" />
-            <base64 filename="logo.png" media-type="image/png">00000000</base64>
-            <remarks>
-                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
-                    .</p>
-                <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
-                <p>Images must be in sufficient resolution to read all detail when rendered in a
+                        <p>Request to create accounts are approved by <insert type="param" id-ref="ac-02_odp.03" />
+                        <p></p>
+                    </p>
+                    <p>All authorized users that have access to the business layer are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                    <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
+                </description>
+            </by-component>
+            <by-component component-uuid="707ba686-7906-486e-9870-5b1f136a1f6b" uuid="5567624b-72b8-469d-9b6a-1fd707704247">
+                <description>
+                    <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                    <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
+
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.f" uuid="25468357-e8b1-4703-aecb-b6a37ccccd9e">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c51bccae-1f04-403f-9996-e2d04dfcfdbf">
+                <description>
+                    <p>Blossom user accounts are created, enabled, modified, disabled, and removed according to <insert type="param" id-ref="ac-02_odp.04" />
+                        the types of Blossom accounts (privileged or non-privileged);</p>
+                    <p>All authorized users that have access to the business layer are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                    <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
+                </description>
+            </by-component>
+            <by-component component-uuid="707ba686-7906-486e-9870-5b1f136a1f6b" uuid="5811d991-d480-4a71-a260-efe2d62fbf90">
+                <description>
+                    <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                    <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.g" uuid="a4de4fa5-0c77-4a13-8a57-13739bcfc1ae">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="ab679286-80e7-4b6d-b08c-34931bb56073">
+                <description>
+                    <p>This control is being tailored out because for this research project it is expensive to access system logs.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.h" uuid="17fe835f-b916-4966-a168-6249b54a9275">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
+                <description>
+                    <p>Account managers, <insert type="param" id-ref="ac-02_odp.05" />
+                            System Owner, and Program Manager are notified within:</p>
+                    <p>All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
+                    </p>
+                    <p>Each "party" documented in the "metadata" of this SSP, with the type="person" and the "prop" with name="iam-manager" and value="Cognito-NGAC", has a "prop" with name="job-title" which has a "value" identifying the entity's role. </p>
+                </description>
+            </by-component>
+            <by-component component-uuid="e82e6e07-0c62-417e-8a19-3744991b4c65" uuid="8c10f5f2-fb3d-4198-b3ae-27d33470d3e1">
+                <description>
+                    <p>All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
+                    </p>
+                    <p>Each "party" documented in the "metadata" of this SSP, with the type="person" and the "prop" with name="iam-manager" and value="AWS", has a "prop" with name="job-title" which has a "value" identifying the entity's role. </p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.h.1" uuid="e3d29dc5-7247-4045-862b-8b233824937a">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="f1606d4f-3c5e-4c25-9649-94a12edbc113">
+                <description>
+                    <p>This control is being tailored out because accounts have a life span limit equal to the life of the project.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.h.2" uuid="a48f76ce-c4d3-4b65-ab88-9d9de0eb5408">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
+                <description>
+                    <p>
+                        <insert type="param" id-ref="ac-02_odp.07" />
+                        within 1 business day when users are terminated or
+                        transferred; </p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.h.3" uuid="07fa50b6-54a6-4e82-8d50-b732868be673">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="1d085fa3-94d9-4f4c-a62b-963cc4640f12">
+                <description>
+                    <p>This control is being tailored out because system usage and the need to know do not change for the research project.
+                    </p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.i" uuid="8089db43-a930-4b05-b661-f6bdaf602de0">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="f793018d-36df-48bf-a2f0-996364d3f46e">
+                <description>
+                    <p>This control is being tailored out because this is a research project with limited access.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.i.1" uuid="d39d826f-5eda-46f5-ba6e-c1876c5c9a44">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c5d96adf-2313-48c2-98e1-73f1b7044d68">
+                <description>
+                    <p>This control is being tailored out because this is a research project with limited access.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.i.2" uuid="3bc04bba-c4bb-4134-be58-00b1c9e639e1">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="54fc3c61-3717-4ad2-8291-fd521b6b9d0d">
+                <description>
+                    <p>This control is being tailored out because this is a research project with limited access.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.i.3" uuid="c6e80ed4-f36e-4e6b-9bb2-2ef200bda619">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="587c32c5-701a-4e5c-83a7-2438ab3d71b1">
+                <description>
+                    <p>This control is being tailored out because this is a research project with limited access.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.j" uuid="6d66a726-f59a-478c-b1ab-071293318857">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="b7932e43-9aa3-4bba-86a8-439a74e1e79a">
+                <description>
+                    <p>This control is being tailored out because this project does not have a central account management system.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.k" uuid="781332d1-017d-4c97-8f42-ec618914bcb3">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="d0cdfbc2-aef5-418e-94dc-9906341bcc12">
+                <description>
+                    <p>This control is being tailored out because system does not support group accounts.</p>
+                </description>
+            </by-component>
+        </statement>
+        <statement statement-id="ac-2_smt.l" uuid="ea940e91-f316-4adc-8a99-ffa8a7609127">
+            <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="43bc4032-086d-4de9-92a6-dec75edb0040">
+                <description>
+                    <p>This control is being tailored out because this is a research project with limited functionality.</p>
+                </description>
+            </by-component>
+        </statement>
+    </implemented-requirement>
+</control-implementation>
+<back-matter>
+    <resource uuid="c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c">
+        <description>
+            <p>Blossom Wiki</p>
+        </description>
+        <rlink href="https://github.com/usnistgov/blossom-nist-member/wiki" media-type="multipart/alternative" />
+        <remarks>
+            <p>Project's Wiki which provides descriptions for the ATO and business processes.</p>
+        </remarks>
+    </resource>
+    <resource uuid="006babc9-4f57-4ab0-9941-15fcb65e0387">
+        <description>
+            <p>National Institute of Standards and Technology's Logo</p>
+        </description>
+        <rlink href="https://www.nist.gov/sites/default/files/images/2017/09/20/645px-nist_logo-svg_1.png" media-type="image/png" />
+        <base64 filename="logo.png" media-type="image/png">00000000</base64>
+        <remarks>
+            <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .
+            </p>
+            <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
+            <p>Images must be in sufficient resolution to read all detail when rendered in a
                     browser via HTML5.</p>
-            </remarks>
-        </resource>
-        <resource uuid="d2eb3c18-6754-4e3a-a933-03d289e3fad5">
-            <description>
-                <p>The primary authorization boundary diagram.</p>
-            </description>
-            <rlink href="./diagrams/boundary.png" />
-            <base64 filename="logo.png" media-type="image/png">00000000</base64>
-            <remarks>
-                <p>Section 9.2, Figure 9-1 Authorization Boundary Diagram (graphic)</p>
-                <p>This should be referenced in the
+        </remarks>
+    </resource>
+    <resource uuid="d2eb3c18-6754-4e3a-a933-03d289e3fad5">
+        <description>
+            <p>The primary authorization boundary diagram.</p>
+        </description>
+        <rlink href="./diagrams/boundary.png" />
+        <base64 filename="logo.png" media-type="image/png">00000000</base64>
+        <remarks>
+            <p>Section 9.2, Figure 9-1 Authorization Boundary Diagram (graphic)</p>
+            <p>This should be referenced in the
                     system-characteristics/authorization-boundary/diagram/link/@href flag using a
                     value of "#d2eb3c18-6754-4e3a-a933-03d289e3fad5"</p>
-                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
-                    .</p>
-                <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
-                <p>Images must be in sufficient resolution to read all detail when rendered in a
+            <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .
+            </p>
+            <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
+            <p>Images must be in sufficient resolution to read all detail when rendered in a
                     browser via HTML5.</p>
-            </remarks>
-        </resource>
-        <resource uuid="61081e81-850b-43c1-bf43-1ecbddcb9e7f">
-            <description>
-                <p>The primary network diagram.</p>
-            </description>
-            <rlink href="./diagrams/network.png" />
-            <base64 filename="network.png" media-type="image/png">00000000</base64>
-            <remarks>
-                <p>Section 9.4, Figure 9-2 Network Diagram (graphic)</p>
-                <p>This should be referenced in the
+        </remarks>
+    </resource>
+    <resource uuid="61081e81-850b-43c1-bf43-1ecbddcb9e7f">
+        <description>
+            <p>The primary network diagram.</p>
+        </description>
+        <rlink href="./diagrams/network.png" />
+        <base64 filename="network.png" media-type="image/png">00000000</base64>
+        <remarks>
+            <p>Section 9.4, Figure 9-2 Network Diagram (graphic)</p>
+            <p>This should be referenced in the
                     system-characteristics/network-architecture/diagram/link/@href flag using a
                     value of "#61081e81-850b-43c1-bf43-1ecbddcb9e7f"</p>
-                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
-                    .</p>
-                <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
-                <p>Images must be in sufficient resolution to read all detail when rendered in a
+            <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .
+            </p>
+            <p>FedRAMP prefers <code>base64</code> for images and diagrams.</p>
+            <p>Images must be in sufficient resolution to read all detail when rendered in a
                     browser via HTML5.</p>
-            </remarks>
-        </resource>
-        <resource uuid="fab59751-b855-40cb-93c1-492562e20e18">
-            <title>Privacy Impact Assessment</title>
-            <prop name="type" ns="https://csrc.nist.gov/ns/blossom"
-                value="privacy-impact-assessment" />
-            <prop name="publication" ns="https://csrc.nist.gov/ns/blossom" value="Document Date" />
-            <prop name="version" value="Document Version" />
-            <rlink href="./documents/pia.docx"
-                media-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
-            <base64 filename="pia.docx"
-                media-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+        </remarks>
+    </resource>
+    <resource uuid="fab59751-b855-40cb-93c1-492562e20e18">
+        <title>Privacy Impact Assessment</title>
+        <prop name="type" ns="https://csrc.nist.gov/ns/blossom" value="privacy-impact-assessment" />
+        <prop name="publication" ns="https://csrc.nist.gov/ns/blossom" value="Document Date" />
+        <prop name="version" value="Document Version" />
+        <rlink href="./documents/pia.docx" media-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+        <base64 filename="pia.docx" media-type="application/vnd.openxmlformats-officedocument.wordprocessingml.document">
                 00000000</base64>
-            <remarks>
-                <p>Table 15-1 Attachments: Privacy Impact Assessment</p>
-                <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
-                    .</p>
-            </remarks>
-        </resource>
-    </back-matter>
+        <remarks>
+            <p>Table 15-1 Attachments: Privacy Impact Assessment</p>
+            <p>May use <code>rlink</code> with a relative path, or embedded as <code>base64</code>
+                    .
+            </p>
+        </remarks>
+    </resource>
+</back-matter>
 </system-security-plan>
