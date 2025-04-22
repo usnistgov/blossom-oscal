@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<assessment-plan uuid="60077e84-e62f-4375-8c6c-b0e0d4560c5f"
+    xmlns="http://csrc.nist.gov/ns/oscal/1.0">
+    <metadata>
+        <title>Blossom Security Assessment Plan</title>
+        <last-modified>2024-02-01T13:57:28.355446-04:00</last-modified>
+        <version>1.0</version>
+        <oscal-version>1.1.2</oscal-version>
+        <role id="sys-sec-assessor">
+            <title>Blossom Security Control Assessor</title>
+        </role>
+        <location uuid="1ef39fd9-d184-44c4-8ef4-36d2dbad70a2">
+            <title>National Institute of Standards and Technology</title>
+            <address type="work">
+                <addr-line>100 Bureau Drive</addr-line>
+                <city>Gaithersburg</city>
+                <state>MD</state>
+                <postal-code>20899</postal-code>
+            </address>
+            <remarks>
+                <p>NIST ITL Computer Security Division's Secure Systems and Applications Group is
+                    the primary CSP for this project.</p>
+            </remarks>
+        </location>
+        <party uuid="132953a9-640c-46f7-9de9-3fa15ec99361" type="person">
+            <name>Steve S. Asesoro</name>
+            <prop name="job-title" value="System Security Assessor" />
+            <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom"
+                value="non-privileged" />
+            <email-address>blossom-assessor@nist.gov</email-address>
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
+        </party>
+        <party uuid="8aed7ffd-5158-445d-8d7c-eec5cf240cba" type="organization">
+            <name>National Institute of Standards and Technology IT Lab Computer Security Division
+                Secure Systems and Applications Group</name>
+            <short-name>NIST</short-name>
+            <link href="#006babc9-4f57-4ab0-9941-15fcb65e0387" rel="logo" />
+            <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
+            <remarks>
+                <p>Blossom network provider.</p>
+            </remarks>
+        </party>
+        <responsible-party role-id="sys-sec-assessor">
+            <party-uuid>132953a9-640c-46f7-9de9-3fa15ec99361</party-uuid>
+        </responsible-party>
+    </metadata>
+    <import-ssp href="../ssp/blossom_admin_member_ssp_2-4-2025.xml" />
+    <!--
+    <local-definitions>
+        <activity uuid="52277182-1ba3-4cb6-8d96-b1b97aaf9d6b">
+            <title>Examine System Elements for Least Privilege Design and Implementation</title>
+            <description>
+                <p>The activity and it steps will be performed by the assessor and facilitated by
+                    owner, ISSO, and product team for the IFA GoodRead system with necessary
+                    information and access about least privilege design and implementation of the
+                    system's elements: the application, web framework, server, and cloud account
+                    infrastructure.</p>
+            </description>
+            <prop name="method" value="EXAMINE" />
+            <step uuid="733e3cbf-e398-46b6-9c02-a2cb534c341e">
+                <title>Obtain Network Access via VPN to IFA GoodRead Environment</title>
+                <description>
+                    <p>The assessor will obtain network access with appropriately configured VPN
+                        account to see admin frontend to the application for PAO staff, which is
+                        only accessible via VPN with an appropriately configured role for PAO staff
+                        accounts.</p>
+                </description>
+            </step>
+            <step uuid="4ce7e0b4-d69e-4b80-a700-8600b4d4d933">
+                <title>Obtain Credentials and Access to AwesomeCloud Account for IFA GoodRead System</title>
+                <description>
+                    <p>The assessor will obtain access to the GoodRead Product Team's AwesomeCloud
+                        account with their single sign-on credentials to a read-only assessor role.</p>
+                </description>
+            </step>
+            <step uuid="3d0297de-e47b-4360-b9c3-cf5c425f86cd">
+                <title>Obtain Applcation Access Provided by Product Team</title>
+                <description>
+                    <p>The assessor will obtain non-privileged account credentials with the PAO
+                        staff role to test this role in the application does not permit excessive
+                        administrative operations.</p>
+                </description>
+            </step>
+            <step uuid="64ca1ef6-3ad4-4747-97c6-40890222463f">
+                <title>Confirm Load Balancer Blocks Access to Admin Frontend from Internet</title>
+                <description>
+                    <p>The assessor will confirm that the load balancer for public access does not
+                        allow access to Admin Frontend of the application from the Internet.</p>
+                </description>
+            </step>
+            <step uuid="715f0592-166f-44f6-bb66-d99623e035dc">
+                <title>Confirm GoodRead's PAO Role Cannot Manage Users</title>
+                <description>
+                    <p>The assessor will confirm that user's logged into the GoodRead Application
+                        with the PAO staff role cannot add, modify, or disable users from the
+                        system.</p>
+                </description>
+            </step>
+            <step uuid="4641957b-a0fa-4c61-af1a-d3e9101efe40">
+                <title>Confirm Django Admin Panel Not Available</title>
+                <description>
+                    <p>The assessor will confirm with web-based interface and API methods users with
+                        the PAO Staff role cannot access the Django admin panel functions and
+                        interactively change application's database records.</p>
+                </description>
+            </step>
+            <related-controls>
+                <control-selection>
+                    <include-control control-id="ac-2.a" />
+                </control-selection>
+            </related-controls>
+            <responsible-role role-id="assessor">
+                <party-uuid>e7730080-71ce-4b20-bec4-84f33136fd58</party-uuid>
+            </responsible-role>
+        </activity>
+    </local-definitions>
+-->
+    <reviewed-controls>
+        <control-selection>
+            <include-control control-id="ac-2">
+                <statement-id>ac-2.a</statement-id>
+                <statement-id>ac-2.b</statement-id>
+                <statement-id>ac-2.c</statement-id>
+                <statement-id>ac-2.d</statement-id>
+                <statement-id>ac-2.d.1</statement-id>
+                <statement-id>ac-2.d.2</statement-id>
+                <statement-id>ac-2.d.3</statement-id>
+                <statement-id>ac-2.e</statement-id>
+                <statement-id>ac-2.f</statement-id>
+                <statement-id>ac-2.h</statement-id>
+                <statement-id>ac-2.h.2</statement-id>
+            </include-control>
+        </control-selection>
+        <control-objective-selection>
+            <include-all />
+        </control-objective-selection>
+    </reviewed-controls>
+    <assessment-subject type="component">
+        <description>
+            <p>Blossom components to be assessed need to be identified.</p>
+        </description>
+        <include-all />
+    </assessment-subject>
+    <!--
+    <assessment-subject type="component">
+        <description>
+            <p>The ISSO will review Blossom privileged and non-privileged accounts (review the NGAC
+    implementation in the blockchain; review the ACL for Blossom; review privileges for each type of
+    Blossom account); and review AWS generated printout of privileged and non-privileged Blossom
+    users and their associated privileges on the Blossom system.</p>
+        </description>
+        <include-all />
+    </assessment-subject>
+    -->
+    <!-- Assessment assets describes assessment scanning tools, teams, scripts we will use and
+    assumptions made -->
+    <assessment-assets>
+        <assessment-platform uuid="f4737d2f-60f4-456b-9c39-e47e73512ffb">
+        </assessment-platform>
+    </assessment-assets>
+    <task uuid="9637212f-dbc9-4892-ac1f-be6a75faf105" type="action">
+        <title>Assessing Implementation of AC-2.a</title>
+        <description>
+            <p>The ISSO will review Blossom privileged and non-privileged accounts (review the NGAC
+                implementation in the blockchain; review the ACL for Blossom; review privileges for
+                each type of Blossom account); and review AWS generated printout of privileged and
+                non-privileged Blossom users and their associated privileges on the Blossom system.
+                Execute script abcd.py to parse SSP and extract documented roles. Compare between
+                ACL and system.</p>
+        </description>
+        <prop name="control-statement" uuid="eadf747f-a02c-4e80-8661-ec1cf8dd11e8"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.a" group="ac-2.a" />
+        <prop name="assessment-objective" uuid="774c3146-452f-4201-bed4-2483a873a80a"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.a" group="ac-2.a" />
+        <prop name="assessment-method" uuid="917eb76b-d62f-4164-8cd6-815c554cf1cc"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.a" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="e5f67f39-f3be-4b41-846a-a849e0c16202">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    <task uuid="9b185733-1dd1-4015-ac79-01d3f000f563" type="action">
+        <title>Assessing Implementation of AC-2.b</title>
+        <description>
+            <p>The ISSO will review the Blossom system accounts to identify if account managers
+                (blossom-admin group in GitHub, iam-manager role in SSP) have been assigned by
+                ensuring iam-manager role is defined in SSP and is present in responsible parties.
+                Execute script abcd.py to parse SSP and extract group managers documented in the
+                SSP.</p>
+        </description>
+        <prop name="control-statement" uuid="f34cfa70-3c08-4deb-93ad-d13052188d9b"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.b" group="ac-2.b" />
+        <prop name="assessment-objective" uuid="d43773e6-f061-4bfa-8871-f124d0b2fbbd"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.b" group="ac-2.b" />
+        <prop name="assessment-method" uuid="bbf4dae9-3eeb-4025-8bd5-f2cc651a9095"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.b" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="5076f6e8-2257-4aa9-8715-939521c651b5">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    <task uuid="d7acee77-47fc-46eb-91a2-60c25bd8440e" type="action">
+        <title>Assessing Implementation of AC-2.c</title>
+        <description>
+            <p>The ISSO will review the Blossom user account authorization form (workflow) to
+                identify if criteria requirements (NIST e-mail) for group or role membership have
+                been met. Execute script abcd.py to parse GitHub to verify e-mail addresses.</p>
+        </description>
+        <prop name="control-statement" uuid="eafd45ad-a0a8-453f-a501-e4dfdcea869f"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.c" group="ac-2.c" />
+        <prop name="assessment-objective" uuid="ebba12e9-ed94-4114-87c9-14b1f17743f0"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.c" group="ac-2.c" />
+        <prop name="assessment-method" uuid="7e116a06-b1ce-49b7-94f5-a1dfee87fa70"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.c" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="2bfa19db-e84c-4b3d-81d4-89b7c1304d7c">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    <task uuid="4f12cdda-0c7b-4a52-9d98-6f878cfe6a39" type="action">
+        <title>Assessing Implementation of AC-2.d.1</title>
+        <description>
+            <p>The ISSO will review Blossom user account authorization forms and system generated
+                ACLs and user lists to verify all authorized Blossom users and their access
+                authorizations; and review Blossom account creation workflows and approved Blossom
+                user authorizations to identify access authorizations. Execute script _____ to parse
+                X509 certificate and ACLs to extract users. Match users to SSP.</p>
+        </description>
+        <prop name="control-statement" uuid="225d2b35-a418-4f93-aeb5-d6164971f931"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.d.1" group="ac-2.d.1" />
+        <prop name="assessment-objective" uuid="b04d3040-599f-4e80-8c59-da22e35718ce"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.d.1" group="ac-2.d.1" />
+        <prop name="assessment-method" uuid="f27219ac-2f1d-43ce-8b6f-2f7dd61d414c"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.d.1" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="257b47e0-af36-4d2f-9928-038d6cf010a9">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    <task uuid="13af08b2-cf65-4054-8d41-37ac55fe0ed0" type="action">
+        <title>Assessing Implementation of AC-2.d.2</title>
+        <description>
+            <p>The ISSO will review Blossom system generated ACLs and user lists to verify all
+                authorized Blossom users groups and role memberships; and review Blossom account
+                creation workflows and approved Blossom user authorizations to identify users group
+                and role memberships. Execute script _____ to parse X509 certificate and ACLs to
+                extract roles. Match roles to SSP.</p>
+        </description>
+        <prop name="control-statement" uuid="3da1ff16-a6ef-41d9-b19c-9399650daa73"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.d.2" group="ac-2.d.2" />
+        <prop name="assessment-objective" uuid="2f5c1955-7586-40a3-a015-ec5021beef88"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.d.2" group="ac-2.d.2" />
+        <prop name="assessment-method" uuid="6c039a0c-2d13-4814-bfce-1c819bb44a9d"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.d.2" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="42afe385-9d42-4b1b-85cd-6a7566ea2fd2">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    <task uuid="050557bf-2b4e-4caa-b99d-ebc03b364795" type="action">
+        <title>Assessing Implementation of AC-2.d.3</title>
+        <description>
+            <p>The ISSO will review Blossom user account authorization forms and verify access
+                authorizations; review system generated printout of Blossom users and verify that
+                users have valid authorizations; and review Blossom user account request workflows
+                to verify that Blossom users have valid Blossom system access authorizations.
+                Execute scripts _____ to parse X509 certificate and ACLs to extract users and
+                privileges. </p>
+        </description>
+        <prop name="control-statement" uuid="60ff3996-484f-4722-8a5f-ccdfc9152844"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.d.3" group="ac-2.d.3" />
+        <prop name="assessment-objective" uuid="7e68462a-5540-498e-95a4-9fff4cb8f4fe"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.d.3" group="ac-2.d.3" />
+        <prop name="assessment-method" uuid="c792e8f6-4015-4b5d-af71-f6728d7924bd"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.d.3" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="b609aa2f-3704-4b31-b0bd-0f2250ad74e5">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX.</p>
+        </remarks>
+    </task>
+    <task uuid="efe1afc0-0c02-4f5b-9bea-123c6dc8117b" type="action">
+        <title>Assessing Implementation of AC-2.e</title>
+        <description>
+            <p>The ISSO will review Blossom user account authorization forms and verify that Blossom
+                user account requests are approved by the System Owner and the Program Manager; and
+                review Blossom user account request workflows to validate that Blossom account
+                requests have been submitted and are complete and approved. Execute script _____ to
+                parse GitHub and extract account creation requests.</p>
+        </description>
+        <prop name="control-statement" uuid="538233f8-f23f-4c80-9898-3ddb964986cc"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.e" group="ac-2.e" />
+        <prop name="assessment-objective" uuid="750bfcaf-b5e1-47cb-903f-041d5c84d539"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.e" group="ac-2.e" />
+        <prop name="assessment-method" uuid="f89de91c-08a6-49ee-8627-bc37471010e8"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.e" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="dde37540-6677-46bf-ab87-fa31e10ae136">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX.</p>
+        </remarks>
+    </task>
+    <task uuid="0200c248-723f-48fd-a9f8-0c332367f639" type="action">
+        <title>Assessing Implementation of AC-2.f</title>
+        <description>
+            <p>The ISSO will review Blossom user account authorization forms and verify that Blossom
+                user accounts are created, enabled, modified, disabled, and removed according to the
+                types of Blossom accounts (privileged or non-privileged); and review Blossom user
+                account request workflows to validate that account changes/updates have been
+                submitted and are complete and approved. Execute script _____ to parse GitHub and
+                extract account changes.</p>
+        </description>
+        <prop name="control-statement" uuid="ce341780-1b40-4bf3-99aa-864ccb986b2d"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.f" group="ac-2.f" />
+        <prop name="assessment-objective" uuid="4918d905-cb62-4969-b312-13446b474e64"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.f" group="ac-2.f" />
+        <prop name="assessment-method" uuid="8e58dc49-74bc-4d0e-9d9a-1ff5637414ef"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.f" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="fd84ea76-5910-4b0f-b272-40302cdbd535">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX.</p>
+        </remarks>
+    </task>
+    <task uuid="23e5fa2c-a73f-4666-ace0-447e79ebb9fd" type="action">
+        <title>Assessing Implementation of AC-2.h.2</title>
+        <description>
+            <p>The ISSO will verify that Blossom users are terminated or transferred within 1
+                business day after receiving notification; and review completed Blossom workflows to
+                validate that Blossom user account changes are documented. Execute script _____ to
+                parse account notifications.</p>
+        </description>
+        <prop name="control-statement" uuid="35c3509e-6bd6-443b-9f08-3802953fbfcf"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.h.2" group="ac-2.h.2" />
+        <prop name="assessment-objective" uuid="ca3b42bd-eda6-4beb-b8f3-588af5bffe62"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.h.2" group="ac-2.h.2" />
+        <prop name="assessment-method" uuid="7ae68d7b-982a-4492-8234-12349634f15e"
+            ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.h.2" />
+        <link href="../script/abcd.py" rel="assessment-method" />
+        <!--
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        -->
+        <associated-activity activity-uuid="a0dbfdba-29ed-4e92-812a-6fa1d37b2e20">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX.</p>
+        </remarks>
+    </task>
+    <!--
+    <task uuid="b3504d22-0e75-4dd7-9247-618661beba4e" type="action">
+        <title>Identify That Blossom User Accounts Are Managed</title>
+        <description>
+            <p>The ISSO will review Blossom user account authorization forms and verify that Blossom user
+    accounts are created, enabled, modified, disabled, and removed according to the types of Blossom
+    accounts (privileged or non-privileged); and review Blossom user account request workflows to
+    validate that account changes/updates have been submitted, and are complete and approved.</p>
+        </description>
+        <prop name="marking" uuid="b5886538-748d-4df8-b44d-d77508a93e89" value="EXAMINE" group="ac-2.f"/>
+        <link href="https://www.nist.gov" rel="website"/>
+        <dependency task-uuid="4facc265-ba1d-4d66-afc7-6385984b6a1e"/>
+        <associated-activity activity-uuid="0d243b23-a889-478f-9716-6d4870e56209">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    -->
+    <!--
+    <task uuid="5d56c18c-dd81-4c41-a19e-39ce5ed333a6" type="action">
+        <title>Assessing Implementation of AC-2.a</title>
+        <description>
+            <p>Execute script abcd.py to parse SSP and extract documented roles.</p>
+        </description>
+        <prop name="control-statement" uuid="42aef1fc-7b46-4209-9855-1db7cc3da81b"
+    ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.a" group="ac-2.a"/>
+        <prop name="assessment-objective" uuid="12276e1f-0685-4002-add7-9d0b5b6550d5"
+    ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_obj.a-1" group="ac-2.a"/>
+        <prop name="assessment-method" uuid="c444ac9e-9e44-41c8-a010-a369cc49728b"
+    ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2_asm-test" group="ac-2.a"/>
+        <link href="../script/abcd.py" rel="assessment-method"/>
+        <dependency task-uuid="91cace04-53c1-469b-986d-9affba8e3778"/>
+        <associated-activity activity-uuid="b0a4687c-9ac2-47f1-8f53-ef0fa8cd52da">
+            <subject type="component">
+                <include-all />
+            </subject>
+        </associated-activity>
+        <responsible-role role-id="assessor" />
+        <remarks>
+            <p>XXX</p>
+        </remarks>
+    </task>
+    -->
+
+</assessment-plan>
