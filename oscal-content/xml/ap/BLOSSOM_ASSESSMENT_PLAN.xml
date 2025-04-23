@@ -222,9 +222,9 @@
     <task uuid="d7acee77-47fc-46eb-91a2-60c25bd8440e" type="action">
         <title>Assessing Implementation of AC-2.c</title>
         <description>
-            <p>The ISSO will review the Blossom user account authorization form (workflow) to
+            <p>The ISSO will review the Blossom user account management form (GitHub Action) to
                 identify if criteria requirements (NIST e-mail) for group or role membership have
-                been met. Execute script abcd.py to parse GitHub to verify e-mail addresses.</p>
+                been met. Execute script abcd.py to parse GitHub to verify e-mail addresses are being checked by the Action.</p>
         </description>
         <prop name="control-statement" uuid="eafd45ad-a0a8-453f-a501-e4dfdcea869f"
             ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.c" group="ac-2.c" />
@@ -253,7 +253,8 @@
                 ACLs and user lists to verify all authorized Blossom users and their access
                 authorizations; and review Blossom account creation workflows and approved Blossom
                 user authorizations to identify access authorizations. Execute script _____ to parse
-                X509 certificate and ACLs to extract users. Match users to SSP.</p>
+                signed X509 certificates CN and ACLs to extract users. Match users to SSP.</p>
+                <!-- duplicate attributes from x509 certificates to Cognito user attributes (profile) -->
         </description>
         <prop name="control-statement" uuid="225d2b35-a418-4f93-aeb5-d6164971f931"
             ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.d.1" group="ac-2.d.1" />
@@ -281,8 +282,9 @@
             <p>The ISSO will review Blossom system generated ACLs and user lists to verify all
                 authorized Blossom users groups and role memberships; and review Blossom account
                 creation workflows and approved Blossom user authorizations to identify users group
-                and role memberships. Execute script _____ to parse X509 certificate and ACLs to
+                and role memberships. Execute script _____ to parse signed X509 certificates attributes and ACLs to
                 extract roles. Match roles to SSP.</p>
+                <!-- duplicate attributes from x509 certificates to Cognito user attributes (profile) -->
         </description>
         <prop name="control-statement" uuid="3da1ff16-a6ef-41d9-b19c-9399650daa73"
             ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.d.2" group="ac-2.d.2" />
@@ -313,6 +315,7 @@
                 to verify that Blossom users have valid Blossom system access authorizations.
                 Execute scripts _____ to parse X509 certificate and ACLs to extract users and
                 privileges. </p>
+                <!-- duplicate attributes from x509 certificates to Cognito user attributes (profile) -->
         </description>
         <prop name="control-statement" uuid="60ff3996-484f-4722-8a5f-ccdfc9152844"
             ns="http://csrc.nist.gov/ns/blossom/1.0" value="ac-2.d.3" group="ac-2.d.3" />
