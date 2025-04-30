@@ -18,6 +18,7 @@
                     of the Blossom Member which provides the software assets leasing service (here
                     in known as "this system").</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
         </role>
         <role id="system-administrator">
             <title>System Administrator (SA)</title>
@@ -25,6 +26,7 @@
                 <p>The individual accountable for the deployment, configuration, testing and
                     operations of the system on behalf of the System Owner.</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
         </role>
         <role id="sys-sec-assessor">
             <title>System Security Assessor (SSA)</title>
@@ -32,6 +34,7 @@
                 <p>The individual accountable for assessing the security posture of the system on
                     behalf of the system owner.</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
         </role>
         <role id="authorizing-official">
             <title>Authorizing Official</title>
@@ -43,6 +46,7 @@
                     of the system and has access to the ATO channel (chaincode) to upload the ATO Attestation Memo (AAM). 
                     The AO signs the AAM on behalf of the agency.</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
         </role>
         <!-- ###
           The following 3 roles are associated with the business (assets) operations 
@@ -53,6 +57,7 @@
                 <p>The individual accountable for managing leased licenses (checkout, install,
                     uninstall, return).</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
         </role>
         <role id="license-owner">
             <title>License Owner (LO)</title>
@@ -62,6 +67,7 @@
                     agencies.</p>
                 <p>The License Owner role exists only within the service provider agency.</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
         </role>
         <role id="acquisition-officer">
             <title>Acquisition Officer</title>
@@ -69,6 +75,7 @@
                 <p>The individual within the Agency which is responsible for approving and 
                     processing the payment of the leased pool of software licenses.</p>
             </description>
+            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
         </role>
         <location uuid="1ef39fd9-d184-44c4-8ef4-36d2dbad70a2">
             <title>National Institute of Standards and Technology</title>
@@ -112,7 +119,6 @@
             <name>Stan Owens</name>
             <prop name="job-title" value="System Owner" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
             <email-address>blossom-so@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
@@ -126,7 +132,6 @@
             <name>Simmon Admino</name>
             <prop name="job-title" value="System Administrator" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
             <email-address>blossom-admin@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
@@ -135,7 +140,6 @@
             <name>Steve S. Asesoro</name>
             <prop name="job-title" value="System Security Assessor" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="AWS" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
             <email-address>blossom-assessor@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
@@ -149,7 +153,6 @@
             <name>Aurelian Officeman</name>
             <prop name="job-title" value="Authorizing Official" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
             <email-address>blossom-ao@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
@@ -158,7 +161,6 @@
             <name>Licenta Owens</name>
             <prop name="job-title" value="License Owner" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="privileged" />
             <email-address>blossom-lo@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
@@ -166,7 +168,6 @@
             <name>Acquia Officiale</name>
             <prop name="job-title" value="Acquisition Officer" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
             <email-address>blossom-aco@nist.gov</email-address>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
         </party>
@@ -174,7 +175,6 @@
             <name>Tom Pock</name>
             <prop name="job-title" value="Technical Point of Contact" />
             <prop name="iam-manager" ns="https://csrc.nist.gov/ns/blossom" value="Cognito-NGAC" />
-            <prop name="privilege-level" ns="https://csrc.nist.gov/ns/blossom" value="non-privileged" />
             <email-address>blossom@nist.gov</email-address>
             <location-uuid>1ef39fd9-d184-44c4-8ef4-36d2dbad70a2</location-uuid>
             <member-of-organization>8aed7ffd-5158-445d-8d7c-eec5cf240cba</member-of-organization>
