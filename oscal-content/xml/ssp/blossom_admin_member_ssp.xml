@@ -836,7 +836,7 @@
             -->
             <link rel="documentation" href="#c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c" />
             <set-parameter param-id="ac-02_odp.01">
-                <value>have an organization-sponsored email address to demonstrate employment,complete training, and have been          approved by the System Owner based on the business need of the individual</value>
+                <value>have an organization-sponsored active email address to demonstrate employment with the organization, and have been approved by the System Owner based on the business need of the individual</value>
             </set-parameter>
             <set-parameter param-id="ac-02_odp.02">
                 <value>Access tagging</value>
@@ -912,11 +912,11 @@
                         <p>The following accounts are supported for the business operations (assets management):</p>
                         <ul>
                             <li>Privileged accounts: 
-                                <ul>License Owner</ul>
+                                <p>License Owner</p>
                             </li>
                             <li>Non-Privileged accounts: 
-                                <ul>Acquisition Officer</ul>
-                                <ul>Technical Point of Contact</ul>
+                                <p>Acquisition Officer</p>
+                                <p>Technical Point of Contact</p>
                             </li>
                         </ul>
                         <p>The Authorizing Official is responsible for reviewing the ATO package prepared by the System Owner and signing/authorizing the system to operate.</p>
@@ -925,7 +925,7 @@
                         <p>The following account is supported for the ATO processes.</p>
                         <ul>
                             <li>Privileged accounts:
-                                <ul>Authorizing Official</ul>
+                                <p>Authorizing Official</p>
                             </li>
                         </ul>
                     </description>
@@ -936,11 +936,11 @@
                         <p>The following accounts of the NIST Member of the Blossom System are managed by the Leveraged AWS IaaS:</p>
                         <ul>
                             <li>Privileged accounts: 
-                                <ul>System Owner</ul>
-                                <ul>System Administrator</ul>
+                                <p>System Owner</p>
+                                <p>System Administrator</p>
                             </li>
                             <li>Non-Privileged accounts: 
-                                <ul>System Security Assessor</ul>
+                                <p>System Security Assessor</p>
                                 <!-- #####
                                 NOTE: Authorizing Official will not have access to the infrastructure. 
                                  System Owner is responsible to prepare the ATO package in collaboration 
@@ -983,8 +983,8 @@
                     <description>
                         <!-- ac-02_odp.01= "have an organization-sponsored email address to demonstrate employment and
                           have been approved by the System Owner based on the business need of the individual" -->
-                        <p>For each identified role, access to the system for each role will be individually 
-                            analyzed and granted if the requesters proves they <insert type="param" id-ref="ac-02_odp.01" />
+                        <p>For each identified role, access to the system will be individually 
+                            analyzed and granted if the approval process proves they <insert type="param" id-ref="ac-02_odp.01" />
                             for the respective group and role membership.</p>
                     </description>
                 </by-component>
@@ -1031,34 +1031,36 @@
             <statement statement-id="ac-2_smt.d.3" uuid="0a95af0d-8d11-41cb-a5cf-e7352b0cafe8">
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="37e94c9b-acb8-458f-8a95-c1d110ead856">
                     <description>
-                        <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
-                        <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
+                        <p>All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with "role-id" matching the respective roles or attributes.</p>
+                        <p>All parties with the access authorizations are listed as "party-uuid" elements</p>
+                        <p>All authorized privileges are listed and accurately maintained in this SSP in the "system-implementation", as "user" elements with "uuid".</p>
+                        <p>A "prop" with name="privilege-level" and value="privileged" identifies the authorized privileges as privileged access rights.</p>
                     </description>
                 </by-component>
                 <by-component component-uuid="789dca83-d20b-421b-8210-284223278e54" uuid="cfa9519b-2c71-4a82-b862-6e9017337f16">
                     <description>
-                        <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
-                        <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
+                        <p>All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with "role-id" matching the respective roles or attributes.</p>
+                        <p>All parties with the access authorizations are listed as "party-uuid" elements</p>
+                        <p>All authorized privileges are listed and accurately maintained in this SSP in the "system-implementation", as "user" elements with "uuid".</p>
+                        <p>A "prop" with name="privilege-level" and value="non-privileged" identifies the authorized privileges as non-privileged access rights.</p>
                     </description>
                 </by-component>
             </statement>
             <statement statement-id="ac-2_smt.e" uuid="f14d12a4-470a-4d97-b0d1-8a8bd72749f0">
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="40d40fbc-aed0-4323-9846-2ed3dc0f321e">
                     <description>
-                        <p>Request to create accounts are approved by <insert type="param" id-ref="ac-02_odp.03" />
-                        <p></p>
-                    </p>
-                    <p>All authorized users that have access to the business layer are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
-                    <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
-                </description>
-            </by-component>
-            <by-component component-uuid="707ba686-7906-486e-9870-5b1f136a1f6b" uuid="5567624b-72b8-469d-9b6a-1fd707704247">
-                <description>
-                    <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
-                    <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
+                        <p>Request to create accounts are approved by <insert type="param" id-ref="ac-02_odp.03" /></p>
+                        <p>All authorized users that have access to the business layer are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                        <p>A "prop" with name="iam-manager" and value="Cognito-NGAC" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system, performing business operations.</p>
+                    </description>
+                </by-component>
+                <by-component component-uuid="707ba686-7906-486e-9870-5b1f136a1f6b" uuid="5567624b-72b8-469d-9b6a-1fd707704247">
+                    <description>
+                        <p>All authorized users are listed and accurately maintained in this SSP in the "metadata", as "party" elements of type="person".</p>
+                        <p>A "prop" with name="iam-manager" and value="AWS" identifies the "party" elements of type="person" (aka the authorized users) that have access to the system's infrastructure managed by AWS.</p>
 
-                </description>
-            </by-component>
+                    </description>
+                </by-component>
         </statement>
         <statement statement-id="ac-2_smt.f" uuid="25468357-e8b1-4703-aecb-b6a37ccccd9e">
             <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c51bccae-1f04-403f-9996-e2d04dfcfdbf">
@@ -1087,7 +1089,7 @@
             <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c555e31a-7b0d-437a-b415-e9ba5f2e1ef0">
                 <description>
                     <p>Account managers, <insert type="param" id-ref="ac-02_odp.05" />
-                            System Owner, and Program Manager are notified within:</p>
+                            System Owner, and Program Manager are notified within:<insert type="param" id-ref="ac-02_odp.06" /></p>
                     <p>All roles supported by the Blossom system are documented in this SSP in the "metadata", as "role" elements with "id" identifying the role. 
                     </p>
                     <p>Each "party" documented in the "metadata" of this SSP, with the type="person" and the "prop" with name="iam-manager" and value="Cognito-NGAC", has a "prop" with name="job-title" which has a "value" identifying the entity's role. </p>
@@ -1112,9 +1114,7 @@
             <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="c5a6312a-6123-4aa4-8097-3b4e30e70b72">
                 <description>
                     <p>
-                        <insert type="param" id-ref="ac-02_odp.07" />
-                        within 1 business day when users are terminated or
-                        transferred; </p>
+                        <insert type="param" id-ref="ac-02_odp.07" /> when users are terminated or transferred; </p>
                 </description>
             </by-component>
         </statement>
