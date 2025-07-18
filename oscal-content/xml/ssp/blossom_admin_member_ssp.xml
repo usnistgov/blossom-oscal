@@ -609,10 +609,10 @@
             <date-authorized>2024-01-01</date-authorized>
             <remarks>
                 <p>TBD: ssp-uuid: 73a7ca56-ac02-43b9-8664-62bcb05a7e91 will need to be added for
-                    oscal 1.2.0.</p>
+                    OSCAL 1.2.0.</p>
                 <p>The leveraged authorization assembly is supposed to have a required uuid flag
                     instead of an optional id flag. This will be fixed in the syntax shortly.</p>
-                <p>Use one leveraged-authorization assembly for each underlying system. (In the
+                <p>Use one leveraged-authorization assembly for each underlying system. In the
                     legacy world, these may be general support systems.</p>
                 <p>The link fields are optional, but preferred where known. Often, a leveraging
                     system's SSP author will not have access to the leveraged system's SSP, but
@@ -708,7 +708,7 @@
             <!-- TBD: The following <prop>s must be reviewed, updated and only one option kept based
             on AC-2 implementation of the inherited control for managing the Authorizing Official's
             account -->
-            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2024/05/30" />
+            <prop name="planned-completion-date" ns="https://fedramp.gov/ns/oscal" value="2025/08/30" />
             <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="partial">
                 <remarks>
                     <p>Per the documentation available in the Blossom Wiki, the AWS Managed
@@ -727,22 +727,6 @@
                         (Authorization and Business) used by the system.</p>
                 </remarks>
             </prop>
-            <!-- Use this prop for not applicable controls
-            <prop name="implementation-status" ns="https://fedramp.gov/ns/oscal" value="not-applicable">
-                <remarks>
-                    <p>TBD: Describe the justification for marking this control Not Applicable.</p>
-                </remarks>
-            </prop>  
-            -->
-            <!-- Control origination varies per role. See by-component under ac-2_smt
-            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="leveraged-system" />
-            <prop name="control-origination" ns="https://fedramp.gov/ns/oscal" value="customer-configured">
-                <remarks>
-                    <p>TBD: Describe any customer-configured requirements for satisfying this
-                        control.</p>
-                </remarks>
-            </prop>
-            -->
             <link rel="documentation" href="#c3e6cc46-a28a-45ac-a2b0-ef7ce230a45c" />
             <set-parameter param-id="ac-02_odp.01">
                 <value>have an organization-sponsored active email address to demonstrate employment with the organization, complete training, and have been approved by the System Owner based on the business need of the individual</value>
@@ -789,7 +773,7 @@
                 <by-component component-uuid="60f92bcf-f353-4236-9803-2a5d41751010" uuid="9d06a5a6-0c30-43cb-a18a-baabd616ddfb">
                     <description>
                         <p>For the business layer, users that have one of the roles specified in this document and which have accounts  
-                        created in Cognito, access is controlled by the Policy machines implementing NGAC in the "Assets" chaincodes. 
+                        created in Cognito, have access controlled by the Policy machines implementing NGAC in the "Assets" chaincodes. 
                         For the operational (ATO management) layer, only the Authorizing Officials upload the ATO Attestation
                         to the "Authorization" chaincode. The Policy machines implementing NGAC in the "Authorization" chaincode 
                         controls Authorizing Officials' access.</p>
@@ -949,7 +933,7 @@
                         <!-- ac-02_odp.02="Access tagging" -->
                         <p>All access authorizations are documented in this SSP in the "metadata" as "responsible-party" with
                          "role-id" matching the respective roles or attributes.</p>
-                        <p>All parties with the access authorizations are listed as "party-uuid" elements</p>
+                        <p>All parties with the access authorizations are documented under "party-uuid" elements.</p>
                         <p>All authorized privileges are listed and accurately maintained in this SSP in the "system-implementation",
                          as "user" elements with "uuid".</p>
                         <p>For each "role", the <insert type="param" id-ref="ac-02_odp.02" /> is defined by 
@@ -967,7 +951,6 @@
                         <p>For each "role", the <insert type="param" id-ref="ac-02_odp.02" /> is defined by 
                         a "prop" with name="privilege-level" and value="non-privileged" identifies the authorized 
                         privileges as non-privileged access rights.</p>
-access tagging;</p>
                     </description>
                 </by-component>
             </statement>
