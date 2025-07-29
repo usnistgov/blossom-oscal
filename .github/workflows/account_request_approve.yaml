@@ -9,7 +9,7 @@ jobs:
   # When ACCOUNT_APPROVED label is added to account management request
   request-approved:
     if: github.event.label.name == 'ACCOUNT_APPROVED'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     permissions:
       issues: write
     steps:
@@ -27,7 +27,7 @@ jobs:
 
   parse-issue:
     needs: request-approved
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     outputs:
       account-modification: ${{ steps.issue-parser.outputs.issueparser_account-modification }}
       user-first-name: ${{ steps.issue-parser.outputs.issueparser_user-first-name }}
@@ -36,6 +36,7 @@ jobs:
       user-email: ${{ steps.issue-parser.outputs.issueparser_user-email }}
       account-type: ${{ steps.issue-parser.outputs.issueparser_account-type }}
       ssp-file-path: ${{ steps.issue-parser.outputs.issueparser_ssp-file-path }}
+      amb-member: ${{ steps.issue-parser.outputs.issueparser_amb-member }}
     steps:        
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -53,18 +54,28 @@ jobs:
   create-user:
     needs: parse-issue
     if: ${{ needs.parse-issue.outputs.account-modification == 'Create' }}
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps: 
       - name: Checkout repo
         uses: actions/checkout@v4
 
       - name: Ensure directory exists for created users
         run: |
-          mkdir -p ato/oscal-artifacts/created_users/
+          mkdir -p ops/secops/created_users/
       
       - name: Ensure directory exists for created users references
         run: |
-          mkdir -p ato/oscal-artifacts/reference_created_users/
+          mkdir -p ops/secops/reference_created_users/
+
+      - name: Create session ID if it doesn't already exist
+        if: ${{ hashFiles('.sims/session.lock') == '' }}
+        run: |
+          bash ops/secops/create_session.sh
+
+      - name: Get most recent session ID
+        id: get-session-id
+        run: |
+          echo "session-id=$(cat .sims/session.lock)" >> $GITHUB_OUTPUT
 
       - name: Create yaml file for automated user creation
         env:
@@ -74,8 +85,16 @@ jobs:
           USER_ROLE: ${{ needs.parse-issue.outputs.account-type }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           SSP_FILE_PATH: ${{ needs.parse-issue.outputs.ssp-file-path }}
+          REQUESTER: ${{ github.event.issue.user.login }} # GitHub user that created this request
+          APPROVER: ${{ github.event.sender.login }} # GitHub user that approved this request
+          SESSION_ID: ${{ steps.get-session-id.outputs.session-id }}
+          AMB_MEMBER: ${{ needs.parse-issue.outputs.amb-member }}
         run: |
-          python ato/secops/create_user.py --user-name "$USER_NAME" --user-username "$USER_USERNAME" --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER" --ssp-path "$SSP_FILE_PATH"
+          python ops/secops/create_user.py --user-name "$USER_NAME" --user-username "$USER_USERNAME" \
+          --user-email "$USER_EMAIL" --user-role "$USER_ROLE" --issue-number "$ISSUE_NUMBER" --ssp-path "$SSP_FILE_PATH" \
+          --requester "$REQUESTER" --approver "$APPROVER" --session-id "$SESSION_ID" --amb-member "$AMB_MEMBER"
+          cat ops/secops/created_users/*
+          cat ops/secops/reference_created_users/*
 
       - name: Store user yaml in repo
         run: |
@@ -83,15 +102,85 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config pull.rebase false
           git fetch --all
-          git checkout "$BRANCH_NAME" || git checkout -b "$BRANCH_NAME"
-          git pull origin "$BRANCH_NAME"
-          git add "ato/oscal-artifacts/created_users/*"
-          git add "ato/oscal-artifacts/reference_created_users/*"
+          (git checkout "$BRANCH_NAME" && git pull origin "$BRANCH_NAME") || git checkout -b "$BRANCH_NAME"
+          git add "ops/secops/created_users/*"
+          git add "ops/secops/reference_created_users/*"
           git commit -m "Create user request #$ISSUE_NUMBER"
-          git push origin "$BRANCH_NAME"
+          git push origin "$BRANCH_NAME" || git push -u origin "$BRANCH_NAME"
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
-          BRANCH_NAME: "account-request"
+          BRANCH_NAME: ${{ steps.get-session-id.outputs.session-id }}
+  
+      - name: Configure AWS CLI
+        uses: aws-actions/configure-aws-credentials@8c3f20df09ac63af7b3ae3d7c91f105f857d8497 # v4
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
+
+      - name: Get filename of reference yaml to upload
+        id: get-filename
+        run: |
+          echo "reference-yaml=$(git diff --name-only HEAD HEAD~1 | grep "ops/secops/reference")" >> $GITHUB_OUTPUT
+      
+      - name: Copy reference yaml to bucket
+        run: |
+          aws s3 cp "$REFERENCE_YAML" s3://"$AWS_BUCKET"
+        env:
+          REFERENCE_YAML: ${{ steps.get-filename.outputs.reference-yaml }}
+          AWS_BUCKET: ${{ secrets.AWS_BUCKET }}
+
+  delete-user:
+    needs: parse-issue
+    if: ${{ needs.parse-issue.outputs.account-modification == 'Delete' }}
+    runs-on: ubuntu-22.04
+    steps: 
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Ensure directory exists for deleted users
+        run: |
+          mkdir -p ops/secops/deleted_users/
+      
+      - name: Ensure directory exists for deleted users references
+        run: |
+          mkdir -p ops/secops/reference_deleted_users/
+
+      - name: Get most recent session ID
+        id: get-session-id
+        run: |
+          echo "session-id=$(cat .sims/session.lock)" >> $GITHUB_OUTPUT
+
+      - name: Create yaml file for automated user deletion
+        env:
+          USER_USERNAME: ${{ needs.parse-issue.outputs.user-username }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          SSP_FILE_PATH: ${{ needs.parse-issue.outputs.ssp-file-path }}
+          REQUESTER: ${{ github.event.issue.user.login }} # GitHub user that created this request
+          APPROVER: ${{ github.event.sender.login }} # GitHub user that approved this request
+          SESSION_ID: ${{ steps.get-session-id.outputs.session-id }}
+        run: |
+          python ops/secops/delete_user.py --user-username "$USER_USERNAME" \
+          --issue-number "$ISSUE_NUMBER" --ssp-path "$SSP_FILE_PATH" \
+          --requester "$REQUESTER" --approver "$APPROVER" --session-id "$SESSION_ID"
+          cat ops/secops/deleted_users/*
+          cat ops/secops/reference_deleted_users/*
+
+      - name: Store user yaml in repo
+        run: |
+          git config user.name "delete-user-action[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config pull.rebase false
+          git fetch --all
+          (git checkout "$BRANCH_NAME" && git pull origin "$BRANCH_NAME") || git checkout -b "$BRANCH_NAME"
+          git pull origin "$BRANCH_NAME"
+          git add "ops/secops/deleted_users/*"
+          git add "ops/secops/reference_deleted_users/*"
+          git commit -m "Delete user request #$ISSUE_NUMBER"
+          git push origin "$BRANCH_NAME" || git push -u origin "$BRANCH_NAME"
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          BRANCH_NAME: ${{ steps.get-session-id.outputs.session-id }}
   
       - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@8c3f20df09ac63af7b3ae3d7c91f105f857d8497 # v4
@@ -100,8 +189,14 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY }}
       
+      - name: Get filename of reference yaml to upload
+        id: get-filename
+        run: |
+          echo "reference-yaml=$(git diff --name-only HEAD HEAD~1 | grep "ops/secops/reference")" >> $GITHUB_OUTPUT
+      
       - name: Copy reference yaml to bucket
         run: |
-          aws s3 cp --recursive ato/oscal-artifacts/reference_created_users/ s3://"$AWS_BUCKET"
+          aws s3 cp "$REFERENCE_YAML" s3://"$AWS_BUCKET"
         env:
+          REFERENCE_YAML: ${{ steps.get-filename.outputs.reference-yaml }}
           AWS_BUCKET: ${{ secrets.AWS_BUCKET }}

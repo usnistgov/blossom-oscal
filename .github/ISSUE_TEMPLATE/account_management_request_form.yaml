@@ -114,6 +114,17 @@ body:
       placeholder: .sims/
     validations:
       required: true
+  - type: dropdown
+    id: amb-member
+    attributes:
+      label: Which AMB Member
+      description: Select which AMB Member
+      options:
+        - SAM
+        - Agency
+      multiple: false
+    validations:
+      required: true
   - type: checkboxes
     id: attestation
     attributes:

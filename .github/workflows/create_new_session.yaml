@@ -1,0 +1,19 @@
+name: Create New Session
+
+on:
+  workflow_dispatch:
+
+jobs:
+  create-session:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            ops/secops
+            .sims
+      
+      - name: Create session
+        run: |
+          bash ops/secops/create_session.sh

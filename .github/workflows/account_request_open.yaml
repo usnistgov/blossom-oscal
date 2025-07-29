@@ -8,9 +8,52 @@ on:
 jobs:
   # When an issue is created by account management request form
   # Label of account management request form is ACCOUNT_REQUEST_RECORD
-  request-opened:
+
+  # Parse submitted request form
+  parse-issue:
     if: github.event.label.name == 'ACCOUNT_REQUEST_RECORD'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
+    outputs:
+      user-email: ${{ steps.issue-parser.outputs.issueparser_user-email }}
+    steps:        
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github/ISSUE_TEMPLATE/account_management_request_form.yaml
+          sparse-checkout-cone-mode: false
+
+      - name: Parse issue body
+        uses: stefanbuck/github-issue-parser@2d2ff50d4aae06ab58d26bf59468d98086605f11 # v3.2.1
+        id: issue-parser
+        with:
+          template-path: ".github/ISSUE_TEMPLATE/account_management_request_form.yaml"
+        
+  # Account request is automatically closed if non-NIST email.
+  # blossom account managers (blossom-management) is notified.
+  request-invalid-email:
+    needs: parse-issue
+    if: ${{ !endsWith(needs.parse-issue.outputs.user-email, '@nist.gov') }}
+    runs-on: ubuntu-22.04
+    permissions:
+      issues: write
+    steps:
+      - name: Close account request with invalid email
+        run: gh issue close "$NUMBER" --comment "$COMMENT" --reason "not planned"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          NUMBER: ${{ github.event.issue.number }}
+          COMMENT: >
+            Account management request contains an invalid, non-NIST email. 
+            @usnistgov/blossom-management 
+            Closing request as "not planned".
+  
+  # Account request is sent for approval if NIST email.
+  request-opened:
+    needs: parse-issue
+    if: ${{ endsWith(needs.parse-issue.outputs.user-email, '@nist.gov') }}
+    runs-on: ubuntu-22.04
     permissions:
       issues: write
     steps:

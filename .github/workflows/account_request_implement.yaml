@@ -9,7 +9,7 @@ jobs:
   # When ACCOUNT_IMPLEMENTED label is added to account management request
   request-implemented:
     if: github.event.label.name == 'ACCOUNT_IMPLEMENTED'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     permissions:
       issues: write
     steps:
